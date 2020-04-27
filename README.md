@@ -8,14 +8,13 @@ This document is a cheatsheet for JavaScript you will frequently encounter in mo
 
 
 ## Table of Contents
-
-**1. Level - 1**
-   1. [Basic JavaScript Questions](https://github.com/Sunil-Pradhan/interview-handbook/blob/master/Js/Level%20-%201/basic-javascript-questions.md)
-   2. [Intermediate JavaScript Questions](https://github.com/Sunil-Pradhan/interview-handbook/blob/master/Js/Level%20-%201/intermediate-javascript-questions.md)
-   3. [Advance JavaScript Questions](https://github.com/Sunil-Pradhan/interview-handbook/blob/master/Js/Level%20-%201/advance-javascript-questions.md)
+* [Complementary Resources](#com-res)
+* [Branch and Merge](#Branch-merge)
 
 
 
+
+<a name="Complementary Resources"></a>
 ## Complementary Resources
 
 When you struggle to understand a concept, I suggest you look for answers on the following resources:
