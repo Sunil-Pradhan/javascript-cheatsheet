@@ -8,11 +8,21 @@ This document is a cheatsheet for JavaScript you will frequently encounter in mo
 
 
 ## Table of Contents
+
+* [JavaScript Comments](#js-commet)
 * [Complementary Resources](#com-res)
-* [Branch and Merge](#Branch-merge)
 
 
 
+<a name="JavaScript Comments"></a>
+## Comments
+
+```javascript
+// This is an in-line comment.
+
+/* This is a
+multi-line comment */
+```
 
 <a name="Complementary Resources"></a>
 ## Complementary Resources
