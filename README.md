@@ -14,7 +14,7 @@ This document is a cheatsheet for JavaScript you will frequently encounter in mo
 
 
 
-<a name="JavaScript Comments"></a>
+<a name="js-commet"></a>
 ## Comments
 
 ```javascript
@@ -24,7 +24,7 @@ This document is a cheatsheet for JavaScript you will frequently encounter in mo
 multi-line comment */
 ```
 
-<a name="Complementary Resources"></a>
+<a name="com-res"></a>
 ## Complementary Resources
 
 When you struggle to understand a concept, I suggest you look for answers on the following resources:
