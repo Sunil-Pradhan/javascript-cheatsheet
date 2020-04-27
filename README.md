@@ -4,7 +4,7 @@
 
 <h1 align="center">JavaScript Cheatsheet</h1>
 
-This section contains a number of JavaScript interview questions and its answers that can be used for interview preparation or improve your existing JavaScript skills.Suggested answers along with relevant resources are also mentioned but you can also submit answers to questions as a contributor.
+This document is a cheatsheet for JavaScript you will frequently encounter in modern projects and most contemporary sample code.
 
 
 ## Table of Contents
