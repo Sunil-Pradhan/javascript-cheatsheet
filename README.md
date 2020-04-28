@@ -61,7 +61,9 @@ I recommend always declaring your variables with `const` by default, but with `l
              | Scope    | Reassignable     | Temporal Dead Zone
 ------------ | ------------------------------------------------
 **const**    | Block    | No               | Yes
+------------ | ------------------------------------------------
 **let**      | Block    | Yes              | Yes
+------------ | ------------------------------------------------
 **var**      | Function | Yes              | No
 
 
