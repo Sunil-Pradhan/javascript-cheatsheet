@@ -10,6 +10,7 @@ This document is a cheatsheet for JavaScript you will frequently encounter in mo
 ## Table of Contents
 
 * [JavaScript Comments](#js-commet)
+* [Data types](#js-datatypes)
 * [Complementary Resources](#com-res)
 
 
@@ -17,20 +18,41 @@ This document is a cheatsheet for JavaScript you will frequently encounter in mo
 <a name="js-commet"></a>
 ## Comments
 
-```javascript
-// This is an in-line comment.
+Single line comments start with `//`. For multi-line commands, you use `/* ... */`.
 
-/* This is a
-multi-line comment */
+```javascript
+// This is a single line comment
+
+/*
+ And this is
+ a multi-line
+ comment
+ */
 ```
 
+<a name="js-datatypes"></a>
+## Data types
+
+The latest ECMAScript standard defines eight data types:
+
+* Number
+* String
+* Boolean
+* Null
+* Undefined
+* Symbol 
+* BigInt
+
+
+
+
 <a name="com-res"></a>
-## Complementary Resources
+##### Complementary Resources
 
 When you struggle to understand a concept, I suggest you look for answers on the following resources:
 
 
-* [MDN (Mozilla Developer Network)](https://developer.mozilla.org/en-US/)
+* [MDN (Mozilla Developer Network)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [ES6 Features with examples)](http://es6-features.org/#Constants)
 * [Reddit (JavaScript))](https://www.reddit.com/r/javascript/)
 * [StackOverflow)](https://stackoverflow.com/questions/tagged/javascript)
