@@ -55,6 +55,16 @@ There are 3 ways to create variables in JavaScript:
 
 Variables created with `var` are in scope of the function (or global if declared in the global scope); `let` variables are block scoped; and `const` variables are like let plus their values cannot be re-assigned.
 
+I recommend always declaring your variables with `const` by default, but with `let` if it is a variable that you need to reassign later.
+
+
+             | Scope    | Reassignable     | Temporal Dead Zone
+------------ | ------------------------------------------------
+**const**    | Block    | No               | Yes
+**let**      | Block    | Yes              | Yes
+**var**      | Function | Yes              | No
+
+
 
 <hr>
 
