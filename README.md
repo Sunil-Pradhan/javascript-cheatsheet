@@ -11,6 +11,7 @@ This document is a cheatsheet for JavaScript you will frequently encounter in mo
 
 * [JavaScript Comments](#js-commet)
 * [Data types](#js-datatypes)
+* [Variables](#js-variables)
 * [Complementary Resources](#com-res)
 
 
@@ -43,8 +44,16 @@ The latest ECMAScript standard defines eight data types:
 * Symbol 
 * BigInt
 
+<a name="js-variables"></a>
+## Variables
 
+In javascript, a variable is like a temporary location where you store your data for future retrieval.
 
+There are 3 ways to create variables in javascript:
+
+`var`, `let`, `const`
+
+Variables created with `var` are in scope of the function (or global if declared in the global scope); `let` variables are block scoped; and `const` variables are like let plus their values cannot be re-assigned.
 
 <a name="com-res"></a>
 ##### Complementary Resources
