@@ -67,6 +67,11 @@ I recommend always declaring your variables with `const` by default, but with `l
 **var**      | Function | Yes              | No
 
 
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
 
 <hr>
 
