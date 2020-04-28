@@ -47,7 +47,7 @@ The latest ECMAScript standard defines eight data types:
 <a name="js-variables"></a>
 ## Variables
 
-In javascript, a variable is like a temporary location where you store your data for future retrieval.
+In JavaScript, a variable is like a temporary location where you store your data for future retrieval.
 
 There are 3 ways to create variables in javascript:
 
