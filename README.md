@@ -58,19 +58,33 @@ Variables created with `var` are in scope of the function (or global if declared
 I recommend always declaring your variables with `const` by default, but with `let` if it is a variable that you need to reassign later.
 
 
-    demo      | Scope    | Reassignable     | Temporal Dead Zone
------------- | ------------------------------------------------
-**const**    | Block    | No               | Yes
------------- | ------------------------------------------------
-**let**      | Block    | Yes              | Yes
------------- | ------------------------------------------------
-**var**      | Function | Yes              | No
+ <table>
+  <tr>
+    <th></th>
+    <th>Scope</th>
+    <th>Reassignable</th>
+    <th>Temporal Dead Zone</th>
+  </tr>
+  <tr>
+    <th>const</th>
+    <td>Block</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <th>let</th>
+    <td>Block</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+   <tr>
+    <th>var</th>
+    <td>Function</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+</table>
 
-
-First Header | Scope | Reassignable | Temporal Dead Zone
------------- | -------------
-Content from cell 1 | Content from cell 2 | Content from cell 2 | Content from cell 2
-Content in the first column | Content in the second column | Content from cell 2 | Content from cell 2
 
 
 <hr>
