@@ -85,6 +85,20 @@ I recommend always declaring your variables with `const` by default, but with `l
   </tr>
 </table>
 
+##### Sample code
+
+```javascript 
+// This is how you define a variable
+// `x` will be `undefined`
+var x;
+
+// Declare a constant (the convention is to use CAPS for constants)
+const FOO = 42;
+
+// Declare another two variables, using `var` and `let`
+var hello = 'world';
+let bar = 'baz';
+```
 
 
 <hr>
@@ -98,4 +112,4 @@ When you struggle to understand a concept, I suggest you look for answers on the
 * [MDN (Mozilla Developer Network)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [ES6 Features with examples)](http://es6-features.org/#Constants)
 * [Reddit (JavaScript))](https://www.reddit.com/r/javascript/)
-* [StackOverflow)](https://stackoverflow.com/questions/tagged/javascript)
+* [StackOverflow](https://stackoverflow.com/questions/tagged/javascript)
