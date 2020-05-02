@@ -5,9 +5,7 @@
 <h1 align="center">JavaScript Cheatsheet</h1>
 
 <p align="center">
-JavaScript (JS) is a dynamic interpreted language that powers the web. It is widely used in browsers (where JS scripts are interpreted by JavaScript engines like Chrome's V8) and increasingly on servers (on a Node.js runtime environment).
-
-This document is a cheatsheet for JavaScript you will frequently encounter in modern projects and most contemporary sample code.
+JavaScript (JS) is a dynamic interpreted language that powers the web. It is widely used in browsers (where JS scripts are interpreted by JavaScript engines like Chrome's V8) and increasingly on servers (on a Node.js runtime environment). This document is a cheatsheet for JavaScript you will frequently encounter in modern projects and most contemporary sample code.
 </p>
 
 
