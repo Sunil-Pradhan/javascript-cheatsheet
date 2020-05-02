@@ -100,6 +100,11 @@ var hello = 'world';
 let bar = 'baz';
 ```
 
+```javascript
+// increment and decrement numbers
+i++; // the equivalent of i = i + 1
+i--; // the equivalent of i = i - 1;
+```
 
 <hr>
 
