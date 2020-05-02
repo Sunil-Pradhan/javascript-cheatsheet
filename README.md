@@ -11,15 +11,16 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 
 ## Table of Contents
 
-* [JavaScript Comments](#js-commet)
+* [JavaScript Basics](#js-basics)
 * [Data types](#js-datatypes)
 * [Variables](#js-variables)
 * [Complementary Resources](#com-res)
 
 
+<a name="js-basics"></a>
+## JavaScript Basics
 
-<a name="js-commet"></a>
-## Comments
+##### Comments
 
 Single line comments start with `//`. For multi-line commands, you use `/* ... */`.
 
