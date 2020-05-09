@@ -161,6 +161,11 @@ if (condition) {
 
 Example:
 
+![js-if-else-statement](/img/js-if-else-statement.png)
+
+
+
+
 <hr>
 
 <a name="com-res"></a>
