@@ -125,7 +125,7 @@ i--; // the equivalent of i = i - 1;
 <a name="js-branch-loops"></a>
 ## Branches and Loops
 
-### Branching Out
+### Branching Out:
 
 #### if statement 
 
