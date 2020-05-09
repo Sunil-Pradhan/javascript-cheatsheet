@@ -139,6 +139,11 @@ if (condition is true) {
 }
 ```
 
+Example: 
+
+![js-if-statement](/img/js-if-statement.png)
+
+
 
 
 <hr>
