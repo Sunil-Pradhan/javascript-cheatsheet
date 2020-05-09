@@ -126,5 +126,5 @@ When you struggle to understand a concept, I suggest you look for answers on the
 
 * [MDN (Mozilla Developer Network)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [ES6 Features with examples)](http://es6-features.org/#Constants)
-* [Reddit (JavaScript))](https://www.reddit.com/r/javascript/)
+* [Reddit (JavaScript)](https://www.reddit.com/r/javascript/)
 * [StackOverflow](https://stackoverflow.com/questions/tagged/javascript)
