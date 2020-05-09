@@ -131,6 +131,8 @@ i--; // the equivalent of i = i - 1;
 
 It is used to execute an instruction or block of instructions only if a condition is fulfilled i.e True.
 
+Syntax: 
+
 ```javascript
 if (condition is true) {
   statement is executed
