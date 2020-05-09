@@ -14,7 +14,11 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 * [JavaScript Basics](#js-basics)
 * [Data types](#js-datatypes)
 * [Variables](#js-variables)
+* [Branches and Loops](#js-branch-loops)
 * [Complementary Resources](#com-res)
+
+
+
 
 
 <a name="js-basics"></a>
@@ -115,6 +119,13 @@ let bar = 'baz';
 i++; // the equivalent of i = i + 1
 i--; // the equivalent of i = i - 1;
 ```
+
+<hr>
+
+<a name="js-branch-loops"></a>
+## Branches and Loops
+
+
 
 <hr>
 
