@@ -163,16 +163,24 @@ Example:
 
 ![js-if-else-statement](/img/js-if-else-statement.png)
 
+#### Nested if statement
 
-#### Nested if statement 
+Embedding if statement inside another if statement is called JavaScript nested if statement. Here, else statement allows you to print different statements depending upon the expression result (true, false).
 
-Embedding if statement inside another if statement is called JavaScript nested if statement. Here, else statement allows you to print different statements depending upon the expression result (true, false). 
+Syntax:
+
+```javascript
+if (condition1) {
+  // Executes when condition1 is true
+  if (condition2) {
+    // Executes when condition2 is true
+  }
+}
+```
 
 Example:
 
 ![js-nested-if-statement](/img/js-nested-if-statement.png)
-
-
 
 <hr>
 
