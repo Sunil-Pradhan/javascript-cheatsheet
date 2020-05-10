@@ -206,7 +206,7 @@ First check if statement condition 1, if it's not true then go to condition 2 an
 
 Example:
 
-![js-if-else-if statement](/img/js-if-else-if statement.png)
+![js-if-else-if statement](/img/js-if-else-if%20statement.png.png)
 
 
 <hr>
