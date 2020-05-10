@@ -182,6 +182,28 @@ Example:
 
 ![js-nested-if-statement](/img/js-nested-if-statement.png)
 
+#### if-else-if ladder or else...if statement
+
+Use else if to specify a new condition to test, if the first condition is false.
+
+Syntax:
+
+```javascript
+if (condition_1) {
+  statement_1_block;
+} else if (condition_2) {
+  statement_2_block;
+} else if (condition_n) {
+  statement_n_block;
+}
+.
+.
+.
+else statment;
+```
+
+First check if statement condition 1, if it's not true then go to condition 2 and check. Still it’s not true then go to condition 3 and so on, until you are not getting any true value, otherwise show the else statement.
+
 <hr>
 
 <a name="com-res"></a>
