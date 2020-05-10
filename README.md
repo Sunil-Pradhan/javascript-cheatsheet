@@ -204,6 +204,11 @@ else statment;
 
 First check if statement condition 1, if it's not true then go to condition 2 and check. Still it’s not true then go to condition 3 and so on, until you are not getting any true value, otherwise show the else statement.
 
+Example:
+
+![js-if-else-if statement](/img/js-if-else-if statement.png)
+
+
 <hr>
 
 <a name="com-res"></a>
