@@ -164,7 +164,9 @@ Example:
 ![js-if-else-statement](/img/js-if-else-statement.png)
 
 
+#### Nested if statement 
 
+Embedding if statement inside another if statement is called JavaScript nested if statement. Here, else statement allows you to print different statements depending upon the expression result (true, false). 
 
 <hr>
 
