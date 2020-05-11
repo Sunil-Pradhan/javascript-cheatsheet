@@ -215,18 +215,21 @@ The switch statement chooses between multiple statements to execute based on pos
 Syntax:
 
 ```javascript
-switch(expression) {
-  case expression 1:
-      block of statements 1;
-      break;
-  case expression 2:
-      block of statements 2;
-      break;
-.
-.
-.
-default:
-      default block of instructions;
+switch (expression)
+{
+    case value1:
+        statement1;
+        break;
+    case value2:
+        statement2;
+        break;
+    .
+    .
+    case valueN:
+        statementN;
+        break;
+    default:
+        statementDefault;
 }
 ```
 
