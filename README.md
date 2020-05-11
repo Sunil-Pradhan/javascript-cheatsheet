@@ -240,7 +240,9 @@ Example: (Without default)
 ![js-switch-statement-without-default](/img/js-switch-statement-without-default.png)
 
 
+Example: (With default)
 
+![js-switch-statement-with-default](/img/js-switch-statement-with-default.png)
 
 
 
