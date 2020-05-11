@@ -235,6 +235,15 @@ switch (expression)
 
 :bulb: TIP: All the cases will be evaluated if you do not use a break statement. 
 
+Example: (Without default)
+
+![js-switch-statement-without-default](/img/js-switch-statement-without-default.png)
+
+
+
+
+
+
 <hr>
 
 <a name="com-res"></a>
