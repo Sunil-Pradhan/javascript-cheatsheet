@@ -244,7 +244,7 @@ Example: (With default)
 
 ![js-switch-statement-with-default](/img/js-switch-statement-with-default.png)
 
-Sometimes it is also possible or necessary to execute the same statement for multiple expressions. 
+Sometimes it is also possible or necessary to execute the same statement for **multiple expressions**. 
 
 Syntax:
 
@@ -267,6 +267,12 @@ switch (expression)
         statementDefault;
 }
 ```
+
+Example: In a week, if you have two days off then in that case you can use switch statements where you need to execute the same statement multiple times.
+
+Example: (With multiple options)
+
+![js-switch-statement-with-multiple-options](/img/js-switch-statement-with-multiple-options.png)
 
 <hr>
 
