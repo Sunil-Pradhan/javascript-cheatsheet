@@ -208,6 +208,27 @@ Example:
 
 ![js-if-else-if statement](/img/js-if-else-if%20statement.png)
 
+#### Switch statement
+
+The switch statement chooses between multiple statements to execute based on possible values of a single expression. Each of these values in a switch statement is called a case.
+
+Syntax:
+
+```javascript
+switch(expression) {
+  case expression 1:
+      block of statements 1;
+      break;
+  case expression 2:
+      block of statements 2;
+      break;
+.
+.
+.
+default:
+      default block of instructions;
+}
+```
 
 <hr>
 
