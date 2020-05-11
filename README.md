@@ -233,6 +233,8 @@ switch (expression)
 }
 ```
 
+:bulb: TIP: All the cases will be evaluated if you do not use a break statement. 
+
 <hr>
 
 <a name="com-res"></a>
