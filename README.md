@@ -244,7 +244,29 @@ Example: (With default)
 
 ![js-switch-statement-with-default](/img/js-switch-statement-with-default.png)
 
+Sometimes it is also possible or necessary to execute the same statement for multiple expressions. 
 
+Syntax:
+
+```javascript
+switch (expression)
+{
+    case value1:
+        statement1;
+        break;
+    case value2:
+    case value3:
+        statement3;
+        break;
+    .
+    .
+    case valueN:
+        statementN;
+        break;
+    default:
+        statementDefault;
+}
+```
 
 <hr>
 
