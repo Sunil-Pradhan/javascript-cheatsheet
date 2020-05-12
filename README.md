@@ -292,6 +292,9 @@ Example: (By if statement)
 
 Example: (By ternary operator)
 
+![js-multiple-conditional-ternary-operator-by-ternary-operator](/img/js-multiple-conditional-ternary-operator-by-ternary-operator.png)
+
+
 
 <hr>
 
