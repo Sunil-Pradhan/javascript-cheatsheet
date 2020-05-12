@@ -275,11 +275,11 @@ Example: (With multiple options)
 
 #### Conditional (Ternary) operator
 
-Example: (By ternary operator)
+Example: (By if statement)
 
 ![Conditional-ternary-operator-by-if-statement](/img/Conditional-ternary-operator-by-if-statement.png)
 
-Example: (By if statement)
+Example: (By ternary operator)
 
 ![js-conditional-ternary-operator-by-ternary-operator](/img/js-conditional-ternary-operator-by-ternary-operator.png)
 
