@@ -283,6 +283,14 @@ Example: (By ternary operator)
 
 ![js-conditional-ternary-operator-by-ternary-operator](/img/js-conditional-ternary-operator-by-ternary-operator.png)
 
+#### Multiple conditional (Ternary) operators
+
+Example: (By if statement)
+
+![js-multiple-conditional-ternary-operator-by-if-statement](/img/js-multiple-conditional-ternary-operator-by-if-statement.png)
+
+
+Example: (By ternary operator)
 
 
 <hr>
