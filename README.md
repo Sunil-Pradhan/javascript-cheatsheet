@@ -233,18 +233,17 @@ switch (expression)
 }
 ```
 
-:bulb: TIP: All the cases will be evaluated if you do not use a break statement. 
+:bulb: TIP: All the cases will be evaluated if you do not use a break statement.
 
 Example: (Without default)
 
 ![js-switch-statement-without-default](/img/js-switch-statement-without-default.png)
 
-
 Example: (With default)
 
 ![js-switch-statement-with-default](/img/js-switch-statement-with-default.png)
 
-Sometimes it is also possible or necessary to execute the same statement for **multiple expressions**. 
+Sometimes it is also possible or necessary to execute the same statement for **multiple expressions**.
 
 Syntax:
 
@@ -273,6 +272,12 @@ Example: In a week, if you have two days off then in that case you can use switc
 Example: (With multiple options)
 
 ![js-switch-statement-with-multiple-options](/img/js-switch-statement-with-multiple-options.png)
+
+#### Conditional (Ternary) operator
+
+Example: (By if statement)
+
+![Conditional-ternary-operator-by-if-statement](/img/Conditional-ternary-operator-by-if-statement.png)
 
 <hr>
 
