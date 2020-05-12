@@ -233,7 +233,7 @@ switch (expression)
 }
 ```
 
-:bulb: TIP: All the cases will be evaluated if you do not use a break statement.
+:bulb: **TIP:** All the cases will be evaluated if you do not use a break statement.
 
 Example: (Without default)
 
@@ -294,7 +294,11 @@ Example: (By ternary operator)
 
 ![js-multiple-conditional-ternary-operator-by-ternary-operator](/img/js-multiple-conditional-ternary-operator-by-ternary-operator.png)
 
+:bulb: **TIP:** A ternary operator returns the first value if the expression is true, or else returns the second value.
 
+```javascript
+(expression)? ifTrue: ifFalse;
+```
 
 <hr>
 
