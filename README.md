@@ -300,6 +300,16 @@ Example: (By ternary operator)
 (expression)? ifTrue: ifFalse;
 ```
 
+<br/>
+<div align="right">
+    <b><a href="#----">↥ back to top</a></b>
+</div>
+<br/>
+
+### Branching Out:
+
+#### if statement
+
 <hr>
 
 <a name="com-res"></a>
