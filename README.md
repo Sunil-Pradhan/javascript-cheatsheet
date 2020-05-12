@@ -143,6 +143,12 @@ Example:
 
 ![js-if-statement](/img/js-if-statement.png)
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 #### if...else statement
 
 if...else statement is used when a different sequence of instructions is to be executed depending on the logical value(True/False) of the conditions evaluated.
@@ -163,6 +169,12 @@ Example:
 
 ![js-if-else-statement](/img/js-if-else-statement.png)
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 #### Nested if statement
 
 Embedding if statement inside another if statement is called JavaScript nested if statement. Here, else statement allows you to print different statements depending upon the expression result (true, false).
@@ -181,6 +193,12 @@ if (condition1) {
 Example:
 
 ![js-nested-if-statement](/img/js-nested-if-statement.png)
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 #### if-else-if ladder or else...if statement
 
@@ -207,6 +225,12 @@ First check if statement condition 1, if it's not true then go to condition 2 an
 Example:
 
 ![js-if-else-if statement](/img/js-if-else-if%20statement.png)
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 #### Switch statement
 
@@ -273,6 +297,12 @@ Example: (With multiple options)
 
 ![js-switch-statement-with-multiple-options](/img/js-switch-statement-with-multiple-options.png)
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 #### Conditional (Ternary) operator
 
 Example: (By if statement)
@@ -282,6 +312,12 @@ Example: (By if statement)
 Example: (By ternary operator)
 
 ![js-conditional-ternary-operator-by-ternary-operator](/img/js-conditional-ternary-operator-by-ternary-operator.png)
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 #### Multiple conditional (Ternary) operators
 
