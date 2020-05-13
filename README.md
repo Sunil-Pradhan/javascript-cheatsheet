@@ -368,6 +368,14 @@ Example:
 
 ![js-for-loop-type-one](/img/js-for-loop-type-one.png)
 
+**Type 2:**
+
+Example:
+
+![js-for-loop-type-two](/img/js-for-loop-type-two.png)
+
+Here you define a variable first but in for loop you are still keeping `;` at the initialize stage. 
+
 <hr>
 
 <a name="com-res"></a>
