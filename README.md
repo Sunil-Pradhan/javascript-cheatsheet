@@ -376,6 +376,13 @@ Example:
 
 Here you define a variable first but in for loop you are still keeping `;` at the initialize stage. 
 
+
+**Type 3:**
+
+Example:
+
+![js-for-loop-type-three](/img/js-for-loop-type-three.png)
+
 <hr>
 
 <a name="com-res"></a>
