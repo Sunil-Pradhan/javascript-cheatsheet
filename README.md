@@ -347,7 +347,9 @@ expression ? ifTrue : ifFalse;
 
 The for loop is usually used where the loop will be repeated a fixed number of times.
 
-Syntax: 
+**Type 1:**
+
+Syntax:
 
 ```javascript
 for (initialization condition; testing condition; increment/decrement)
@@ -355,6 +357,18 @@ for (initialization condition; testing condition; increment/decrement)
     statement(s);
 }
 ```
+
+First for loop initialize a variable then enter into a test condition. If the condition is true then it will execute the block of statement.
+
+After this step, it will reach at the end of the block [ } ] but before it goes to the second time looping, it increases one value with the help of an increment operator.
+
+When the loop runs for a second time, it does not even look at the initialized variable because its job has been over.
+
+When the test condition is false finally then it stops executing the statement.
+
+Example:
+
+![js-for-loop-type-one](/img/js-for-loop-type-one.png)
 
 <hr>
 
