@@ -342,7 +342,7 @@ Example: (By ternary operator)
 </div>
 <br/>
 
-### Branching Out:
+### Loop De Loop:
 
 #### if statement
 
