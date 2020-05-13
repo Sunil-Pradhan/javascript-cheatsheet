@@ -383,6 +383,15 @@ Example:
 
 ![js-for-loop-type-three](/img/js-for-loop-type-three.png)
 
+
+**Type 4:**
+
+Example:
+
+![js-for-loop-type-four](/img/js-for-loop-type-four.png)
+
+What it tells us. We have initialized a variable then we have our test condition within the if statement. It checks the condition upto equality 3 then it will break and exit from the loop. 
+
 <hr>
 
 <a name="com-res"></a>
