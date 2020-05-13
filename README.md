@@ -358,13 +358,11 @@ for (initialization condition; testing condition; increment/decrement)
 }
 ```
 
-First for loop initialize a variable then enter into a test condition. If the condition is true then it will execute the block of statement.
-
-After this step, it will reach at the end of the block [ } ] but before it goes to the second time looping, it increases one value with the help of an increment operator.
+First for loop initialize a variable then enter into a test condition. If the condition is true then it will execute the block of statement After this step, it will reach at the end of the block `}` but before it goes to the second time looping, it increases one value with the help of an increment operator.
 
 When the loop runs for a second time, it does not even look at the initialized variable because its job has been over.
 
-When the test condition is false finally then it stops executing the statement.
+When the test condition is false then it stops executing the statement.
 
 Example:
 
