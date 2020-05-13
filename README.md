@@ -352,7 +352,7 @@ Syntax:
 ```javascript
 for (initialization condition; testing condition; increment/decrement)
 {
-    statement(s)
+    statement(s);
 }
 ```
 
