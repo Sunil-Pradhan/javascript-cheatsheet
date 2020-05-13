@@ -325,7 +325,6 @@ Example: (By if statement)
 
 ![js-multiple-conditional-ternary-operator-by-if-statement](/img/js-multiple-conditional-ternary-operator-by-if-statement.png)
 
-
 Example: (By ternary operator)
 
 ![js-multiple-conditional-ternary-operator-by-ternary-operator](/img/js-multiple-conditional-ternary-operator-by-ternary-operator.png)
@@ -333,7 +332,7 @@ Example: (By ternary operator)
 :bulb: **TIP:** A ternary operator returns the first value if the expression is true, or else returns the second value.
 
 ```javascript
-(expression)? ifTrue: ifFalse;
+expression ? ifTrue : ifFalse;
 ```
 
 <br/>
@@ -344,7 +343,18 @@ Example: (By ternary operator)
 
 ### Loop De Loop:
 
-#### if statement
+#### for loop
+
+The for loop is usually used where the loop will be repeated a fixed number of times.
+
+Syntax: 
+
+```javascript
+for (initialization condition; testing condition; increment/decrement)
+{
+    statement(s)
+}
+```
 
 <hr>
 
