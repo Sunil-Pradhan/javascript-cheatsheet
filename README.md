@@ -403,7 +403,20 @@ What it tells us. We have initialized a variable then we have our test condition
 
 #### Nested for loop
 
-In nested for loop, you are using a for loop inside of another for loop. 
+In nested for loop, you are using a for loop inside of another for loop.
+
+Syntax: 
+
+```javaScript
+for (initialization condition; testing condition; increment/decrement) {
+
+            statement(s);
+
+            for (initialization condition; testing condition; increment/decrement) {
+              statement(s);
+            }
+      }
+```
 
 Example: 
 
