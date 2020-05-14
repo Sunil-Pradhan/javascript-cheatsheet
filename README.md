@@ -454,7 +454,13 @@ Example:
 ![js-while-loop-type-one](/img/js-while-loop-type-one.png)
 
 
+**Type 2:**
 
+In other cases you can use a while loop when the condition is true forever but you do not know when the loop is going to close. 
+
+Example:
+
+![js-while-loop-type-two](/img/js-while-loop-type-two.png)
 
 
 
