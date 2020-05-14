@@ -418,7 +418,9 @@ for (initialization condition; testing condition; increment/decrement) {
       }
 ```
 
-Example: 
+Example:
+
+![js-for-loop-nested](/img/js-for-loop-nested.png)
 
 <hr>
 
