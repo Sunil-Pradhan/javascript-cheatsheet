@@ -343,6 +343,15 @@ expression ? ifTrue : ifFalse;
 
 ### Loop De Loop:
 
+JavaScript supports the following kinds loops:
+
+* **for -** loops through a block of code a number of times
+* **while -** loops through a block of code while a specified condition is true
+* **do/while -** also loops through a block of code while a specified condition is true
+* **for/in -** loops through the properties of an object
+* **for/of -** loops through the values of an iterable object
+
+
 #### for loop
 
 The for loop is usually used where the loop will be repeated a fixed number of times.
@@ -391,6 +400,12 @@ Example:
 ![js-for-loop-type-four](/img/js-for-loop-type-four.png)
 
 What it tells us. We have initialized a variable then we have our test condition within the if statement. It checks the condition upto equality 3 then it will break and exit from the loop. 
+
+#### Nested for loop
+
+In nested for loop, you are using a for loop inside of another for loop. 
+
+Example: 
 
 <hr>
 
