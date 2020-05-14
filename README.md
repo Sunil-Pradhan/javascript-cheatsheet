@@ -463,6 +463,13 @@ Example:
 ![js-while-loop-type-two](/img/js-while-loop-type-two.png)
 
 
+#### Nested while loop
+
+In nested while loop, you are using a while loop inside of another while loop.
+
+Example:
+
+![js-while-loop-nested](/img/js-while-loop-nested.png)
 
 <hr>
 
