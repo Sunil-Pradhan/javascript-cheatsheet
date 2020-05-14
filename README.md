@@ -471,6 +471,13 @@ Example:
 
 ![js-while-loop-nested](/img/js-while-loop-nested.png)
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <hr>
 
 <a name="com-res"></a>
