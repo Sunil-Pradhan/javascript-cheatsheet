@@ -422,6 +422,42 @@ Example:
 
 ![js-for-loop-nested](/img/js-for-loop-nested.png)
 
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+#### while loop
+
+The while loop keeps repeating an action until an associated condition returns false. The while loop can be thought of as a repeating if statement.
+
+**Type 1:**
+
+Syntax: 
+
+```javaScript
+while (test condition) {
+    
+    statement(s);
+    increment/decrement;
+}
+```
+
+We put one test condition at the beginning of the program.  Then it will go to the body of the loop, once it finishes its work then it will increment or decrement the value. Finally it will reach the end of the loop where it can start again from starting until the condition is false. 
+
+
+Example:
+
+![js-while-loop-type-one](/img/js-while-loop-type-one.png)
+
+
+
+
+
+
 <hr>
 
 <a name="com-res"></a>
