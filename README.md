@@ -498,6 +498,15 @@ Example:
 
 ![js-do-while-loop-type-two](/img/js-do-while-loop-type-two.png)
 
+
+#### Nested do...while loop
+
+In nested do...while loop, you are using a do...while loop inside of another do...while loop.
+
+Example:
+
+![js-do-while-loop-nested](/img/js-do-while-loop-nested.png)
+
 <hr>
 
 <a name="com-res"></a>
