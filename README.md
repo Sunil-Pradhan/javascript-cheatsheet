@@ -507,6 +507,14 @@ Example:
 
 ![js-do-while-loop-nested](/img/js-do-while-loop-nested.png)
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### `break` and `continue` keyword in loop
+
 <hr>
 
 <a name="com-res"></a>
