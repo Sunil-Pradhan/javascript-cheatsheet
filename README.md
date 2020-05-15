@@ -521,6 +521,12 @@ Example:
 
 ![js-break-keyword](/img/js-break-keyword.png)
 
+**`continue` - skip the loop:**
+
+Example:
+
+![js-continue-keyword](/img/js-continue-keyword.png)
+
 <hr>
 
 <a name="com-res"></a>
