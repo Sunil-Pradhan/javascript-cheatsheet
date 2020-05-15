@@ -515,6 +515,12 @@ Example:
 
 #### `break` and `continue` keyword in loop
 
+**`break` - stop the loop:**
+
+Example:
+
+![js-break-keyword](/img/js-break-keyword.png)
+
 <hr>
 
 <a name="com-res"></a>
