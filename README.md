@@ -473,6 +473,9 @@ Example:
 
 The do...while loop is similar to while loop, but the condition is checked after the loop body is executed. This ensures that the loop body is run at least once.
 
+
+**Type 1:**
+
 Syntax:
 
 ```javaScript
@@ -486,6 +489,14 @@ while (condition);
 Example:
 
 ![js-do-while-loop](/img/js-do-while-loop.png)
+
+:bulb: **TIP:** In while statement we check condition first but in do..while statement we check condition last.  
+
+**Type 2:**
+
+Example:
+
+![js-do-while-loop-type-two](/img/js-do-while-loop-type-two.png)
 
 <hr>
 
