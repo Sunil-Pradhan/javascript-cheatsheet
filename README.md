@@ -108,8 +108,8 @@ var x;
 const FOO = 42;
 
 // Declare another two variables, using `var` and `let`
-var hello = "world";
-let bar = "baz";
+var hello = 'world';
+let bar = 'baz';
 ```
 
 ```javascript
@@ -345,12 +345,11 @@ expression ? ifTrue : ifFalse;
 
 JavaScript supports the following kinds loops:
 
-* **for -** loops through a block of code a number of times
-* **while -** loops through a block of code while a specified condition is true
-* **do...while -** also loops through a block of code while a specified condition is true
-* **for...in -** loops through the properties of an object
-* **for...of -** loops through the values of an iterable object
-
+- **for -** loops through a block of code a number of times
+- **while -** loops through a block of code while a specified condition is true
+- **do...while -** also loops through a block of code while a specified condition is true
+- **for...in -** loops through the properties of an object
+- **for...of -** loops through the values of an iterable object
 
 #### for loop
 
@@ -383,8 +382,7 @@ Example:
 
 ![js-for-loop-type-two](/img/js-for-loop-type-two.png)
 
-Here you define a variable first but in for loop you are still keeping `;` at the initialize stage. 
-
+Here you define a variable first but in for loop you are still keeping `;` at the initialize stage.
 
 **Type 3:**
 
@@ -392,20 +390,19 @@ Example:
 
 ![js-for-loop-type-three](/img/js-for-loop-type-three.png)
 
-
 **Type 4:**
 
 Example:
 
 ![js-for-loop-type-four](/img/js-for-loop-type-four.png)
 
-What it tells us. We have initialized a variable then we have our test condition within the if statement. It checks the condition upto equality 3 then it will break and exit from the loop. 
+What it tells us. We have initialized a variable then we have our test condition within the if statement. It checks the condition upto equality 3 then it will break and exit from the loop.
 
 #### Nested for loop
 
 In nested for loop, you are using a for loop inside of another for loop.
 
-Syntax: 
+Syntax:
 
 ```javaScript
 for (initialization condition; testing condition; increment/decrement) {
@@ -422,13 +419,11 @@ Example:
 
 ![js-for-loop-nested](/img/js-for-loop-nested.png)
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 #### while loop
 
@@ -436,32 +431,29 @@ The while loop keeps repeating an action until an associated condition returns f
 
 **Type 1:**
 
-Syntax: 
+Syntax:
 
 ```javaScript
 while (test condition) {
-    
+
     statement(s);
     increment/decrement;
 }
 ```
 
-We put one test condition at the beginning of the program.  Then it will go to the body of the loop, once it finishes its work then it will increment or decrement the value. Finally it will reach the end of the loop where it can start again from starting until the condition is false. 
-
+We put one test condition at the beginning of the program. Then it will go to the body of the loop, once it finishes its work then it will increment or decrement the value. Finally it will reach the end of the loop where it can start again from starting until the condition is false.
 
 Example:
 
 ![js-while-loop-type-one](/img/js-while-loop-type-one.png)
 
-
 **Type 2:**
 
-In other cases you can use a while loop when the condition is true forever but you do not know when the loop is going to close. 
+In other cases you can use a while loop when the condition is true forever but you do not know when the loop is going to close.
 
 Example:
 
 ![js-while-loop-type-two](/img/js-while-loop-type-two.png)
-
 
 #### Nested while loop
 
@@ -477,6 +469,19 @@ Example:
 </div>
 <br/>
 
+#### do...while loop
+
+The do...while loop is similar to while loop, but the condition is checked after the loop body is executed. This ensures that the loop body is run at least once.
+
+Syntax:
+
+```javaScript
+do
+{
+    statement(s)
+}
+while (condition);
+```
 
 <hr>
 
