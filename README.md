@@ -483,6 +483,10 @@ do
 while (condition);
 ```
 
+Example:
+
+![js-do-while-loop](/img/js-do-while-loop.png)
+
 <hr>
 
 <a name="com-res"></a>
