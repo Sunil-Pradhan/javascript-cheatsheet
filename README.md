@@ -527,6 +527,12 @@ Example:
 
 ![js-continue-keyword](/img/js-continue-keyword.png)
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <hr>
 
 <a name="com-res"></a>
