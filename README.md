@@ -138,8 +138,9 @@ i--; // the equivalent of i = i - 1;
 | `>=`     | Greater or Equal Than |
 | `<`      | Less Than             |
 | `<=`     | Less or Equal Than    |
-| `&&`     | And                   |
-| ``||``     | OR                    |
+| `&&`     | And(Logical)          |
+| `||`     | OR(Logical)           |
+| `!`      | Not(Logical)          |
 
 
 <hr>
