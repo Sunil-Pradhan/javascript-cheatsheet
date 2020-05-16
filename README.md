@@ -120,6 +120,28 @@ i--; // the equivalent of i = i - 1;
 
 <hr>
 
+<a name="js-operators"></a>
+
+## JavaScript Operators
+
+### Comparison Operators:
+
+| Operator | Meaning               |
+| -------- | --------------------- |
+| `==`     | Equality              |
+| `===`    | Strict Equality       |
+| `!=`     | Inequality            |
+| `!==`    | Strict Inequality     |
+| `>`      | Greater Than          |
+| `>=`     | Greater or Equal Than |
+| `<`      | Less Than             |
+| `<=`     | Less or Equal Than    |
+| `&&`     | And                   |
+| `||`     | OR                    |
+
+
+<hr>
+
 <a name="js-branch-loops"></a>
 
 ## Branches and Loops
