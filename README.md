@@ -154,11 +154,11 @@ i--; // the equivalent of i = i - 1;
 
 Bitwise operators compare bit to bit.
 
-| Operator | Meaning                   |
-| -------- | --------------------------|
-| `<<`     | Shifts the bits to left   |
-| `===`    | Strict Equality       |
-| `!=`     | Inequality            |
+| Operator | Meaning                               |
+| -------- | --------------------------------------|
+| `<<`     | Shifts the bits to left               |
+| `>>`     | Shifts the bits to right              |
+| `~`      | Bitwise inversion(One's complement)   |
 | `!==`    | Strict Inequality     |
 | `>`      | Greater Than          |
 | `>=`     | Greater or Equal Than |
