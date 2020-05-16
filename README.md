@@ -17,6 +17,7 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Branches and Loops](#js-branch-loops)
 - [Complementary Resources](#com-res)
 
+
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -141,24 +142,29 @@ i--; // the equivalent of i = i - 1;
 | `||`     | OR(Logical)           |
 | `!`      | Not(Logical)          |
 
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
 
+
 ### Bitwise Operators:
 
 Bitwise operators compare bit to bit.
 
-| Operator | Meaning                             |
-| -------- | ----------------------------------- |
-| `<<`     | Shifts the bits to left             |
-| `>>`     | Shifts the bits to right            |
-| `~`      | Bitwise inversion(One's complement) |
-| `&`      | Bitwise logical AND                 |
-| \`||`\       | Bitwise logical OR |
-| `^`      | Bitwise exclusive OR (XOR)          |
+| Operator | Meaning                               |
+| -------- | --------------------------------------|
+| `<<`     | Shifts the bits to left               |
+| `>>`     | Shifts the bits to right              |
+| `~`      | Bitwise inversion(One's complement)   |
+| `&`      | Bitwise logical AND                   |
+| `|`      | Bitwise logical OR                    |
+| `^`      | Bitwise exclusive OR (XOR)            |
+
+
+
 
 <hr>
 
@@ -515,6 +521,7 @@ Example:
 
 The do...while loop is similar to while loop, but the condition is checked after the loop body is executed. This ensures that the loop body is run at least once.
 
+
 **Type 1:**
 
 Syntax:
@@ -531,13 +538,14 @@ Example:
 
 ![js-do-while-loop](/img/js-do-while-loop.png)
 
-:bulb: **TIP:** In while statement we check condition first but in do..while statement we check condition last.
+:bulb: **TIP:** In while statement we check condition first but in do..while statement we check condition last.  
 
 **Type 2:**
 
 Example:
 
 ![js-do-while-loop-type-two](/img/js-do-while-loop-type-two.png)
+
 
 #### Nested do...while loop
 
