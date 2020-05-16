@@ -139,8 +139,36 @@ i--; // the equivalent of i = i - 1;
 | `<`      | Less Than             |
 | `<=`     | Less or Equal Than    |
 | `&&`     | And(Logical)          |
-| $||$     | OR(Logical)           |
+| `||`     | OR(Logical)           |
 | `!`      | Not(Logical)          |
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+### Bitwise Operators:
+
+Bitwise operators compare bit to bit.
+
+| Operator | Meaning                   |
+| -------- | --------------------------|
+| `<<`     | Shifts the bits to left   |
+| `===`    | Strict Equality       |
+| `!=`     | Inequality            |
+| `!==`    | Strict Inequality     |
+| `>`      | Greater Than          |
+| `>=`     | Greater or Equal Than |
+| `<`      | Less Than             |
+| `<=`     | Less or Equal Than    |
+| `&&`     | And(Logical)          |
+| `||`     | OR(Logical)           |
+| `!`      | Not(Logical)          |
+
+
 
 
 <hr>
