@@ -139,7 +139,7 @@ i--; // the equivalent of i = i - 1;
 | `<`      | Less Than             |
 | `<=`     | Less or Equal Than    |
 | `&&`     | And(Logical)          |
-| ||     | OR(Logical)           |
+| `| |`     | OR(Logical)           |
 | `!`      | Not(Logical)          |
 
 
