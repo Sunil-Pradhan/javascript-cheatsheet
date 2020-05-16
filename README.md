@@ -157,7 +157,7 @@ Bitwise operators compare bit to bit.
 | `>>`     | Shifts the bits to right            |
 | `~`      | Bitwise inversion(One's complement) |
 | `&`      | Bitwise logical AND                 |
-| \||\       | Bitwise logical OR |
+| \`||`\       | Bitwise logical OR |
 | `^`      | Bitwise exclusive OR (XOR)          |
 
 <hr>
