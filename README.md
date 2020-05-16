@@ -13,8 +13,10 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [JavaScript Basics](#js-basics)
 - [Data types](#js-datatypes)
 - [Variables](#js-variables)
+- [Operators](#js-operators)
 - [Branches and Loops](#js-branch-loops)
 - [Complementary Resources](#com-res)
+
 
 <a name="js-basics"></a>
 
@@ -137,6 +139,7 @@ i--; // the equivalent of i = i - 1;
 | `<`      | Less Than             |
 | `<=`     | Less or Equal Than    |
 | `&&`     | And                   |
+| `&&`     | OR                   |
 | `||`     | OR                    |
 
 
