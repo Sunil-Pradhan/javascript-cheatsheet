@@ -159,14 +159,9 @@ Bitwise operators compare bit to bit.
 | `<<`     | Shifts the bits to left               |
 | `>>`     | Shifts the bits to right              |
 | `~`      | Bitwise inversion(One's complement)   |
-| `!==`    | Strict Inequality     |
-| `>`      | Greater Than          |
-| `>=`     | Greater or Equal Than |
-| `<`      | Less Than             |
-| `<=`     | Less or Equal Than    |
-| `&&`     | And(Logical)          |
-| `||`     | OR(Logical)           |
-| `!`      | Not(Logical)          |
+| `&`      | Bitwise logical AND                   |
+| `|`      | Bitwise logical OR                    |
+| `^`      | Bitwise exclusive OR (XOR)            |
 
 
 
