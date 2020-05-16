@@ -164,7 +164,11 @@ Bitwise operators compare bit to bit.
 | `^`      | Bitwise exclusive OR (XOR)            |
 
 
-
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 <hr>
 
