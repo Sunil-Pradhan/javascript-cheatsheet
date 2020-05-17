@@ -128,19 +128,8 @@ i--; // the equivalent of i = i - 1;
 
 ### Comparison Operators:
 
-| Operator | Meaning               |
-| -------- | --------------------- |
-| `==`     | Equality              |
-| `===`    | Strict Equality       |
-| `!=`     | Inequality            |
-| `!==`    | Strict Inequality     |
-| `>`      | Greater Than          |
-| `>=`     | Greater or Equal Than |
-| `<`      | Less Than             |
-| `<=`     | Less or Equal Than    |
-| `&&`     | And(Logical)          |
-| `||`     | OR(Logical)           |
-| `!`      | Not(Logical)          |
+![js-comparison-operators](/img/js-comparison-operators.png)
+
 
 
 <br/>
