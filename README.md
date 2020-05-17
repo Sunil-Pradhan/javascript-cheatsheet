@@ -172,7 +172,16 @@ a += 2; // b = b+2
 console.log(a);
 
 //output 12
+```
 
+**Subtraction assignment:** 
+
+```javascript
+var a = 10;
+a -= 2; // b = b-2
+console.log(a);
+
+//output 8
 ```
 
 <br/>
