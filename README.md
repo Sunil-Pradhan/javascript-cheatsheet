@@ -17,7 +17,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Branches and Loops](#js-branch-loops)
 - [Complementary Resources](#com-res)
 
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -130,14 +129,11 @@ i--; // the equivalent of i = i - 1;
 
 ![js-comparison-operators](/img/js-comparison-operators.png)
 
-
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 ### Bitwise Operators:
 
@@ -158,30 +154,40 @@ Bitwise operators compare bit to bit.
 **Basic assignment:**
 
 ```javascript
-var a = 10; 
+var a = 10;
 console.log(a);
 
 //output 10
 ```
 
-**Addition assignment:** 
+**Addition assignment:**
 
 ```javascript
 var a = 10;
-a += 2; // b = b+2
+a += 2; // a = a+2
 console.log(a);
 
 //output 12
 ```
 
-**Subtraction assignment:** 
+**Subtraction assignment:**
 
 ```javascript
 var a = 10;
-a -= 2; // b = b-2
+a -= 2; // a = a-2
 console.log(a);
 
 //output 8
+```
+
+**Multiplication assignment:**
+
+```javascript
+var a = 10;
+a *= 2; // a = a*2
+console.log(a);
+
+//output 20
 ```
 
 <br/>
@@ -545,7 +551,6 @@ Example:
 
 The do...while loop is similar to while loop, but the condition is checked after the loop body is executed. This ensures that the loop body is run at least once.
 
-
 **Type 1:**
 
 Syntax:
@@ -562,14 +567,13 @@ Example:
 
 ![js-do-while-loop](/img/js-do-while-loop.png)
 
-:bulb: **TIP:** In while statement we check condition first but in do..while statement we check condition last.  
+:bulb: **TIP:** In while statement we check condition first but in do..while statement we check condition last.
 
 **Type 2:**
 
 Example:
 
 ![js-do-while-loop-type-two](/img/js-do-while-loop-type-two.png)
-
 
 #### Nested do...while loop
 
