@@ -143,14 +143,9 @@ i--; // the equivalent of i = i - 1;
 
 Bitwise operators compare bit to bit.
 
-| Operator | Meaning                               |
-| -------- | --------------------------------------|
-| `<<`     | Shifts the bits to left               |
-| `>>`     | Shifts the bits to right              |
-| `~`      | Bitwise inversion(One's complement)   |
-| `&`      | Bitwise logical AND                   |
-| `|`      | Bitwise logical OR                    |
-| `^`      | Bitwise exclusive OR (XOR)            |
+![js-bitwise-operators](/img/js-bitwise-operators.png)
+
+
 
 
 <br/>
