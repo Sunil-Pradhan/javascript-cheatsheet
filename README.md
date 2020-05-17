@@ -149,7 +149,6 @@ Bitwise operators compare bit to bit.
 
 ### Assignment Operators:
 
-Bitwise operators compare bit to bit.
 
 **Basic assignment:**
 
