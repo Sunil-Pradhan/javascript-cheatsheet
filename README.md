@@ -190,6 +190,16 @@ console.log(a);
 //output 20
 ```
 
+**Division assignment:**
+
+```javascript
+var a = 10;
+a /= 2; // a = a/2
+console.log(a);
+
+//output 5
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
