@@ -145,7 +145,18 @@ Bitwise operators compare bit to bit.
 
 ![js-bitwise-operators](/img/js-bitwise-operators.png)
 
+### Assignment Operators:
 
+Bitwise operators compare bit to bit.
+
+**Basic assignment:**
+
+```javascript
+var a = 10; 
+console.log(a);
+
+//output 10
+```
 
 
 <br/>
