@@ -125,6 +125,16 @@ i--; // the equivalent of i = i - 1;
 
 ## JavaScript Operators
 
+
+### Operator Precedence:
+
+Operator precedence describes the order in which operations are performed in an arithmetic expression.
+
+The operator with the lowest number is said to have the highest precedence.
+
+:bulb: **TIP:** When an expression contains two or more operators that have the same precedence, they are evaluated according to their associativity (Associativity determines whether the operators are evaluated from left to right or right to left).
+ 
+
 ### Comparison Operators:
 
 ![js-comparison-operators](/img/js-comparison-operators.png)
