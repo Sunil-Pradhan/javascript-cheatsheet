@@ -288,23 +288,37 @@ Increment/decrement can only be applied to variables. Trying to use it on a valu
 
 The operators `++` and `--` can be placed either before or after a variable.
 
-When the operator goes after the variable, it is in “postfix form”: `counter++`.
+When the operator goes after the variable, it is in “postfix form”: `counter++`
 
-The “prefix form” is when the operator goes before the variable: `++counter`.
+The “prefix form” is when the operator goes before the variable: `++counter`
 
 Both of these statements do the same thing: increase counter by 1.
 
-**Is there any difference?** 
+**Is there any difference?**
 
 Yes, but you can only see it if you use the returned value of `++/--`.
 
 Let’s clarify. As we know, all operators return a value. Increment/decrement is no exception. The prefix form returns the new value while the postfix form returns the old value (prior to increment/decrement).
 
-Example:
+Example(prefix): 
 
+```javascript
+var counter = 1;
+var a = ++counter;
+console.log(a);
 
+//output 2
+```
 
+Example(postfix): 
 
+```javascript
+var counter = 1;
+var a = counter++;
+console.log(a);
+
+//output 1
+```
 
 <hr>
 
