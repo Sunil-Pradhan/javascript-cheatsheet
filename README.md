@@ -228,6 +228,19 @@ console.log(c);
 //output 31
 ```
 
+
+**Decrement Example:**
+
+```javascript
+var a = 20;
+a--;
+var b = 10;
+var c = a + b;
+console.log(c);
+
+//output 29
+```
+
 <hr>
 
 <a name="js-branch-loops"></a>
