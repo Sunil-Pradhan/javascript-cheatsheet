@@ -320,6 +320,13 @@ console.log(a);
 //output 1
 ```
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <hr>
 
 <a name="js-branch-loops"></a>
