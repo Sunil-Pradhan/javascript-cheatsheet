@@ -252,6 +252,12 @@ alert(2 ** 3);
 //output 8 (2*2*2)
 ```
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 ### Increment and decrement Operators:
 
 **Increment Example:**
