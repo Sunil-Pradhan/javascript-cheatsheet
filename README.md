@@ -132,7 +132,9 @@ Operator precedence describes the order in which operations are performed in an 
 
 The operator with the lowest number is said to have the highest precedence.
 
-:bulb: **TIP:** When an expression contains two or more operators that have the same precedence, they are evaluated according to their associativity (Associativity determines whether the operators are evaluated from left to right or right to left).
+:bulb: **TIP:** When an expression contains two or more operators that have the same precedence, they are evaluated according to their **associativity** (Associativity determines whether the operators are evaluated from left to right or right to left).
+
+:bulb: **TIP:** Find operator precedence table at [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence).  
  
 
 ### Comparison Operators:
