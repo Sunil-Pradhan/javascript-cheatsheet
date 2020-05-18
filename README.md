@@ -149,7 +149,6 @@ Bitwise operators compare bit to bit.
 
 ### Assignment Operators:
 
-
 **Basic assignment:**
 
 ```javascript
@@ -216,6 +215,18 @@ console.log(a);
 <br/>
 
 ### Increment and decrement Operators:
+
+**Increment Example:**
+
+```javascript
+var a = 20;
+a++;
+var b = 10;
+var c = a + b;
+console.log(c);
+
+//output 31
+```
 
 <hr>
 
