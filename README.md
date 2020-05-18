@@ -125,7 +125,6 @@ i--; // the equivalent of i = i - 1;
 
 ## JavaScript Operators
 
-
 ### Operator Precedence:
 
 Operator precedence describes the order in which operations are performed in an arithmetic expression.
@@ -134,14 +133,13 @@ The operator with the lowest number is said to have the highest precedence.
 
 When an expression contains two or more operators that have the same precedence, they are evaluated according to their **associativity** (Associativity determines whether the operators are evaluated from left to right or right to left).
 
-:bulb: **TIP:** Find operator precedence table at [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence).  
+:bulb: **TIP:** Find operator precedence table at [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence).
 
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
- 
 
 ### Comparison Operators:
 
@@ -232,6 +230,28 @@ console.log(a);
 </div>
 <br/>
 
+### Exponentiation Operator:
+
+The exponentiation operator `**` is a recent addition to the JavaScript language.
+
+The result of `a ** b` is `a` multiplied by itself `b` times.
+
+Example:
+
+```javascript
+alert(2 ** 2);
+
+//output 4 (2*2)
+```
+
+Example:
+
+```javascript
+alert(2 ** 3);
+
+//output 8 (2*2*2)
+```
+
 ### Increment and decrement Operators:
 
 **Increment Example:**
@@ -245,7 +265,6 @@ console.log(c);
 
 //output 31
 ```
-
 
 **Decrement Example:**
 
