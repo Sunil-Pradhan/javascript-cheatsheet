@@ -49,13 +49,16 @@ doStuff(); // Semicolons (;) to terminate lines
 
 The latest ECMAScript standard defines nine types:
 
-- Number
-- String
-- Boolean
-- Null
-- Undefined
-- Symbol
-- BigInt
+Seven primitive data types:
+
+* Undefined 
+* Boolean 
+* Number 
+* String 
+* BigInt 
+* Symbol
+* Null
+
 
 <a name="js-variables"></a>
 
