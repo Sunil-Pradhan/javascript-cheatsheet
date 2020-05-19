@@ -49,37 +49,36 @@ doStuff(); // Semicolons (;) to terminate lines
 
 ### Type of data:
 
-In JavaScript two types of data type available: 
+In JavaScript two types of data type available:
 
-* Primitive 
-* Reference or derived type
+- Primitive
+- Reference or derived type
 
 **What is the difference between both of them?**
 
-Primitive data types are base data types whereas reference data types are derived. 
+Primitive data types are base data types whereas reference data types are derived.
 
 :bulb: **TIP:** Memory allocation in Primitive data types happens in “Stack” whereas memory allocation in Reference data types happens in “Heap” (Dynamic memory).
 
-
+<br>
+<br>
 
 The latest ECMAScript standard defines nine types:
 
 Seven primitive data types:
 
-* Undefined 
-* Boolean 
-* Number 
-* String 
-* BigInt 
-* Symbol
-* Null
+- Undefined
+- Boolean
+- Number
+- String
+- BigInt
+- Symbol
+- Null
 
 Two derived data types (non-primitive):
 
-* Object 
-* Function 
-
-
+- Object
+- Function
 
 <a name="js-variables"></a>
 
@@ -324,7 +323,7 @@ Yes, but you can only see it if you use the returned value of `++/--`.
 
 Let’s clarify. As we know, all operators return a value. Increment/decrement is no exception. The prefix form returns the new value while the postfix form returns the old value (prior to increment/decrement).
 
-Example(prefix): 
+Example(prefix):
 
 ```javascript
 var counter = 1;
@@ -334,7 +333,7 @@ console.log(a);
 //output 2
 ```
 
-Example(postfix): 
+Example(postfix):
 
 ```javascript
 var counter = 1;
@@ -349,7 +348,6 @@ console.log(a);
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 <hr>
 
