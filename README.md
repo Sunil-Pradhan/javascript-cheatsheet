@@ -47,7 +47,7 @@ doStuff(); // Semicolons (;) to terminate lines
 
 ## Data types
 
-The latest ECMAScript standard defines eight data types:
+The latest ECMAScript standard defines nine types:
 
 - Number
 - String
