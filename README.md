@@ -23,7 +23,7 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 
 Everything in JavaScript is an object.
 
-##### Comments
+### Comments
 
 Single line comments start with `//`. For multi-line commands, you use `/* ... */`.
 
@@ -37,11 +37,17 @@ Single line comments start with `//`. For multi-line commands, you use `/* ... *
  */
 ```
 
-##### Terminate statements
+### Terminate statements
 
 ```javascript
 doStuff(); // Semicolons (;) to terminate lines
 ```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 <a name="js-datatypes"></a>
 
