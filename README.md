@@ -89,7 +89,7 @@ Two derived data types (non-primitive):
 
 ### BigInt:
 
-In JavaScript, the `number` type cannot represent integer values larger than 2<sup>53</sup> (or less than -253 for negatives), that’s a technical limitation caused by their internal representation. That’s about 16 decimal digits, so for most purposes the limitation isn’t a problem, but sometimes we need really big numbers, e.g. for cryptography or microsecond-precision timestamps.
+In JavaScript, the `number` type cannot represent integer values larger than 2<sup>53</sup> (or less than -2<sup>53</sup> for negatives), that’s a technical limitation caused by their internal representation. That’s about 16 decimal digits, so for most purposes the limitation isn’t a problem, but sometimes we need really big numbers, e.g. for cryptography or microsecond-precision timestamps.
 
 BigInt type was recently added to the language to represent integers of arbitrary length.
 
