@@ -94,9 +94,16 @@ In JavaScript, the `number` type cannot represent integer values larger than 2<s
 
 A `BigInt` is created by appending `n` to the end of an integer literal:
 
-Example: 
+Example:
 
+````javascript
+const x = 123n;
+// the 'n' at the end means it's a BigInt
 
+console.log(typeof x);
+
+//output BigInt
+```
 
 <a name="js-variables"></a>
 
@@ -152,7 +159,7 @@ const FOO = 42;
 // Declare another two variables, using `var` and `let`
 var hello = 'world';
 let bar = 'baz';
-```
+````
 
 ```javascript
 // increment and decrement numbers
