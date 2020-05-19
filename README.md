@@ -52,6 +52,13 @@ In JavaScrip two types of data type available:
 * Primitive 
 * Reference or derived type
 
+**What is the difference between both of them?**
+
+Primitive data types are base data types whereas reference data types are derived. 
+
+:bulb: **TIP:** Memory allocation in Primitive data types happens in “Stack” whereas memory allocation in Reference data types happens in “Heap” (Dynamic memory).
+
+
 
 The latest ECMAScript standard defines nine types:
 
