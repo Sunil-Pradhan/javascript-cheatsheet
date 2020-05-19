@@ -47,6 +47,12 @@ doStuff(); // Semicolons (;) to terminate lines
 
 ## Data types
 
+In JavaScrip two types of data type available: 
+
+* Primitive 
+* Reference or derived type
+
+
 The latest ECMAScript standard defines nine types:
 
 Seven primitive data types:
