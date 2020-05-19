@@ -47,7 +47,9 @@ doStuff(); // Semicolons (;) to terminate lines
 
 ## Data types
 
-In JavaScrip two types of data type available: 
+### Type of data:
+
+In JavaScript two types of data type available: 
 
 * Primitive 
 * Reference or derived type
