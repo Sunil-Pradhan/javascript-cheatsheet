@@ -111,7 +111,16 @@ console.log(typeof x);
 //output - BigInt
 ```
 
+### Symbol:
 
+Symbol is used to generate primitives which are unique in nature.
+
+```javascript
+var x = Symbol();
+console.log(typeof x);
+
+//output - Symbol
+```
 
 <a name="js-variables"></a>
 
