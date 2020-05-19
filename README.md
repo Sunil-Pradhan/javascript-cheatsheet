@@ -102,7 +102,7 @@ const x = 123n;
 
 console.log(typeof x);
 
-//output BigInt
+//output - BigInt
 ```
 
 
