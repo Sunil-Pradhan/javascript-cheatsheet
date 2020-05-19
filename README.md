@@ -59,6 +59,12 @@ Seven primitive data types:
 * Symbol
 * Null
 
+Two derived data types (non-primitive):
+
+* Object 
+* Function 
+
+
 
 <a name="js-variables"></a>
 
