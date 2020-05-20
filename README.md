@@ -239,6 +239,12 @@ Rules:
 ![js-boolean-conversion-rules](/img/js-boolean-conversion-rules.jpg)
 
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variables"></a>
 
 ## Variables
@@ -301,7 +307,11 @@ i++; // the equivalent of i = i + 1
 i--; // the equivalent of i = i - 1;
 ```
 
-<hr>
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 <a name="js-operators"></a>
 
