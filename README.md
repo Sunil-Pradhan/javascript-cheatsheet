@@ -214,7 +214,18 @@ alert(typeof value); //string
 
 **Numeric Conversion**
 
-You ca
+You can use `Number()` function to explicitly convert a value to a number:
+
+
+Example:
+
+```javascript
+var str = '123';
+alert(typeof str); //string
+
+var num = Number(str); //becomes a number 123
+alert(typeof num); //number
+```
 
 
 
