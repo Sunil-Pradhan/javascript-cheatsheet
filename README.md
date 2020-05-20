@@ -183,6 +183,11 @@ console.log(typeof x);
 </div>
 <br/>
 
+### Type Conversions
+
+
+**String Conversion**
+
 
 <a name="js-variables"></a>
 
