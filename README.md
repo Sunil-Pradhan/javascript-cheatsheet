@@ -166,6 +166,24 @@ console.log(typeof x);
 //output - Symbol
 ```
 
+### Null:
+
+Example:
+
+```javascript
+var x = null;
+console.log(typeof x);
+
+//output - object
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <a name="js-variables"></a>
 
 ## Variables
