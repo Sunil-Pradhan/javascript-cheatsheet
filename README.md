@@ -226,6 +226,20 @@ alert(typeof str); //string
 var num = Number(str); //becomes a number 123
 alert(typeof num); //number
 ```
+Rules: 
+
+| Operator           | Meaning               |
+| ------------------ | --------------------- |
+| undefined          | NaN             |
+| `===`    | Strict Equality       |
+| `!=`     | Inequality            |
+| `!==`    | Strict Inequality     |
+| `>`      | Greater Than          |
+| `>=`     | Greater or Equal Than |
+| `<`      | Less Than             |
+| `<=`     | Less or Equal Than    |
+| `&&`     | And                   |
+| `||`     | Or                    |
 
 
 
