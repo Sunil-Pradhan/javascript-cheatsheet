@@ -94,11 +94,24 @@ Two derived data types (non-primitive):
 
 ### Undefined:
 
+Example:
+
 ```javascript
 var x;
 console.log(typeof x);
 
 //output - undefined
+```
+
+### Boolean:
+
+Example:
+
+```javascript
+var x = true;
+console.log(typeof x);
+
+//output - boolean
 ```
 
 ### BigInt:
