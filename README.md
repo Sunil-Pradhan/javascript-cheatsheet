@@ -187,7 +187,7 @@ console.log(typeof x);
 
 Typecasting or coercion in simple terms means to change the data type of a value to another data type like for example, integer to a string or a string to a boolean etc.
 
-There are two types of type casting, implicit and explicit.
+There are two types of type casting, **implicit** and **explicit**.
 
 Implicit type casting is when there is automatic conversion of data type, whereas when a developer expresses the intention to convert between types by writing the appropriate code, it’s called explicit type casting.
 
