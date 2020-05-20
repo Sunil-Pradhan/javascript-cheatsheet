@@ -227,12 +227,7 @@ alert(typeof num); //number
 
 Rules:
 
-| Value          | Becomes...                                                       |
-| -------------- | ---------------------------------------------------------------- |
-| undefined      | NaN                                                              |
-| null           | 0                                                                |
-| true and false | 1 and 0                                                          |
-| string         | Whitespaces from the start and end are removed. if the remaining |
+![js-numeric-conversion-rules](/img/js-numeric-conversion-rules.jpg)
 
 <a name="js-variables"></a>
 
