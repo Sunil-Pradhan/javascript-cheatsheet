@@ -229,6 +229,16 @@ Rules:
 
 ![js-numeric-conversion-rules](/img/js-numeric-conversion-rules.jpg)
 
+
+**Boolean Conversion**
+
+It happens in logical operations  but can also be performed explicitly with a call to `Boolean()` function.
+
+Rules: 
+
+![js-boolean-conversion-rules](/img/js-boolean-conversion-rules.jpg)
+
+
 <a name="js-variables"></a>
 
 ## Variables
