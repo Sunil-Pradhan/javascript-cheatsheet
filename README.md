@@ -183,7 +183,7 @@ console.log(typeof x);
 </div>
 <br/>
 
-### Type Conversions OR Typecasting OR coercion
+### Type Conversions OR Typecasting OR Coercion
 
 Typecasting or coercion in simple terms means to change the data type of a value to another data type like for example, integer to a string or a string to a boolean etc.
 
