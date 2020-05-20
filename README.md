@@ -200,6 +200,23 @@ JavaScript supports three type of conversion
 
 **String Conversion**
 
+You can use `String()` function to convert a value to a string:
+
+Example:
+
+```javascript
+var value = true;
+alert(typeof value); //boolean
+
+value = String(value); //now value is a string 'true'
+alert(typeof value); //string
+```
+
+**Numeric Conversion**
+
+You ca
+
+
 
 <a name="js-variables"></a>
 
