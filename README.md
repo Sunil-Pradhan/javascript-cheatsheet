@@ -193,10 +193,9 @@ Implicit type casting is when there is automatic conversion of data type, wherea
 
 JavaScript supports three type of conversion
 
-* to string
-* to number
-* to boolean
-
+- to string
+- to number
+- to boolean
 
 **String Conversion**
 
@@ -216,7 +215,6 @@ alert(typeof value); //string
 
 You can use `Number()` function to explicitly convert a value to a number:
 
-
 Example:
 
 ```javascript
@@ -226,22 +224,15 @@ alert(typeof str); //string
 var num = Number(str); //becomes a number 123
 alert(typeof num); //number
 ```
-Rules: 
 
-| Operator           | Meaning               |
-| ------------------ | --------------------- |
-| undefined          | NaN             |
-| `===`    | Strict Equality       |
-| `!=`     | Inequality            |
-| `!==`    | Strict Inequality     |
-| `>`      | Greater Than          |
-| `>=`     | Greater or Equal Than |
-| `<`      | Less Than             |
-| `<=`     | Less or Equal Than    |
-| `&&`     | And                   |
-| `||`     | Or                    |
+Rules:
 
-
+| Value          | Becomes...                                                       |
+| -------------- | ---------------------------------------------------------------- |
+| undefined      | NaN                                                              |
+| null           | 0                                                                |
+| true and false | 1 and 0                                                          |
+| string         | Whitespaces from the start and end are removed. if the remaining |
 
 <a name="js-variables"></a>
 
