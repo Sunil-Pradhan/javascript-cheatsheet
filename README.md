@@ -92,6 +92,15 @@ Two derived data types (non-primitive):
 </div>
 <br/>
 
+### Undefined:
+
+```javascript
+var x;
+console.log(typeof x);
+
+//output - undefined
+```
+
 ### BigInt:
 
 In JavaScript, the `number` type cannot represent integer values larger than 2<sup>53</sup> (or less than -2<sup>53</sup> for negatives), that’s a technical limitation caused by their internal representation. That’s about 16 decimal digits, so for most purposes the limitation isn’t a problem, but sometimes we need really big numbers, e.g. for cryptography or microsecond-precision timestamps.
