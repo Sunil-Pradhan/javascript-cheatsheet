@@ -194,8 +194,8 @@ Implicit type casting is when there is automatic conversion of data type, wherea
 JavaScript supports three type of conversion
 
 * to string
-* to boolean
 * to number
+* to boolean
 
 
 **String Conversion**
