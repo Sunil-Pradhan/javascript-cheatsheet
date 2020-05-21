@@ -37,6 +37,31 @@ Single line comments start with `//`. For multi-line commands, you use `/* ... *
  */
 ```
 
+### JavaScript expression
+
+A fragment of code that produces a value is called an expression.
+
+
+```javascript
+5 * 10		//5 * 10 evaluates to 50
+
+x * 10		//expressions can also contain variable values
+```
+
+### JavaScript statement
+
+A JavaScript program is a list of instructions to be executed by a computer and these programming instructions are called statements.
+
+
+```javascript
+var x, y, z;    //statement 1
+x = 5;          //statement 2
+y = 6;          //statement 3
+z = x + y;      //statement 4
+```
+
+If an expression corresponds to a sentence fragment, a JavaScript statement corresponds to a full sentence in a human language.
+
 ### Terminate statements
 
 ```javascript
