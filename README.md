@@ -63,6 +63,8 @@ Variables created with `var` are in scope of the function (or global if declared
 
 I recommend always declaring your variables with `const` by default, but with `let` if it is a variable that you need to reassign later.
 
+![js-variables-let-const-var](/img/js-variables-let-const-var.png)
+
  <table>
   <tr>
     <th></th>
