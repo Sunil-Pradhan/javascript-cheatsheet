@@ -65,34 +65,7 @@ I recommend always declaring your variables with `const` by default, but with `l
 
 ![js-variables-let-const-var](/img/js-variables-let-const-var.png)
 
- <table>
-  <tr>
-    <th></th>
-    <th>Scope</th>
-    <th>Reassignable</th>
-    <th>Temporal Dead Zone</th>
-  </tr>
-  <tr>
-    <th>const</th>
-    <td>Block</td>
-    <td>No</td>
-    <td>Yes</td>
-  </tr>
-  <tr>
-    <th>let</th>
-    <td>Block</td>
-    <td>Yes</td>
-    <td>Yes</td>
-  </tr>
-   <tr>
-    <th>var</th>
-    <td>Function</td>
-    <td>Yes</td>
-    <td>No</td>
-  </tr>
-</table>
-
-##### Sample code
+**Variable declaration:**
 
 ```javascript
 // This is how you define a variable
@@ -100,11 +73,11 @@ I recommend always declaring your variables with `const` by default, but with `l
 var x;
 
 // Declare a constant (the convention is to use CAPS for constants)
-const FOO = 42;
+const PI = 3.14;
 
 // Declare another two variables, using `var` and `let`
-var hello = 'world';
-let bar = 'baz';
+var firstName = 'Sunil';
+let lastName = 'Pradhan';
 ```
 
 ```javascript
