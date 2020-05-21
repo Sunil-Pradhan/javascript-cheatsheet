@@ -107,6 +107,8 @@ console.log(typeof x);
 
 ### Boolean:
 
+Booleans can only have two values: `true` or `false`.
+
 Example:
 
 ```javascript
@@ -128,6 +130,8 @@ console.log(typeof age);
 ```
 
 ### String:
+
+A string is a series of characters like "Sunil Pradhan".
 
 Example:
 
