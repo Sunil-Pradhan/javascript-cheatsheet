@@ -539,7 +539,7 @@ console.log(a);
 </div>
 <br/>
 
-<hr>
+
 
 <a name="js-branch-loops"></a>
 
