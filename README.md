@@ -23,7 +23,7 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 
 Everything in JavaScript is an object.
 
-### Comments
+### JavaScript comments
 
 Single line comments start with `//`. For multi-line commands, you use `/* ... */`.
 
@@ -62,7 +62,7 @@ z = x + y;      //statement 4
 
 If an expression corresponds to a sentence fragment, a JavaScript statement corresponds to a full sentence in a human language.
 
-### Terminate statements
+### Terminate statements in JavaScript
 
 ```javascript
 doStuff(); // Semicolons (;) to terminate lines
