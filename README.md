@@ -92,6 +92,8 @@ I recommend always declaring your variables with `const` by default, but with `l
 
 :bulb: **TIP:** The **Temporal Dead Zone(TDZ)** is never named explicitly in the ECMAScript specification, but the term is often used to describe why let and const bindings are not accessible before their declaration.
 
+<br>
+
 **Variable declaration:**
 
 ```javascript
