@@ -80,7 +80,7 @@ var firstName = 'Sunil';
 let lastName = 'Pradhan';
 ```
 
-**Re-declaring Variable: **
+**Re-declaring Variable:**
 
 If you re-declare a JavaScript variable, it will not lose its value.
 
