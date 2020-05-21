@@ -120,6 +120,8 @@ console.log(typeof x);
 
 ### Number:
 
+JavaScript has only one type of number and it can be written with or without decimals.
+
 Example:
 
 ```javascript
