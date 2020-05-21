@@ -93,7 +93,7 @@ console.log(x);
 //Output - 4
 ```
 
-
+:bulb: **TIP:** JavaScript statements are executed, one by one, in the same order as they are written. 
 
 <br/>
 <div align="right">
