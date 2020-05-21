@@ -168,6 +168,8 @@ console.log(typeof x);
 
 ### Null:
 
+It’s just a special value which represents “nothing”, “empty” or “value unknown”.
+
 Example:
 
 ```javascript
