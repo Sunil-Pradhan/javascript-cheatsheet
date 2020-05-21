@@ -11,8 +11,8 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 ## Table of Contents
 
 - [JavaScript Basics](#js-basics)
+- [Variables](#js-variables) 
 - [Data types](#js-datatypes)
-- [Variables](#js-variables)
 - [Operators](#js-operators)
 - [Branches and Loops](#js-branch-loops)
 - [Complementary Resources](#com-res)
@@ -41,6 +41,74 @@ Single line comments start with `//`. For multi-line commands, you use `/* ... *
 
 ```javascript
 doStuff(); // Semicolons (;) to terminate lines
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+<a name="js-variables"></a>
+
+## Variables
+
+In JavaScript, a variable is like a temporary location where you store your data for future retrieval.
+
+There are 3 ways to create variables in JavaScript:
+
+`var`, `let`, `const`
+
+Variables created with `var` are in scope of the function (or global if declared in the global scope); `let` variables are block scoped; and `const` variables are like let plus their values cannot be re-assigned.
+
+I recommend always declaring your variables with `const` by default, but with `let` if it is a variable that you need to reassign later.
+
+ <table>
+  <tr>
+    <th></th>
+    <th>Scope</th>
+    <th>Reassignable</th>
+    <th>Temporal Dead Zone</th>
+  </tr>
+  <tr>
+    <th>const</th>
+    <td>Block</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <th>let</th>
+    <td>Block</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+   <tr>
+    <th>var</th>
+    <td>Function</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+</table>
+
+##### Sample code
+
+```javascript
+// This is how you define a variable
+// `x` will be `undefined`
+var x;
+
+// Declare a constant (the convention is to use CAPS for constants)
+const FOO = 42;
+
+// Declare another two variables, using `var` and `let`
+var hello = 'world';
+let bar = 'baz';
+```
+
+```javascript
+// increment and decrement numbers
+i++; // the equivalent of i = i + 1
+i--; // the equivalent of i = i - 1;
 ```
 
 <br/>
@@ -255,73 +323,6 @@ Rules:
 </div>
 <br/>
 
-<a name="js-variables"></a>
-
-## Variables
-
-In JavaScript, a variable is like a temporary location where you store your data for future retrieval.
-
-There are 3 ways to create variables in JavaScript:
-
-`var`, `let`, `const`
-
-Variables created with `var` are in scope of the function (or global if declared in the global scope); `let` variables are block scoped; and `const` variables are like let plus their values cannot be re-assigned.
-
-I recommend always declaring your variables with `const` by default, but with `let` if it is a variable that you need to reassign later.
-
- <table>
-  <tr>
-    <th></th>
-    <th>Scope</th>
-    <th>Reassignable</th>
-    <th>Temporal Dead Zone</th>
-  </tr>
-  <tr>
-    <th>const</th>
-    <td>Block</td>
-    <td>No</td>
-    <td>Yes</td>
-  </tr>
-  <tr>
-    <th>let</th>
-    <td>Block</td>
-    <td>Yes</td>
-    <td>Yes</td>
-  </tr>
-   <tr>
-    <th>var</th>
-    <td>Function</td>
-    <td>Yes</td>
-    <td>No</td>
-  </tr>
-</table>
-
-##### Sample code
-
-```javascript
-// This is how you define a variable
-// `x` will be `undefined`
-var x;
-
-// Declare a constant (the convention is to use CAPS for constants)
-const FOO = 42;
-
-// Declare another two variables, using `var` and `let`
-var hello = 'world';
-let bar = 'baz';
-```
-
-```javascript
-// increment and decrement numbers
-i++; // the equivalent of i = i + 1
-i--; // the equivalent of i = i - 1;
-```
-
-<br/>
-<div align="right">
-    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
-</div>
-<br/>
 
 <a name="js-operators"></a>
 
