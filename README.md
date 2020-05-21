@@ -84,13 +84,15 @@ let lastName = 'Pradhan';
 
 If you re-declare a JavaScript variable, it will not lose its value.
 
-````javascript
+
+```javascript
 var x = 4;
 var x;
 console.log(x);
 
 //Output - 4
 ```
+
 
 
 <br/>
