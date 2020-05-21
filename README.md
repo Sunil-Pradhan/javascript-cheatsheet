@@ -11,7 +11,7 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 ## Table of Contents
 
 - [JavaScript Basics](#js-basics)
-- [Variables](#js-variables) 
+- [Variables](#js-variables)
 - [Data types](#js-datatypes)
 - [Operators](#js-operators)
 - [Branches and Loops](#js-branch-loops)
@@ -80,11 +80,18 @@ var firstName = 'Sunil';
 let lastName = 'Pradhan';
 ```
 
-```javascript
-// increment and decrement numbers
-i++; // the equivalent of i = i + 1
-i--; // the equivalent of i = i - 1;
+**Re-declaring Variable: **
+
+If you re-declare a JavaScript variable, it will not lose its value.
+
+````javascript
+var x = 4;
+var x;
+console.log(x);
+
+//Output - 4
 ```
+
 
 <br/>
 <div align="right">
@@ -146,7 +153,7 @@ var x;
 console.log(typeof x);
 
 //output - undefined
-```
+````
 
 ### Boolean:
 
@@ -282,22 +289,19 @@ Rules:
 
 ![js-numeric-conversion-rules](/img/js-numeric-conversion-rules.jpg)
 
-
 **Boolean Conversion**
 
-It happens in logical operations  but can also be performed explicitly with a call to `Boolean()` function.
+It happens in logical operations but can also be performed explicitly with a call to `Boolean()` function.
 
-Rules: 
+Rules:
 
 ![js-boolean-conversion-rules](/img/js-boolean-conversion-rules.jpg)
-
 
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 <a name="js-operators"></a>
 
