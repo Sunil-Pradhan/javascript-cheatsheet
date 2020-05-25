@@ -15,7 +15,10 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Data types](#js-datatypes)
 - [Operators](#js-operators)
 - [Branches and Loops](#js-branch-loops)
+- [Function](#js-function)
 - [Complementary Resources](#com-res)
+
+
 
 <a name="js-basics"></a>
 
@@ -951,6 +954,22 @@ Example:
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+
+
+<a name="js-function"></a>
+
+## JavaScript Function 
+
+Everything in 
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 
 <hr>
 
