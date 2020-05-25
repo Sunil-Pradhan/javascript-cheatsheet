@@ -940,6 +940,18 @@ Example:
 
 Example:
 
+```javascript 
+for (i = 1; i <= 5; i++) {
+  if (i == 3) {
+    continue; //skip 3
+  }
+  console.log(i);
+}
+
+//output - 1, 2, 3, 4, 5
+```
+
+
 ![js-continue-keyword](/img/js-continue-keyword.png)
 
 <br/>
