@@ -952,8 +952,6 @@ for (i = 1; i <= 5; i++) {
 ```
 
 
-![js-continue-keyword](/img/js-continue-keyword.png)
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
