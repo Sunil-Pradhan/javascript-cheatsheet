@@ -969,6 +969,16 @@ function function_name() {
 }
 function_name();
 ```
+Example: 
+
+```javascript
+function display() {
+  console.log('Hello! Sunil');
+}
+display();
+
+//output - Hello! Sunil
+```
 
 
 
