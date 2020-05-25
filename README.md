@@ -934,13 +934,22 @@ Example:
 
 Example:
 
-![js-break-keyword](/img/js-break-keyword.png)
+```javascript
+for (i = 1; i <= 5; i++) {
+  if (i == 3) {
+    break; //stop loop
+  }
+  console.log(i);
+}
+
+//output - 1, 2
+```
 
 **`continue` - skip the loop:**
 
 Example:
 
-```javascript 
+```javascript
 for (i = 1; i <= 5; i++) {
   if (i == 3) {
     continue; //skip 3
@@ -950,7 +959,6 @@ for (i = 1; i <= 5; i++) {
 
 //output - 1, 2, 3, 4, 5
 ```
-
 
 <br/>
 <div align="right">
@@ -979,7 +987,8 @@ function function_name() {
 }
 function_name();
 ```
-Example: 
+
+Example:
 
 ```javascript
 function display() {
@@ -989,8 +998,6 @@ display();
 
 //output - Hello! Sunil
 ```
-
-
 
 <br/>
 <div align="right">
