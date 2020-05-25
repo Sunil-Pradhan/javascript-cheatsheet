@@ -956,8 +956,21 @@ Functions are subprograms which are used to compute a value or perform a task.
 
 **Type of function:**
 
-* Built-in functions
-* User-defined functions
+- Built-in functions
+- User-defined functions
+
+#### Creating and calling a function
+
+Syntax:
+
+```javascript
+function function_name() {
+  //code block
+}
+function_name();
+```
+
+
 
 <br/>
 <div align="right">
