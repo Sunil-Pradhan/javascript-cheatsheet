@@ -1087,8 +1087,7 @@ display('Sunil', 20);
 //output - Sunil 20 undefined
 ```
 
-If a function is called with missing arguments, the missing values are set to `undefined`. 
-
+If a function is called with missing arguments, the missing values are set to `undefined`.
 
 <br/>
 <div align="right">
@@ -1096,9 +1095,9 @@ If a function is called with missing arguments, the missing values are set to `u
 </div>
 <br/>
 
-#### Arguments Object in JavaScript
+#### Arguments object in JavaScript
 
-When you call a function and pass the arguments, these arguments are stored in an object.   
+When you call a function and pass the arguments, these arguments are stored in an object.
 
 Example:
 
@@ -1109,17 +1108,31 @@ function display(fname, lname) {
 }
 display('Sunil', 'Pradhan');
 
-//output 
+//output
 //Sunil
 //Pradhan
 ```
 
 :bulb: **Note:**
 
-The object contains an entry for each argument passed to the function, the first entry’s index starting at 0. 
+The object contains an entry for each argument passed to the function, the first entry’s index starting at 0.
 
-The arguments object is not an Array. It is similar to an Array, but does not have any Array properties except length. 
+The arguments object is not an Array. It is similar to an Array, but does not have any Array properties except length.
 
+**Example: (Change arguments value internally while execution)**
+
+```javascript
+function display(fname, lname) {
+  arguments[0] = 'Anil';
+  console.log(arguments[0]);
+  console.log(arguments[1]);
+}
+display('Sunil', 'Pradhan');
+
+//output
+//Anil
+//Pradhan
+```
 
 <hr>
 
