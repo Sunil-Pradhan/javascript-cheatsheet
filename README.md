@@ -1076,6 +1076,28 @@ display('Sunil', 20);
 //output - Sunil 20
 ```
 
+**Example: (argument missing)**
+
+```javascript
+function display(fname, age, zip) {
+  console.log(fname, age, zip);
+}
+display('Sunil', 20);
+
+//output - Sunil 20 undefined
+```
+
+If a function is called with missing arguments, the missing values are set to `undefined`. 
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+
 <hr>
 
 <a name="com-res"></a>
