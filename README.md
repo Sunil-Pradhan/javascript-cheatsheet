@@ -1146,6 +1146,24 @@ display('Sunil', 'Pradhan');
 ```
 Here the length property will show you how many arguments it contains when called by the function. 
 
+**Example: (Arguments object and for loop)**
+
+By using for loop inside arguments object you can retrieve all of the arguments content. 
+
+```javascript
+function display(fname, lname) {
+  for (var i = 0; i < arguments.length; i++) {
+    console.log(arguments[i] + '');
+  }
+}
+display('Sunil', 'Pradhan');
+
+//Output
+//Sunil
+//Pradhan
+```
+Here the length property will show you how many arguments it contains when called by the function. 
+
 <hr>
 
 <a name="com-res"></a>
