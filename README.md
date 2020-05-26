@@ -1144,11 +1144,12 @@ display('Sunil', 'Pradhan');
 
 //output - 2
 ```
-Here the length property will show you how many arguments it contains when called by the function. 
+
+Here the length property will show you how many arguments it contains when called by the function.
 
 **Example: (Arguments object and for loop)**
 
-By using for loop inside arguments object you can retrieve all of the arguments content. 
+By using for loop inside arguments object you can retrieve all of the arguments content.
 
 ```javascript
 function display(fname, lname) {
@@ -1161,6 +1162,22 @@ display('Sunil', 'Pradhan');
 //Output
 //Sunil
 //Pradhan
+```
+
+**Example: (Too many arguments)**
+
+If you want to pass many arguments which are originally not present in your parameters then also you can display it on your output screen with the help of argument object.
+
+```javascript
+function num(num1, num2) {
+  console.log(num1, num2);
+  console.log(num1, num2, arguments[2]);
+}
+num(1, 2, 3);
+
+//Output
+// 1 2
+// 1 2 3
 ```
 
 <br/>
