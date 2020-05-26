@@ -1054,7 +1054,7 @@ Now the display(name) is replaced by its argument - display(Sunil).
 
 It goes down to the console and show the output.
 
-Example:(Same number of arguments and parameters)
+**Example: (Same number of arguments and parameters)**
 
 ```javascript
 function display(fname, lname) {
