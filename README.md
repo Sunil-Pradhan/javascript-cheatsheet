@@ -1134,6 +1134,18 @@ display('Sunil', 'Pradhan');
 //Pradhan
 ```
 
+**Example: (Length property)**
+
+```javascript
+function display(fname, lname) {
+  console.log(arguments.length);
+}
+display('Sunil', 'Pradhan');
+
+//output - 2
+```
+Here the length property will show you how many arguments it contains when called by the function. 
+
 <hr>
 
 <a name="com-res"></a>
