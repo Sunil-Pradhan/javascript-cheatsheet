@@ -1162,7 +1162,12 @@ display('Sunil', 'Pradhan');
 //Sunil
 //Pradhan
 ```
-Here the length property will show you how many arguments it contains when called by the function. 
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 <hr>
 
