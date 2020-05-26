@@ -1033,6 +1033,19 @@ function function_name(parameter1, parameter2) {
 function_name(argument1, argument2);
 ```
 
+Example: 
+
+```javascript
+function display(name) {
+  console.log(name);
+}
+display('Sunil');
+
+
+//output - Sunil
+```
+
+
 <hr>
 
 <a name="com-res"></a>
