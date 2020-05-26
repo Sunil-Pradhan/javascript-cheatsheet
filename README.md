@@ -1044,6 +1044,15 @@ display('Sunil');
 
 //output - Sunil
 ```
+In JavaScript function parameters behave as variables. So when the display function is called [display(‘Sunil’)], it moves to the top of the function and meets display(name). 
+
+display(name) says - I have a parameter(variable) and expecting an argument which I can pass through. Do you have any? 
+
+display(‘Sunil’) says - Yes! I have an argument(Sunil). I am giving you. 
+
+Now the display(name) is replaced by its argument - display(Sunil). 
+
+It goes down to the console and show the output. 
 
 
 <hr>
