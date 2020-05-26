@@ -1005,6 +1005,16 @@ display();
 </div>
 <br/>
 
+#### Function with parameters
+
+Syntax:
+
+```javascript
+function function_name(parameter1, parameter2) {
+  //code block
+}
+```
+
 <hr>
 
 <a name="com-res"></a>
