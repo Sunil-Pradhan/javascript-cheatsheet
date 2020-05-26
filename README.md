@@ -1096,6 +1096,12 @@ If a function is called with missing arguments, the missing values are set to `u
 </div>
 <br/>
 
+#### Arguments Object in JavaScript
+
+When you call a function and pass the arguments, these arguments are stored in an object.   
+
+Syntax:
+
 
 
 <hr>
