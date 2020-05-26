@@ -1100,7 +1100,19 @@ If a function is called with missing arguments, the missing values are set to `u
 
 When you call a function and pass the arguments, these arguments are stored in an object.   
 
-Syntax:
+Example:
+
+```javascript
+function display(fname, lname) {
+  console.log(arguments[0]);
+  console.log(arguments[1]);
+}
+display('Sunil', 'Pradhan');
+
+//output 
+//Sunil
+//Pradhan
+```
 
 
 
