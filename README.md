@@ -1065,6 +1065,17 @@ display('Sunil', 'Pradhan');
 //output - Sunil Pradhan
 ```
 
+**Example: (different data types in arguments)**
+
+```javascript
+function display(fname, age) {
+  console.log(fname, age);
+}
+display('Sunil', 20);
+
+//output - Sunil 20
+```
+
 <hr>
 
 <a name="com-res"></a>
