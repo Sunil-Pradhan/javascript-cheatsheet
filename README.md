@@ -1186,6 +1186,10 @@ num(1, 2, 3);
 </div>
 <br/>
 
+#### Default parameter in JavaScript 
+
+When the function called and if it doesn't hold any value inside of it then it will use its default value from parameters to display its output. 
+
 <hr>
 
 <a name="com-res"></a>
