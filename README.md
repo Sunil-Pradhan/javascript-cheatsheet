@@ -1033,7 +1033,7 @@ function function_name(parameter1, parameter2) {
 function_name(argument1, argument2);
 ```
 
-Example: 
+Example:
 
 ```javascript
 function display(name) {
@@ -1041,19 +1041,29 @@ function display(name) {
 }
 display('Sunil');
 
-
 //output - Sunil
 ```
-In JavaScript function parameters behave as variables. So when the display function is called [display(‘Sunil’)], it moves to the top of the function and meets display(name). 
 
-display(name) says - I have a parameter(variable) and expecting an argument which I can pass through. Do you have any? 
+In JavaScript function parameters behave as variables. So when the display function is called [display(‘Sunil’)], it moves to the top of the function and meets display(name).
 
-display(‘Sunil’) says - Yes! I have an argument(Sunil). I am giving you. 
+display(name) says - I have a parameter(variable) and expecting an argument which I can pass through. Do you have any?
 
-Now the display(name) is replaced by its argument - display(Sunil). 
+display(‘Sunil’) says - Yes! I have an argument(Sunil). I am giving you.
 
-It goes down to the console and show the output. 
+Now the display(name) is replaced by its argument - display(Sunil).
 
+It goes down to the console and show the output.
+
+Example:(Same number of arguments and parameters)
+
+```javascript
+function display(fname, lname) {
+  console.log(fname, lname);
+}
+display('Sunil', 'Pradhan');
+
+//output - Sunil Pradhan
+```
 
 <hr>
 
