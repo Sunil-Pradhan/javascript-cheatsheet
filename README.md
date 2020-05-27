@@ -1332,7 +1332,6 @@ function num(a, b, c = null) {
 num(10, 20); //two args
 
 //output - 10, 20, null
-
 ```
 
 **In case of `Array`:**
@@ -1348,7 +1347,7 @@ num(5, [10]);
 //output - 5, 10
 ```
 
-Here it doesn't even look at default value because we have passed 10 in our argument.  
+Here it doesn't even look at default value because we have passed 10 in our argument.
 
 ```javascript
 function num(a, b = [101]) {
@@ -1358,12 +1357,21 @@ function num(a, b = [101]) {
 num(5);
 
 //output - 5, 101
-
 ```
 
-No value passed so that it is displaying default value.  
+No value passed so that it is displaying default value.
 
+**Example: (Multidimensional array)**
 
+```javascript
+function person(age, name = ['Sunil', 'Pradhan']) {
+  console.log(age);
+  console.log(name);
+}
+person(20, ['Anil', 'Sahu']);
+
+//Output - 20, Anil Sahu
+```
 
 <hr>
 
