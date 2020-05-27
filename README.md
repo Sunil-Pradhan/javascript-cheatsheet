@@ -1335,6 +1335,36 @@ num(10, 20); //two args
 
 ```
 
+**In case of `Array`:**
+
+```javascript
+function num(a, b = [101]) {
+  console.log(a);
+  console.log(b);
+}
+num(5, [10]);
+//Passing 10 as an array
+
+//output - 5, 10
+```
+
+Here it doesn't even look at default value because we have passed 10 in our argument.  
+
+```javascript
+function num(a, b = [101]) {
+  console.log(a);
+  console.log(b);
+}
+num(5);
+
+//output - 5, 101
+
+```
+
+No value passed so that it is displaying default value.  
+
+
+
 <hr>
 
 <a name="com-res"></a>
