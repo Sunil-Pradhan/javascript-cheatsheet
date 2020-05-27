@@ -1297,7 +1297,22 @@ function num(a, b = 50, c) {
 }
 num(10); //one args
 
-//output - 10, 20, undefined
+//output - 10, 50, undefined
+```
+
+**Example: (Multiple default values)**
+
+```javascript
+function num(a, b = 50, c = 70) {
+  //b and c is defined as default value
+
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+num(10); //one args
+
+//output - 10, 50, 70
 ```
 
 <hr>
