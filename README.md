@@ -1218,7 +1218,7 @@ num(10, 20); //two args
 Here we have passed two arguments so that after `a` and '`b`. It took the default value to show the result of '`c`, i.e 70. 
 
 
-**Example: (Same arguments with parameter values)**
+**Example: (Three arguments values)**
 
 ```javascript
 function num(a, b, c = 70) {
@@ -1233,6 +1233,21 @@ num(10, 20, 30); //three args
 //output - 10, 20, 30
 ```
 Here we have passed three arguments so that we don’t need to use the default value.
+
+**Example: (One arguments value)**
+
+```javascript
+function num(a, b, c = 70) {
+  //c is defined as default value
+
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+num(10); //one args
+
+//output - 10, undefined, 70
+```
 
 <hr>
 
