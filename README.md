@@ -1315,6 +1315,26 @@ num(10); //one args
 //output - 10, 50, 70
 ```
 
+:bulb: **TIP:** JavaScript also allows the use of array and null as default values.
+
+<br>
+
+**In case of `null`:**
+
+```javascript
+function num(a, b, c = null) {
+  //c is defined as null but default value
+
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+num(10, 20); //two args
+
+//output - 10, 20, null
+
+```
+
 <hr>
 
 <a name="com-res"></a>
