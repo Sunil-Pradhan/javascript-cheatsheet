@@ -1215,6 +1215,8 @@ num(10, 20); //two args
 //output - 10, 20, 70
 ```
 
+Here we have passed two arguments so that after `a` and '`b`. It took the default value to show the result of '`c`, i.e 70. 
+
 <hr>
 
 <a name="com-res"></a>
