@@ -1373,6 +1373,19 @@ person(20, ['Anil', 'Sahu']);
 //Output - 20, Anil Sahu
 ```
 
+**Example: (with index array number)**
+
+```javascript
+function person(age, name = ['Sunil', 'Pradhan']) {
+  console.log(age);
+  console.log(name[0]);
+  console.log(name[1]);
+}
+person(20, ['Anil', 'Sahu']);
+
+//Output - 20, Anil Sahu
+```
+
 <hr>
 
 <a name="com-res"></a>
