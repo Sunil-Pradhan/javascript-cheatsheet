@@ -1215,10 +1215,9 @@ num(10, 20); //two args
 //output - 10, 20, 70
 ```
 
-Here we have passed two arguments so that after `a` and '`b`. It took the default value to show the result of '`c`, i.e 70. 
+Here we have passed two arguments so that after `a` and '`b`. It took the default value to show the result of '`c`, i.e 70.
 
-
-**Example: (Three arguments values)**
+**Example: (Three arguments values, default value declared at last)**
 
 ```javascript
 function num(a, b, c = 70) {
@@ -1232,9 +1231,10 @@ num(10, 20, 30); //three args
 
 //output - 10, 20, 30
 ```
+
 Here we have passed three arguments so that we don’t need to use the default value.
 
-**Example: (One arguments value)**
+**Example: (One arguments value, default value declared at last)**
 
 ```javascript
 function num(a, b, c = 70) {
@@ -1248,10 +1248,42 @@ num(10); //one args
 
 //output - 10, undefined, 70
 ```
-Here we have passed only one argument so that it successfully console out `a` but when it arrives at `b`, it doesn’t find any arguments. Hence, it shows `undefined`. 
 
-Due to the default value of `c` we are getting a result of 70 in the third console statement.  
+Here we have passed only one argument so that it successfully console out `a` but when it arrives at `b`, it doesn’t find any arguments. Hence, it shows `undefined`.
 
+Due to the default value of `c` we are getting a result of 70 in the third console statement.
+
+**Example: (Three arguments value, default value declared at middle)**
+
+```javascript
+function num(a, b = 50, c) {
+  //c is defined as default value
+
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+num(10, 20, 30); //three args
+
+//output - 10, 20, 30
+```
+
+Here we have passed three arguments and in the middle of parameters we have defined our default value. It still doesn't show `undefined` because we have passed three arguments.
+
+Hence, it is fetching data from its arguments. But if it misses one argument value then it will again show `undefined`.
+
+```javascript
+function num(a, b = 50, c) {
+  //c is defined as default value
+
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+num(10, 20); //30 missing
+
+//output - 10, 20, undefined
+```
 
 <hr>
 
