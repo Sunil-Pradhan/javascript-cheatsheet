@@ -1192,6 +1192,7 @@ When the function called and if it doesn't hold any value inside of it then it w
 
 Default parameter values always come on last, otherwise it returns undefined. Once default value start then rest of parameters should be default value only. 
 
+Syntax: 
 
 ```javascript
 function function_name(para1, para2 = 'value1', para3 = 'value2') {
