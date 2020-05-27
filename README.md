@@ -1232,7 +1232,7 @@ num(10, 20, 30); //three args
 
 //output - 10, 20, 30
 ```
-
+Here we have passed three arguments so that we don’t need to use the default value.
 
 <hr>
 
