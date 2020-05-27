@@ -1257,7 +1257,7 @@ Due to the default value of `c` we are getting a result of 70 in the third conso
 
 ```javascript
 function num(a, b = 50, c) {
-  //c is defined as default value
+  //b is defined as default value
 
   console.log(a);
   console.log(b);
@@ -1274,13 +1274,28 @@ Hence, it is fetching data from its arguments. But if it misses one argument val
 
 ```javascript
 function num(a, b = 50, c) {
-  //c is defined as default value
+  //b is defined as default value
 
   console.log(a);
   console.log(b);
   console.log(c);
 }
 num(10, 20); //30 missing
+
+//output - 10, 20, undefined
+```
+
+If only one argument then it takes default value from `b` and `c` would be `undefined`.
+
+```javascript
+function num(a, b = 50, c) {
+  //b is defined as default value
+
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+num(10); //one args
 
 //output - 10, 20, undefined
 ```
