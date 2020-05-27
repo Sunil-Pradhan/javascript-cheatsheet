@@ -1248,6 +1248,10 @@ num(10); //one args
 
 //output - 10, undefined, 70
 ```
+Here we have passed only one argument so that it successfully console out `a` but when it arrives at `b`, it doesn’t find any arguments. Hence, it shows `undefined`. 
+
+Due to the default value of `c` we are getting a result of 70 in the third console statement.  
+
 
 <hr>
 
