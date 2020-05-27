@@ -1186,18 +1186,33 @@ num(1, 2, 3);
 </div>
 <br/>
 
-#### Default parameter in JavaScript 
+#### Default parameter in JavaScript
 
-When the function called and if it doesn't hold any value inside of it then it will use its default value from parameters to display its output. 
+When the function called and if it doesn't hold any value inside of it then it will use its default value from parameters to display its output.
 
-Default parameter values always come on last, otherwise it returns undefined. Once default value start then rest of parameters should be default value only. 
+Default parameter values always come on last, otherwise it returns undefined. Once default value start then rest of parameters should be default value only.
 
-Syntax: 
+Syntax:
 
 ```javascript
 function function_name(para1, para2 = 'value1', para3 = 'value2') {
   //code block
 }
+```
+
+Example:
+
+```javascript
+function num(a, b, c = 70) {
+  //c is defined as default value
+
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+num(10, 20); //two args
+
+//output - 10, 20, 70
 ```
 
 <hr>
