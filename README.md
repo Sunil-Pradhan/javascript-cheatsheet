@@ -1405,21 +1405,35 @@ Because this makes it possible for a reader to understand the progression in the
 
 Now just like how a book is divided into chapters; JavaScript Module divide a program into sections of code that by some criteria belong together.
 
-The benefit of organizing a program into modules is that it helps people who aren't yet familiar with the code to find what they are looking for. 
+The benefit of organizing a program into modules is that it helps people who aren't yet familiar with the code to find what they are looking for.
 
 In short: _Module is a JavaScript file where we write codes. The objects in a module are not available for use, unless the module file exports them._
 
-In ES6 the Module syntax has been standardized.  So let's say we have two files `ModuleA.js` and `ModuleB.js` then each of these files become a JavaScript Module. 
+In ES6 the Module syntax has been standardized. So let's say we have two files `ModuleA.js` and `ModuleB.js` then each of these files become a JavaScript Module.
 
-So if we have a function in `ModuleB.js` to use it in `ModuleA.js` we `export` from `ModuleB.js` and `import` in `ModuleA.js`. 
+So if we have a function in `ModuleB.js` to use it in `ModuleA.js` we `export` from `ModuleB.js` and `import` in `ModuleA.js`.
 
 ![js-module](/img/js-module.jpg)
 
 And that's the basic idea behind JavaScript Module - Export and Import
 
-
 #### Module Setup
 
+**index.html**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Module</title>
+    <script type="module" src="ModuleA.js"></script>
+  </head>
+  <body>
+    <h1>Learn JavaScript Module</h1>
+  </body>
+</html>
+```
+Two more fiels: ModuleA.js, ModuleB.js 
 
 <br/>
 <div align="right">
