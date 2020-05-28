@@ -1444,9 +1444,9 @@ Two more files: **ModuleA.js**, **ModuleB.js**
 
 #### Exporting Module
 
-`export` - The export statement is used when creating JavaScript modules to export functions, objects, or primitive values from the module so they can be used by other programs with the `import` statement. 
+`export` - The export statement is used when creating JavaScript modules to export functions, objects, or primitive values from the module so they can be used by other programs with the `import` statement.
 
-There are two different types of `export` - `named` and `default`. You can have multiple named exports per module but only one default export. 
+There are two different types of `export` - `named` and `default`. You can have multiple named exports per module but only one default export.
 
 #### Named Exports
 
@@ -1458,7 +1458,7 @@ We have two files **ModuleA.js** & **ModuleB.js**, now let's head over to **Modu
 let fname = 'Sunil';
 ```
 
-Now let's say we want to export this variable `fname` so that it can be used in other modules. So for that we just need to use the `export` keyword.  So add `export` at the beginning of the statement.
+Now let's say we want to export this variable `fname` so that it can be used in other modules. So for that we just need to use the `export` keyword. So add `export` at the beginning of the statement.
 
 **ModuleB.js**
 
@@ -1466,20 +1466,21 @@ Now let's say we want to export this variable `fname` so that it can be used in 
 export let fname = 'Sunil';
 ```
 
-So now our variable `fname` is ready to be accessed in other modules. 
+So now our variable `fname` is ready to be accessed in other modules.
 
-So how do we import that over to `ModuleA.js`? 
+So how do we import that over to `ModuleA.js`?
 
-So to import variables we use the keyword `import` followed by name of the variable, type `fname’ within curly braces. 
+So to import variables we use the keyword `import` followed by name of the variable, type `fname’ within curly braces.
 
-But from where are we importing it? From a file called ModuleB.js in the current directory(./) 
+But from where are we importing it? From a file called ModuleB.js in the current directory(./)
 
 **ModuleA.js**
 
 ```javascript
 import { fname } from './ModuleB.js';
 ```
-Try log to the console ‘fname’: 
+
+Try log to the console ‘fname’:
 
 ```javascript
 import { fname } from './ModuleB.js';
@@ -1500,13 +1501,14 @@ console.log(fname);
   </body>
 </html>
 ```
+
 Let's save all files and head over to the browser to see console of `index.html`. There you go Sunil.
 
 ![js-named-exports](/img/js-named-exports.jpg)
 
-So we have created a variable `fname` equals `Sunil` in `ModuleB.js` and importing it into `ModuleA.js`, and we have displayed it on the log of `index.html`. 
+So we have created a variable `fname` equals `Sunil` in `ModuleB.js` and importing it into `ModuleA.js`, and we have displayed it on the log of `index.html`.
 
-But how do JavaScript modules communicate with each other? 
+But how do JavaScript modules communicate with each other?
 
 Let’s create one more variable in `ModuleB.js`:
 
@@ -1517,7 +1519,7 @@ export let fname = 'Sunil';
 export let lname = 'Pradhan';
 ```
 
-Now to import this we can just specify with the comma the name of the variable so `lname` over here: 
+Now to import this we can just specify with the comma the name of the variable so `lname` over here:
 
 **ModuleA.js**
 
@@ -1525,7 +1527,8 @@ Now to import this we can just specify with the comma the name of the variable s
 import { fname, lname } from './ModuleB.js';
 console.log(fname);
 ```
-In console log use backticks for `$fname` and `$lname`. 
+
+In console log use backticks for `$fname` and `$lname`.
 
 **ModuleA.js**
 
@@ -1534,10 +1537,35 @@ import { fname, lname } from './ModuleB.js';
 console.log(`${fname} ${lname}`);
 ```
 
-Output: 
+Output:
 
 ![js-named-exports-two](/img/js-named-exports-two.jpg)
 
+Now let's say we have 10 variables to export, in such a case this export keyword can be replaced from every sentence and we can just have one export.
+
+**ModuleB.js**
+
+```javascript
+let fname = 'Sunil';
+let lname = 'Pradhan';
+
+export { fname, lname };
+```
+
+So if we had 10 variables we just would specify all 10 variables separated by a comma. So now when we export it and import it, everything else remains the same.
+
+**ModuleA.js**
+
+```javascript
+import { fname, lname } from './ModuleB.js';
+console.log(`${fname} ${lname}`);
+```
+
+Output:
+
+![js-named-exports-two](/img/js-named-exports-two.jpg)
+
+Sunil Pradhan, so nothing changed. 
 
 
 <hr>
