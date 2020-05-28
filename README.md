@@ -1506,7 +1506,14 @@ Let's save all files and head over to the browser to see console of `index.html`
 
 So we have created a variable `fname` equals `Sunil` in `ModuleB.js` and importing it into `ModuleA.js`, and we have displayed it on the log of `index.html`. 
 
+But how do JavaScript modules communicate with each other? 
 
+Let’s create one more variable in `ModuleB.js`:
+
+```javascript
+export let fname = 'Sunil';
+export let lname = 'Pradhan';
+```
 
 <hr>
 
