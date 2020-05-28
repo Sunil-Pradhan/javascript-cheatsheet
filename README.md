@@ -1567,6 +1567,34 @@ Output:
 
 Sunil Pradhan, so nothing changed. 
 
+So that's another way to export your variables. You can either do it in the same line or you can have a single export at the end specifying the list of variables. 
+
+The next point about importing is that we can specify an alias. 
+
+**ModuleA.js**
+
+```javascript
+import { fname as f, lname as l } from './ModuleB.js';
+console.log(`${fname} ${lname}`);
+```
+
+So when you use an alias for an import you must use that alias else it would throw an error,so we need to change this to `f` and `l`. 
+
+**ModuleA.js**
+
+```javascript
+import { fname as f, lname as l } from './ModuleB.js';
+console.log(`${f} ${l}`);
+```
+
+Output:
+
+![js-named-exports-two](/img/js-named-exports-two.jpg)
+
+
+:bulb: **TIP:** JavaScript Module imports are hoisted and read-only.
+
+
 
 <hr>
 
