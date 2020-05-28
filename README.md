@@ -1474,11 +1474,36 @@ So to import variables we use the keyword `import` followed by name of the varia
 
 But from where are we importing it? From a file called ModuleB.js in the current directory(./) 
 
-ModuleA.js 
+**ModuleA.js**
 
 ```javascript
 import { fname } from './ModuleB.js';
 ```
+Try log to the console ‘fname’: 
+
+```javascript
+import { fname } from './ModuleB.js';
+console.log(fname);
+```
+
+**index.html**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Module</title>
+    <script type="module" src="ModuleA.js"></script>
+  </head>
+  <body>
+    <h1>Learn JavaScript Module</h1>
+  </body>
+</html>
+```
+
+Output visible on `index.html` console: 
+
+Output - Sunil 
 
 
 <hr>
