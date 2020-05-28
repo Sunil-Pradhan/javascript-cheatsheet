@@ -1500,10 +1500,11 @@ console.log(fname);
   </body>
 </html>
 ```
+Let's save all files and head over to the browser to see console of `index.html`. There you go Sunil.
 
-Output visible on `index.html` console: 
+![js-named-exports](/img/js-named-exports.jpg)
 
-Output - Sunil 
+
 
 
 <hr>
