@@ -16,7 +16,12 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Operators](#js-operators)
 - [Branches and Loops](#js-branch-loops)
 - [Function](#js-function)
+- [Module - Import & Export](#js-module)
 - [Complementary Resources](#com-res)
+
+
+
+
 
 <a name="js-basics"></a>
 
@@ -1385,6 +1390,24 @@ person(20, ['Anil', 'Sahu']);
 
 //Output - 20, Anil Sahu
 ```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+<a name="js-module"></a>
+
+## Module - Import & Export
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 <hr>
 
