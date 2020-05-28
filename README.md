@@ -1450,12 +1450,21 @@ There are two different types of `export` - `named` and `default`. You can have 
 
 #### Named Exports
 
-Now we have two files ModuleA.js & ModuleB.js, now let's head over to ModuleB.js and create a new variable. 
+Now we have two files ModuleA.js & ModuleB.js, now let's head over to ModuleB.js and create a new variable.
+
+**ModuleB.js**
 
 ```javascript
 let fname = 'Sunil';
 ```
 
+Now let's say we want to export this variable `fname` so that it can be used in other modules. So for that we just need to use the `export` keyword.  So add `export` at the beginning of the statement.
+
+**ModuleB.js**
+
+```javascript
+export let fname = 'Sunil';
+```
 
 <hr>
 
