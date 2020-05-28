@@ -1433,13 +1433,22 @@ And that's the basic idea behind JavaScript Module - Export and Import
   </body>
 </html>
 ```
-Two more files: **ModuleA.js**, **ModuleB.js** 
+
+Two more files: **ModuleA.js**, **ModuleB.js**
 
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+#### Exporting Module
+
+`export` - The export statement is used when creating JavaScript modules to export functions, objects, or primitive values from the module so they can be used by other programs with the `import` statement. 
+
+There are two different types of `export` - `named` and `default`. You can have multiple named exports per module but only one default export. 
+
+
 
 <hr>
 
