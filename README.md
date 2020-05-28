@@ -1594,6 +1594,31 @@ Output:
 
 :bulb: **TIP:** JavaScript Module imports are hoisted and read-only.
 
+So `fname` and `lname` can be imported but can never be changed but what you can change is the properties of objects. 
+
+**ModuleB.js**
+
+```javascript
+let fname = 'Sunil';
+let lname = 'Pradhan';
+
+let obj = {
+  name: 'Rula',
+};
+
+export { fname, lname, obj };
+
+```
+**ModuleA.js**
+
+```javascript
+import { fname, lname, obj } from './ModuleB.js';
+obj.name = 'Anil';
+console.log(obj.name);
+console.log(`${fname} ${lname}`);
+```
+
+
 
 
 <hr>
