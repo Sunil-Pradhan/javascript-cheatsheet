@@ -1525,6 +1525,20 @@ Now to import this we can just specify with the comma the name of the variable s
 import { fname, lname } from './ModuleB.js';
 console.log(fname);
 ```
+In console log use backticks for `$fname` and `$lname`. 
+
+**ModuleA.js**
+
+```javascript
+import { fname, lname } from './ModuleB.js';
+console.log(`${fname} ${lname}`);
+```
+
+Output: 
+
+![js-named-exports-two](/img/js-named-exports-two.jpg)
+
+
 
 <hr>
 
