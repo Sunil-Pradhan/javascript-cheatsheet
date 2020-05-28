@@ -1409,6 +1409,10 @@ The benefit of organizing a program into modules is that it helps people who are
 
 In short: _Module is a JavaScript file where we write codes. The objects in a module are not available for use, unless the module file exports them._
 
+In ES6 the Module syntax has been standardized.  So let's say we have two files `ModuleA.js` and `ModuleB.js` then each of these files become a JavaScript Module. 
+
+So if we have a function in `ModuleB.js` to use it in `ModuleA.js` we `export` from `ModuleB.js` and `import` in `ModuleA.js`. 
+
 
 <br/>
 <div align="right">
