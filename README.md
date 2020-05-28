@@ -19,10 +19,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Module - Import & Export](#js-module)
 - [Complementary Resources](#com-res)
 
-
-
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -1397,10 +1393,21 @@ person(20, ['Anil', 'Sahu']);
 </div>
 <br/>
 
-
 <a name="js-module"></a>
 
 ## Module - Import & Export
+
+**What are JavaScript Module?**
+
+If you go through any book you will notice that the author divides the book into **chapters** and **sections**, but why?
+
+Because this makes it possible for a reader to understand the progression in the book and to easily find a specific part that they are interested in, also the author is able to clearly indicate what the focus is on.
+
+Now just like how a book is divided into chapters; JavaScript Module divide a program into sections of code that by some criteria belong together.
+
+The benefit of organizing a program into modules is that it helps people who aren't yet familiar with the code to find what they are looking for. 
+
+In short: _Module is a JavaScript file where we write codes. The objects in a module are not available for use, unless the module file exports them._
 
 
 <br/>
