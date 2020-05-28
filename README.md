@@ -1504,6 +1504,7 @@ Let's save all files and head over to the browser to see console of `index.html`
 
 ![js-named-exports](/img/js-named-exports.jpg)
 
+So we have created a variable `fname` equals `Sunil` in `ModuleB.js` and importing it into `ModuleA.js`, and we have displayed it on the log of `index.html`. 
 
 
 
