@@ -1618,8 +1618,9 @@ console.log(obj.name);
 console.log(`${fname} ${lname}`);
 ```
 
+So let's save this and the name has been changed from `Rula` to `Anil`. 
 
-
+![js-named-exports-three](/img/js-named-exports-three.jpg)
 
 <hr>
 
