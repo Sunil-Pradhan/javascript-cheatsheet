@@ -1510,9 +1510,20 @@ But how do JavaScript modules communicate with each other?
 
 Let’s create one more variable in `ModuleB.js`:
 
+**ModuleB.js**
+
 ```javascript
 export let fname = 'Sunil';
 export let lname = 'Pradhan';
+```
+
+Now to import this we can just specify with the comma the name of the variable so `lname` over here: 
+
+**ModuleA.js**
+
+```javascript
+import { fname, lname } from './ModuleB.js';
+console.log(fname);
 ```
 
 <hr>
