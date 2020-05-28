@@ -1450,7 +1450,7 @@ There are two different types of `export` - `named` and `default`. You can have 
 
 #### Named Exports
 
-Now we have two files ModuleA.js & ModuleB.js, now let's head over to ModuleB.js and create a new variable.
+We have two files **ModuleA.js** & **ModuleB.js**, now let's head over to **ModuleB.js** and create a new variable.
 
 **ModuleB.js**
 
