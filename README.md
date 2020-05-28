@@ -1433,7 +1433,7 @@ And that's the basic idea behind JavaScript Module - Export and Import
   </body>
 </html>
 ```
-Two more files: ModuleA.js, ModuleB.js 
+Two more files: **ModuleA.js**, **ModuleB.js** 
 
 <br/>
 <div align="right">
