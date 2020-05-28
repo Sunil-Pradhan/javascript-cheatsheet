@@ -1448,6 +1448,13 @@ Two more files: **ModuleA.js**, **ModuleB.js**
 
 There are two different types of `export` - `named` and `default`. You can have multiple named exports per module but only one default export. 
 
+#### Named Exports
+
+Now we have two files ModuleA.js & ModuleB.js, now let's head over to ModuleB.js and create a new variable. 
+
+```javascript
+let fname = 'Sunil';
+```
 
 
 <hr>
