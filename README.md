@@ -1843,24 +1843,23 @@ const a = 10;
 export { a };
 ```
 
-**Named export function:** 
+**Named export function:**
 
 **Mobile.js**
 
 ```javascript
-//Named export function 
+//Named export function
 
 export function show() {
-	console.log("Hello Sunil");
+  console.log('Hello Sunil');
 }
 ```
 
 **App.js**
 
 ```javascript
-
-//Named import function  
-import {show} from "./mobile.js";
+//Named import function
+import { show } from './mobile.js';
 show();
 ```
 
@@ -1869,16 +1868,62 @@ Same but different way to represent:
 **Mobile.js**
 
 ```javascript
-//Named export function 
+//Named export function
 
 function show() {
-	console.log("Hello Sunil");
+  console.log('Hello Sunil');
 }
 
-export {show};
+export { show };
 ```
 
+**Named export class:**
 
+**Mobile.js**
+
+```javascript
+//Named export class
+
+export class Nokia {
+  volumeup() {
+    console.log('High Volume');
+  }
+}
+```
+
+**App.js**
+
+```javascript
+//Named import class
+import { Nokia } from './mobile.js';
+const n = new Nokia();
+n.volumeup();
+```
+
+Same but different way to represent:
+
+**Mobile.js**
+
+```javascript
+//Named export class
+
+class Nokia {
+  volumeup() {
+    console.log('High Volume');
+  }
+}
+
+export { Nokia };
+```
+
+**App.js**
+
+```javascript
+//Named import class
+import { Nokia } from './mobile.js';
+const n = new Nokia();
+n.volumeup();
+```
 
 **Multiple named export:**
 
