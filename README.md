@@ -1699,7 +1699,6 @@ function greet(message) {
 
 Then to export the function just like exporting a variable we can attach `export` keyword at the beginning.
 
-
 **ModuleB.js**
 
 ```javascript
@@ -1707,6 +1706,23 @@ export function greet(message) {
   console.log(message);
 }
 ```
+
+So our function is ready to be exported, let's go ahead and `import` it in `ModuleA.js`.
+
+Within curly braces the name of the function so `greet` and where are we importing it from the current directory i.e `ModuleB.js`, so now that we have the function we can go ahead and call it.
+
+**ModuleA.js**
+
+```javascript
+import { greet } from './ModuleB.js';
+
+greet('Hello Sunil');
+```
+
+let's pass `Hello Sunil`. So when we save this our output would be:
+
+![js-function-module-export-import](/img/js-function-module-export-import.jpg)
+
 
 
 <br/>
