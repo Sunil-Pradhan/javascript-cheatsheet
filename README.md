@@ -1687,7 +1687,7 @@ So aliases work with `default` imports as well.
 
 #### Exporting Functions and Classes
 
-When
+As we exported variables we can also export functions and classes in ES6. 
 
 
 <br/>
