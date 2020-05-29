@@ -1594,7 +1594,7 @@ Output:
 
 :bulb: **TIP:** JavaScript Module imports are hoisted and read-only.
 
-_That means whenever you have an import statement it is always going to be hoisted to the top and also `fname` and `lname` can be imported but can never be changed but what you can change is the properties of objects._
+_That means whenever you have an import statement it is always going to be hoisted to the top and more `fname` and `lname` can be imported but can never be changed but what you can change is the properties of objects._
 
 **ModuleB.js**
 
