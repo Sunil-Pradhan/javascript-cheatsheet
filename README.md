@@ -1502,7 +1502,7 @@ console.log(fname);
 </html>
 ```
 
-Let's save all files and head over to the browser to see console of `index.html`. There you go Sunil.
+Let's save all files and head over to the browser to see console of `index.html`. There you go - Sunil.
 
 ![js-named-exports](/img/js-named-exports.jpg)
 
