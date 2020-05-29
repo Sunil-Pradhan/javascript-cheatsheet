@@ -1653,6 +1653,11 @@ import firstName from './ModuleB.js';
 console.log(firstName);
 ```
 
+This is going to work because we are going to be exporting only a single value from `ModuleB.js` and that is going to be captured in whatever we are importing. 
+
+So `firstName` is going to be mapped onto `fname`, so if we go ahead and log to the console our output would be same i.e Sunil. 
+
+
 ![js-named-exports](/img/js-named-exports.jpg)
 
 <hr>
