@@ -1660,6 +1660,18 @@ So `firstName` is going to be mapped onto `fname`, so if we go ahead and log to 
 
 ![js-named-exports](/img/js-named-exports.jpg)
 
+So that's how `default` export work. Another thing to keep in mind as we can also provide alias for importing `default` but the only thing is we need to use curly braces. 
+
+So `default as f`, so this default is going to be the default import from `ModuleB.js` and we just going to alias it with `f`. 
+
+**ModuleA.js**
+
+```javascript
+import { default as f } from './ModuleB.js';
+
+console.log(f);
+```
+
 <hr>
 
 <a name="com-res"></a>
