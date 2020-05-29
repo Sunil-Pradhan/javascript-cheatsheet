@@ -1653,6 +1653,8 @@ import firstName from './ModuleB.js';
 console.log(firstName);
 ```
 
+![js-named-exports](/img/js-named-exports.jpg)
+
 <hr>
 
 <a name="com-res"></a>
