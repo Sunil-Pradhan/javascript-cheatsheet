@@ -1622,6 +1622,11 @@ So let's save this and the name has been changed from `Rula` to `Anil`.
 
 ![js-named-exports-three](/img/js-named-exports-three.jpg)
 
+
+#### Default Exports
+
+Whenever we have modules that **export only a single value or a function** then, we can make use of the `default` keyword while exporting. 
+
 <hr>
 
 <a name="com-res"></a>
