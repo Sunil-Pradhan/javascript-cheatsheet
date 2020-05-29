@@ -1769,6 +1769,8 @@ export class GreetMessage {
 
 So let's go back to `ModuleA.js` and by next to `greet` we need to specify `GreetMessage`. 
 
+And over here let's create a new instance of the class, so `let` `gm` is equal to a `new GreetMessage` and then call `gm.greet()`. 
+
 
 **ModuleA.js**
 
@@ -1776,7 +1778,11 @@ So let's go back to `ModuleA.js` and by next to `greet` we need to specify `Gree
 import { greet, GreetMessage } from './ModuleB.js';
 
 greet('Hello Sunil');
+
+let gm = new GreetMessage();
+gm.greet();
 ```
+
 
 
 <br/>
