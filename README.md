@@ -1812,6 +1812,15 @@ You can have only one `default` `export` per module. A `default` `export` can be
 ![js-importing-defaults](/img/js-importing-defaults.jpg)
 
 
+**Importing named:**
+
+You can have multiple named exports per module. Named exports are useful to export several values. During the import, it is mandatory to use the same name of the corresponding object. 
+
+![js-importing-named](/img/js-importing-named.jpg)
+
+**Importing all:** 
+
+![js-importing-all](/img/js-importing-all.jpg)
 
 
 <hr>
