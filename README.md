@@ -1639,6 +1639,13 @@ export default fname;
 
 And now since this is going to be the only export from this particular file or module we can use export `default` and then without curly braces the name of the variable. 
 
+While importing it there are few changes the first thing is you can leave out the curly braces so we don't have to use the curly braces while importing `default` export. 
+
+And the second thing is unlike `named` export where the name of the variable while exporting has to match the name while importing in module but in `default` export and import the name doesn't have to match. 
+
+
+
+
 
 <hr>
 
