@@ -1814,6 +1814,72 @@ You can have multiple named exports per module. Named exports are useful to expo
 
 ![js-importing-named](/img/js-importing-named.jpg)
 
+**Named export and import for variable:**
+
+**Mobile.js**
+
+```javascript
+//Named export variable
+
+export const a = 10;
+```
+
+**App.js**
+
+```javascript
+//Named import variable
+import { a } from './mobile.js';
+console.log(a);
+```
+
+Same but different way to represent:
+
+**Mobile.js**
+
+```javascript
+//Named export variable
+
+const a = 10;
+export { a };
+```
+
+**Named export function:** 
+
+**Mobile.js**
+
+```javascript
+//Named export function 
+
+export function show() {
+	console.log("Hello Sunil");
+}
+```
+
+**App.js**
+
+```javascript
+
+//Named import function  
+import {show} from "./mobile.js";
+show();
+```
+
+Same but different way to represent:
+
+**Mobile.js**
+
+```javascript
+//Named export function 
+
+function show() {
+	console.log("Hello Sunil");
+}
+
+export {show};
+```
+
+
+
 **Multiple named export:**
 
 **Mobile.js**
