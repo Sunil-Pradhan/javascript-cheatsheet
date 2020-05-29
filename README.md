@@ -1565,11 +1565,11 @@ Output:
 
 ![js-named-exports-two](/img/js-named-exports-two.jpg)
 
-Sunil Pradhan, so nothing changed. 
+Sunil Pradhan, so nothing changed.
 
-So that's another way to export your variables. You can either do it in the same line or you can have a single export at the end specifying the list of variables. 
+So that's another way to export your variables. You can either do it in the same line or you can have a single export at the end specifying the list of variables.
 
-The next point about importing is that we can specify an alias. 
+The next point about importing is that we can specify an alias.
 
 **ModuleA.js**
 
@@ -1578,7 +1578,7 @@ import { fname as f, lname as l } from './ModuleB.js';
 console.log(`${fname} ${lname}`);
 ```
 
-So when you use an alias for an import you must use that alias else it would throw an error, so we need to change this to `f` and `l`. 
+So when you use an alias for an import you must use that alias else it would throw an error, so we need to change this to `f` and `l`.
 
 **ModuleA.js**
 
@@ -1590,7 +1590,6 @@ console.log(`${f} ${l}`);
 Output:
 
 ![js-named-exports-two](/img/js-named-exports-two.jpg)
-
 
 :bulb: **TIP:** JavaScript Module imports are hoisted and read-only.
 
@@ -1607,8 +1606,8 @@ let obj = {
 };
 
 export { fname, lname, obj };
-
 ```
+
 **ModuleA.js**
 
 ```javascript
@@ -1618,16 +1617,15 @@ console.log(obj.name);
 console.log(`${fname} ${lname}`);
 ```
 
-So let's save this and the name has been changed from `Rula` to `Anil`. 
+So let's save this and the name has been changed from `Rula` to `Anil`.
 
 ![js-named-exports-three](/img/js-named-exports-three.jpg)
 
-
 #### Default Exports
 
-Whenever we have modules that **export only a single value or a function** then, we can make use of the `default` keyword while exporting. 
+Whenever we have modules that **export only a single value or a function** then, we can make use of the `default` keyword while exporting.
 
-So consider this example, in our `ModuleB.js`,  I am going to have a new variable: 
+So consider this example, in our `ModuleB.js`, I am going to have a new variable:
 
 **ModuleB.js**
 
@@ -1637,13 +1635,13 @@ let fname = 'Sunil';
 export default fname;
 ```
 
-And now since this is going to be the only export from this particular file or module we can use export `default` and then without curly braces the name of the variable. 
+And now since this is going to be the only export from this particular file or module we can use export `default` and then without curly braces the name of the variable.
 
-While importing it there are few changes the first thing is you can leave out the curly braces so we don't have to use the curly braces while importing `default` export. 
+While importing it there are few changes the first thing is you can leave out the curly braces so we don't have to use the curly braces while importing `default` export.
 
-And the second thing is unlike `named` export where the name of the variable while exporting has to match the name while importing in module but in `default` export and import the name doesn't have to match. 
+And the second thing is unlike `named` export where the name of the variable while exporting has to match the name while importing in module but in `default` export and import the name doesn't have to match.
 
-So over here we can just call it `firstName` : 
+So over here we can just call it `firstName` :
 
 **ModuleA.js**
 
@@ -1653,16 +1651,15 @@ import firstName from './ModuleB.js';
 console.log(firstName);
 ```
 
-This is going to work because we are going to be exporting only a single value from `ModuleB.js` and that is going to be captured in whatever we are importing. 
+This is going to work because we are going to be exporting only a single value from `ModuleB.js` and that is going to be captured in whatever we are importing.
 
-So `firstName` is going to be mapped onto `fname`, so if we go ahead and log to the console our output would be same i.e Sunil. 
-
+So `firstName` is going to be mapped onto `fname`, so if we go ahead and log to the console our output would be same i.e Sunil.
 
 ![js-named-exports](/img/js-named-exports.jpg)
 
-So that's how `default` export work. Another thing to keep in mind as we can also provide alias for importing `default` but the only thing is we need to use curly braces. 
+So that's how `default` export work. Another thing to keep in mind as we can also provide alias for importing `default` but the only thing is we need to use curly braces.
 
-So `default as f`, so this default is going to be the default import from `ModuleB.js` and we just going to alias it with `f`. 
+So `default as f`, so this default is going to be the default import from `ModuleB.js` and we just going to alias it with `f`.
 
 **ModuleA.js**
 
@@ -1676,8 +1673,7 @@ So when we save this and refresh we will get the same output.
 
 ![js-named-exports](/img/js-named-exports.jpg)
 
-So aliases work with `default` imports as well. 
-
+So aliases work with `default` imports as well.
 
 <br/>
 <div align="right">
@@ -1687,8 +1683,19 @@ So aliases work with `default` imports as well.
 
 #### Exporting Functions and Classes
 
-As we exported variables we can also export functions and classes in ES6. 
+As we exported variables we can also export functions and classes in ES6.
 
+Let's take an example:
+
+Over here in `ModuleB.js` we are going to create a new function `greet` and this is going to accept a parameter and all it does is going to log to the console.
+
+**ModuleB.js**
+
+```javascript
+function greet(message) {
+  console.log(message);
+}
+```
 
 <br/>
 <div align="right">
