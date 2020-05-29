@@ -1723,6 +1723,8 @@ let's pass `Hello Sunil`. So when we save this our output would be:
 
 ![js-function-module-export-import](/img/js-function-module-export-import.jpg)
 
+So that's the basic idea behind exporting functions and importing them. Just add the `export` keyword and you `import` it and you can call it in the module where you have imported it. 
+
 
 
 <br/>
