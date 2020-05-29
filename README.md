@@ -1470,7 +1470,7 @@ So now our variable `fname` is ready to be accessed in other modules.
 
 So how do we import that over to `ModuleA.js`?
 
-So to import variables we use the keyword `import` followed by name of the variable, type `fname’ within curly braces.
+So to import variables we use the keyword `import` followed by name of the variable, type `fname` within curly braces.
 
 But from where are we importing it? From a file called ModuleB.js in the current directory(./)
 
