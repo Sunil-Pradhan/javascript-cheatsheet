@@ -1814,9 +1814,71 @@ You can have multiple named exports per module. Named exports are useful to expo
 
 ![js-importing-named](/img/js-importing-named.jpg)
 
+**Multiple named export:**
+
+**Mobile.js**
+
+```javascript
+//Multiple Named export
+
+class Nokia {
+  volumnUp() {
+    console.log('High Volume');
+  }
+}
+
+function show() {
+  console.log('Hello Module');
+}
+
+export const a = 10;
+
+export { Nokia, show };
+```
+
+**App.js**
+
+```javascript
+//Multiple Named import
+import { Nokia, show, a } from './mobile.js';
+const n = new Nokia();
+n.volumnUp();
+show();
+console.log(a);
+```
+
 **Importing all:**
 
-![js-importing-all](/img/js-importing-all.jpg)
+**Mobile.js**
+
+```javascript
+//Multiple Named export
+
+class Nokia {
+  volumnUp() {
+    console.log('High Volume');
+  }
+}
+
+function show() {
+  console.log('Hello Module');
+}
+
+export const a = 10;
+
+export { Nokia, show };
+```
+
+**App.js**
+
+```javascript
+//Multiple Named import
+import * as device from './mobile.js';
+const n = new Nokia();
+n.volumnUp();
+show();
+console.log(a);
+```
 
 **Use default and named together:**
 
