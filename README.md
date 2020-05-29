@@ -1625,6 +1625,9 @@ So let's save this and the name has been changed from `Rula` to `Anil`.
 
 Whenever we have modules that **export only a single value or a function** then, we can make use of the `default` keyword while exporting.
 
+:bulb: **TIP:** You can have only one `default` `export` per module and it can be imported with any name. 
+
+
 So consider this example, in our `ModuleB.js`, I am going to have a new variable:
 
 **ModuleB.js**
