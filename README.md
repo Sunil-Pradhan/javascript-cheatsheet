@@ -1697,6 +1697,18 @@ function greet(message) {
 }
 ```
 
+Then to export the function just like exporting a variable we can attach `export` keyword at the beginning.
+
+
+**ModuleB.js**
+
+```javascript
+export function greet(message) {
+  console.log(message);
+}
+```
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
