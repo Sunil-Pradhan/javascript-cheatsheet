@@ -1578,7 +1578,7 @@ import { fname as f, lname as l } from './ModuleB.js';
 console.log(`${fname} ${lname}`);
 ```
 
-So when you use an alias for an import you must use that alias else it would throw an error,so we need to change this to `f` and `l`. 
+So when you use an alias for an import you must use that alias else it would throw an error, so we need to change this to `f` and `l`. 
 
 **ModuleA.js**
 
