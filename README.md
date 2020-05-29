@@ -1528,7 +1528,7 @@ import { fname, lname } from './ModuleB.js';
 console.log(fname);
 ```
 
-In console log use backticks for `$fname` and `$lname`.
+In console log use backticks for `fname` and `lname`.
 
 **ModuleA.js**
 
