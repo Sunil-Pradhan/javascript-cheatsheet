@@ -1748,6 +1748,25 @@ class GreetMessage {
 }
 ```
 
+Now to export the class we can use the `export` keyword again and attach it at the very beginning.
+
+**ModuleB.js**
+
+```javascript
+export function greet(message) {
+  console.log(message);
+}
+
+export class GreetMessage {
+  constructor() {
+    console.log('Constructor');
+  }
+  greet() {
+    console.log('Greet Function');
+  }
+}
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
