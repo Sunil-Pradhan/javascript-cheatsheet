@@ -1672,6 +1672,10 @@ import { default as f } from './ModuleB.js';
 console.log(f);
 ```
 
+So when we save this and refresh we will get the same output.
+
+![js-named-exports](/img/js-named-exports.jpg)
+
 <hr>
 
 <a name="com-res"></a>
