@@ -1787,6 +1787,9 @@ And when we save this and head over to the browser our output would be:
 ![js-class-module-export-import](/img/js-class-module-export-import.jpg)
 
 
+So we have `Hello Sunil` which is the function and then we have the `constructor` invoked and then we have the `greet` function log to the console. 
+
+Here we have the `constructor` and the `greet` function both of them were imported and invoked when we created this instance of the class. 
 
 
 <br/>
