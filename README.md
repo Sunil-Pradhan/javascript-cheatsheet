@@ -1450,6 +1450,8 @@ There are two different types of `export` - `named` and `default`. You can have 
 
 #### Named Exports
 
+You can have multiple named exports per module. Named exports are useful to export several values. During the import, it is mandatory to use the same name of the corresponding object. 
+
 We have two files **ModuleA.js** & **ModuleB.js**, now let's head over to **ModuleB.js** and create a new variable.
 
 **ModuleB.js**
