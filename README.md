@@ -1767,6 +1767,18 @@ export class GreetMessage {
 }
 ```
 
+So let's go back to `ModuleA.js` and by next to `greet` we need to specify `GreetMessage`. 
+
+
+**ModuleA.js**
+
+```javascript
+import { greet, GreetMessage } from './ModuleB.js';
+
+greet('Hello Sunil');
+```
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
