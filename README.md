@@ -1450,7 +1450,7 @@ There are two different types of `export` - `named` and `default`. You can have 
 
 #### Named Exports
 
-You can have multiple named exports per module. Named exports are useful to export several values. During the import, it is mandatory to use the same name of the corresponding object. 
+You can have multiple named exports per module. Named exports are useful to export several values. During the import, it is mandatory to use the same name of the corresponding object.
 
 We have two files **ModuleA.js** & **ModuleB.js**, now let's head over to **ModuleB.js** and create a new variable.
 
@@ -1627,8 +1627,7 @@ So let's save this and the name has been changed from `Rula` to `Anil`.
 
 Whenever we have modules that **export only a single value or a function** then, we can make use of the `default` keyword while exporting.
 
-:bulb: **TIP:** You can have only one `default` `export` per module and it can be imported with any name. 
-
+:bulb: **TIP:** You can have only one `default` `export` per module and it can be imported with any name.
 
 So consider this example, in our `ModuleB.js`, I am going to have a new variable:
 
@@ -1772,10 +1771,9 @@ export class GreetMessage {
 }
 ```
 
-So let's go back to `ModuleA.js` and by next to `greet` we need to specify `GreetMessage`. 
+So let's go back to `ModuleA.js` and by next to `greet` we need to specify `GreetMessage`.
 
-And over here let's create a new instance of the class, so `let` `gm` is equal to a `new GreetMessage` and then call `gm.greet()`. 
-
+And over here let's create a new instance of the class, so `let` `gm` is equal to a `new GreetMessage` and then call `gm.greet()`.
 
 **ModuleA.js**
 
@@ -1787,15 +1785,14 @@ greet('Hello Sunil');
 let gm = new GreetMessage();
 gm.greet();
 ```
-And when we save this and head over to the browser our output would be: 
+
+And when we save this and head over to the browser our output would be:
 
 ![js-class-module-export-import](/img/js-class-module-export-import.jpg)
 
+So we have `Hello Sunil` which is the function and then we have the `constructor` invoked and then we have the `greet` function log to the console.
 
-So we have `Hello Sunil` which is the function and then we have the `constructor` invoked and then we have the `greet` function log to the console. 
-
-Here we have the `constructor` and the `greet` function both of them were imported and invoked when we created this instance of the class. 
-
+Here we have the `constructor` and the `greet` function both of them were imported and invoked when we created this instance of the class.
 
 <br/>
 <div align="right">
@@ -1805,20 +1802,19 @@ Here we have the `constructor` and the `greet` function both of them were import
 
 #### Summary - Module - Import & Export
 
-**Importing defaults:** 
+**Importing defaults:**
 
-You can have only one `default` `export` per module. A `default` `export` can be imported with any name. 
+You can have only one `default` `export` per module. A `default` `export` can be imported with any name.
 
 ![js-importing-defaults](/img/js-importing-defaults.jpg)
 
-
 **Importing named:**
 
-You can have multiple named exports per module. Named exports are useful to export several values. During the import, it is mandatory to use the same name of the corresponding object. 
+You can have multiple named exports per module. Named exports are useful to export several values. During the import, it is mandatory to use the same name of the corresponding object.
 
 ![js-importing-named](/img/js-importing-named.jpg)
 
-**Importing all:** 
+**Importing all:**
 
 ![js-importing-all](/img/js-importing-all.jpg)
 
@@ -1844,7 +1840,7 @@ export default Nokia;
 export { show };
 ```
 
-**App.js** 
+**App.js**
 
 ```javascript
 // Named import
@@ -1854,11 +1850,6 @@ n.volumnUp();
 show();
 console.log(a);
 ```
-
-![js-importing-default-and-named](/img/js-importing-default-and-named.jpg)
-
-
-
 
 <hr>
 
