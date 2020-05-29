@@ -1643,9 +1643,15 @@ While importing it there are few changes the first thing is you can leave out th
 
 And the second thing is unlike `named` export where the name of the variable while exporting has to match the name while importing in module but in `default` export and import the name doesn't have to match. 
 
+So over here we can just call it `firstName` : 
 
+**ModuleA.js**
 
+```javascript
+import firstName from './ModuleB.js';
 
+console.log(firstName);
+```
 
 <hr>
 
