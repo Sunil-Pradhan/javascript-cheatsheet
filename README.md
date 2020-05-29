@@ -1676,6 +1676,26 @@ So when we save this and refresh we will get the same output.
 
 ![js-named-exports](/img/js-named-exports.jpg)
 
+So aliases work with `default` imports as well. 
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### Exporting Functions and Classes
+
+When
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <hr>
 
 <a name="com-res"></a>
