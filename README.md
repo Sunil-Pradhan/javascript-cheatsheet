@@ -1723,9 +1723,30 @@ let's pass `Hello Sunil`. So when we save this our output would be:
 
 ![js-function-module-export-import](/img/js-function-module-export-import.jpg)
 
-So that's the basic idea behind exporting functions and importing them. Just add the `export` keyword and you `import` it and you can call it in the module where you have imported it. 
+So that's the basic idea behind exporting functions and importing them. Just add the `export` keyword and you `import` it and you can call it in the module where you have imported it.
 
+So next let's have a look at how to `export` and `import` classes.
 
+For this we are going to create a new class `GreetMessage` and this is going to have a `constructor` and within the constructor,let's just log "Constructor."
+
+And let's also have a simple function greet and it's just going to log to the console "Greet Function."
+
+**ModuleB.js**
+
+```javascript
+export function greet(message) {
+  console.log(message);
+}
+
+class GreetMessage {
+  constructor() {
+    console.log('Constructor');
+  }
+  greet() {
+    console.log('Greet Function');
+  }
+}
+```
 
 <br/>
 <div align="right">
