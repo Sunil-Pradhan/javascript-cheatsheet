@@ -1822,6 +1822,12 @@ You can have multiple named exports per module. Named exports are useful to expo
 
 ![js-importing-all](/img/js-importing-all.jpg)
 
+**Importing default and named:**
+
+![js-importing-default-and-named](/img/js-importing-default-and-named.jpg)
+
+
+
 
 <hr>
 
