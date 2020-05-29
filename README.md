@@ -1803,6 +1803,17 @@ Here we have the `constructor` and the `greet` function both of them were import
 </div>
 <br/>
 
+#### Summary - Module - Import & Export
+
+**Importing defaults:** 
+
+You can have only one `default` `export` per module. A `default` `export` can be imported with any name. 
+
+![js-importing-defaults](/img/js-importing-defaults.jpg)
+
+
+
+
 <hr>
 
 <a name="com-res"></a>
