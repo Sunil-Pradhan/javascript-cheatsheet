@@ -1782,6 +1782,10 @@ greet('Hello Sunil');
 let gm = new GreetMessage();
 gm.greet();
 ```
+And when we save this and head over to the browser our output would be: 
+
+![js-class-module-export-import](/img/js-class-module-export-import.jpg)
+
 
 
 
