@@ -1627,6 +1627,19 @@ So let's save this and the name has been changed from `Rula` to `Anil`.
 
 Whenever we have modules that **export only a single value or a function** then, we can make use of the `default` keyword while exporting. 
 
+So consider this example, in our `ModuleB.js`,  I am going to have a new variable: 
+
+**ModuleB.js**
+
+```javascript
+let fname = 'Sunil';
+
+export default fname;
+```
+
+And now since this is going to be the only export from this particular file or module we can use export `default` and then without curly braces the name of the variable. 
+
+
 <hr>
 
 <a name="com-res"></a>
