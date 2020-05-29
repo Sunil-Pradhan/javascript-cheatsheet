@@ -1480,7 +1480,7 @@ But from where are we importing it? From a file called `ModuleB.js` in the curre
 import { fname } from './ModuleB.js';
 ```
 
-Try log to the console ‘fname’:
+Try log to the console `fname`:
 
 ```javascript
 import { fname } from './ModuleB.js';
