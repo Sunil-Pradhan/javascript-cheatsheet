@@ -2024,6 +2024,27 @@ show();
 console.log(a);
 ```
 
+**Default import and export for variable:**
+
+**Mobile.js**
+
+```javascript
+//Default export variable
+
+const a = 10;
+export default a;
+```
+
+**App.js**
+
+
+```javascript
+//Default import variable
+import a from "./mobile.js"
+console.log(a);
+```
+
+
 <hr>
 
 <a name="com-res"></a>
