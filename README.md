@@ -2120,6 +2120,11 @@ class Nokia {
 export default Nokia;
 ```
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 
 <hr>
