@@ -2079,6 +2079,47 @@ function show() {
 export default show;
 ```
 
+**Class import and export:** 
+
+**Mobile.js**
+
+```javascript
+//Default export class
+
+export default class Nokia {
+	volumnUp() {
+		console.log("High Volume");
+	}
+}
+```
+
+
+**App.js**
+
+```javascript
+//Default import class
+import Nokia from "./mobile.js";
+
+const n = new Nokia();
+n.volumnUp();
+```
+
+Same but different way to represent:
+
+**Mobile.js**
+
+```javascript
+//Default export class
+
+class Nokia {
+	volumnUp() {
+		console.log("High Volume");
+	}
+}
+
+export default Nokia;
+```
+
 
 
 <hr>
