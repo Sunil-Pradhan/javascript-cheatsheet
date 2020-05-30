@@ -2037,12 +2037,48 @@ export default a;
 
 **App.js**
 
-
 ```javascript
 //Default import variable
 import a from "./mobile.js"
 console.log(a);
 ```
+
+**Function import and export:** 
+
+**Mobile.js**
+
+```javascript
+
+//Default export function
+
+export default function show() {
+	console.log("Hello Module");
+}
+```
+
+**App.js**
+
+```javascript
+//Default import function
+import show from "./mobile.js"
+show();
+```
+
+Same but different way to represent:
+
+
+**Mobile.js**
+
+```javascript
+//Default export function
+
+function show() {
+	console.log("Hello Module");
+}
+
+export default show;
+```
+
 
 
 <hr>
