@@ -1445,6 +1445,29 @@ console.log(add(2, 2));
 </div>
 <br/>
 
+
+#### Variable scope in JavaScript function
+
+It has two types: 
+
+* Global Scope
+* Local Scope
+
+**Global Scope:**
+
+* A variable that is declared outside a function definition is a global variable, and its value is accessible and modifiable throughout your program. 
+
+* In a web browser, global variables are deleted when you close the browser window (or tab), but remain available to new pages loaded into the same window. 
+
+
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-rest-spread"></a>
 
 ## Rest & Spread Operator
