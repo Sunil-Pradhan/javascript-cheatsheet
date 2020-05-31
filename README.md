@@ -1394,12 +1394,20 @@ person(20, ['Anil', 'Sahu']);
 </div>
 <br/>
 
-
 #### Return statement in JavaScript function
 
-A return statement in JavaScript function may return any type of data, including arrays and objects. 
+A return statement in JavaScript function may return any type of data, including arrays and objects.
 
-When 
+Syntax:
+
+````javascript
+function function_name(para1, para2,...) {
+  //code block
+  return (expression);
+  //expression can be variable, arrays or objects
+}
+
+It says - I am going to return some expression where I am being called for. 
 
 <br/>
 <div align="right">
@@ -1423,7 +1431,7 @@ Syntax:
 function function_name(...args) {
   //code block
 }
-```
+````
 
 You can also pass some sample parameters while declaring Rest operator(...).
 
@@ -1435,7 +1443,7 @@ function function_name(a, ...args) {
 }
 ```
 
-:bulb: **TIP:** The Rest operator(...) must be the last parameter to a function. 
+:bulb: **TIP:** The Rest operator(...) must be the last parameter to a function.
 
 **Example(Without parameter):**
 
@@ -1463,14 +1471,13 @@ show(10, 20, 30, 40);
 //[ 20, 30, 40 ]
 ```
 
-Here you can see it assigns `a = 10` and the rest of the arguments are assigned to 20, 30, 40. 
+Here you can see it assigns `a = 10` and the rest of the arguments are assigned to 20, 30, 40.
 
-This is the reason why it's called a Rest operator. Rest arguments for Rest parameters(...).  
-
+This is the reason why it's called a Rest operator. Rest arguments for Rest parameters(...).
 
 If you want to access only 20 or 30 then how can you do it?
 
-Rest operator is just an array so by using index value you can access the value 20 or 30  it.  
+Rest operator is just an array so by using index value you can access the value 20 or 30 it.
 
 **Example(Using index value):**
 
@@ -1488,10 +1495,7 @@ show(10, 20, 30, 40);
 
 **Difference between Rest operator and Arguments object:**
 
-Arguments object is not a real Array, while Rest operator are Array instances, meaning methods like `sort`, `map`, `forEach` or `pop` can be applied on it directly. 
-
-
-
+Arguments object is not a real Array, while Rest operator are Array instances, meaning methods like `sort`, `map`, `forEach` or `pop` can be applied on it directly.
 
 <br/>
 <div align="right">
