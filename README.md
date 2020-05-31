@@ -1394,6 +1394,21 @@ person(20, ['Anil', 'Sahu']);
 </div>
 <br/>
 
+
+#### Return statement in JavaScript function
+
+A return statement in JavaScript function may return any type of data, including arrays and objects. 
+
+When 
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+
 <a name="js-rest-spread"></a>
 
 ## Rest & Spread Operator
