@@ -1423,7 +1423,23 @@ console.log(x);
 //output = 30
 ```
 
+ But what is the benefit of using return statement: 
 
+If you want to pass different arguments but with the same parameters then it can be a helpful. 
+
+```javascript
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(10, 20));
+console.log(add(1, 2));
+console.log(add(2, 2));
+
+//output = 30
+//output = 3
+//output = 4
+```
 
 <br/>
 <div align="right">
