@@ -1487,7 +1487,20 @@ show();
 
 //output - I am local variable
 ```
+If try from outside function then: 
 
+```javascript 
+function show() {
+  var j = 'I am local variable';
+  //local variable
+  console.log(j);
+}
+show();
+console.log(j);
+
+//output - I am local variable
+//output - Error - ReferenceError: j is not defined
+```
 
 
 <br/>
