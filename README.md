@@ -1410,15 +1410,23 @@ function function_name(...args) {
 }
 ```
 
+You can also pass some sample parameters while declaring Rest operator(...).
+
+Syntax:
+
+```javascript
+function function_name(a, ...args) {
+  //code block
+}
+```
+
+:bulb: **TIP:** The Rest operator(...) must be the last parameter to a function. 
 
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
-
-
 
 <a name="js-module"></a>
 
@@ -1459,7 +1467,7 @@ And that's the basic idea behind JavaScript Module - Export and Import
     <h1>Learn JavaScript Module</h1>
   </body>
 </html>
-````
+```
 
 Two more files: **ModuleA.js**, **ModuleB.js**
 
