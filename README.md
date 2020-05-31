@@ -1422,7 +1422,7 @@ function function_name(a, ...args) {
 
 :bulb: **TIP:** The Rest operator(...) must be the last parameter to a function. 
 
-Example: 
+**Example(Without parameter):**
 
 ```javascript
 function show(...args) {
@@ -1432,6 +1432,20 @@ function show(...args) {
 show(10, 20, 30, 40);
 
 //[ 10, 20, 30, 40 ]
+```
+
+**Example(With parameter):**
+
+```javascript
+function show(a, ...args) {
+  console.log(a);
+  console.log(args);
+}
+
+show(10, 20, 30, 40);
+
+//10
+//[ 20, 30, 40 ]
 ```
 
 <br/>
