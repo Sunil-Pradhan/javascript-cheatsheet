@@ -1448,6 +1448,11 @@ show(10, 20, 30, 40);
 //[ 20, 30, 40 ]
 ```
 
+Here you can see it assigns `a = 10` and the rest of the arguments are assigned to 20, 30, 40. 
+
+This is the reason why it's called a Rest operator. Rest arguments for Rest parameters(...).  
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
