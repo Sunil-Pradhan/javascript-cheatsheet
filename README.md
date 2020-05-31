@@ -20,8 +20,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Module - Import & Export](#js-module)
 - [Complementary Resources](#com-res)
 
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -1396,18 +1394,21 @@ person(20, ['Anil', 'Sahu']);
 </div>
 <br/>
 
-
-
-
 <a name="js-rest-spread"></a>
 
 ## Rest & Spread Operator
 
 ### Rest operator
 
-The Rest operator allows you to represent an indefinite number of arguments as an array. 
+The Rest operator allows you to represent an indefinite number of arguments as an array.
 
+Syntax:
 
+```javascript
+function function_name(...args) {
+  //code block
+}
+```
 
 
 <br/>
@@ -1458,7 +1459,7 @@ And that's the basic idea behind JavaScript Module - Export and Import
     <h1>Learn JavaScript Module</h1>
   </body>
 </html>
-```
+````
 
 Two more files: **ModuleA.js**, **ModuleB.js**
 
@@ -2065,20 +2066,19 @@ export default a;
 
 ```javascript
 //Default import variable
-import a from "./mobile.js"
+import a from './mobile.js';
 console.log(a);
 ```
 
-**Function import and export:** 
+**Function import and export:**
 
 **Mobile.js**
 
 ```javascript
-
 //Default export function
 
 export default function show() {
-	console.log("Hello Module");
+  console.log('Hello Module');
 }
 ```
 
@@ -2086,12 +2086,11 @@ export default function show() {
 
 ```javascript
 //Default import function
-import show from "./mobile.js"
+import show from './mobile.js';
 show();
 ```
 
 Same but different way to represent:
-
 
 **Mobile.js**
 
@@ -2099,13 +2098,13 @@ Same but different way to represent:
 //Default export function
 
 function show() {
-	console.log("Hello Module");
+  console.log('Hello Module');
 }
 
 export default show;
 ```
 
-**Class import and export:** 
+**Class import and export:**
 
 **Mobile.js**
 
@@ -2113,18 +2112,17 @@ export default show;
 //Default export class
 
 export default class Nokia {
-	volumnUp() {
-		console.log("High Volume");
-	}
+  volumnUp() {
+    console.log('High Volume');
+  }
 }
 ```
-
 
 **App.js**
 
 ```javascript
 //Default import class
-import Nokia from "./mobile.js";
+import Nokia from './mobile.js';
 
 const n = new Nokia();
 n.volumnUp();
@@ -2138,9 +2136,9 @@ Same but different way to represent:
 //Default export class
 
 class Nokia {
-	volumnUp() {
-		console.log("High Volume");
-	}
+  volumnUp() {
+    console.log('High Volume');
+  }
 }
 
 export default Nokia;
@@ -2151,7 +2149,6 @@ export default Nokia;
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 <hr>
 
