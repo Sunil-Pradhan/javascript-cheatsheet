@@ -1408,9 +1408,7 @@ function function_name(para1, para2,...) {
 }
 ```
 
-
-It says - I am going to return some expression where I am being called for. 
-
+It says - I am going to return some expression where I am being called for.
 
 ```javascript
 function add(a, b) {
@@ -1423,9 +1421,9 @@ console.log(x);
 //output = 30
 ```
 
- But what is the benefit of using return statement: 
+But what is the benefit of using return statement:
 
-If you want to pass different arguments but with the same parameters then it can be a helpful. 
+If you want to pass different arguments but with the same parameters then it can be a helpful.
 
 ```javascript
 function add(a, b) {
@@ -1447,8 +1445,6 @@ console.log(add(2, 2));
 </div>
 <br/>
 
-
-
 <a name="js-rest-spread"></a>
 
 ## Rest & Spread Operator
@@ -1463,7 +1459,7 @@ Syntax:
 function function_name(...args) {
   //code block
 }
-````
+```
 
 You can also pass some sample parameters while declaring Rest operator(...).
 
@@ -1486,7 +1482,7 @@ function show(...args) {
 
 show(10, 20, 30, 40);
 
-//[ 10, 20, 30, 40 ]
+//output [ 10, 20, 30, 40 ]
 ```
 
 **Example(With parameter):**
@@ -1499,8 +1495,8 @@ function show(a, ...args) {
 
 show(10, 20, 30, 40);
 
-//10
-//[ 20, 30, 40 ]
+output; //10
+output; //[ 20, 30, 40 ]
 ```
 
 Here you can see it assigns `a = 10` and the rest of the arguments are assigned to 20, 30, 40.
@@ -1521,8 +1517,8 @@ function show(a, ...args) {
 
 show(10, 20, 30, 40);
 
-//10
-//30
+//output 10
+//output 30
 ```
 
 **Difference between Rest operator and Arguments object:**
