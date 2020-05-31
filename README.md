@@ -1406,8 +1406,24 @@ function function_name(para1, para2,...) {
   return (expression);
   //expression can be variable, arrays or objects
 }
+```
+
 
 It says - I am going to return some expression where I am being called for. 
+
+
+```javascript
+function add(a, b) {
+  return a + b;
+}
+
+var x = add(10, 20);
+console.log(x);
+
+//output = 30
+```
+
+
 
 <br/>
 <div align="right">
