@@ -1445,20 +1445,48 @@ console.log(add(2, 2));
 </div>
 <br/>
 
-
 #### Variable scope in JavaScript function
 
-It has two types: 
+It has two types:
 
-* Global Scope
-* Local Scope
+- Global Scope
+- Local Scope
 
 **Global Scope:**
 
-* A variable that is declared outside a function definition is a global variable, and its value is accessible and modifiable throughout your program. 
+- A variable that is declared outside a function definition is a global variable, and its value is accessible and modifiable throughout your program.
 
-* In a web browser, global variables are deleted when you close the browser window (or tab), but remain available to new pages loaded into the same window. 
+- In a web browser, global variables are deleted when you close the browser window (or tab), but remain available to new pages loaded into the same window.
 
+Example:
+
+```javascript
+var x = 'I am global variable';
+function show() {
+  console.log(x); //inside function
+}
+show();
+console.log(x); //outside function
+
+//output - I am global variable
+//output - I am global variable
+```
+
+**Local Scope:**
+
+* A variable that is declared inside a function definition is local. It is created and destroyed every time the function is executed, and it cannot be accessed by any code outside the function. 
+* Inside a function, if a variable has not been declared with `var` keyword it is created as a global variable.   
+
+```javascript
+function show() {
+  var j = 'I am local variable';
+  //local variable
+  console.log(j);
+}
+show();
+
+//output - I am local variable
+```
 
 
 
