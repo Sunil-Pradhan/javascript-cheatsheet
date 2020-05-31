@@ -1400,7 +1400,7 @@ A return statement in JavaScript function may return any type of data, including
 
 Syntax:
 
-````javascript
+```javascript
 function function_name(para1, para2,...) {
   //code block
   return (expression);
