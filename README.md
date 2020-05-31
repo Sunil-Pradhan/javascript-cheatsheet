@@ -1471,6 +1471,12 @@ show(10, 20, 30, 40);
 //30
 ```
 
+**Difference between Rest operator and Arguments object:**
+
+Arguments object is not a real Array, while Rest operator are Array instances, meaning methods like `sort`, `map`, `forEach` or `pop` can be applied on it directly. 
+
+
+
 
 <br/>
 <div align="right">
