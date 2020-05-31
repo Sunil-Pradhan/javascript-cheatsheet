@@ -1453,6 +1453,25 @@ Here you can see it assigns `a = 10` and the rest of the arguments are assigned 
 This is the reason why it's called a Rest operator. Rest arguments for Rest parameters(...).  
 
 
+If you want to access only 20 or 30 then how can you do it?
+
+Rest operator is just an array so by using index value you can access the value 20 or 30  it.  
+
+**Example(Using index value):**
+
+```javascript
+function show(a, ...args) {
+  console.log(a);
+  console.log(args[1]);
+}
+
+show(10, 20, 30, 40);
+
+//10
+//30
+```
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
