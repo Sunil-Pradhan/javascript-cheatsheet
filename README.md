@@ -1422,6 +1422,18 @@ function function_name(a, ...args) {
 
 :bulb: **TIP:** The Rest operator(...) must be the last parameter to a function. 
 
+Example: 
+
+```javascript
+function show(...args) {
+  console.log(args);
+}
+
+show(10, 20, 30, 40);
+
+//[ 10, 20, 30, 40 ]
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
