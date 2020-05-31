@@ -16,8 +16,11 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Operators](#js-operators)
 - [Branches and Loops](#js-branch-loops)
 - [Function](#js-function)
+- [Rest & Spread Operator](#js-rest-spread)
 - [Module - Import & Export](#js-module)
 - [Complementary Resources](#com-res)
+
+
 
 <a name="js-basics"></a>
 
@@ -1392,6 +1395,29 @@ person(20, ['Anil', 'Sahu']);
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+
+
+
+<a name="js-rest-spread"></a>
+
+## Rest & Spread Operator
+
+### Rest operator
+
+The Rest operator allows you to represent an indefinite number of arguments as an array. 
+
+
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+
 
 <a name="js-module"></a>
 
