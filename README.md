@@ -1992,6 +1992,8 @@ console.log(getArrowvalue(5));
 ```
 When you pass a single argument you can omit `()`: 
 
+few other examples;
+
 
 ```
 var myfunN = c => c;             //work
