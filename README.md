@@ -19,7 +19,11 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Variable Hoisting](#js-variable-hosting)
 - [Rest & Spread Operator](#js-rest-spread)
 - [Module - Import & Export](#js-module)
+- [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
+
+
+
 
 <a name="js-basics"></a>
 
@@ -187,11 +191,11 @@ console.log(typeof x);
 //output - undefined
 ```
 
-Without initialization we are trying to access it so that it throws us `undefined`. 
+Without initialization we are trying to access it so that it throws us `undefined`.
 
-**Condtion 1:** `undefined` when you declare a variable but not initialized a value and trying to access it then it will show you as `undefined`. 
+**Condtion 1:** `undefined` when you declare a variable but not initialized a value and trying to access it then it will show you as `undefined`.
 
-**Condtion 2:** Trying to access a variable which doesn’t even exist then it will show you an `undefined`. 
+**Condtion 2:** Trying to access a variable which doesn’t even exist then it will show you an `undefined`.
 
 ### Boolean:
 
@@ -275,9 +279,18 @@ console.log(typeof x);
 //output - object
 ```
 
-Here variable is empty so that it is at the beginning behave as a placeholder which you will use to put something inside of it. 
+Here variable is empty so that it is at the beginning behave as a placeholder which you will use to put something inside of it.
 
-The value does not go to `undefined` so that you have to put initially `null` which later you can change it to a value. 
+The value does not go to `undefined` so that you have to put initially `null` which later you can change it to a value.
+
+:bulb: **TIP:** Difference between undefined and null in JavaScript
+
+Undefined means the value has not been set, whereas null means the value has been set to empty.
+
+```javascript
+var a = null; //null example
+var a; //undefined example
+```
 
 <br/>
 <div align="right">
@@ -552,7 +565,7 @@ console.log(a);
 
 ### Typeof operator:
 
-The typeof operator is used to get the data type of its operand. The operand can be either a literal or a data structure such as a variable, a function, or an object. 
+The typeof operator is used to get the data type of its operand. The operand can be either a literal or a data structure such as a variable, a function, or an object.
 
 ```javascript
 var a = 10;
@@ -2054,20 +2067,19 @@ var myfunN = (a,b) => {return a+b};   //work
 
 #### Immediately invoked functions expression in JavaScript(IIFE)
 
-
-* IIFE (Immediately invoked function expression) is a JavaScript function that runs as soon as it is defined. 
-* It is a design pattern which is also known as **Self-Executing Anonymous Function** and contains two major parts. 
-* The first is the anonymous function with lexical scope enclosed within the **Grouping Operator()**. This prevents accessing variables within the IIFE idiom as well as polluting the global scope. 
-* The second part is creating the **immediately executing function expression ()**, through which the JavaScript engine will directly interpret the function. 
+- IIFE (Immediately invoked function expression) is a JavaScript function that runs as soon as it is defined.
+- It is a design pattern which is also known as **Self-Executing Anonymous Function** and contains two major parts.
+- The first is the anonymous function with lexical scope enclosed within the **Grouping Operator()**. This prevents accessing variables within the IIFE idiom as well as polluting the global scope.
+- The second part is creating the **immediately executing function expression ()**, through which the JavaScript engine will directly interpret the function.
 
 :bulb: **TIP:** IIFE function is like an anonymous function only but it is self executing.
 
-It means IIFE allows you to avoid creation of global variables and functions. 
+It means IIFE allows you to avoid creation of global variables and functions.
 
-* As it doesn’t define variables and functions globally so there will be no name conflicts. 
-* Scope is limited to that particular function
+- As it doesn’t define variables and functions globally so there will be no name conflicts.
+- Scope is limited to that particular function
 
-Example: 
+Example:
 
 ```javascript
 (function () {
@@ -2077,7 +2089,7 @@ Example:
 //output - Hello Sunil
 ```
 
-Here `var` is only limited to this function only. You can't access this variable outside of it. 
+Here `var` is only limited to this function only. You can't access this variable outside of it.
 
 **Example(With variable):**
 
@@ -2098,12 +2110,9 @@ Here `var` is only limited to this function only. You can't access this variable
 })(30, 20);
 
 //output - 30, 20
-
 ```
 
-
-:bulb: **TIP:** IIFE function is self-executing 
-
+:bulb: **TIP:** IIFE function is self-executing
 
 <br/>
 <div align="right">
@@ -2257,8 +2266,6 @@ show();
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
-
 
 <a name="js-rest-spread"></a>
 
@@ -3069,6 +3076,36 @@ class Nokia {
 
 export default Nokia;
 ```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+<a name="js-oop"></a>
+
+## Object Oriented Programming - OOP
+
+Object oriented programming (OOP) is a programming language model organized around objects rather than “actions” and data rather than logic. 
+
+Four pillar of OOPS: Encapsulation, abstraction, inheritance,polymorphism    
+
+**Encapsulation:**
+
+It encapsulates your data. 
+
+**Abstraction:**
+
+Which is important only to show that much and rest needs to hide it.
+
+**Inheritance:**
+
+Inheritance means something you receive from your ancestry.
+
+**Polymorphism:**
+
+polymorphism means you are writing a single function() but it works differently for different situations.  
 
 <br/>
 <div align="right">
