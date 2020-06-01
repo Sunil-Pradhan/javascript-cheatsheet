@@ -1589,6 +1589,7 @@ show();
 </div>
 <br/>
 
+
 #### Block scope in JavaScript function:
 
 Block scope is achieved by JavaScript's two new keyword for variable - `let` and `const`.
@@ -1612,6 +1613,39 @@ Variable 10 is only available for this if block, outside of this block if you tr
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+
+#### Closure in JavaScript function
+
+A closure is an inner function that has access to the outer function’s variables. 
+
+For every closure we have three scopes: 
+
+* Local scope (Own scope) 
+* Outer functions scope
+* Global scope 
+
+
+**Outer functions scope**
+
+When an inner function variable is able to access an outer function variable then it is called **outer function scope**.
+
+Example: 
+
+```javascript
+var i = 10;
+function show() {
+  var j = 20;
+  console.log(j);
+  console.log(i);
+  //outer scope
+}
+show();
+
+//output - 20, 10
+```
+
+
 
 <a name="js-variable-hosting"></a>
 
