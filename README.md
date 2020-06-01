@@ -1930,6 +1930,19 @@ myfun();
 //output - Sunil
 ```
 
+**Arrow function with default parameter**
+
+Example: 
+
+```javascript
+var myfun = (a, b = 20) => {
+  console.log(a + ' ' + b);
+};
+
+myfun(10);
+
+//output - 10, 20
+```
 
 
 
