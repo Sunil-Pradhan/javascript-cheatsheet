@@ -1738,6 +1738,23 @@ function show() {
 
 Here variable declaration takes top of the function so that we are getting value of `undefined`. 
 
+Fix: 
+
+```javascript
+var i = 'Hello';
+console.log(i);
+
+function show() {
+  var i = 'Sunil';
+  console.log(i);
+  
+}
+show();
+
+//output - Hello
+//output - Sunil
+```
+
 
 <br/>
 <div align="right">
