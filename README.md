@@ -1688,6 +1688,11 @@ show();
 //output - j - Local variable of outer function
 ```
 
+Here closure is able to access local variables as well as outer function variable and more it can even access global variable in your program too. 
+
+Example: 
+
+
 
 <a name="js-variable-hosting"></a>
 
