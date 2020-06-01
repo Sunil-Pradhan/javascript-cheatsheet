@@ -1474,8 +1474,8 @@ console.log(x); //outside function
 
 **Local Scope:**
 
-* A variable that is declared inside a function definition is local. It is created and destroyed every time the function is executed, and it cannot be accessed by any code outside the function. 
-* Inside a function, if a variable has not been declared with `var` keyword it is created as a global variable.   
+- A variable that is declared inside a function definition is local. It is created and destroyed every time the function is executed, and it cannot be accessed by any code outside the function.
+- Inside a function, if a variable has not been declared with `var` keyword it is created as a global variable.
 
 ```javascript
 function show() {
@@ -1487,9 +1487,10 @@ show();
 
 //output - I am local variable
 ```
-If try from outside function then: 
 
-```javascript 
+If try from outside function then:
+
+```javascript
 function show() {
   var j = 'I am local variable';
   //local variable
@@ -1523,8 +1524,21 @@ if (true) {
 //output - ReferenceError: j is not defined
 ```
 
-Now try an example where you are not declaring a variable but assign it. In this case it turns into a global variable  even if it is a  local variable. 
+Now try an example where you are not declaring a variable but assign it. In this case it turns into a global variable even if it is a local variable.
 
+```javascript
+function show() {
+  j = 'I am now global variable';
+  //it's now global
+  console.log(j);
+}
+show();
+
+console.log(j);
+
+//output - I am now global variable
+//output - I am now global variable
+```
 
 <br/>
 <div align="right">
