@@ -1816,6 +1816,33 @@ a(10, 20);
 //output - 10 20
 ```
 
+**Return anonymous function or Passing anonymous function as argument:** 
+
+
+```javascript
+function disp(myfun) {
+  return myfun;
+}
+console.log(disp('Hello Sunil'));
+
+//output - Hello Sunil
+```
+
+In this example we have passed a string in function as an argument.  But now we need to see how to pass an anonymous function as an argument. 
+
+```javascript 
+function disp(myfun) {
+  return myfun();
+}
+console.log(
+  disp(function () {
+    return 'Hello Sunil';
+  })
+);
+
+//Output - Hello Sunil
+```
+
 
 
 <br/>
