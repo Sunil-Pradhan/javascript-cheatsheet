@@ -1985,6 +1985,15 @@ So no parameters right now and we are returning 10.
 **Single parameter**
 
 ```
+const getArrowvalue = m => 10 * m;
+console.log(getArrowvalue(5));
+
+//output - 50
+```
+When you pass a single argument you can omit `()`: 
+
+
+```
 var myfunN = c => c;             //work
 var myfunN = c => {c};           //not work
 var myfunN = c => {return c};    //work
