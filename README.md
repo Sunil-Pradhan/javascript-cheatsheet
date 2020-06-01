@@ -16,9 +16,12 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Operators](#js-operators)
 - [Branches and Loops](#js-branch-loops)
 - [Function](#js-function)
+- [Variable Hoisting](#js-variable-hosting)
 - [Rest & Spread Operator](#js-rest-spread)
 - [Module - Import & Export](#js-module)
 - [Complementary Resources](#com-res)
+
+
 
 <a name="js-basics"></a>
 
@@ -1614,6 +1617,13 @@ Variable 10 is only available for this if block, outside of this block if you tr
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+
+<a name="js-variable-hosting"></a>
+
+## Variable Hoisting
+
+The Res
 
 
 <a name="js-rest-spread"></a>
