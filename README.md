@@ -2050,6 +2050,35 @@ Example:
 //output - Hello Sunil
 ```
 
+Here `var` is only limited to this function only. You can't access this variable outside of it. 
+
+Example: 
+
+```javascript
+(function () {
+  var a = 10;
+  console.log(a);
+})();
+
+//output - 10
+```
+
+With parameter;
+
+Example: 
+
+```javascript
+(function (a, b) {
+  console.log(a, b);
+})(30, 20);
+
+//output - 30, 20
+
+```
+
+
+:bulb: **TIP:** IIFE function is self-executing 
+
 
 <br/>
 <div align="right">
