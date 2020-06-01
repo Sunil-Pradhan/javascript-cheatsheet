@@ -21,8 +21,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Module - Import & Export](#js-module)
 - [Complementary Resources](#com-res)
 
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -1480,7 +1478,7 @@ console.log(x); //outside function
 - A variable that is declared inside a function definition is local. It is created and destroyed every time the function is executed, and it cannot be accessed by any code outside the function.
 - Inside a function, if a variable has not been declared with `var` keyword it is created as a global variable.
 
-Example: 
+Example:
 
 ```javascript
 function show() {
@@ -1495,7 +1493,7 @@ show();
 
 If try from outside function then:
 
-Example: 
+Example:
 
 ```javascript
 function show() {
@@ -1512,7 +1510,7 @@ console.log(j);
 
 But when you try to access other functions local variables from one other function, you would get an error.
 
-Example: 
+Example:
 
 ```javascript
 var i = 'I am global';
@@ -1535,7 +1533,7 @@ if (true) {
 
 Now try an example where you are not declaring a variable but assign it. In this case it turns into a global variable even if it is a local variable.
 
-Example: 
+Example:
 
 ```javascript
 function show() {
@@ -1551,14 +1549,13 @@ console.log(j);
 //output - I am now global variable
 ```
 
-
-:bulb: **TIP:** If there is a function inside a function the inner function can access the outer function’s variables but the outer function can not access the inner function’s variables. 
+:bulb: **TIP:** If there is a function inside a function the inner function can access the outer function’s variables but the outer function can not access the inner function’s variables.
 
 <br>
 
-:bulb: **TIP:** Function arguments (parameters) work as local variables inside functions. 
+:bulb: **TIP:** Function arguments (parameters) work as local variables inside functions.
 
-Example: 
+Example:
 
 ```javascript
 function show() {
@@ -1586,22 +1583,20 @@ show();
 //output - ReferenceError: i is not defined
 ```
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
 
+#### Block scope in JavaScript function:
 
-#### Block scope in JavaScript function: 
-
-Block scope is achieved by JavaScript's two new keyword for variable - `let` and `const`. 
+Block scope is achieved by JavaScript's two new keyword for variable - `let` and `const`.
 
 ```javascript
-//block scope 
+//block scope
 if (true) {
-  let i = 10; //local variable 
+  let i = 10; //local variable
   console.log(i);
 }
 console.log(i);
@@ -1610,38 +1605,42 @@ console.log(i);
 //output - ReferenceError: i is not defined
 ```
 
-Variable 10 is only available for this if block, outside of this block if you try to access 10 then it would throw an error. 
+Variable 10 is only available for this if block, outside of this block if you try to access 10 then it would throw an error.
 
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
 
-Hoisting is JavaScript's default behavior of moving declarations to the top of the function, if defined in a function, or the top of the global context, if outside a function. 
+Hoisting is JavaScript's default behavior of moving declarations to the top of the function, if defined in a function, or the top of the global context, if outside a function.
 
-_It means if you have declared a variable inside a function then its declaration part will move to the top._  
+_It means if you have declared a variable inside a function then its declaration part will move to the top._
 
 _But if you have not declared a variable inside any function simply declare it in your program then it globally moves to the top._
 
 ```javascript
 var a; //variable declaration
-a = 10; //variable initialization 
+a = 10; //variable initialization
 ```
 
+Example(We write code):
 
+```javascript
+var a = 10;
+document.write(a);
+var b = 20;
+```
 
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 <a name="js-rest-spread"></a>
 
