@@ -1589,7 +1589,6 @@ show();
 </div>
 <br/>
 
-
 #### Block scope in JavaScript function:
 
 Block scope is achieved by JavaScript's two new keyword for variable - `let` and `const`.
@@ -1614,23 +1613,21 @@ Variable 10 is only available for this if block, outside of this block if you tr
 </div>
 <br/>
 
-
 #### Closure in JavaScript function
 
-A closure is an inner function that has access to the outer function’s variables. 
+A closure is an inner function that has access to the outer function’s variables.
 
-For every closure we have three scopes: 
+For every closure we have three scopes:
 
-* Local scope (Own scope) 
-* Outer functions scope
-* Global scope 
-
+- Local scope (Own scope)
+- Outer functions scope
+- Global scope
 
 **Outer functions scope**
 
 When an inner function variable is able to access an outer function variable then it is called **outer function scope**.
 
-Example: 
+Example:
 
 ```javascript
 var i = 10;
@@ -1644,9 +1641,10 @@ show();
 
 //output - 20, 10
 ```
-:bulb: **TIP:** Nested function is closure and closure is also a nested function  
 
-Example: 
+:bulb: **TIP:** Nested function is closure and closure is also a nested function
+
+Example:
 
 ```javascript
 function show() {
@@ -1667,7 +1665,7 @@ show();
 
 This is the basic concept of nested function. But where is the closure ??
 
-It is when you are accessing the outer function variable inside of your inner function then its called closure. 
+It is when you are accessing the outer function variable inside of your inner function then its called closure.
 
 ```javascript
 function show() {
@@ -1688,9 +1686,9 @@ show();
 //output - j - Local variable of outer function
 ```
 
-Here closure is able to access local variables as well as outer function variable and more it can even access global variable in your program too. 
+Here closure is able to access local variables as well as outer function variable and more it can even access global variable in your program too.
 
-Example: 
+Example:
 
 ```javascript
 var a = 'Global variable';
@@ -1718,7 +1716,6 @@ show();
 But outer function can not access the inner function variable.
 
 ```javascript
-
 function show() {
   var j = 'j - Local variable of outer function';
   console.log(j);
@@ -1727,7 +1724,6 @@ function show() {
     var k = 'k - Local variable of inner function';
     console.log(k);
     console.log(j);
-
   }
   innerFun();
   console.log(k);
@@ -1746,15 +1742,13 @@ show();
 </div>
 <br/>
 
+#### Function expression
 
+When we create a function and assign it to a variable then its called as function expression.
 
-#### Function expression 
+:bulb: **TIP:** When you are creating function expression you need to close it by semicolon (;).
 
-When we create a function and assign it to a variable then its called as function expression. 
-
-:bulb: **TIP:** When you are creating function expression you need to close it by semicolon (;). 
-
-Example: 
+Example:
 
 ```javascript
 var myfun = function show() {
@@ -1764,12 +1758,12 @@ myfun();
 
 //output - Hello Sunil
 ```
-Remember you can not call function expression before function definition else it would throw an error. 
 
-Why so? 
+Remember you can not call function expression before function definition else it would throw an error.
+
+Why so?
 
 Function expressions in JavaScript are not hoisted, unlike function declarations.
-
 
 <br/>
 <div align="right">
@@ -1777,24 +1771,23 @@ Function expressions in JavaScript are not hoisted, unlike function declarations
 </div>
 <br/>
 
-
 #### Anonymous function
 
-Anonymous functions allow the creation of functions which have no specified name. 
+Anonymous functions allow the creation of functions which have no specified name.
 
 In other words, a JavaScript function which does not have any name.
 
-Anonymous function can: 
+Anonymous function can:
 
-* Stored in a variable
-* Returned in a function
-* Pass in a function 
+- Stored in a variable
+- Returned in a function
+- Pass in a function
 
-:bulb: **TIP:** When you are creating an anonymous function you need to close it by semicolon (;). 
+:bulb: **TIP:** When you are creating an anonymous function you need to close it by semicolon (;).
 
-**Store anonymous function in a variable:** 
+**Store anonymous function in a variable:**
 
-Example: 
+Example:
 
 ```javascript
 var a = function () {
@@ -1818,7 +1811,7 @@ a(10, 20);
 
 **Returning anonymous function**
 
-Example: 
+Example:
 
 ```javascript
 function disp(a) {
@@ -1834,8 +1827,7 @@ console.log(anoFun(20));
 //output - 30
 ```
 
-**Pass in a function or Passing anonymous function as argument:** 
-
+**Pass in a function or Passing anonymous function as argument:**
 
 ```javascript
 function disp(myfun) {
@@ -1846,9 +1838,9 @@ console.log(disp('Hello Sunil'));
 //output - Hello Sunil
 ```
 
-In this example we have passed a string in function as an argument.  But now we need to see how to pass an anonymous function as an argument. 
+In this example we have passed a string in function as an argument. But now we need to see how to pass an anonymous function as an argument.
 
-```javascript 
+```javascript
 function disp(myfun) {
   return myfun();
 }
@@ -1861,6 +1853,36 @@ console.log(
 //Output - Hello Sunil
 ```
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### Arrow function
+
+An arrow function expression has a shorter syntax compared to function expression. Arrow functions are always anonymous in nature.
+
+In other words, arrow function syntax will be small and it will be anonymous means this function will not have any name. 
+
+Syntax:
+
+```javascript
+() => {
+  statements;
+};
+```
+
+Example: 
+
+```javascript
+var myFun = () => {
+  console.log('Hello Sunil');
+};
+myFun();
+
+//output - Hello Sunil
+```
 
 
 <br/>
@@ -1868,8 +1890,6 @@ console.log(
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
-
 
 <a name="js-variable-hosting"></a>
 
@@ -1994,9 +2014,9 @@ function show() {
 }
 ```
 
-Here variable declaration takes top of the function so that we are getting value of `undefined`. 
+Here variable declaration takes top of the function so that we are getting value of `undefined`.
 
-Fix: 
+Fix:
 
 ```javascript
 var i = 'Hello';
@@ -2005,14 +2025,12 @@ console.log(i);
 function show() {
   var i = 'Sunil';
   console.log(i);
-  
 }
 show();
 
 //output - Hello
 //output - Sunil
 ```
-
 
 <br/>
 <div align="right">
@@ -2034,7 +2052,7 @@ Syntax:
 function function_name(...args) {
   //code block
 }
-````
+```
 
 You can also pass some sample parameters while declaring Rest operator(...).
 
