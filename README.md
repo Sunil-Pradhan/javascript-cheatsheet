@@ -1966,7 +1966,7 @@ myfun(10, 20, 30, 40, 50);
 
 **No parameter**
 
-If our function has just a single statement within the body then we can remove curly braces `{}` and we can also remove `return` keyword. 
+If our function has just a single statement within the body then we can remove curly braces `{}` and we can also remove `return` keyword.
 
 Example:
 
@@ -1979,8 +1979,7 @@ console.log(getArrowvalue());
 
 Here we have the fat arrow syntax. On the left hand side you have the parameter list to the function and on the right hand side you have an implicit return value.
 
-So no parameters right now and we are returning 10. 
-
+So no parameters right now and we are returning 10.
 
 **Single parameter**
 
@@ -1990,10 +1989,10 @@ console.log(getArrowvalue(5));
 
 //output - 50
 ```
-When you pass a single argument you can omit `()`: 
+
+When you pass a single argument you can omit `()`:
 
 few other examples;
-
 
 ```
 var myfunN = c => c;             //work
@@ -2002,6 +2001,17 @@ var myfunN = c => {return c};    //work
 ```
 
 **Two or more parameter**
+
+But when you pass two or more argument then you need to keep `()`:
+
+```javascript
+const getArrowvalue = (m, bonus) => 10 * m + bonus;
+console.log(getArrowvalue(5, 50));
+
+//output - 100
+```
+
+few other examples;
 
 ```
 var myfunN = (a,b) => a+b;            //work
