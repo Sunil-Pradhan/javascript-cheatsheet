@@ -1650,9 +1650,7 @@ b = 20;
 
 :bulb: In summary first declaration and then initialization. 
 
-This is the reason why we are able to use variables in JavaScript even before it has been declared. 
-
-Remember, only variable declarations are hoisted to the top, not variable initialization.  
+This is the reason why we are able to use variables in JavaScript even before it has been declared. But remember, only variable declarations are hoisted to the top, not variable initialization.  
 
 <br/>
 <div align="right">
