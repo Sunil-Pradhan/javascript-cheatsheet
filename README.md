@@ -1748,7 +1748,7 @@ show();
 
 
 
-#### Function Expression 
+#### Function expression 
 
 When we create a function and assign it to a variable then its called as function expression. 
 
@@ -1775,6 +1775,17 @@ Function expressions in JavaScript are not hoisted, unlike function declarations
 </div>
 <br/>
 
+
+#### Anonymous function
+
+When we cre
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 
 
