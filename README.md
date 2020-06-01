@@ -1523,6 +1523,8 @@ if (true) {
 //output - ReferenceError: j is not defined
 ```
 
+Now try an example where you are not declaring a variable but assign it. In this case it turns into a global variable  even if it is a  local variable. 
+
 
 <br/>
 <div align="right">
