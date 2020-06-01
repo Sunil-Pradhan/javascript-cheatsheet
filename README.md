@@ -1638,7 +1638,7 @@ document.write(a);
 var b = 20;
 ```
 
-JavaScript understand internally this way at compile phase:
+JavaScript understand internally this way at compile phase
 
 ```javascript
 var a;
@@ -1648,9 +1648,36 @@ document.write(a);
 b = 20;
 ```
 
-:bulb: In summary first declaration and then initialization. 
+:bulb: In summary first declaration and then initialization.
 
-This is the reason why we are able to use variables in JavaScript even before it has been declared. But remember, only variable declarations are hoisted to the top, not variable initialization.  
+This is the reason why we are able to use variables in JavaScript even before it has been declared. But remember, only variable declarations are hoisted to the top, not variable initialization.
+
+But due to this nature of hosting you can come across into problem;
+
+Example:
+
+```javascript
+var a = 10;
+console.log(a + ' ' + b);
+var b = 20;
+
+//output 10 undefined
+```
+
+Why are you getting `undefined`?
+
+Because JavaScript read your code:
+
+```javascript
+var a;
+var b;
+
+a = 10;
+console.log(a  + “ “ +b);
+b = 20;
+```
+
+`b` has been declared but later initialized. So that once console statment displayed then it reaches to `b= 20` which result into undefined. 
 
 <br/>
 <div align="right">
