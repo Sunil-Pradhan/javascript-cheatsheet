@@ -1628,13 +1628,27 @@ var a; //variable declaration
 a = 10; //variable initialization
 ```
 
-Example(We write code):
+Example:
+
+We write code
 
 ```javascript
 var a = 10;
 document.write(a);
 var b = 20;
 ```
+
+JavaScript understand internally this way at compile phase:
+
+```javascript
+var a;
+var b;
+a = 10;
+document.write(a);
+b = 20;
+```
+
+:bulb: In summary first declaration and then initialization. 
 
 <br/>
 <div align="right">
