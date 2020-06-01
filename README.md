@@ -1644,7 +1644,49 @@ show();
 
 //output - 20, 10
 ```
+:bulb: **TIP:** Nested function is closure and closure is also a nested function  
 
+Example: 
+
+```javascript
+function show() {
+  var j = 'j - Local variable of outer function';
+  console.log(j);
+
+  function innerFun() {
+    var k = 'k - Local variable of inner function';
+    console.log(k);
+  }
+  innerFun();
+}
+show();
+
+//output - j - Local variable of outer function
+//output - k - Local variable of inner function
+```
+
+This is the basic concept of nested function. But where is the closure ??
+
+It is when you are accessing the outer function variable inside of your inner function then its called closure. 
+
+```javascript
+function show() {
+  var j = 'j - Local variable of outer function';
+  console.log(j);
+
+  function innerFun() {
+    var k = 'k - Local variable of inner function';
+    console.log(k);
+    console.log(j);
+  }
+  innerFun();
+}
+show();
+
+//output - j - Local variable of outer function
+//output - k - Local variable of inner function
+//output - j - Local variable of outer function
+```
 
 
 <a name="js-variable-hosting"></a>
