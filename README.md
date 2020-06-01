@@ -1944,6 +1944,19 @@ myfun(10);
 //output - 10, 20
 ```
 
+**Arrow function with Rest operator**
+
+Example: 
+
+```javascript
+var myfun = (a, ...args) => {
+  console.log(a + ' <rest---> ' + args);
+};
+
+myfun(10, 20, 30, 40, 50);
+
+//output - 10 <rest---> 20,30,40,50
+```
 
 
 <br/>
