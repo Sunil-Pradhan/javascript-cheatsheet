@@ -275,6 +275,10 @@ console.log(typeof x);
 //output - object
 ```
 
+Here variable is empty so that it is at the beginning behave as a placeholder which you will use to put something inside of it. 
+
+The value does not go to `undefined` so that you have to put initially `null` which later you can change it to a value. 
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
