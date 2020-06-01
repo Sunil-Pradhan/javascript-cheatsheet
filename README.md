@@ -1962,7 +1962,7 @@ myfun(10, 20, 30, 40, 50);
 //output - 10 <rest---> 20,30,40,50
 ```
 
-Note on arrow function with return statement:
+:bulb: **Note:** Arrow function with return statement:
 
 ```
 var myfunN = c => c;             //work
