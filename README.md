@@ -1909,6 +1909,17 @@ myfun(10);
 
 //output - 10
 ```
+But if you have multiple parameters then you should use `()`
+
+```javascript
+var myfun = (a, b) => {
+  console.log(a, b);
+};
+myfun(10, 20);
+
+//output - 10, 20
+```
+
 
 
 <br/>
