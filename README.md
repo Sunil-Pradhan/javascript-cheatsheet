@@ -1502,6 +1502,27 @@ console.log(j);
 //output - Error - ReferenceError: j is not defined
 ```
 
+But when you try to access other functions local variables from one other function, you would get an error.
+
+```javascript
+var i = 'I am global';
+function show() {
+  var j = 'I am local variable';
+  //local variable
+  console.log(j);
+}
+show();
+console.log(i);
+
+if (true) {
+  console.log(j);
+}
+
+//output - I am local variable
+//output - I am global
+//output - ReferenceError: j is not defined
+```
+
 
 <br/>
 <div align="right">
