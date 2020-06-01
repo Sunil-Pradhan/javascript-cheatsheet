@@ -2040,6 +2040,15 @@ It means IIFE allows you to avoid creation of global variables and functions.
 * As it doesn’t define variables and functions globally so there will be no name conflicts. 
 * Scope is limited to that particular function
 
+Example: 
+
+```javascript
+(function () {
+  console.log('Hello Sunil');
+})();
+
+//output - Hello Sunil
+```
 
 
 <br/>
