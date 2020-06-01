@@ -1964,10 +1964,20 @@ myfun(10, 20, 30, 40, 50);
 
 :bulb: **Note:** Arrow function with return statement:
 
+**Single parameter**
+
 ```
 var myfunN = c => c;             //work
 var myfunN = c => {c};           //not work
 var myfunN = c => {return c};    //work
+```
+
+**Two or more parameter**
+
+```
+var myfunN = (a,b) => a+b;            //work
+var myfunN = (a,b) => {a+b};          //not work - undefined
+var myfunN = (a,b) => {return a+b};   //work
 ```
 
 <br/>
