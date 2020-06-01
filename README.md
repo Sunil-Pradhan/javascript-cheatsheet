@@ -1692,6 +1692,28 @@ Here closure is able to access local variables as well as outer function variabl
 
 Example: 
 
+```javascript
+var a = 'Global variable';
+console.log(a);
+function show() {
+  var j = 'j - Local variable of outer function';
+  console.log(j);
+
+  function innerFun() {
+    var k = 'k - Local variable of inner function';
+    console.log(k);
+    console.log(j);
+    console.log(a);
+  }
+  innerFun();
+}
+show();
+
+//output - j - Local variable of outer function
+//output - k - Local variable of inner function
+//output - j - Local variable of outer function
+//output - Global variable
+```
 
 
 <a name="js-variable-hosting"></a>
