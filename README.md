@@ -1707,6 +1707,25 @@ function show() {
 }
 ```
 
+Lets create a new variable inside the function: 
+
+```javascript
+var i = 'Hello';
+console.log(i);
+
+function show() {
+  console.log(i);
+  var i = 'Pradhan';
+}
+show();
+
+//output - Hello
+//output - undefined
+```
+
+
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
