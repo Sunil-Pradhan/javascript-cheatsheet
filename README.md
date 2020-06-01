@@ -1540,6 +1540,13 @@ console.log(j);
 //output - I am now global variable
 ```
 
+
+:bulb: **TIP:** If there is a function inside a function the inner function can access the outer function’s variables but the outer function can not access the inner function’s variables. 
+
+<br>
+
+:bulb: **TIP:** Function arguments (parameters) work as local variables inside functions. 
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
