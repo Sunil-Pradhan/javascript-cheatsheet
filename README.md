@@ -1886,6 +1886,20 @@ myFun();
 
 :bulb: **TIP:** You can not call arrow function before declaration. 
 
+**Arrow function with parameters**
+
+Example: 
+
+```javascript
+var myfun = (a) => {
+  console.log(a);
+};
+myfun(10);
+
+//output - 10
+```
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
