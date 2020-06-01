@@ -540,6 +540,23 @@ console.log(a);
 </div>
 <br/>
 
+### Typeof operator in JavaScript:
+
+The typeof operator is used to get the data type of its operand. The operand can be either a literal or a data structure such as a variable, a function, or an object. 
+
+```javascript
+var a = 10;
+console.log(typeof a);
+
+//output - number
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-branch-loops"></a>
 
 ## Branches and Loops
