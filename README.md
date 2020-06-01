@@ -1863,7 +1863,7 @@ console.log(
 
 An arrow function expression has a shorter syntax compared to function expression. Arrow functions are always anonymous in nature.
 
-In other words, arrow function syntax will be small and it will be anonymous means this function will not have any name. 
+In other words, arrow function syntax will be small and it will be anonymous means this function will not have any name.
 
 Syntax:
 
@@ -1873,7 +1873,7 @@ Syntax:
 };
 ```
 
-Example: 
+Example:
 
 ```javascript
 var myFun = () => {
@@ -1884,11 +1884,11 @@ myFun();
 //output - Hello Sunil
 ```
 
-:bulb: **TIP:** You can not call arrow function before declaration. 
+:bulb: **TIP:** You can not call arrow function before declaration.
 
 **Arrow function with parameters**
 
-Example: 
+Example:
 
 ```javascript
 var myfun = (a) => {
@@ -1899,16 +1899,17 @@ myfun(10);
 //output - 10
 ```
 
-When passing a single parameter it is not mandatory to have `( )`, without it also work. 
+When passing a single parameter it is not mandatory to have `( )`, without it also work.
 
 ```javascript
-var myfun = a => {
+var myfun = (a) => {
   console.log(a);
 };
 myfun(10);
 
 //output - 10
 ```
+
 But if you have multiple parameters then you should use `()`.
 
 ```javascript
@@ -1919,7 +1920,8 @@ myfun(10, 20);
 
 //output - 10, 20
 ```
-If you don't have any parameters then you need to keep `()`. 
+
+If you don't have any parameters then you need to keep `()`.
 
 ```javascript
 var myfun = () => {
@@ -1930,9 +1932,11 @@ myfun();
 //output - Sunil
 ```
 
+:bulb: **TIP:** If you have a single parameter then it is not mandatory to have `()` as well as `{}`. But if you have a block of statement then you need to put `{}`.
+
 **Arrow function with default parameter**
 
-Example: 
+Example:
 
 ```javascript
 var myfun = (a, b = 20) => {
@@ -1946,7 +1950,7 @@ myfun(10);
 
 **Arrow function with Rest operator**
 
-Example: 
+Example:
 
 ```javascript
 var myfun = (a, ...args) => {
@@ -1958,6 +1962,13 @@ myfun(10, 20, 30, 40, 50);
 //output - 10 <rest---> 20,30,40,50
 ```
 
+Note on arrow function with return statement:
+
+```
+var myfunN = c => c;             //work
+var myfunN = c => {c};           //not work
+var myfunN = c => {return c};    //work
+```
 
 <br/>
 <div align="right">
