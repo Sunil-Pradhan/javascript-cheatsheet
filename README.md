@@ -1590,6 +1590,26 @@ show();
 </div>
 <br/>
 
+
+#### Block scope in JavaScript function: 
+
+Block scope is achieved by JavaScript's two new keyword for variable - `let` and `const`. 
+
+```javascript
+//block scope 
+if (true) {
+  let i = 10; //local variable 
+  console.log(i);
+}
+console.log(i);
+
+//output - 10
+//output - ReferenceError: i is not defined
+```
+
+Variable 10 is only available for this if block, outside of this block if you try to access 10 then it would throw an error. 
+
+
 <a name="js-rest-spread"></a>
 
 ## Rest & Spread Operator
