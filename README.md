@@ -1715,6 +1715,32 @@ show();
 //output - Global variable
 ```
 
+But outer function can not access the inner function variable.
+
+```javascript
+
+function show() {
+  var j = 'j - Local variable of outer function';
+  console.log(j);
+
+  function innerFun() {
+    var k = 'k - Local variable of inner function';
+    console.log(k);
+    console.log(j);
+
+  }
+  innerFun();
+  console.log(k);
+}
+show();
+
+//output - j - Local variable of outer function
+//output - k - Local variable of inner function
+//output - j - Local variable of outer function
+//output - ReferenceError: k is not defined
+```
+
+
 
 <a name="js-variable-hosting"></a>
 
