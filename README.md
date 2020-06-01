@@ -1477,6 +1477,8 @@ console.log(x); //outside function
 - A variable that is declared inside a function definition is local. It is created and destroyed every time the function is executed, and it cannot be accessed by any code outside the function.
 - Inside a function, if a variable has not been declared with `var` keyword it is created as a global variable.
 
+Example: 
+
 ```javascript
 function show() {
   var j = 'I am local variable';
@@ -1489,6 +1491,8 @@ show();
 ```
 
 If try from outside function then:
+
+Example: 
 
 ```javascript
 function show() {
@@ -1504,6 +1508,8 @@ console.log(j);
 ```
 
 But when you try to access other functions local variables from one other function, you would get an error.
+
+Example: 
 
 ```javascript
 var i = 'I am global';
@@ -1526,6 +1532,8 @@ if (true) {
 
 Now try an example where you are not declaring a variable but assign it. In this case it turns into a global variable even if it is a local variable.
 
+Example: 
+
 ```javascript
 function show() {
   j = 'I am now global variable';
@@ -1546,6 +1554,35 @@ console.log(j);
 <br>
 
 :bulb: **TIP:** Function arguments (parameters) work as local variables inside functions. 
+
+Example: 
+
+```javascript
+function show() {
+  //local variable
+
+  var j;
+  j = 'J a local variable of outer function';
+  console.log(j);
+
+  function innerFun() {
+    //local variable
+    var i;
+    i = 'I a local variable of inner function';
+    console.log(i);
+    console.log(j);
+  }
+  innerFun();
+  console.log(i);
+}
+show();
+
+//output - J a local variable of outer function
+//output - I a local variable of inner function
+//output - J a local variable of outer function
+//output - ReferenceError: i is not defined
+```
+
 
 <br/>
 <div align="right">
