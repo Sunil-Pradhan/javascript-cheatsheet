@@ -1752,6 +1752,8 @@ show();
 
 When we create a function and assign it to a variable then its called as function expression. 
 
+:bulb: **TIP:** When you are creating function expression you need to close it by semicolon (;). 
+
 Example: 
 
 ```javascript
@@ -1788,7 +1790,31 @@ Anonymous function can:
 * Returned in a function
 * Pass in a function 
 
+:bulb: **TIP:** When you are creating an anonymous function you need to close it by semicolon (;). 
 
+**Store anonymous function in a variable:** 
+
+Example: 
+
+```javascript
+var a = function () {
+  console.log('Hello Sunil');
+};
+a();
+
+//output - Hello Sunil
+```
+
+Passing some parameters then;
+
+```javascript
+var a = function (x, y) {
+  console.log(x + ' ' + y);
+};
+a(10, 20);
+
+//output - 10 20
+```
 
 
 
