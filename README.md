@@ -1909,7 +1909,7 @@ myfun(10);
 
 //output - 10
 ```
-But if you have multiple parameters then you should use `()`
+But if you have multiple parameters then you should use `()`.
 
 ```javascript
 var myfun = (a, b) => {
@@ -1919,6 +1919,17 @@ myfun(10, 20);
 
 //output - 10, 20
 ```
+If you don't have any parameters then you need to keep `()`. 
+
+```javascript
+var myfun = () => {
+  console.log('Sunil');
+};
+myfun();
+
+//output - Sunil
+```
+
 
 
 
