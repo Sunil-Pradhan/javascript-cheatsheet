@@ -1899,6 +1899,17 @@ myfun(10);
 //output - 10
 ```
 
+When passing a single parameter it is not mandatory to have `( )`, without it also work. 
+
+```javascript
+var myfun = a => {
+  console.log(a);
+};
+myfun(10);
+
+//output - 10
+```
+
 
 <br/>
 <div align="right">
