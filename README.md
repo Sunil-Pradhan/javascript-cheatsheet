@@ -1964,6 +1964,24 @@ myfun(10, 20, 30, 40, 50);
 
 :bulb: **Note:** Arrow function with return statement:
 
+**No parameter**
+
+If our function has just a single statement within the body then we can remove curly braces `{}` and we can also remove `return` keyword. 
+
+Example:
+
+```javascript
+const getArrowvalue = () => 10;
+console.log(getArrowvalue());
+
+//output - 10
+```
+
+Here we have the fat arrow syntax. On the left hand side you have the parameter list to the function and on the right hand side you have an implicit return value.
+
+So no parameters right now and we are returning 10. 
+
+
 **Single parameter**
 
 ```
