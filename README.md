@@ -2180,7 +2180,15 @@ show();
 * The first is the anonymous function with lexical scope enclosed within the **Grouping Operator()**. This prevents accessing variables within the IIFE idiom as well as polluting the global scope. 
 * The second part is creating the **immediately executing function expression ()**, through which the JavaScript engine will directly interpret the function. 
 
-:bulb: **TIP:** IIFE function is like an anonymous function only but it is self executing. 
+:bulb: **TIP:** IIFE function is like an anonymous function only but it is self executing.
+
+It means IIFE allows you to avoid creation of global variables and functions. 
+
+* As it doesn’t define variables and functions globally so there will be no name conflicts. 
+* Scope is limited to that particular function
+
+
+
 
 
 
