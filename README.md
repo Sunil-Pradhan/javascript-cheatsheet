@@ -540,7 +540,7 @@ console.log(a);
 </div>
 <br/>
 
-### Typeof operator in JavaScript:
+### Typeof operator:
 
 The typeof operator is used to get the data type of its operand. The operand can be either a literal or a data structure such as a variable, a function, or an object. 
 
