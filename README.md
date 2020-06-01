@@ -1707,7 +1707,7 @@ function show() {
 }
 ```
 
-Lets create a new variable inside the function: 
+Lets create a new variable inside the function:
 
 ```javascript
 var i = 'Hello';
@@ -1715,7 +1715,7 @@ console.log(i);
 
 function show() {
   console.log(i);
-  var i = 'Pradhan';
+  var i = 'Sunil';
 }
 show();
 
@@ -1723,7 +1723,20 @@ show();
 //output - undefined
 ```
 
+JavaScript understand internally this way at compile phase
 
+```javascript
+var i;
+i = 'Hello';
+console.log(i);
+function show() {
+  var i;
+  console.log(i);
+  i = 'Sunil';
+}
+```
+
+Here variable declaration takes top of the function so that we are getting value of `undefined`. 
 
 
 <br/>
@@ -1746,7 +1759,7 @@ Syntax:
 function function_name(...args) {
   //code block
 }
-```
+````
 
 You can also pass some sample parameters while declaring Rest operator(...).
 
