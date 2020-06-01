@@ -1623,7 +1623,17 @@ Variable 10 is only available for this if block, outside of this block if you tr
 
 ## Variable Hoisting
 
-The Res
+Hoisting is JavaScript's default behavior of moving declarations to the top of the function, if defined in a function, or the top of the global context, if outside a function. 
+
+_It means if you have declared a variable inside a function then its declaration part will move to the top._  
+
+_But if you have not declared a variable inside any function simply declare it in your program then it globally moves to the top._
+
+```javascript
+var a; //variable declaration
+a = 10; //variable initialization 
+```
+
 
 
 <br/>
