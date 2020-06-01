@@ -1609,6 +1609,12 @@ console.log(i);
 
 Variable 10 is only available for this if block, outside of this block if you try to access 10 then it would throw an error. 
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 
 <a name="js-rest-spread"></a>
 
