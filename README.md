@@ -2052,7 +2052,7 @@ Example:
 
 Here `var` is only limited to this function only. You can't access this variable outside of it. 
 
-Example: 
+**Example(With variable):**
 
 ```javascript
 (function () {
@@ -2063,9 +2063,7 @@ Example:
 //output - 10
 ```
 
-With parameter;
-
-Example: 
+**Example(With parameter):**
 
 ```javascript
 (function (a, b) {
