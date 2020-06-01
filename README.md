@@ -1778,7 +1778,18 @@ Function expressions in JavaScript are not hoisted, unlike function declarations
 
 #### Anonymous function
 
-When we cre
+Anonymous functions allow the creation of functions which have no specified name. 
+
+In other words, a JavaScript function which does not have any name.
+
+Anonymous function can: 
+
+* Stored in a variable
+* Returned in a function
+* Pass in a function 
+
+
+
 
 
 <br/>
