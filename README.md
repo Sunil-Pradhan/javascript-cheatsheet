@@ -1816,7 +1816,25 @@ a(10, 20);
 //output - 10 20
 ```
 
-**Return anonymous function or Passing anonymous function as argument:** 
+**Returning anonymous function**
+
+Example: 
+
+```javascript
+function disp(a) {
+  return function (b) {
+    return a + b;
+  };
+}
+
+var anoFun = disp(10);
+
+console.log(anoFun(20));
+
+//output - 30
+```
+
+**Pass in a function or Passing anonymous function as argument:** 
 
 
 ```javascript
