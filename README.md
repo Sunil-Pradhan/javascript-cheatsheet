@@ -1884,6 +1884,7 @@ myFun();
 //output - Hello Sunil
 ```
 
+:bulb: **TIP:** You can not call arrow function before declaration. 
 
 <br/>
 <div align="right">
