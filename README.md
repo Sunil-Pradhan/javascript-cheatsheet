@@ -1654,7 +1654,7 @@ This is the reason why we are able to use variables in JavaScript even before it
 
 But due to this nature of hosting you can come across into problem;
 
-Example:
+**Example(Variable):**
 
 ```javascript
 var a = 10;
@@ -1677,7 +1677,35 @@ console.log(a  + “ “ +b);
 b = 20;
 ```
 
-`b` has been declared but later initialized. So that once console statment displayed then it reaches to `b= 20` which result into undefined. 
+`b` has been declared but later initialized. So that once console statment displayed then it reaches to `b= 20` which result into undefined.
+
+**Example(Function):**
+
+We write code
+
+```javascript
+var i = 'Hello';
+console.log(i);
+
+function show() {
+  console.log(i);
+}
+show();
+
+//output - Hello
+//output - Hello
+```
+
+JavaScript understand internally this way at compile phase
+
+```javascript
+var i;
+i = 'Hello';
+console.log(i);
+function show() {
+  console.log(i);
+}
+```
 
 <br/>
 <div align="right">
