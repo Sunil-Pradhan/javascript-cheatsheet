@@ -1626,6 +1626,13 @@ Variable 10 is only available for this if block, outside of this block if you tr
 The Res
 
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <a name="js-rest-spread"></a>
 
 ## Rest & Spread Operator
