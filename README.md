@@ -1740,6 +1740,42 @@ show();
 //output - ReferenceError: k is not defined
 ```
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+
+#### Function Expression 
+
+When we create a function and assign it to a variable then its called as function expression. 
+
+Example: 
+
+```javascript
+var myfun = function show() {
+  console.log('Hello Sunil');
+};
+myfun();
+
+//output - Hello Sunil
+```
+Remember you can not call function expression before function definition else it would throw an error. 
+
+Why so? 
+
+Function expressions in JavaScript are not hoisted, unlike function declarations.
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 
 
 <a name="js-variable-hosting"></a>
