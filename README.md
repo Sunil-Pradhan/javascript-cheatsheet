@@ -19,9 +19,9 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Variable Hoisting](#js-variable-hosting)
 - [Rest & Spread Operator](#js-rest-spread)
 - [Module - Import & Export](#js-module)
+- [Destructuring - Array & Object](#js-destructuring)
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
-
 
 
 
@@ -3076,6 +3076,20 @@ class Nokia {
 
 export default Nokia;
 ```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+<a name="js-destructuring"></a>
+
+## Destructuring - Array & Object
+
+### Array Destructuring 
+
 
 <br/>
 <div align="right">
