@@ -2124,11 +2124,10 @@ A callback function is a function which can be any function (Anonymous function,
 
 In other words, when you pass a function into another function as an argument then its called a **callback function**.
 
-Call back function is of two types: 
+Call back function is of two types:
 
-* Synchronous
-* Asynchronous
-
+- Synchronous
+- Asynchronous
 
 **Example(without parameter):**
 
@@ -2173,6 +2172,23 @@ geeky((a) => console.log('I am show function ' + a));
 //output - I am show function 101
 ```
 
+**Example(Synchronous):**
+
+ It waits for each operation to complete, after that it executes the next operation. 
+
+ ```javascript
+ function show() {
+  console.log('I am show function');
+}
+function geeky(callback) {
+  callback();
+}
+geeky(show);
+console.log('End');
+
+//output - I am show function
+//output - End
+```
 
 <br/>
 <div align="right">
