@@ -3098,6 +3098,12 @@ Create a simple employee array and is going to hold three values first one is `S
 let employee = ['Sunil', 'Pradhan', 'Male'];
 ```
 
+Next within square brackets we are going to say `fname` as first name, `lname` which is last name and then `gender` and this is going to be assigned to this employee array. 
+
+```javascript
+let [fname, lname, gender] = employee;
+```
+
 
 
 
