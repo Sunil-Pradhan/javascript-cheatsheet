@@ -2230,6 +2230,12 @@ Declare and initialize an object in JavaScript
 
 #### Object Literal in JavaScript
 
+Syntax: 
+
+```javascript
+var object_name = {};
+```
+
 Two ways you can write: `[]` or `.`
 
 **Example(using `[]`):**
