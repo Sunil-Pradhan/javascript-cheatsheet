@@ -2228,8 +2228,11 @@ Declare and initialize an object in JavaScript
 * By using Object Constructor 
 
 
-
 #### Object Literal in JavaScript
+
+Two ways you can write: `[]` or `.`
+
+**Example(using `[]`):**
 
 <br>
 
