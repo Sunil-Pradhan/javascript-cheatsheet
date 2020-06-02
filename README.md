@@ -3174,6 +3174,20 @@ console.log(gender);
 //output - Male
 ```
 
+We can also destructure using the Rest operator which helps us to have a single variable that can contain a group of elements;
+
+ ```javascript
+ let employee = ['Sunil', 'Pradhan', 'Male'];
+let [fname, ...elements] = employee;
+
+console.log(fname);
+console.log(elements);
+
+//output
+
+//Sunil
+//[ 'Pradhan', 'Male' ]
+```
 
 
 
