@@ -3090,7 +3090,7 @@ export default Nokia;
 
 Destructuring is a convenient way of extracting multiple values from data stored in objects and Arrays. 
 
-### Array Destructuring 
+### Array Destructuring:
 
 
 <br/>
