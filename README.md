@@ -2292,7 +2292,7 @@ console.log(fees['total']());
 //output - 300, 300
 ```
 
-
+**Declare and initialization of object together:**
 
 <br/>
 <div align="right">
