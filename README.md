@@ -3204,6 +3204,64 @@ console.log(gender);
 
 //Output - Sunil, Pradhan, undefined
 ```
+We don't have the gender anymore here so can specify a default value;
+
+```javascript
+let employee = ['Sunil', 'Pradhan'];
+
+let [fname, lname, gender = 'Male'] = employee;
+
+console.log(fname);
+console.log(lname);
+console.log(gender);
+
+//Output - Sunil, Pradhan, Male
+```
+
+We have `Sunil` being a `Male` since we are not specifying `Male` or a third value in our employee array. There is no destructuring for this `gender` variable so it is going to take `Male` as a default value and it's going to log on to the console. 
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+
+### Object Destructuring:
+
+Let employee there's going to be an object first name is going to be `Sunil` and then we'll have a last name which is going to be `Pradhan` and they will have gender which is going to be `Male`. 
+
+```javascript
+let employee = {
+  fname: 'Sunil',
+  lname: 'Pradhan',
+  gender: 'Male',
+};
+
+```
+Now destructure this employee object we need to use curly braces `{}`. We need to specify the variable names and we have to ensure that the property name is the same as this variable name. 
+
+So we need to have `fname`, `lname`, `gender` and this is going to be equal to an employee.
+
+```javascript
+let employee = {
+  fname: 'Sunil',
+  lname: 'Pradhan',
+  gender: 'Male',
+};
+
+let { fname, lname, gender } = employee;
+
+console.log(fname);
+console.log(lname);
+console.log(gender);
+
+
+//output - Sunil, Pradhan, Male
+```
+
+
 
 
 
