@@ -24,10 +24,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
 
-
-
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -2179,10 +2175,10 @@ geeky((a) => console.log('I am show function ' + a));
 
 **Example(Synchronous):**
 
- It waits for each operation to complete, after that it executes the next operation. 
+It waits for each operation to complete, after that it executes the next operation.
 
- ```javascript
- function show() {
+```javascript
+function show() {
   console.log('I am show function');
 }
 function geeky(callback) {
@@ -2197,7 +2193,7 @@ console.log('End');
 
 **Example(Asynchronous):**
 
-It never waits for each operation to complete, rather it executes all operations in the first GO only.  
+It never waits for each operation to complete, rather it executes all operations in the first GO only.
 
 ```javascript
 setTimeout(function show() {
@@ -2220,6 +2216,13 @@ console.log('End');
 
 ## Object
 
+An object is a collection of properties, and a property is an association between a name (or key) and a value.
+
+A property’s value can be a function, in which case the property is known as a method.
+
+:bulb: **TIP:** Objects are variables too. But objects can contain many values.
+
+<br>
 
 <br/>
 <div align="right">
