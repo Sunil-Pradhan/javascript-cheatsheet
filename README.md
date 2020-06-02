@@ -3143,6 +3143,37 @@ console.log(gender);
 
 So we can still specify any number of variables on the left hand side while destructuring an array but once the mapping is done in this case `Sunil` to first name `Pradhan` to last name and we don't have any more values to assign to the variable so `undefined` is going to be the value for this gender and so on. 
 
+We can also omit variables on the left hand side, that means: 
+
+```javascript
+let employee = ['Sunil', 'Pradhan', 'Male'];
+let [fname, lname, gender] = employee;
+
+console.log(fname);
+console.log(lname);
+console.log(gender);
+
+//output
+
+//Sunil
+//Pradhan
+//Male
+```
+
+Here in this case we only want to save this `male` into this `gender` variable, we don't want to unnecessarily have memory for a first name and last name since we are not going to be using it.
+
+In such a scenario we can just omit it but this comma right here is essential. 
+
+```javascript
+let employee = ['Sunil', 'Pradhan', 'Male'];
+let [, , gender] = employee;
+
+
+console.log(gender);
+
+//output - Male
+```
+
 
 
 
