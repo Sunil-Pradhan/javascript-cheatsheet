@@ -3261,6 +3261,32 @@ console.log(gender);
 //output - Sunil, Pradhan, Male
 ```
 
+So we have destructure this employee object by taking these individual property values and assigning them to the variables. 
+
+
+Now let's say our property name is huge and so we don't want to use such a variable name throughout in our code. So in such a case we can create an alias. 
+
+```javascript
+let employee = {
+  fname: 'Sunil',
+  lname: 'Pradhan',
+  gender: 'Male',
+};
+
+let { fname: f, lname: l, gender: g } = employee;
+
+console.log(f);
+console.log(l);
+console.log(g);
+
+//output - Sunil, Pradhan, Male
+```
+So that's pretty much how you destructure works in JavaScript objects. 
+
+You have an object and then you use the curly braces and assign it to the object and each property name should match the variable name and then the value will get assigned to it. 
+
+
+
 
 
 
