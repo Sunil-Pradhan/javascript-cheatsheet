@@ -2294,6 +2294,23 @@ console.log(fees['total']());
 
 **Declare and initialization of object together:**
 
+Example: 
+
+```javascript
+var fees = {
+  Rahul: 100,
+  Sunil: 200,
+  total: function () {
+    return 300;
+  },
+};
+console.log(fees.Rahul);
+console.log(fees.Sunil);
+console.log(fees.total());
+
+//output - 100, 200, 300
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
