@@ -16,12 +16,17 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Operators](#js-operators)
 - [Branches and Loops](#js-branch-loops)
 - [Function](#js-function)
+- [Object](#js-object)
 - [Variable Hoisting](#js-variable-hosting)
 - [Rest & Spread Operator](#js-rest-spread)
 - [Module - Import & Export](#js-module)
 - [Destructuring - Array & Object](#js-destructuring)
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
+
+
+
+
 
 <a name="js-basics"></a>
 
@@ -2204,6 +2209,17 @@ console.log('End');
 //output - End
 //output - I am show function
 ```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+<a name="js-object"></a>
+
+## Object
+
 
 <br/>
 <div align="right">
