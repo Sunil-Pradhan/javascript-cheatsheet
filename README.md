@@ -2190,6 +2190,21 @@ console.log('End');
 //output - End
 ```
 
+**Example(Asynchronous):**
+
+It never waits for each operation to complete, rather it executes all operations in the first GO only.  
+
+```javascript
+setTimeout(function show() {
+  console.log('I am show function');
+}, 5000);
+
+console.log('End');
+
+//output - End
+//output - I am show function
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
