@@ -2222,6 +2222,8 @@ A property’s value can be a function, in which case the property is known as a
 
 :bulb: **TIP:** Objects are variables too. But objects can contain many values.
 
+<br>
+
 Declare and initialize an object in JavaScript
 
 - By using Object Literal
@@ -2237,28 +2239,60 @@ var object_name = {};
 
 Two ways you can write: `[]` or `.`
 
-**Example(using `[]`):**
+**Example(using `[]` operator):**
 
 ```javascript
 var fees = {};
 fees['Sunil'] = 100;
 ```
 
-If you want to give a space between your property then you need to use double quote and try to access it via `[]` rather than `.`.
+If you want to give a space between your property then you need to use double quote and try to access it via `[]` operator rather than `.` operator.
 
 ```javascript
 var fees = {};
 fees['Sunil Pradhan'] = 100;
 ```
 
-**Example(using `.`):**
+**Example(using `.` operator):**
 
 ```javascript
 var fees = {};
 fees.sunil = 100;
 ```
 
-<br>
+**Example(access methods):**
+
+When we assign a function to an object then it is called as methods.
+
+Suppose you have defined a function other part of a program as follows;
+
+```javascript
+function sum() {
+  return 300;
+}
+```
+
+You can access this function in the following ways:
+
+```javascript
+fees[`total`] = function () {
+  return 300;
+};
+```
+
+or
+
+```javascript
+fees['total] = sum;
+```
+
+or
+
+```javascript
+fees.total = function () {
+  return 300;
+};
+```
 
 <br/>
 <div align="right">
