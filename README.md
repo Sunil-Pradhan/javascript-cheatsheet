@@ -2240,6 +2240,18 @@ Two ways you can write: `[]` or `.`
 
 **Example(using `[]`):**
 
+```javascript
+var fees = {};
+fees['Sunil'] = 100;
+```
+
+**Example(using `.`):**
+
+```javascript
+var fees = {};
+fees.sunil = 100;
+```
+
 <br>
 
 <br/>
