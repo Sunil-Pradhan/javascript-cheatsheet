@@ -2276,37 +2276,23 @@ console.log(fees.Sunil);
 
 **Example(access methods):**
 
-When we assign a function to an object then it is called as methods.
-
-Suppose you have defined a function other part of a program as follows;
 
 ```javascript
-function sum() {
-  return 300;
-}
-```
-
-You can access this function in the following ways:
-
-```javascript
-fees[`total`] = function () {
+var fees = {};
+fees['total'] = function () {
   return 300;
 };
+
+fees.total(); //by using . operator
+fees['total'](); //by using [] operator
+
+console.log(fees.total());
+console.log(fees['total']());
+
+//output - 300, 300
 ```
 
-or
 
-```javascript
-fees['total] = sum;
-```
-
-or
-
-```javascript
-fees.total = function () {
-  return 300;
-};
-```
 
 <br/>
 <div align="right">
