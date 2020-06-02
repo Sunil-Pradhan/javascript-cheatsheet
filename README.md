@@ -3188,6 +3188,22 @@ console.log(elements);
 //Sunil
 //[ 'Pradhan', 'Male' ]
 ```
+So we have `Sunil` which is assigned to first name and now since we have a Rest operator the remaining values are getting stored into an array and assigned to this element. 
+
+
+We can also use destructuring with default values;
+
+```javascript
+let employee = ['Sunil', 'Pradhan'];
+
+let [fname, lname, gender] = employee;
+
+console.log(fname);
+console.log(lname);
+console.log(gender);
+
+//Output - Sunil, Pradhan, undefined
+```
 
 
 
