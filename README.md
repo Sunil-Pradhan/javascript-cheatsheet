@@ -3122,6 +3122,30 @@ console.log(gender);
 //Male
 ```
 
+So that's a basic idea in array destructuring. We take the individual elements from an array and assign it to individual variables. 
+
+Now let's consider the second example, this time we don't have this male gender anymore.
+
+```javascript
+let employee = ['Sunil', 'Pradhan'];
+let [fname, lname, gender] = employee;
+
+console.log(fname);
+console.log(lname);
+console.log(gender);
+
+//output
+
+//Sunil
+//Pradhan
+//undefined
+```
+
+So we can still specify any number of variables on the left hand side while destructuring an array but once the mapping is done in this case `Sunil` to first name `Pradhan` to last name and we don't have any more values to assign to the variable so `undefined` is going to be the value for this gender and so on. 
+
+
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
