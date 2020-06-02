@@ -2241,9 +2241,17 @@ Two ways you can write: `[]` or `.`
 
 **Example(using `[]` operator):**
 
+we have defined our object and it is an empty object for us. 
+
 ```javascript
 var fees = {};
-fees['Sunil'] = 100;
+
+fees['Rahul'] = 100;
+fees['Sunil'] = 200;
+console.log(fees['Rahul']);
+console.log(fees['Sunil']);
+
+//output - 100, 200
 ```
 
 If you want to give a space between your property then you need to use double quote and try to access it via `[]` operator rather than `.` operator.
@@ -2257,7 +2265,13 @@ fees['Sunil Pradhan'] = 100;
 
 ```javascript
 var fees = {};
-fees.sunil = 100;
+
+fees['Rahul'] = 100;
+fees['Sunil'] = 200;
+console.log(fees.Rahul);
+console.log(fees.Sunil);
+
+//output - 100, 200
 ```
 
 **Example(access methods):**
