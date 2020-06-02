@@ -2123,6 +2123,10 @@ Here `var` is only limited to this function only. You can't access this variable
 
 A callback function is a function which can be any function (Anonymous function, Arrow function) passed into another function as an argument, which is then invoked inside the outer function to complete some kind of action. 
 
+In other words, when you pass a function into another function as an argument then its called a **callback function**.
+
+
+
 
 
 <br/>
