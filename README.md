@@ -2224,13 +2224,12 @@ A property’s value can be a function, in which case the property is known as a
 
 Declare and initialize an object in JavaScript
 
-* By using Object Literal 
-* By using Object Constructor 
-
+- By using Object Literal
+- By using Object Constructor
 
 #### Object Literal in JavaScript
 
-Syntax: 
+Syntax:
 
 ```javascript
 var object_name = {};
@@ -2243,6 +2242,13 @@ Two ways you can write: `[]` or `.`
 ```javascript
 var fees = {};
 fees['Sunil'] = 100;
+```
+
+If you want to give a space between your property then you need to use double quote and try to access it via `[]` rather than `.`.
+
+```javascript
+var fees = {};
+fees['Sunil Pradhan'] = 100;
 ```
 
 **Example(using `.`):**
