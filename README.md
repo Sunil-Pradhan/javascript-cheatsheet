@@ -2118,6 +2118,20 @@ Here `var` is only limited to this function only. You can't access this variable
 </div>
 <br/>
 
+
+#### Callback function
+
+A callback function is a function which can be any function (Anonymous function, Arrow function) passed into another function as an argument, which is then invoked inside the outer function to complete some kind of action. 
+
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
