@@ -2222,6 +2222,15 @@ A property’s value can be a function, in which case the property is known as a
 
 :bulb: **TIP:** Objects are variables too. But objects can contain many values.
 
+Declare and initialize an object in JavaScript
+
+* By using Object Literal 
+* By using Object Constructor 
+
+
+
+#### Object Literal in JavaScript
+
 <br>
 
 <br/>
