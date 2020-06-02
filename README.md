@@ -3092,6 +3092,15 @@ Destructuring is a convenient way of extracting multiple values from data stored
 
 ### Array Destructuring:
 
+Create a simple employee array and is going to hold three values first one is `Sunil`, which is first name then we will have `Pradhan` which is the last name and then we will have `Male` which is the gender. 
+
+```javascript
+let employee = ['Sunil', 'Pradhan', 'Male'];
+```
+
+
+
+
 
 <br/>
 <div align="right">
