@@ -23,8 +23,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
 
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -3083,30 +3081,46 @@ export default Nokia;
 </div>
 <br/>
 
-
 <a name="js-destructuring"></a>
 
 ## Destructuring - Array & Object
 
-Destructuring is a convenient way of extracting multiple values from data stored in objects and Arrays. 
+Destructuring is a convenient way of extracting multiple values from data stored in objects and Arrays.
 
 ### Array Destructuring:
 
-Create a simple employee array and is going to hold three values first one is `Sunil`, which is first name then we will have `Pradhan` which is the last name and then we will have `Male` which is the gender. 
+Create a simple employee array and is going to hold three values first one is `Sunil`, which is first name then we will have `Pradhan` which is the last name and then we will have `Male` which is the gender.
 
 ```javascript
 let employee = ['Sunil', 'Pradhan', 'Male'];
 ```
 
-Next within square brackets we are going to say `fname` as first name, `lname` which is last name and then `gender` and this is going to be assigned to this employee array. 
+Next within square brackets we are going to say `fname` as first name, `lname` which is last name and then `gender` and this is going to be assigned to this employee array.
 
 ```javascript
 let [fname, lname, gender] = employee;
 ```
 
+So what looks like an array creation is actually the destructuring of this employee array.
 
+So the first three elements of the employee array are assigned to these three variables so `Sunil` gets assigned `fname`, `Pradhan` to `lname` and `Male` to `gender`.
 
+Here we are destructuring this employee array by splitting up this individual elements and assigning them to these variables.
 
+```javascript
+let employee = ['Sunil', 'Pradhan', 'Male'];
+let [fname, lname, gender] = employee;
+
+console.log(fname);
+console.log(lname);
+console.log(gender);
+
+//output
+
+//Sunil
+//Pradhan
+//Male
+```
 
 <br/>
 <div align="right">
@@ -3118,13 +3132,13 @@ let [fname, lname, gender] = employee;
 
 ## Object Oriented Programming - OOP
 
-Object oriented programming (OOP) is a programming language model organized around objects rather than “actions” and data rather than logic. 
+Object oriented programming (OOP) is a programming language model organized around objects rather than “actions” and data rather than logic.
 
-Four pillar of OOPS: Encapsulation, abstraction, inheritance,polymorphism    
+Four pillar of OOPS: Encapsulation, abstraction, inheritance,polymorphism
 
 **Encapsulation:**
 
-It encapsulates your data. 
+It encapsulates your data.
 
 **Abstraction:**
 
@@ -3136,7 +3150,7 @@ Inheritance means something you receive from your ancestry.
 
 **Polymorphism:**
 
-polymorphism means you are writing a single function() but it works differently for different situations.  
+polymorphism means you are writing a single function() but it works differently for different situations.
 
 <br/>
 <div align="right">
