@@ -2118,23 +2118,48 @@ Here `var` is only limited to this function only. You can't access this variable
 </div>
 <br/>
 
-
 #### Callback function
 
-A callback function is a function which can be any function (Anonymous function, Arrow function) passed into another function as an argument, which is then invoked inside the outer function to complete some kind of action. 
+A callback function is a function which can be any function (Anonymous function, Arrow function) passed into another function as an argument, which is then invoked inside the outer function to complete some kind of action.
 
 In other words, when you pass a function into another function as an argument then its called a **callback function**.
 
+**Example(without parameter):**
 
+```javascript
+function show() {
+  console.log('I am show function');
+}
 
+function geeky(callback) {
+  callback();
+}
+geeky(show);
 
+//output - I am show function
+```
+
+**Example(with parameter):**
+
+```javascript
+function show(a) {
+  console.log('I am show function ' + a);
+}
+
+function geeky(callback) {
+  var a = 101;
+  callback(a);
+}
+geeky(show);
+
+//output - I am show function 101
+```
 
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 <a name="js-variable-hosting"></a>
 
@@ -3140,7 +3165,7 @@ console.log(gender);
 //Male
 ```
 
-So that's a basic idea in array destructuring. We take the individual elements from an array and assign it to individual variables. 
+So that's a basic idea in array destructuring. We take the individual elements from an array and assign it to individual variables.
 
 Now let's consider the second example, this time we don't have this male gender anymore.
 
@@ -3159,9 +3184,9 @@ console.log(gender);
 //undefined
 ```
 
-So we can still specify any number of variables on the left hand side while destructuring an array but once the mapping is done in this case `Sunil` to first name `Pradhan` to last name and we don't have any more values to assign to the variable so `undefined` is going to be the value for this gender and so on. 
+So we can still specify any number of variables on the left hand side while destructuring an array but once the mapping is done in this case `Sunil` to first name `Pradhan` to last name and we don't have any more values to assign to the variable so `undefined` is going to be the value for this gender and so on.
 
-We can also omit variables on the left hand side, that means: 
+We can also omit variables on the left hand side, that means:
 
 ```javascript
 let employee = ['Sunil', 'Pradhan', 'Male'];
@@ -3180,12 +3205,11 @@ console.log(gender);
 
 Here in this case we only want to save this `male` into this `gender` variable, we don't want to unnecessarily have memory for a first name and last name since we are not going to be using it.
 
-In such a scenario we can just omit it but this comma right here is essential. 
+In such a scenario we can just omit it but this comma right here is essential.
 
 ```javascript
 let employee = ['Sunil', 'Pradhan', 'Male'];
 let [, , gender] = employee;
-
 
 console.log(gender);
 
@@ -3194,8 +3218,8 @@ console.log(gender);
 
 We can also destructure using the Rest operator which helps us to have a single variable that can contain a group of elements;
 
- ```javascript
- let employee = ['Sunil', 'Pradhan', 'Male'];
+```javascript
+let employee = ['Sunil', 'Pradhan', 'Male'];
 let [fname, ...elements] = employee;
 
 console.log(fname);
@@ -3206,8 +3230,8 @@ console.log(elements);
 //Sunil
 //[ 'Pradhan', 'Male' ]
 ```
-So we have `Sunil` which is assigned to first name and now since we have a Rest operator the remaining values are getting stored into an array and assigned to this element. 
 
+So we have `Sunil` which is assigned to first name and now since we have a Rest operator the remaining values are getting stored into an array and assigned to this element.
 
 We can also use destructuring with default values;
 
@@ -3222,6 +3246,7 @@ console.log(gender);
 
 //Output - Sunil, Pradhan, undefined
 ```
+
 We don't have the gender anymore here so can specify a default value;
 
 ```javascript
@@ -3236,7 +3261,7 @@ console.log(gender);
 //Output - Sunil, Pradhan, Male
 ```
 
-We have `Sunil` being a `Male` since we are not specifying `Male` or a third value in our employee array. There is no destructuring for this `gender` variable so it is going to take `Male` as a default value and it's going to log on to the console. 
+We have `Sunil` being a `Male` since we are not specifying `Male` or a third value in our employee array. There is no destructuring for this `gender` variable so it is going to take `Male` as a default value and it's going to log on to the console.
 
 <br/>
 <div align="right">
@@ -3244,11 +3269,9 @@ We have `Sunil` being a `Male` since we are not specifying `Male` or a third val
 </div>
 <br/>
 
-
-
 ### Object Destructuring:
 
-Let employee there's going to be an object first name is going to be `Sunil` and then we'll have a last name which is going to be `Pradhan` and they will have gender which is going to be `Male`. 
+Let employee there's going to be an object first name is going to be `Sunil` and then we'll have a last name which is going to be `Pradhan` and they will have gender which is going to be `Male`.
 
 ```javascript
 let employee = {
@@ -3256,9 +3279,9 @@ let employee = {
   lname: 'Pradhan',
   gender: 'Male',
 };
-
 ```
-Now destructure this employee object we need to use curly braces `{}`. We need to specify the variable names and we have to ensure that the property name is the same as this variable name. 
+
+Now destructure this employee object we need to use curly braces `{}`. We need to specify the variable names and we have to ensure that the property name is the same as this variable name.
 
 So we need to have `fname`, `lname`, `gender` and this is going to be equal to an employee.
 
@@ -3275,14 +3298,12 @@ console.log(fname);
 console.log(lname);
 console.log(gender);
 
-
 //output - Sunil, Pradhan, Male
 ```
 
-So we have destructure this employee object by taking these individual property values and assigning them to the variables. 
+So we have destructure this employee object by taking these individual property values and assigning them to the variables.
 
-
-Now let's say our property name is huge and so we don't want to use such a variable name throughout in our code. So in such a case we can create an alias. 
+Now let's say our property name is huge and so we don't want to use such a variable name throughout in our code. So in such a case we can create an alias.
 
 ```javascript
 let employee = {
@@ -3299,15 +3320,10 @@ console.log(g);
 
 //output - Sunil, Pradhan, Male
 ```
-So that's pretty much how you destructure works in JavaScript objects. 
 
-You have an object and then you use the curly braces and assign it to the object and each property name should match the variable name and then the value will get assigned to it. 
+So that's pretty much how you destructure works in JavaScript objects.
 
-
-
-
-
-
+You have an object and then you use the curly braces and assign it to the object and each property name should match the variable name and then the value will get assigned to it.
 
 <br/>
 <div align="right">
