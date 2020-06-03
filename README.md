@@ -1008,6 +1008,46 @@ for (i = 1; i <= 5; i++) {
 </div>
 <br/>
 
+
+#### for...in Loop
+
+The `for...in` loop is used to loop through an object’s properties.
+
+When you want to visit all object properties like its keys then you need to use `for..in` loop. 
+
+
+Syntax: 
+
+```javascript
+for(var variable_name in object_name) {
+  //code block
+}
+```
+
+Example: 
+
+```javascript
+function Mobile(model_no) {
+  this.model = model_no;
+  this.color = 'white';
+  this.ram = '4GB';
+}
+
+var samsung = new Mobile('Galaxy');
+
+for (var specs in samsung) {
+  console.log(samsung[specs]);
+}
+
+//output - Galaxy, white, 4GB 
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-function"></a>
 
 ## JavaScript Function
