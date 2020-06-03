@@ -2552,6 +2552,12 @@ Apple.price();
 //output - iphoneX Price - ₹1000
 ```
 
+Globally this keyword points to window object but here `this` keyword points to a new instance of an object. 
+
+**Remember:** 
+
+`Mobile()` is a constructor whereas, `price()` is a function here.
+
 
 
 
