@@ -2474,6 +2474,35 @@ After removal with the `delete` operator, the property has an `undefined` value.
 </div>
 <br/>
 
+#### Factory function in JavaScript object
+
+When a function returns an object, we call it a factory function. It can produce object instances without new keywords or classes. 
+
+```javascript
+function mobile() {
+  return {
+    model: 'iphone',
+    price: function () {
+      return 'Price - ₹1000';
+    },
+  };
+}
+var Apple = mobile();
+console.log(Apple.model + ' ' + Apple.price());
+
+//output - iphone Price - ₹1000
+```
+
+It looks like a simple function but in reality it isn’t. It is a factory function because it returns an object. Through this method we can create multiple object instances without using new keywords.
+
+:bulb: **TIP:** Factory function reduces code repetition 
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
