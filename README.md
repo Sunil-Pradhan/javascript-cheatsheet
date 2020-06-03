@@ -2772,6 +2772,26 @@ When you creates any properties with the help of `this` keyword, then it would b
 
 Use `var` or `let` or `const` keyword to create private properties and methods.
 
+Example: 
+
+```javascript
+var Mobile = function (model_no, sprice) {
+  this.model = model_no;
+  this.color = 'white';
+  var price = 3000; //private
+  var show = function () {
+    return 'Hello World';
+  }; //private
+};
+
+var samsung = new Mobile('Galaxy', 2000);
+console.log(samsung.model);
+console.log(samsung.price);
+console.log(samsung.show);
+
+//output - Galaxy, undefined, undefined
+```
+
 
 <br/>
 <div align="right">
