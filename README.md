@@ -2612,7 +2612,7 @@ if (typeof nokia.memory !== 'undefined') {
 
 This program checks whether memory properties present in our program or not.
 
-**Method #2: By using `in` operator **
+**Method #2: By using `in` operator**
 
 ```javascript
 function Mobile(model_no) {
@@ -2632,7 +2632,26 @@ if ('memory' in nokia) {
 //output - Available
 ```
 
+**Method #3: By using `hasOwnProperty()`**
 
+
+```javascript
+function Mobile(model_no) {
+  this.model = model_no;
+  this.memory = 4;
+}
+
+var samsung = new Mobile('Galaxy');
+var nokia = new Mobile('3310');
+
+if (nokia.hasOwnProperty('memory')) {
+  console.log('Available');
+} else {
+  console.log('Does not exit');
+}
+
+//output - Available
+```
 
 <br/>
 <div align="right">
