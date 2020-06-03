@@ -2799,6 +2799,38 @@ console.log(samsung.show);
 </div>
 <br/>
 
+#### Access private property from outside in JavaScript 
+
+If you want to access private property from outside then you need to use a public property or public methods. 
+
+Example: 
+
+```javascript
+var Mobile = function (model_no, sprice) {
+  this.model = model_no;
+  this.color = 'white';
+  var price = 3000;
+  this.sp = sprice;
+  this.SellingPrice = function () {
+    return price;
+  }; //now public
+};
+
+var samsung = new Mobile('Galaxy', 2000);
+console.log(samsung.SellingPrice());
+
+//output - 3000
+```
+
+The `SellingPrice` method can show you here the price of 3000 because it is now public with the help of this keyword. When we will call now it can show you the output.
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
