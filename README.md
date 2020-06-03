@@ -2714,10 +2714,15 @@ console.log(Object.keys(samsung));
 //output - [ 'model', 'color', 'ram', 'price' ]
 ```
 
-Object keys only show object instance members (model, color) but can not show prototype members. 
+Object keys only show object instance members (model, color) but can not show prototype members.
 
 By using `for..in` loop, it shows both object instance members and prototype members.
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 #### Constructor as a Class in JavaScript
 
@@ -2725,9 +2730,9 @@ A specific category can be defined as class in JavaScript.
 
 For example: Mobile is a category which can be considered as class in JavaScript. Inside the Mobile category many different brands can reside such as Nokia, Samsung, Apple and others.
 
-We can define a class in JavaScript using a custom constructor. 
+We can define a class in JavaScript using a custom constructor.
 
-Example: 
+Example:
 
 ```javascript
 var Mobile = function (model_no, sprice) {
@@ -2736,17 +2741,43 @@ var Mobile = function (model_no, sprice) {
   this.price = 3000;
   this.sp = sprice;
   this.sellingprice = function () {
-    return (this.price = this.sp);
+    return this.price + this.sp;
+  };
+
+  this.data = function () {
+    console.log('Model no:' + this.model + ' Price: ' + this.sellingprice());
   };
 };
 
-var samsung = new Mobile('Galaxy');
+var samsung = new Mobile('Galaxy', 2000);
+samsung.data();
+
+//output - Model no:Galaxy Price: 5000
 ```
+
 Here `Mobile` is a class in JavaScript and then we create a object by using the `new` keyword.
 
-Here `this` keyword points to the current object instance. That means;this.model is equal to samsung.model, here samsung is the current object instance. 
+Here `this` keyword points to the current object instance. That means;this.model is equal to samsung.model, here samsung is the current object instance.
+
+When you creates any properties with the help of `this` keyword, then it would be public.
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 
+#### Private properties and method in JavaScript
+
+Use `var` or `let` or `const` keyword to create private properties and methods.
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 <a name="js-variable-hosting"></a>
 
