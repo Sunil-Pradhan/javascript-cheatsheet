@@ -2534,6 +2534,25 @@ Object instances are created with constructor, which are basically special funct
 * With factory functions you can create object instances in the same manner you can use constructor to create object instances. 
 * When you are creating a constructor its first letter is always the capital letter. 
 
+Example: 
+
+```javascript
+function Mobile() {
+  //write constructor name always capital
+  this.model = 'iphoneX';
+  //this points newly created object: example - iphonex
+  this.price = function () {
+    console.log(this.model + ' ' + 'Price - ₹1000');
+  };
+}
+
+var Apple = new Mobile();
+Apple.price();
+
+//output - iphoneX Price - ₹1000
+```
+
+
 
 
 <br/>
