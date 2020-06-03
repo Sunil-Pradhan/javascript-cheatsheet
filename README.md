@@ -2742,6 +2742,9 @@ var Mobile = function (model_no, sprice) {
 
 var samsung = new Mobile('Galaxy');
 ```
+Here `Mobile` is a class in JavaScript and then we create a object by using the `new` keyword.
+
+Here `this` keyword points to the current object instance. That means;this.model is equal to samsung.model, here samsung is the current object instance. 
 
 
 
