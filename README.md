@@ -1011,7 +1011,7 @@ for (i = 1; i <= 5; i++) {
 
 #### for...in Loop
 
-The `for...in` loop is used to loop through an object’s properties.
+The `for...in` loop is used to loop through an object’s properties and methods.
 
 When you want to visit all object properties like its keys then you need to use `for..in` loop. 
 
