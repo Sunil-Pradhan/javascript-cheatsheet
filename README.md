@@ -2495,7 +2495,7 @@ console.log(Apple.model + ' ' + Apple.price());
 
 It looks like a simple function but in reality it isn’t. It is a factory function because it returns an object. Through this method we can create multiple object instances without using new keywords.
 
-:bulb: **TIP:** Factory function reduces code repetition 
+:bulb: **TIP:** Factory function reduces code repetition. 
 
 <br/>
 <div align="right">
