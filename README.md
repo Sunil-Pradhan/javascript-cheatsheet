@@ -2559,7 +2559,23 @@ Globally this keyword points to window object but here `this` keyword points to 
 `Mobile()` is a constructor whereas, `price()` is a function here.
 
 
+**Example(with parameter):**
 
+```javascript
+function Mobile(model_no) {
+  //write constructor name always capital
+  this.model = model_no;
+  //this points newly created object: example - iphonex
+  this.price = function () {
+    console.log(this.model + ' ' + 'Price - ₹1000');
+  };
+}
+
+var Apple = new Mobile('iphoneX');
+Apple.price();
+
+//output - iphoneX Price - ₹1000
+```
 
 <br/>
 <div align="right">
