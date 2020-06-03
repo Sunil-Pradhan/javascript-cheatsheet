@@ -2497,6 +2497,27 @@ It looks like a simple function but in reality it isn’t. It is a factory funct
 
 :bulb: **TIP:** Factory function reduces code repetition. 
 
+**Example(with parameter):**
+
+```javascript
+function mobile(model_no) {
+  return {
+    model: model_no,
+    price: function () {
+      return 'Price - ₹1000';
+    },
+  };
+}
+var Apple = mobile('iphoneX');
+console.log(Apple.model + ' ' + Apple.price());
+
+var Apple = mobile('iphone 11');
+console.log(Apple.model + ' ' + Apple.price());
+
+//output - iphoneX Price - ₹1000
+//output - iphone 11 Price - ₹1000
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
