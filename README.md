@@ -1008,23 +1008,21 @@ for (i = 1; i <= 5; i++) {
 </div>
 <br/>
 
-
 #### for...in Loop
 
 The `for...in` loop is used to loop through an object’s properties and methods.
 
-When you want to visit all object properties like its keys then you need to use `for..in` loop. 
+When you want to visit all object properties like its keys then you need to use `for..in` loop.
 
-
-Syntax: 
+Syntax:
 
 ```javascript
-for(var variable_name in object_name) {
+for (var variable_name in object_name) {
   //code block
 }
 ```
 
-Example: 
+Example:
 
 ```javascript
 function Mobile(model_no) {
@@ -1039,7 +1037,7 @@ for (var specs in samsung) {
   console.log(samsung[specs]);
 }
 
-//output - Galaxy, white, 4GB 
+//output - Galaxy, white, 4GB
 ```
 
 <br/>
@@ -2487,7 +2485,7 @@ Syntax:
 delete object_name.property_name;
 ```
 
-Example: 
+Example:
 
 ```javascript
 var fees = {
@@ -2506,6 +2504,7 @@ console.log(fees);
 //output - undefined 200
 //output - { Anil: 200 }
 ```
+
 After removal with the `delete` operator, the property has an `undefined` value.
 
 <br/>
@@ -2516,7 +2515,7 @@ After removal with the `delete` operator, the property has an `undefined` value.
 
 #### Factory function in JavaScript object
 
-When a function returns an object, we call it a factory function. It can produce object instances without new keywords or classes. 
+When a function returns an object, we call it a factory function. It can produce object instances without new keywords or classes.
 
 ```javascript
 function mobile() {
@@ -2535,7 +2534,7 @@ console.log(Apple.model + ' ' + Apple.price());
 
 It looks like a simple function but in reality it isn’t. It is a factory function because it returns an object. Through this method we can create multiple object instances without using new keywords.
 
-:bulb: **TIP:** Factory function reduces code repetition. 
+:bulb: **TIP:** Factory function reduces code repetition.
 
 **Example(with parameter):**
 
@@ -2566,15 +2565,15 @@ console.log(Apple.model + ' ' + Apple.price());
 
 #### Constructor in JavaScript
 
-Object instances are created with constructor, which are basically special functions that prepare new instances of an object for use. 
+Object instances are created with constructor, which are basically special functions that prepare new instances of an object for use.
 
 **Remember:**
 
-* Constructor is a special type of function that prepares a new instance of an object. 
-* With factory functions you can create object instances in the same manner you can use constructor to create object instances. 
-* When you are creating a constructor its first letter is always the capital letter. 
+- Constructor is a special type of function that prepares a new instance of an object.
+- With factory functions you can create object instances in the same manner you can use constructor to create object instances.
+- When you are creating a constructor its first letter is always the capital letter.
 
-Example: 
+Example:
 
 ```javascript
 function Mobile() {
@@ -2592,12 +2591,11 @@ Apple.price();
 //output - iphoneX Price - ₹1000
 ```
 
-Globally this keyword points to window object but here `this` keyword points to a new instance of an object. 
+Globally this keyword points to window object but here `this` keyword points to a new instance of an object.
 
-**Remember:** 
+**Remember:**
 
 `Mobile()` is a constructor whereas, `price()` is a function here.
-
 
 **Example(with parameter):**
 
@@ -2619,15 +2617,13 @@ Apple.price();
 
 This function is simply a constructor which behaves as a blueprint for all other mobile (samsung, lg). Because every mobile has a model, price and so.
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
 
-
-#### How to check properties exists in JavaScript 
+#### How to check properties exists in JavaScript
 
 **Method #1: By using `typeof` operator**
 
@@ -2645,7 +2641,6 @@ if (typeof nokia.memory !== 'undefined') {
 } else {
   console.log('Does not exit');
 }
-
 
 //output - Available
 ```
@@ -2674,7 +2669,6 @@ if ('memory' in nokia) {
 
 **Method #3: By using `hasOwnProperty()`**
 
-
 ```javascript
 function Mobile(model_no) {
   this.model = model_no;
@@ -2698,6 +2692,28 @@ if (nokia.hasOwnProperty('memory')) {
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+#### Object keys(object_name)
+
+Example:
+
+```javascript
+function Mobile(model_no) {
+  this.model = model_no;
+  this.color = 'white';
+  this.ram = '4GB';
+  this.price = function () {
+    console.log(this.model + 'Price - ₹3000');
+  };
+}
+
+var samsung = new Mobile('Galaxy');
+
+console.log(Object.keys(samsung));
+
+//output - [ 'model', 'color', 'ram', 'price' ]
+```
+
 
 
 <a name="js-variable-hosting"></a>
