@@ -2324,6 +2324,8 @@ Syntax:
 var object_name = new Object();
 ```
 
+`Object()` is a constructor which creates a reference of that object and it later assigns it to `object_name`. Then we write its properties and access it. 
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
