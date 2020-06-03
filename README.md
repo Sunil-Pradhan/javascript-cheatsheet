@@ -2380,15 +2380,43 @@ console.log(fees['total']());
 //output - 300, 300
 ```
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
 
+#### Adding Object properties and methods in JavaScript
+
+Syntax:
+
+```javascript
+Object_name.Property_name = value;
+Object_name['Property_name'] = value;
+```
+
+Example: 
+
+```javascript
+var fees = {
+  Sunil: 100,
+  Anil: 200,
+};
+
+console.log(fees.Sunil + ' ' + fees.Anil);
+fees.Rahul = 400; //added one props
+console.log(fees);
+
+//output - 100, 200
+//output - { Sunil: 100, Anil: 200, Rahul: 400 }
+```
 
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 <a name="js-variable-hosting"></a>
 
