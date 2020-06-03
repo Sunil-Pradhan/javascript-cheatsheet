@@ -2714,6 +2714,9 @@ console.log(Object.keys(samsung));
 //output - [ 'model', 'color', 'ram', 'price' ]
 ```
 
+Object keys only show object instance members (model, color) but can not show prototype members. 
+
+By using `for..in` loop, it shows both object instance members and prototype members .
 
 
 <a name="js-variable-hosting"></a>
