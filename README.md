@@ -2241,8 +2241,6 @@ Two ways you can write: `[]` or `.`
 
 **Example(using `[]` operator):**
 
-we have defined our object and it is an empty object for us.
-
 ```javascript
 var fees = {};
 
@@ -2324,13 +2322,73 @@ Syntax:
 var object_name = new Object();
 ```
 
-`Object()` is a constructor which creates a reference of that object and it later assigns it to `object_name`. Then we write its properties and access it. 
+`Object()` is a constructor which creates a reference of that object and it later assigns it to `object_name`. Then we write its properties and access it.
+
+:bulb: **TIP:** A constructor is a function that initializes an object.
+
+ <br>
+
+Two ways you can write: `[]` or `.`
+
+**Example(using `[]` operator):**
+
+```javascript
+var fees = new Object();
+
+fees['Rahul'] = 100;
+fees['Sunil'] = 200;
+console.log(fees['Rahul']);
+console.log(fees['Sunil']);
+
+//output - 100, 200
+```
+
+If you want to give a space between your property then you need to use double quote and try to access it via `[]` operator rather than `.` operator.
+
+```javascript
+var fees = new Object();
+fees['Sunil Pradhan'] = 100;
+```
+
+**Example(using `.` operator):**
+
+```javascript
+var fees = new Object();
+
+fees['Rahul'] = 100;
+fees['Sunil'] = 200;
+console.log(fees.Rahul);
+console.log(fees.Sunil);
+
+//output - 100, 200
+```
+
+**Example(access methods):**
+
+```javascript
+var fees = new Object();
+fees['total'] = function () {
+  return 300;
+};
+
+fees.total(); //by using . operator
+fees['total'](); //by using [] operator
+
+console.log(fees.total());
+console.log(fees['total']());
+
+//output - 300, 300
+```
+
 
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+
+
 
 <a name="js-variable-hosting"></a>
 
