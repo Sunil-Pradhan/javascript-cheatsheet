@@ -2723,7 +2723,26 @@ By using `for..in` loop, it shows both object instance members and prototype mem
 
 A specific category can be defined as class in JavaScript.
 
-For example: Mobile is a category which can be considered as class in JavaScript. Inside the Mobile category many different brands can reside such as Nokia, Samsung, Apple and others. 
+For example: Mobile is a category which can be considered as class in JavaScript. Inside the Mobile category many different brands can reside such as Nokia, Samsung, Apple and others.
+
+We can define a class in JavaScript using a custom constructor. 
+
+Example: 
+
+```javascript
+var Mobile = function (model_no, sprice) {
+  this.model = model_no;
+  this.color = 'white';
+  this.price = 3000;
+  this.sp = sprice;
+  this.sellingprice = function () {
+    return (this.price = this.sp);
+  };
+};
+
+var samsung = new Mobile('Galaxy');
+```
+
 
 
 <a name="js-variable-hosting"></a>
