@@ -2716,7 +2716,14 @@ console.log(Object.keys(samsung));
 
 Object keys only show object instance members (model, color) but can not show prototype members. 
 
-By using `for..in` loop, it shows both object instance members and prototype members .
+By using `for..in` loop, it shows both object instance members and prototype members.
+
+
+#### Constructor as a Class in JavaScript
+
+A specific category can be defined as class in JavaScript.
+
+For example: Mobile is a category which can be considered as class in JavaScript. Inside the Mobile category many different brands can reside such as Nokia, Samsung, Apple and others. 
 
 
 <a name="js-variable-hosting"></a>
