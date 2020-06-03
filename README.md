@@ -2524,6 +2524,24 @@ console.log(Apple.model + ' ' + Apple.price());
 </div>
 <br/>
 
+#### Constructor in JavaScript
+
+Object instances are created with constructor, which are basically special functions that prepare new instances of an object for use. 
+
+**Remember:**
+
+* Constructor is a special type of function that prepares a new instance of an object. 
+* With factory functions you can create object instances in the same manner you can use constructor to create object instances. 
+* When you are creating a constructor its first letter is always the capital letter. 
+
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
