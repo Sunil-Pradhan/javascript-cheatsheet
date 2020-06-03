@@ -2431,6 +2431,42 @@ console.log(fees.show());
 //output - 300
 ```
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### Deleting Object properties and methods in JavaScript
+
+Delete operator is used to delete instance properties.
+
+Syntax:
+
+```javascript
+delete object_name.property_name;
+```
+
+Example: 
+
+```javascript
+var fees = {
+  Sunil: 100,
+  Anil: 200,
+};
+
+console.log(fees.Sunil + ' ' + fees.Anil);
+
+delete fees.Sunil;
+
+console.log(fees.Sunil + ' ' + fees.Anil);
+console.log(fees);
+
+//output - 100, 200
+//output - undefined 200
+//output - { Anil: 200 }
+```
+After removal with the `delete` operator, the property has an `undefined` value.
 
 <br/>
 <div align="right">
