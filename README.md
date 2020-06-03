@@ -2241,7 +2241,7 @@ Two ways you can write: `[]` or `.`
 
 **Example(using `[]` operator):**
 
-we have defined our object and it is an empty object for us. 
+we have defined our object and it is an empty object for us.
 
 ```javascript
 var fees = {};
@@ -2276,7 +2276,6 @@ console.log(fees.Sunil);
 
 **Example(access methods):**
 
-
 ```javascript
 var fees = {};
 fees['total'] = function () {
@@ -2294,7 +2293,7 @@ console.log(fees['total']());
 
 **Declare and initialization of object together:**
 
-Example: 
+Example:
 
 ```javascript
 var fees = {
@@ -2309,6 +2308,20 @@ console.log(fees.Sunil);
 console.log(fees.total());
 
 //output - 100, 200, 300
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### Object Constructor in JavaScript
+
+Syntax:
+
+```javascript
+var object_name = new Object();
 ```
 
 <br/>
