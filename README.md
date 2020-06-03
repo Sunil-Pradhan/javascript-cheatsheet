@@ -2395,7 +2395,7 @@ Object_name.Property_name = value;
 Object_name['Property_name'] = value;
 ```
 
-Example: 
+**Example (add props):**
 
 ```javascript
 var fees = {
@@ -2409,6 +2409,26 @@ console.log(fees);
 
 //output - 100, 200
 //output - { Sunil: 100, Anil: 200, Rahul: 400 }
+```
+
+**Example (add methods):**
+
+```javascript
+var fees = {
+  Sunil: 100,
+  Anil: 200,
+};
+
+console.log(fees.Sunil + ' ' + fees.Anil);
+fees.show = function () {
+  return 300; // add methods
+};
+console.log(fees);
+console.log(fees.show());
+
+//output - 100, 200
+//output - { Sunil: 100, Anil: 200, show: [Function (anonymous)] }
+//output - 300
 ```
 
 
