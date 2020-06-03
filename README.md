@@ -2577,11 +2577,49 @@ Apple.price();
 //output - iphoneX Price - ₹1000
 ```
 
+This function is simply a constructor which behaves as a blueprint for all other mobile (samsung, lg). Because every mobile has a model, price and so.
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+
+#### How to check properties exists in JavaScript 
+
+**Method #1: By using `typeof` operator**
+
+```javascript
+function Mobile(model_no) {
+  this.model = model_no;
+  this.memory = 4;
+}
+
+var samsung = new Mobile('Galaxy');
+var nokia = new Mobile('3310');
+
+if (typeof nokia.memory !== 'undefined') {
+  console.log('Available');
+} else {
+  console.log('Does not exit');
+}
+
+
+//output - Available
+```
+
+This program checks whether memory properties present in our program or not.
+
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 
 <a name="js-variable-hosting"></a>
 
