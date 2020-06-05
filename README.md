@@ -3028,6 +3028,24 @@ console.log(stu);
 
 The length property retrieves the index of the next available position at the end of the array. The length property is automatically updated as new elements are added to the array. For this reason, length is commonly used to iterate through all elements of any array.  
 
+:bulb: **TIP:** In array index it counts from 0 but in array length property it counts from 1.
+
+
+```javascript
+var stu = ['Sunil', 'Ram'];
+console.log(stu.length);
+
+//output - 2
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
