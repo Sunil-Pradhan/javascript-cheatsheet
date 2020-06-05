@@ -3086,6 +3086,19 @@ Where,
 - index - Array's index number.Here also you can give any other name index, i or any other.It is not mandatory.
 - arr - The array object the current element belongs to. It is not mandatory.
 
+
+Example: 
+
+```javascript
+var stu = ['Sunil', 'Ram', 56, 66];
+stu.forEach(function (name) {
+  console.log(name);
+});
+
+
+//output - Sunil, Ram, 56, 66
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
