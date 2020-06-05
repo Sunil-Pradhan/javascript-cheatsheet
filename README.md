@@ -2924,6 +2924,25 @@ Syntax:
 var array_name = new Array();
 ```
 
+Example: 
+
+```javascript
+var stu = new Array();
+//empty array
+
+stu[0] = 'Sunil';
+stu[1] = 'Rahul';
+stu[2] = 'Rula';
+
+console.log(stu);
+console.log(stu[0]);
+
+//output - [ 'Sunil', 'Rahul', 'Rula' ]
+//output - Sunil
+```
+
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
