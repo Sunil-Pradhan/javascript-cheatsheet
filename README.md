@@ -3000,6 +3000,19 @@ console.log(stu);
 </div>
 <br/>
 
+#### Removing array elements
+
+Array elements can be removed using the `delete` operator. This operator sets the array element it is invoked on to `undefined` but does not change the arrays’ length. 
+
+Example:
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
