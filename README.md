@@ -3045,6 +3045,19 @@ console.log(stu.length);
 </div>
 <br/>
 
+#### Iteration of array using for loop 
+
+Example: 
+
+```javascript
+var stu = ['Sunil', 'Ram', 56, 66];
+for (let i = 0; i <= 3; i++) {
+  console.log(stu[i]);
+}
+
+//output - Sunil, Ram, 56 , 66 
+```
+
 
 <a name="js-variable-hosting"></a>
 
