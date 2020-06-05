@@ -2924,7 +2924,7 @@ Syntax:
 var array_name = new Array();
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = new Array();
@@ -2943,18 +2943,37 @@ console.log(stu[0]);
 
 **Demerits of using `new` keyword**
 
-Example: 
+Example:
 
 ```javascript
 var num = new Array(5);
 console.log(num[0]);
 
-
 //output - undefined
 ```
 
-This will create an empty array with length five. So this is not a good idea to use an array constructor if you have only a single numeric value. 
+This will create an empty array with length five. So this is not a good idea to use an array constructor if you have only a single numeric value.
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### Modifying array elements
+
+Example:
+
+```javascript
+var stu = ['Sunil', 'Ram'];
+console.log(stu);
+
+stu[0] = 'Rula';
+console.log(stu);
+
+//output - [ 'Sunil', 'Ram' ]
+//output - [ 'Rula', 'Ram' ]
+```
 
 <br/>
 <div align="right">
