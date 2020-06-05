@@ -2882,6 +2882,34 @@ Syntax:
 var array_name = [];
 ```
 
+:bulb: **TIP:** By default, array starts with index 0.
+
+Example:
+
+```javascript
+var stu = [];
+//empty array
+stu[0] = 'Sunil';
+stu[1] = 'Rahul';
+stu[2] = 'Anil';
+
+console.log(stu); //access all array
+console.log(stu[0]); //access Sunil
+
+//output - [ 'Sunil', 'Rahul', 'Anil' ]
+//output - Sunil
+```
+
+Example: 
+
+```javascript
+var stu = [, , , ,];
+console.log(stu[0]);
+
+
+//output - undefined
+```
+
 
 <br/>
 <div align="right">
