@@ -3023,6 +3023,11 @@ console.log(stu);
 </div>
 <br/>
 
+
+#### Array length property 
+
+The length property retrieves the index of the next available position at the end of the array. The length property is automatically updated as new elements are added to the array. For this reason, length is commonly used to iterate through all elements of any array.  
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
