@@ -3006,6 +3006,16 @@ Array elements can be removed using the `delete` operator. This operator sets th
 
 Example:
 
+```javascript
+var stu = ['Sunil', 'Ram'];
+console.log(stu);
+delete stu[0];
+console.log(stu);
+
+//output - [ 'Sunil', 'Ram' ]
+//output - [ undefined, 'Ram' ]
+```
+
 
 <br/>
 <div align="right">
