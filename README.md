@@ -2975,6 +2975,25 @@ console.log(stu);
 //output - [ 'Rula', 'Ram' ]
 ```
 
+Example: 
+
+```javascript
+var stu = ['Sunil', 'Ram'];
+var male = stu;
+//storing array into a variable
+
+
+console.log(male);
+console.log(stu);
+
+male[0] = 'Rula';
+console.log(stu);
+
+//output - [ 'Sunil', 'Ram' ]
+//output - [ 'Sunil', 'Ram' ]
+//output - [ 'Rula', 'Ram' ]
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
