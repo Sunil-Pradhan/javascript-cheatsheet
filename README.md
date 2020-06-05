@@ -2860,6 +2860,10 @@ console.log(typeof stu);
 //output - object
 ```
 
+In javascript you can create arrays in two ways: 
+
+* Array literal 
+* Array constructor 
 
 
 <br/>
