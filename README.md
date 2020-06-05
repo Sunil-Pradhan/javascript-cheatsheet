@@ -17,7 +17,7 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Branches and Loops](#js-branch-loops)
 - [Function](#js-function)
 - [Object](#js-object)
-- [Array](#js-array)
+- [Array](#js-arrays)
 - [Variable Hoisting](#js-variable-hosting)
 - [Rest & Spread Operator](#js-rest-spread)
 - [Module - Import & Export](#js-module)
@@ -2829,7 +2829,10 @@ The `SellingPrice` method can show you here the price of 3000 because it is now 
 </div>
 <br/>
 
-<a name="#js-array"></a>
+
+
+
+<a name="#js-arrays"></a>
 
 ## Array
 
