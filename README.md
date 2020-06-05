@@ -17,12 +17,18 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Branches and Loops](#js-branch-loops)
 - [Function](#js-function)
 - [Object](#js-object)
+- [Array](#js-array)
 - [Variable Hoisting](#js-variable-hosting)
 - [Rest & Spread Operator](#js-rest-spread)
 - [Module - Import & Export](#js-module)
 - [Destructuring - Array & Object](#js-destructuring)
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
+
+
+
+
+
 
 <a name="js-basics"></a>
 
@@ -2823,6 +2829,19 @@ console.log(samsung.SellingPrice());
 ```
 
 The `SellingPrice` method can show you here the price of 3000 because it is now public with the help of this keyword. When we will call now it can show you the output.
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+<a name="#js-array"></a>
+
+## Array
+
+
 
 <br/>
 <div align="right">
