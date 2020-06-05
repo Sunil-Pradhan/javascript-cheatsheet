@@ -3094,9 +3094,13 @@ array.forEact(function(value, index, arr){
 
 Where,
 
-value - It is the current value of array index.
-index - Array's index number
-arr - The array object the current element belongs to 
+* value - It is the current value of array index.It is a variable so that you can name it anything like value, name or other.It is mandatory.
+ 
+* index - Array's index number.Here also you can give any other name index, i or any other.It is not mandatory.
+
+* arr - The array object the current element belongs to. It is not mandatory.
+
+
 
 <br/>
 <div align="right">
