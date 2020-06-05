@@ -3058,6 +3058,17 @@ for (let i = 0; i <= 3; i++) {
 //output - Sunil, Ram, 56 , 66 
 ```
 
+Example: 
+
+```javascript
+var stu = ['Sunil', 'Ram', 56, 66];
+for (let i = 0; i <= stu.length-1; i++) {
+  console.log(stu[i]);
+}
+
+//output - Sunil, Ram, 56 , 66 
+```
+
 
 <a name="js-variable-hosting"></a>
 
