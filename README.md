@@ -25,8 +25,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
 
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -812,7 +810,6 @@ JavaScript supports the following kinds loops:
 - **do...while -** also loops through a block of code while a specified condition is true
 - **for...in -** loops through the properties of an object
 - **for...of -** loops through the values of an iterable object
-
 
 #### for loop
 
@@ -2832,7 +2829,6 @@ The `SellingPrice` method can show you here the price of 3000 because it is now 
 </div>
 <br/>
 
-
 <a name="js-arrays"></a>
 
 ## Array
@@ -2979,13 +2975,12 @@ console.log(stu);
 //output - [ 'Rula', 'Ram' ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Sunil', 'Ram'];
 var male = stu;
 //storing array into a variable
-
 
 console.log(male);
 console.log(stu);
@@ -3006,7 +3001,7 @@ console.log(stu);
 
 #### Removing array elements
 
-Array elements can be removed using the `delete` operator. This operator sets the array element it is invoked on to `undefined` but does not change the arrays’ length. 
+Array elements can be removed using the `delete` operator. This operator sets the array element it is invoked on to `undefined` but does not change the arrays’ length.
 
 Example:
 
@@ -3020,20 +3015,17 @@ console.log(stu);
 //output - [ undefined, 'Ram' ]
 ```
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
 
+#### Array length property
 
-#### Array length property 
-
-The length property retrieves the index of the next available position at the end of the array. The length property is automatically updated as new elements are added to the array. For this reason, length is commonly used to iterate through all elements of any array.  
+The length property retrieves the index of the next available position at the end of the array. The length property is automatically updated as new elements are added to the array. For this reason, length is commonly used to iterate through all elements of any array.
 
 :bulb: **TIP:** In array index it counts from 0 but in array length property it counts from 1.
-
 
 ```javascript
 var stu = ['Sunil', 'Ram'];
@@ -3042,16 +3034,15 @@ console.log(stu.length);
 //output - 2
 ```
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
 
-#### Iteration of array using for loop 
+#### Iteration of array using for loop
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Sunil', 'Ram', 56, 66];
@@ -3059,18 +3050,18 @@ for (let i = 0; i <= 3; i++) {
   console.log(stu[i]);
 }
 
-//output - Sunil, Ram, 56 , 66 
+//output - Sunil, Ram, 56 , 66
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Sunil', 'Ram', 56, 66];
-for (let i = 0; i <= stu.length-1; i++) {
+for (let i = 0; i <= stu.length - 1; i++) {
   console.log(stu[i]);
 }
 
-//output - Sunil, Ram, 56 , 66 
+//output - Sunil, Ram, 56 , 66
 ```
 
 <br/>
@@ -3079,28 +3070,21 @@ for (let i = 0; i <= stu.length-1; i++) {
 </div>
 <br/>
 
+#### forEach Loop
 
-#### forEach Loop 
+The forEach loop calls a provided function once for each element in an array, in order.
 
-The forEach loop calls a provided function once for each element in an array, in order. 
-
-Syntax: 
+Syntax:
 
 ```javascript
-array.forEact(function(value, index, arr){
-
-});
+array.forEact(function (value, index, arr) {});
 ```
 
 Where,
 
-* value - It is the current value of array index.It is a variable so that you can name it anything like value, name or other.It is mandatory.
- 
-* index - Array's index number.Here also you can give any other name index, i or any other.It is not mandatory.
-
-* arr - The array object the current element belongs to. It is not mandatory.
-
-
+- value - It is the current value of array index.It is a variable so that you can name it anything like value, name or other.It is mandatory.
+- index - Array's index number.Here also you can give any other name index, i or any other.It is not mandatory.
+- arr - The array object the current element belongs to. It is not mandatory.
 
 <br/>
 <div align="right">
