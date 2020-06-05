@@ -2941,6 +2941,19 @@ console.log(stu[0]);
 //output - Sunil
 ```
 
+**Demerits of using `new` keyword**
+
+Example: 
+
+```javascript
+var num = new Array(5);
+console.log(num[0]);
+
+
+//output - undefined
+```
+
+This will create an empty array with length five. So this is not a good idea to use an array constructor if you have only a single numeric value. 
 
 
 <br/>
