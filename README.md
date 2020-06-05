@@ -2873,6 +2873,22 @@ In javascript you can create arrays in two ways:
 <br/>
 
 
+
+#### Array Literal
+
+Syntax: 
+
+```javascript
+var array_name = [];
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
