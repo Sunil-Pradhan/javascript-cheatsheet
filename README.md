@@ -2910,6 +2910,18 @@ console.log(stu[0]);
 //output - undefined
 ```
 
+Example: 
+
+```javascript
+var a = 10,
+  b = 20,
+  c = 30;
+var num = [a, b, c];
+console.log(num);
+
+//output - [ 10, 20, 30 ]
+```
+
 
 <br/>
 <div align="right">
