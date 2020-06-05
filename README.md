@@ -2845,6 +2845,13 @@ Arrays are collections of data items stored under a single name.
 
 Arrays provide a mechanism for declaring and accessing several data items with only one identifier, thereby simplifying the task of data management. 
 
+We use arrays when we have to deal with multiple data items. 
+
+Arrays are a special type of object in JavaScript. 
+
+
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
