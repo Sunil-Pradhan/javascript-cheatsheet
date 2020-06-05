@@ -2841,7 +2841,9 @@ The `SellingPrice` method can show you here the price of 3000 because it is now 
 
 ## Array
 
+Arrays are collections of data items stored under a single name. 
 
+Arrays provide a mechanism for declaring and accessing several data items with only one identifier, thereby simplifying the task of data management. 
 
 <br/>
 <div align="right">
