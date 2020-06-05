@@ -25,6 +25,8 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
 
+
+
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -2830,9 +2832,7 @@ The `SellingPrice` method can show you here the price of 3000 because it is now 
 <br/>
 
 
-
-
-<a name="#js-arrays"></a>
+<a name="js-arrays"></a>
 
 ## Array
 
