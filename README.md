@@ -25,11 +25,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
 
-
-
-
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -2773,12 +2768,11 @@ When you creates any properties with the help of `this` keyword, then it would b
 </div>
 <br/>
 
-
 #### Private properties and method in JavaScript
 
 Use `var` or `let` or `const` keyword to create private properties and methods.
 
-Example: 
+Example:
 
 ```javascript
 var Mobile = function (model_no, sprice) {
@@ -2798,18 +2792,17 @@ console.log(samsung.show);
 //output - Galaxy, undefined, undefined
 ```
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
 
-#### Access private property from outside in JavaScript 
+#### Access private property from outside in JavaScript
 
-If you want to access private property from outside then you need to use a public property or public methods. 
+If you want to access private property from outside then you need to use a public property or public methods.
 
-Example: 
+Example:
 
 ```javascript
 var Mobile = function (model_no, sprice) {
@@ -2836,20 +2829,19 @@ The `SellingPrice` method can show you here the price of 3000 because it is now 
 </div>
 <br/>
 
-
 <a name="#js-array"></a>
 
 ## Array
 
-Arrays are collections of data items stored under a single name. 
+Arrays are collections of data items stored under a single name.
 
-Arrays provide a mechanism for declaring and accessing several data items with only one identifier, thereby simplifying the task of data management. 
+Arrays provide a mechanism for declaring and accessing several data items with only one identifier, thereby simplifying the task of data management.
 
-We use arrays when we have to deal with multiple data items. 
+We use arrays when we have to deal with multiple data items.
 
-Arrays are a special type of object in JavaScript. 
+Arrays are a special type of object in JavaScript.
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Sunil', 'Anil', 'Rupa'];
@@ -2860,11 +2852,10 @@ console.log(typeof stu);
 //output - object
 ```
 
-In javascript you can create arrays in two ways: 
+In javascript you can create arrays in two ways:
 
-* Array literal 
-* Array constructor 
-
+- Array literal
+- Array constructor
 
 <br/>
 <div align="right">
@@ -2872,11 +2863,9 @@ In javascript you can create arrays in two ways:
 </div>
 <br/>
 
-
-
 #### Array Literal
 
-Syntax: 
+Syntax:
 
 ```javascript
 var array_name = [];
@@ -2900,17 +2889,16 @@ console.log(stu[0]); //access Sunil
 //output - Sunil
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = [, , , ,];
 console.log(stu[0]);
 
-
 //output - undefined
 ```
 
-Example: 
+Example:
 
 ```javascript
 var a = 10,
@@ -2922,6 +2910,19 @@ console.log(num);
 //output - [ 10, 20, 30 ]
 ```
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### Array Constructor
+
+Syntax:
+
+```javascript
+var array_name = new Array();
+```
 
 <br/>
 <div align="right">
