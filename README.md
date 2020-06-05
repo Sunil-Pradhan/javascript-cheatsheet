@@ -2849,6 +2849,16 @@ We use arrays when we have to deal with multiple data items.
 
 Arrays are a special type of object in JavaScript. 
 
+Example: 
+
+```javascript
+var stu = ['Sunil', 'Anil', 'Rupa'];
+console.log(stu);
+console.log(typeof stu);
+
+//output - [ 'Sunil', 'Anil', 'Rupa' ]
+//output - object
+```
 
 
 
