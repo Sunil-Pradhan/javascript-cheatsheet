@@ -3099,6 +3099,21 @@ stu.forEach(function (name) {
 //output - Sunil, Ram, 56, 66
 ```
 
+Example: 
+
+```javascript
+var stu = ['Sunil', 'Ram', 56, 66];
+stu.forEach(function (value, index) {
+  console.log(value, index);
+});
+
+
+//output - Sunil 0
+//output - Ram 1
+//output - 56 2
+//output - 66 3
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
