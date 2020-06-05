@@ -813,6 +813,7 @@ JavaScript supports the following kinds loops:
 - **for...in -** loops through the properties of an object
 - **for...of -** loops through the values of an iterable object
 
+
 #### for loop
 
 The for loop is usually used where the loop will be repeated a fixed number of times.
@@ -3072,6 +3073,36 @@ for (let i = 0; i <= stu.length-1; i++) {
 //output - Sunil, Ram, 56 , 66 
 ```
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+#### forEach Loop 
+
+The forEach loop calls a provided function once for each element in an array, in order. 
+
+Syntax: 
+
+```javascript
+array.forEact(function(value, index, arr){
+
+});
+```
+
+Where,
+
+value - It is the current value of array index.
+index - Array's index number
+arr - The array object the current element belongs to 
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 <a name="js-variable-hosting"></a>
 
