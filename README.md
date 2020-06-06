@@ -4321,6 +4321,50 @@ console.log(b[0]);
 //output - 80
 ```
 
+Try with few more values;
+
+```javascript
+//array
+var a = [10, 20, 30];
+var b = [...a, 40,50]; 
+console.log(a);
+console.log(b);
+
+//output - [ 10, 20, 30 ]
+//output - [ 10, 20, 30, 40, 50 ]
+```
+
+Example: 
+
+```javascript
+//array
+var a = [10, 20, 30];
+var b = [5, ...a, 40, 50];
+console.log(a);
+console.log(b);
+
+//output - [ 10, 20, 30 ]
+//output - [ 5, 10, 20, 30, 40, 50 ]
+```
+
+Example: 
+
+```javascript
+//array
+var a = [10, 20, 30];
+var b = [40, 50, 60];
+var c = [...a, ...b];
+console.log(a);
+console.log(b);
+console.log(c);
+
+//output - [ 10, 20, 30 ]
+//output - [ 40, 50, 60 ]
+//output - [ 10, 20, 30, 40, 50, 60 ]
+```
+
+Array creates reference but by using spread operators you will not face any issue of reference which creates an array.  
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
