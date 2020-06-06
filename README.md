@@ -1059,6 +1059,21 @@ for(var variable_name of array) {
 }
 ```
 
+Example: 
+
+```javascript
+var stu = ['Sunil', 'Ram', 56, 66];
+
+for (var value of stu) {
+  console.log(value);
+}
+
+//output - Sunil
+//output - Ram
+//output - 56
+//output - 66
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
