@@ -3333,7 +3333,31 @@ console.log(new_stu);
 //output - [ 'Sunil', 'Hari', 'Ram', 'Rula', 'Hari' ] 
 ```
 
-**Example(concat with new values):**
+**Example(merge two arrays and make a new array):**
+
+```javascript
+var stu1 = ['Sunil', 'Ram', 'Sumit'];
+var stu2 = ['Raj', 'Rohan'];
+
+var new_stu = stu1.concat(stu2);
+console.log(new_stu);
+
+//output - [ 'Sunil', 'Ram', 'Sumit', 'Raj', 'Rohan' ]   
+```
+
+**Example(merge three arrays and make a new array):**
+
+
+```javascript
+var stu1 = ['Sunil', 'Ram', 'Sumit'];
+var stu2 = ['Raj', 'Rohan'];
+var stu3 = ['Pinku'];
+
+var new_stu = stu1.concat(stu2,stu3);
+console.log(new_stu);
+
+//output - [ 'Sunil', 'Ram', 'Sumit', 'Raj', 'Rohan', 'Pinku' ]
+```
 
 <br/>
 <div align="right">
