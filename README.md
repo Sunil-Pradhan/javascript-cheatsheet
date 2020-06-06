@@ -3317,12 +3317,11 @@ for (var i = 0; i < rows; i++) {
 </div>
 <br/>
 
-
-### Array Methods 
+### Array Methods
 
 #### `concat()` Method
 
-Syntax: 
+Syntax:
 
 ```javascript
 new_array = old_array.concat(value1, value2, value_n);
@@ -3338,7 +3337,7 @@ var stu = ['Sunil', 'Hari', 'Ram'];
 var new_stu = stu.concat('Rula', 'Hari');
 console.log(new_stu);
 
-//output - [ 'Sunil', 'Hari', 'Ram', 'Rula', 'Hari' ] 
+//output - [ 'Sunil', 'Hari', 'Ram', 'Rula', 'Hari' ]
 ```
 
 **Example(merge two arrays and make a new array):**
@@ -3350,18 +3349,17 @@ var stu2 = ['Raj', 'Rohan'];
 var new_stu = stu1.concat(stu2);
 console.log(new_stu);
 
-//output - [ 'Sunil', 'Ram', 'Sumit', 'Raj', 'Rohan' ]   
+//output - [ 'Sunil', 'Ram', 'Sumit', 'Raj', 'Rohan' ]
 ```
 
 **Example(merge three arrays and make a new array):**
-
 
 ```javascript
 var stu1 = ['Sunil', 'Ram', 'Sumit'];
 var stu2 = ['Raj', 'Rohan'];
 var stu3 = ['Pinku'];
 
-var new_stu = stu1.concat(stu2,stu3);
+var new_stu = stu1.concat(stu2, stu3);
 console.log(new_stu);
 
 //output - [ 'Sunil', 'Ram', 'Sumit', 'Raj', 'Rohan', 'Pinku' ]
@@ -3373,18 +3371,17 @@ console.log(new_stu);
 </div>
 <br/>
 
-
 #### `join()` Method
 
 The `join()` method joins the elements of an array into a string, and returns the string. The elements will be separated by a specified separator. The default separator is comma `,`.
 
-Syntax: 
+Syntax:
 
 ```javascript
 array_name.join(separator);
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Sunil', 'Ram'];
@@ -3396,25 +3393,23 @@ console.log(new_stu);
 //output - Sunil / Ram
 ```
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
 
-
 #### `reverse()` Method
 
 The `reverse()` method reverses the order of the elements in an array.
 
-Syntax: 
+Syntax:
 
 ```javascript
 array_name.reverse();
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Sunil', 'Anil'];
@@ -3426,13 +3421,57 @@ console.log(stu);
 //output - [ 'Anil', 'Sunil' ]
 ```
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
 
+#### `slice()` Method
+
+The `slice()` method returns a shallow copy of a portion of an array into a new array object selected from beginning to end(end not included). The original array will not be modified.
+
+Syntax:
+
+```javascript
+array_name.slice(start, end);
+```
+
+**Remember:**
+
+* Returns a portion of the array as a second array
+* Does not modify the array
+* First argument specifies starting element
+* Second argument specifies ending argument
+* Second argument is optional
+
+**Example(start, end):**
+
+```javascript
+var arr = [1, 2, 3, 4, 5, 6];
+var arr1 = arr.slice(0, 2);
+console.log(arr1);
+
+//output - [ 1, 2 ]
+```
+Here 0 is the starting point and position 2 is the end point but it is not included. 
+
+**Example(start):**
+
+```javascript
+var arr = [1, 2, 3, 4, 5, 6];
+var arr1 = arr.slice(2);
+console.log(arr1);
+
+//output - [ 3, 4, 5, 6 ]
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 <a name="js-variable-hosting"></a>
 
