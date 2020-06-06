@@ -3199,11 +3199,11 @@ Multidimensional array can be 2D, 3D, 4D etc.
 var name[[], [], []];
 ```
 
-Rahul | Dell | 10
-------|----- | ----
-Sonam | HP   | 20
-------|----- | ----
-Sumit | Zen  | 30
+Student | Computer | Qt.
+--------|----------|-----
+Rahul   | Dell     | 10
+Sonam   | HP       | 20
+Sumit   | Zen      | 30
 
 
 <br/>
