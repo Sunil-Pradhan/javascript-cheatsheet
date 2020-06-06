@@ -3942,6 +3942,20 @@ console.log(stu);
 //output - [ 'Rahul', 'Sonam', 'Sumit', 'Raj' ]
 ```
 
+Example: 
+
+```javascript
+var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
+
+var stu_removed = stu.pop();
+console.log(stu);
+console.log(stu_removed);
+
+
+//output - [ 'Rahul', 'Sonam', 'Sumit', 'Raj' ]
+//output - Raj
+```
+
 
 <br/>
 <div align="right">
