@@ -3622,6 +3622,20 @@ console.log(arr);
 //         ]
 ```
 
+Example: 
+
+```javascript
+var a = ['Sanjay', 'Aman', 'Rehman', 'Rahul'];
+
+console.log(a);
+
+a.splice(-2, 1, 'Neha', 'Karan');
+//negative 
+console.log(a);
+
+//output - [ 'Sanjay', 'Aman', 'Rehman', 'Rahul' ]
+//output - [ 'Sanjay', 'Aman', 'Neha', 'Karan', 'Rahul' ]
+```
 
 <br/>
 <div align="right">
