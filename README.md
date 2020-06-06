@@ -3672,7 +3672,7 @@ Syntax:
 Array.isArray(value);
 ```
 
-Example: 
+Example:
 
 ```javascript
 var result1 = Array.isArray(['Rahul', 'Sonam']);
@@ -3685,6 +3685,103 @@ console.log(result2);
 
 //output - false
 ```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### `indexOf()` Method
+
+This method allows you to easily find the occurrence of an item in an array.
+
+- If the item is not found, it returns -1
+- The search will start at the specified position, or at the beginning if no start position is specified, and end the search at the end of the array.
+- If the item is present more than once, the `indexOf` method returns the position of the first occurrence.
+
+Syntax:
+
+```javascript
+var position = array_name.indexOf(item, start);
+```
+
+Example: 
+
+```javascript
+var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
+
+var position = stu.indexOf('Sunil');
+console.log(position);
+
+//output -1
+```
+
+Example: 
+
+```javascript
+var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
+
+var position = stu.indexOf('Sumit');
+console.log(position);
+
+//output - 2
+```
+
+Example: 
+
+```javascript
+var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
+
+var position = stu.indexOf('Raj');
+console.log(position);
+
+//output - 3
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+#### `fill()` Method
+
+The `fill()` method fills all the elements in an array with a static value. 
+
+Syntax: 
+
+```javascript
+array_name.fill(value, start, end);
+```
+
+Example: 
+
+```javascript
+var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
+
+stu.fill('Manu');
+
+//no start and no end
+console.log(stu);
+
+//output - [ 'Manu', 'Manu', 'Manu', 'Manu', 'Manu' ]
+```
+
+Example: 
+
+```javascript
+var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
+
+stu.fill('Manu', 1,3);
+
+//fill Manu starting with index 1 to 3 but 3 not included
+console.log(stu);
+
+//output - [ 'Rahul', 'Manu', 'Manu', 'Raj', 'Raj' ]
+```
+
 
 <br/>
 <div align="right">
