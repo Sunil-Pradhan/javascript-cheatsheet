@@ -4253,6 +4253,35 @@ Syntax:
 
 Rest operator you will see mostly in functions whereas spread operator works in array and object. 
 
+```javascript
+//array
+var a = [10, 20, 30];
+var b = a;
+console.log(a);
+console.log(b);
+
+//output - [ 10, 20, 30 ]
+//output - [ 10, 20, 30 ]
+```
+
+Change in a code slighlty;
+
+```javascript
+//array
+var a = [10, 20, 30];
+var b = a;
+a[0] = 50;
+console.log(a);
+console.log(b);
+
+//output - [ 50, 20, 30 ]
+//output - [ 50, 20, 30 ]
+```
+
+You can see both values have been changed to 50. But why?  
+
+In Javascript array values never copy, it copies only references on the index. 
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
