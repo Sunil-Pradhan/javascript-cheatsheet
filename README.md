@@ -4251,6 +4251,8 @@ Syntax:
 ...stu;
 ```
 
+Rest operator you will see mostly in functions whereas spread operator works in array and object. 
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
