@@ -3187,6 +3187,30 @@ stu.forEach(function (value, index) {
 </div>
 <br/>
 
+#### MultiDimensional array
+
+Multidimensional array is Arrays of Arrays.In other words, an array that contains an array is called a multidimensional array.
+
+Multidimensional array can be 2D, 3D, 4D etc.
+
+2D Array Example: 
+
+```javascript
+var name[[], [], []];
+```
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
