@@ -4306,6 +4306,21 @@ console.log(b[0]);
 //output - 10
 ```
 
+After using the spread operator you can see the changes. 
+
+```javascript
+//array
+var a = [10, 20, 30];
+var b = [...a]; //var b = [10, 20, 30]
+a[0] = 50;
+b[0] = 80;
+console.log(a[0]);
+console.log(b[0]);
+
+//output - 50
+//output - 80
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
