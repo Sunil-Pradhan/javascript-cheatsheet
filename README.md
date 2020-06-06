@@ -3547,6 +3547,22 @@ array_name.splice(start,delete_count, replace_values);
 * The second argument is optional
 * Each additonal argument is inserted into the array
 
+Example: 
+
+```javascript
+var arr = [1, 2, 3, 4, 5, 6];
+//delete few elements:
+
+var arr1 = arr.splice(2, 2);
+console.log(arr1);
+
+//check old array
+console.log(arr);
+
+//output - [ 3, 4 ]
+//output - [ 1, 2, 5, 6 ]
+```
+
 
 <br/>
 <div align="right">
