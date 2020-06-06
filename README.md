@@ -3199,10 +3199,9 @@ Multidimensional array can be 2D, 3D, 4D etc.
 var name[[], [], []];
 ```
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+Rahul | Dell | 10
+Sonam | HP   | 20
+Sumit | Zen  | 30
 
 
 <br/>
