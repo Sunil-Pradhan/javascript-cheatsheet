@@ -3880,6 +3880,35 @@ console.log(stu_length);
 </div>
 <br/>
 
+
+#### `shift()` Method
+
+The `shift()` method removes the first element from an array and returns that removed element. This method changes the length of the array. 
+
+Syntax: 
+
+```javascript
+array_name.shift();
+```
+
+Example: 
+
+```javascript
+var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
+
+stu.shift();
+console.log(stu);
+
+//output - [ 'Sonam', 'Sumit', 'Raj', 'Raj' ]
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
