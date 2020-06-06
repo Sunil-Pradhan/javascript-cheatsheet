@@ -1051,6 +1051,14 @@ for (var specs in samsung) {
 
 The `for..of` statement creates a loop iterating over iterable objects. 
 
+Syntax: 
+
+```javascript
+for(var variable_name of array) {
+
+}
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
