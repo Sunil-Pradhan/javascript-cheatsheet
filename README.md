@@ -1049,17 +1049,16 @@ for (var specs in samsung) {
 
 #### for...of Loop
 
-The `for..of` statement creates a loop iterating over iterable objects. 
+The `for..of` statement creates a loop iterating over iterable objects.
 
-Syntax: 
+Syntax:
 
 ```javascript
-for(var variable_name of array) {
-
+for (var variable_name of array) {
 }
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Sunil', 'Ram', 56, 66];
@@ -1074,14 +1073,14 @@ for (var value of stu) {
 //output - 66
 ```
 
- **Difference between ( for… in ) and ( for… of ) statements in JavaScript:**
+**Difference between ( for… in ) and ( for… of ) statements in JavaScript:**
 
- Both `for..in` and `for..of` are looping constructs which are used to iterate over data structures. The only difference is over what they iterate:
+Both `for..in` and `for..of` are looping constructs which are used to iterate over data structures. The only difference is over what they iterate:
 
 `for..in` iterates over all enumerable property keys of an object
 `for..of` iterates over the values of an iterable object. Examples of iterable objects are arrays, strings, and NodeLists.
 
-Example: 
+Example:
 
 ```javascript
 let arr = ['el1', 'el2', 'el3'];
@@ -1095,19 +1094,22 @@ for (let elKey in arr) {
 
 // elValue are the property values
 for (let elValue of arr) {
-  console.log(elValue)
+  console.log(elValue);
 }
 
-//output 
+//output
 //0
-//1        
-//2        
+//1
+//2
 //addedProp
-//el1      
-//el2      
-//el3 
+//el1
+//el2
+//el3
 ```
 
+###### Reference
+
+https://stackoverflow.com/questions/29285897/what-is-the-difference-between-for-in-and-for-of-statements-in-jav#:~:text=Difference%20for..in%20and%20for,values%20of%20an%20iterable%20object.
 
 <br/>
 <div align="right">
@@ -3154,8 +3156,7 @@ Where,
 - index - Array's index number.Here also you can give any other name index, i or any other.It is not mandatory.
 - arr - The array object the current element belongs to. It is not mandatory.
 
-
-Example: 
+Example:
 
 ```javascript
 var stu = ['Sunil', 'Ram', 56, 66];
@@ -3163,18 +3164,16 @@ stu.forEach(function (name) {
   console.log(name);
 });
 
-
 //output - Sunil, Ram, 56, 66
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Sunil', 'Ram', 56, 66];
 stu.forEach(function (value, index) {
   console.log(value, index);
 });
-
 
 //output - Sunil 0
 //output - Ram 1
