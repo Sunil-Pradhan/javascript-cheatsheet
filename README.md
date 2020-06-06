@@ -4239,6 +4239,24 @@ Arguments object is not a real Array, while Rest operator are Array instances, m
 </div>
 <br/>
 
+### Spread operator
+
+Spread operator is kind of the opposite of the Rest operator so while the Rest operator takes a variable as number of parameters or arguments and puts them into a single array. 
+
+The spread operator takes an array and splits it into the individual elements so Rest is to combine whereas spread is to split. 
+
+Syntax:
+
+```javascript
+...stu;
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-module"></a>
 
 ## Module - Import & Export
