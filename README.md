@@ -3604,6 +3604,23 @@ console.log(arr);
 //         ]
 ```
 
+Example: 
+
+```javascript
+var arr = [1, 2, 3, 4, 5, 6];
+//inserting & deleting both 
+
+let arr4 = arr.splice(2, 1, 'a', 'b');
+
+console.log(arr4);
+console.log(arr);
+
+//output - [3]
+//output - [
+//          1, 2, 'a', 'b',
+//          4, 5, 6   
+//         ]
+```
 
 
 <br/>
