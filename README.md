@@ -3235,11 +3235,29 @@ for (let i = 0; i < 3; i++) {
 //output - Rula, Zen, 50 
 ``` 
 
+**Empty 2D Array:**  
   
-  
+**Method#1 - Using array literal**
 
+```javascript
+var stu = [[], []];
+
+for (let i = 0; i < 2; i++) {
+  for (let j = 0; j < 3; j++) {
+    console.log(i + ' || ' + j + ' ||');
+  }
+}
+
+//output 
+//0 || 0 ||
+//0 || 1 ||
+//0 || 2 ||
+//1 || 0 ||
+//1 || 1 ||
+//1 || 2 ||
+```
  
- 
+
 
 
 <br/>
