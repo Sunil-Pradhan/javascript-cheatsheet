@@ -3672,6 +3672,20 @@ Syntax:
 Array.isArray(value);
 ```
 
+Example: 
+
+```javascript
+var result1 = Array.isArray(['Rahul', 'Sonam']);
+console.log(result1);
+
+//output - true
+
+var result2 = Array.isArray('I am String');
+console.log(result2);
+
+//output - false
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
