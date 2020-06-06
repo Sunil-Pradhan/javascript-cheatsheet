@@ -3921,6 +3921,34 @@ console.log(stu_removed);
 </div>
 <br/>
 
+#### `pop()` Method
+
+The `pop()` method removes the last element from an array and returns that removed element. This method changes the length of the array. 
+
+Syntax: 
+
+```javascript
+array_name.pop();
+```
+
+Example: 
+
+```javascript
+var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
+
+stu.pop();
+console.log(stu);
+
+//output - [ 'Rahul', 'Sonam', 'Sumit', 'Raj' ]
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
