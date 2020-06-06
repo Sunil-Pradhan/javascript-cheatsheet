@@ -3644,6 +3644,26 @@ console.log(a);
 <br/>
 
 
+#### `toString()` Method
+
+The `toString()` Method returns a string containing the comma-separated values of the array. This method is invoked automatically when you print an array. 
+
+It is equivalent to invoking `join()` method without any arguments. The returned string will separate the elements in the array with commas.
+
+
+Syntax:
+
+```javascript
+array_name.toString();
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
