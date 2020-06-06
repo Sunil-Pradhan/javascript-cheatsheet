@@ -3789,6 +3789,37 @@ console.log(stu);
 </div>
 <br/>
 
+
+#### `unshift()` Method
+
+The `unshift()` method adds one or more elements to the beginning of an array and returns the new length of the array.
+
+This method changes the length of an array.
+
+Syntax: 
+
+```javascript
+Array_name.unshift(value1, value2, value_n);
+```
+
+Example: 
+
+```javascript
+var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
+
+stu.unshift('Sunil');
+console.log(stu);
+
+//output - [ 'Sunil', 'Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj' ]
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
