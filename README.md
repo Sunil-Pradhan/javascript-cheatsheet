@@ -4369,6 +4369,62 @@ Array creates reference but by using spread operators you will not face any issu
 
 **Example(object):**
 
+```javascript
+//Object
+
+var a = {
+  courseName: 'JavaScript',
+  tutor: 'Sunil',
+};
+
+var b = a;
+console.log(a);
+console.log(b);
+
+//output - { courseName: 'JavaScript', tutor: 'Sunil' }
+//output - { courseName: 'JavaScript', tutor: 'Sunil' }
+```
+
+Object is also a reference type. 
+
+```javascript
+//Object
+
+var a = {
+  courseName: 'JavaScript',
+  tutor: 'Sunil',
+};
+
+var b = a;
+a.courseName = 'React';
+console.log(a);
+console.log(b);
+
+//output - { courseName: 'React', tutor: 'Sunil' }
+//output - { courseName: 'React', tutor: 'Sunil' }
+```
+
+The value of `b` has also changed. We can use here the spread operator. 
+
+```javascript
+//Object
+
+var a = {
+  courseName: 'JavaScript',
+  tutor: 'Sunil',
+};
+
+var b = {...a};
+a.courseName = 'React';
+console.log(a);
+console.log(b);
+
+//output - { courseName: 'React', tutor: 'Sunil' }
+//output - { courseName: 'JavaScript', tutor: 'Sunil' }
+```
+
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
