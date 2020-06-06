@@ -3832,6 +3832,33 @@ console.log(stu_length);
 </div>
 <br/>
 
+
+#### `push()` Method
+
+The `push()` method adds one or more elements to the end of an array and returns the new length of the array. 
+
+The new item will be added at the end of the array.
+
+This method changes the length of the array. 
+
+
+Syntax: 
+
+```javascript
+Array_name.push(value1, value2, value_n);
+```
+
+Example: 
+
+```javascript
+var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
+
+stu.push('Sunil');
+console.log(stu);
+
+//output - [ 'Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj', 'Sunil' ]
+```
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
