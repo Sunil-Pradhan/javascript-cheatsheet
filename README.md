@@ -3284,7 +3284,7 @@ for (var i = 0; i < rows; i++) {
 //undefined
 ```
 
-
+This is how you can create empty arrays where later you can take input from the users too. 
 
 <br/>
 <div align="right">
