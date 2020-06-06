@@ -1047,6 +1047,16 @@ for (var specs in samsung) {
 </div>
 <br/>
 
+#### for...of Loop
+
+The `for..of` statement creates a loop iterating over iterable objects. 
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-function"></a>
 
 ## JavaScript Function
