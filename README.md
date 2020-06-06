@@ -4422,8 +4422,45 @@ console.log(b);
 //output - { courseName: 'React', tutor: 'Sunil' }
 //output - { courseName: 'JavaScript', tutor: 'Sunil' }
 ```
+Here the value `a` has only change not `b`. 
+
+If you want to add something. 
+
+```javascript
+//Object
+
+var a = {
+  courseName: 'JavaScript',
+  tutor: 'Sunil',
+};
+
+var b = {...a, duration: 'TwoMonths'};
+a.courseName = 'React';
+console.log(a);
+console.log(b);
+
+//output - { courseName: 'React', tutor: 'Sunil' }
+//output - { courseName: 'JavaScript', tutor: 'Sunil', duration: 'TwoMonths' }
+```
+
+Try to merge it;
+
+```javascript
+//Object
+
+var a = {
+  courseName: 'JavaScript',
+  tutor: 'Sunil',
+};
+
+var b = { duration: 'TwoMonths' };
+var c = { ...a, ...b };
 
 
+console.log(c);
+
+//output - { courseName: 'JavaScript', tutor: 'Sunil', duration: 'TwoMonths' }
+```
 
 <br/>
 <div align="right">
