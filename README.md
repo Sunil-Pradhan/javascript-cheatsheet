@@ -3859,6 +3859,27 @@ console.log(stu);
 //output - [ 'Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj', 'Sunil' ]
 ```
 
+Example: 
+
+```javascript
+var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
+
+var stu_length = stu.push('Sunil');
+console.log(stu);
+console.log(stu_length);
+
+
+//output - [ 'Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj', 'Sunil' ]
+//output - 6
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
