@@ -3257,6 +3257,32 @@ for (let i = 0; i < 2; i++) {
 //1 || 2 ||
 ```
  
+This is not a good way to create an empty 2d array due, if you need to make 1000 empty arrays then you need to enter 1000 times `[] []`. 
+
+
+**Method#1 - Using array literal**
+
+```javascript
+var stu = [];
+var rows = 2;
+var cols = 3;
+for (var i = 0; i < rows; i++) {
+  stu[i] = [];
+}
+for (var i = 0; i < rows; i++) {
+  for (var j = 0; j < cols; j++) {
+    console.log(stu[i][j] + ' ');
+  }
+}
+
+//output - 
+//undefined 
+//undefined
+//undefined
+//undefined
+//undefined
+//undefined
+```
 
 
 
