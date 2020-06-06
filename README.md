@@ -3563,6 +3563,29 @@ console.log(arr);
 //output - [ 1, 2, 5, 6 ]
 ```
 
+Example: 
+
+```javascript
+var arr = [1, 2, 3, 4, 5, 6];
+//delete few elements:
+
+var arr1 = arr.splice(2, 2);
+console.log(arr1);
+
+
+//doesn't find any element
+var arr2 = arr.splice(4);
+console.log(arr2);
+
+
+//check old array
+console.log(arr);
+
+//output - [ 3, 4 ]
+//output - []
+//output - [ 1, 2, 5, 6 ]
+```
+
 
 <br/>
 <div align="right">
