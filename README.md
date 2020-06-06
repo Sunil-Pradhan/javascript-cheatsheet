@@ -3235,9 +3235,9 @@ for (let i = 0; i < 3; i++) {
 //output - Rula, Zen, 50 
 ``` 
 
-**Empty 2D Array:**  
+**Empty 2D Array: Using array literal**  
   
-**Method#1 - Using array literal**
+**Method#1**
 
 ```javascript
 var stu = [[], []];
@@ -3260,7 +3260,7 @@ for (let i = 0; i < 2; i++) {
 This is not a good way to create an empty 2d array due, if you need to make 1000 empty arrays then you need to enter 1000 times `[] []`. 
 
 
-**Method#1 - Using array literal**
+**Method#2**
 
 ```javascript
 var stu = [];
