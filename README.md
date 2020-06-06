@@ -3213,7 +3213,7 @@ In computer memory:
 | [1][0]Sonam | [1][1]HP   | [1][2]20 |
 | [2][0]Sumit | [2][1]Zen  | [2][2]30 |
 
-Example: 
+Example:
 
 ```javascript
 var stu = [
@@ -3230,13 +3230,13 @@ for (let i = 0; i < 3; i++) {
   }
 }
 
-//output - Sunil, Dell, 10 
-//output - Anil, HP, 20 
-//output - Rula, Zen, 50 
-``` 
+//output - Sunil, Dell, 10
+//output - Anil, HP, 20
+//output - Rula, Zen, 50
+```
 
-**Empty 2D Array: Using array literal**  
-  
+**Empty 2D Array: Using array literal**
+
 **Method#1**
 
 ```javascript
@@ -3248,7 +3248,7 @@ for (let i = 0; i < 2; i++) {
   }
 }
 
-//output 
+//output
 //0 || 0 ||
 //0 || 1 ||
 //0 || 2 ||
@@ -3256,9 +3256,8 @@ for (let i = 0; i < 2; i++) {
 //1 || 1 ||
 //1 || 2 ||
 ```
- 
-This is not a good way to create an empty 2d array due, if you need to make 1000 empty arrays then you need to enter 1000 times `[] []`. 
 
+This is not a good way to create an empty 2d array due, if you need to make 1000 empty arrays then you need to enter 1000 times `[] []`.
 
 **Method#2**
 
@@ -3275,8 +3274,8 @@ for (var i = 0; i < rows; i++) {
   }
 }
 
-//output - 
-//undefined 
+//output -
+//undefined
 //undefined
 //undefined
 //undefined
@@ -3284,7 +3283,33 @@ for (var i = 0; i < rows; i++) {
 //undefined
 ```
 
-This is how you can create empty arrays where later you can take input from the users too. 
+This is how you can create empty arrays where later you can take input from the users too.
+
+**Get input from user in 2D Array:**
+
+```javascript
+//define a 2d array
+var rows = 3;
+var cols = 2;
+var stu = new Array(rows);
+for (var i = 0; i < rows; i++) {
+  stu[i] = new Array(cols);
+}
+
+//Input for array
+for (var i = 0; i < rows; i++) {
+  for (var j = 0; j < cols; j++) {
+    stu[i][j] = prompt('Enter name: ');
+  }
+}
+
+//Displaying value
+for (var i = 0; i < rows; i++) {
+  for (var j = 0; j < cols; j++) {
+    document.write(i + ' ' + j + stu[i][j]);
+  }
+}
+```
 
 <br/>
 <div align="right">
