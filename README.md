@@ -3963,6 +3963,49 @@ console.log(stu_removed);
 </div>
 <br/>
 
+
+#### `Boolean()` Method
+
+Boolean is the built-in object corresponding to the primitive Boolean data type. JavaScript boolean can have one of two values: true or false. 
+
+**Primitive values:** 
+
+```javascript
+var primitiveTrue = true;
+var primitiveFalse = false;
+```
+
+**Boolean function:**
+
+```javascript
+var functionTrue = Boolean(true);
+var functionFalse = Boolean(flase);
+```
+
+**Boolean constructor:** 
+
+```javascript
+var constructorTrue = new Boolean(true);
+var constructorFalse = new Boolean(false);
+``` 
+
+Example: 
+
+```javascript
+var a = Boolean() //false 
+var a = Boolean(0) //false 
+var a = Boolean(-0) //false 
+var a = Boolean(NaN) //false 
+var a = Boolean(null) //false 
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
