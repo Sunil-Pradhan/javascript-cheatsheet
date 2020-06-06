@@ -3193,18 +3193,25 @@ Multidimensional array is Arrays of Arrays.In other words, an array that contain
 
 Multidimensional array can be 2D, 3D, 4D etc.
 
-2D Array Example: 
+2D Array Example:
 
 ```javascript
 var name[[], [], []];
 ```
 
-Student | Computer | Qt.
---------|----------|-----
-Rahul   | Dell     | 10
-Sonam   | HP       | 20
-Sumit   | Zen      | 30
+| Student | Computer | Qt. |
+| ------- | -------- | --- |
+| Rahul   | Dell     | 10  |
+| Sonam   | HP       | 20  |
+| Sumit   | Zen      | 30  |
 
+In computer memory:
+
+| Student     | Computer   | Qt.      |
+| ----------- | ---------- | -------- |
+| [0][0]Rahul | [0][1]Dell | [0][2]10 |
+| [1][0]Sonam | [1][1]HP   | [1][2]20 |
+| [2][0]Sumit | [2][1]Zen  | [2][2]30 |
 
 <br/>
 <div align="right">
