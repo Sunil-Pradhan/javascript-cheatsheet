@@ -4253,6 +4253,8 @@ Syntax:
 
 Rest operator you will see mostly in functions whereas spread operator works in array and object. 
 
+**Example(array):**
+
 ```javascript
 //array
 var a = [10, 20, 30];
@@ -4364,6 +4366,8 @@ console.log(c);
 ```
 
 Array creates reference but by using spread operators you will not face any issue of reference which creates an array.  
+
+**Example(object):**
 
 <br/>
 <div align="right">
