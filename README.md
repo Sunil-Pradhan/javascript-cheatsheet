@@ -3439,25 +3439,23 @@ array_name.slice(start, end);
 
 **Remember:**
 
-* Returns a portion of the array as a second array
-* Does not modify the array
-* First argument specifies starting element
-* Second argument specifies ending argument
-* Second argument is optional
+- Returns a portion of the array as a second array
+- Does not modify the array
+- First argument specifies starting element
+- Second argument specifies ending argument
+- Second argument is optional
 
+**Start:**
 
-**Start:** 
+- If begin is `undefined`, slice begins from index 0.
+- If the beginning is greater than the length of the sequence, an empty array is returned.
+- A negative index can be used, indicating an offset from the end of the sequence. `slice(-2)` extracts the last two elements in the sequence.
 
-* If begin is `undefined`, slice begins from index 0.
-* If the beginning is greater than the length of the sequence, an empty array is returned.
-* A negative index can be used, indicating an offset from the end of the sequence. `slice(-2)` extracts the last two elements in the sequence.
+**End:**
 
-**End:** 
-
-* If the end is omitted, slice extracts through the end of the sequence(arr.length).
-* If the end is greater than the length of the sequence, slice extracts through to the end of the sequence (arr.length).
-* A negative index can be used, indicating an offset from the end of the sequence. slice(2,-1) extracts the third element through the second-to-last element in the sequence. 
-
+- If the end is omitted, slice extracts through the end of the sequence(arr.length).
+- If the end is greater than the length of the sequence, slice extracts through to the end of the sequence (arr.length).
+- A negative index can be used, indicating an offset from the end of the sequence. slice(2,-1) extracts the third element through the second-to-last element in the sequence.
 
 **Example(start, end):**
 
@@ -3468,7 +3466,8 @@ console.log(arr1);
 
 //output - [ 1, 2 ]
 ```
-Here 0 is the starting point and position 2 is the end point but it is not included. 
+
+Here 0 is the starting point and position 2 is the end point but it is not included.
 
 **Example(start):**
 
@@ -3489,15 +3488,13 @@ console.log(stu);
 var new_stu = stu.slice(-3);
 console.log(new_stu);
 
-
 //output - [ 'Sanjay', 'Aman', 'Rehman', 'Rahul', 'Karan' ]
 //output - [ 'Rehman', 'Rahul', 'Karan' ]
 ```
 
-In memory: 
+In memory:
 
 'Sanjay' ->5, 'Aman' ->4, 'Rehman'-> -3, 'Rahul'-> -2, 'Karan' -> -1
-
 
 **Example(negative value - start, end):**
 
@@ -3508,18 +3505,15 @@ console.log(stu);
 var new_stu = stu.slice(-3, -1);
 console.log(new_stu);
 
-
 //output - [ 'Sanjay', 'Aman', 'Rehman', 'Rahul', 'Karan' ]
 //output - [ 'Rehman', 'Rahul' ]
 ```
-
 
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 #### `splice()` Method
 
@@ -3528,26 +3522,25 @@ The `splice()` method changes the contents of an array by removing existing elem
 Syntax:
 
 ```javascript
-array_name.splice(start,delete_count, replace_values);
+array_name.splice(start, delete_count, replace_values);
 ```
 
-**Start -** The first argument start specifies at what position to add/remove items, use negative values to specify the position from the end of the array. 
+**Start -** The first argument start specifies at what position to add/remove items, use negative values to specify the position from the end of the array.
 
-**delete_count -** The second argument “delete_count”, is the number of elements to delete beginning with index start. 
+**delete_count -** The second argument “delete_count”, is the number of elements to delete beginning with index start.
 
-**replace_values -** “replace_values” are inserted in place of the deleted elements. If more than one separates it by comma.  
-
+**replace_values -** “replace_values” are inserted in place of the deleted elements. If more than one separates it by comma.
 
 **Remember:**
 
-* Modifies the array on which it is invoked
-* The first argument specifies the array postion for insertion or deletion
-* The second argument indicates the number of elements to delete
-* The deleted elements are returned as an array
-* The second argument is optional
-* Each additonal argument is inserted into the array
+- Modifies the array on which it is invoked
+- The first argument specifies the array postion for insertion or deletion
+- The second argument indicates the number of elements to delete
+- The deleted elements are returned as an array
+- The second argument is optional
+- Each additonal argument is inserted into the array
 
-Example: 
+Example:
 
 ```javascript
 var arr = [1, 2, 3, 4, 5, 6];
@@ -3563,7 +3556,7 @@ console.log(arr);
 //output - [ 1, 2, 5, 6 ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 var arr = [1, 2, 3, 4, 5, 6];
@@ -3572,11 +3565,9 @@ var arr = [1, 2, 3, 4, 5, 6];
 var arr1 = arr.splice(2, 2);
 console.log(arr1);
 
-
 //doesn't find any element
 var arr2 = arr.splice(4);
 console.log(arr2);
-
 
 //check old array
 console.log(arr);
@@ -3586,7 +3577,7 @@ console.log(arr);
 //output - [ 1, 2, 5, 6 ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 var arr = [1, 2, 3, 4, 5, 6];
@@ -3600,15 +3591,15 @@ console.log(arr);
 //output - []
 //output - [
 //          1, 2, 'a', 'b',
-//          3, 4, 5,   6   
+//          3, 4, 5,   6
 //         ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 var arr = [1, 2, 3, 4, 5, 6];
-//inserting & deleting both 
+//inserting & deleting both
 
 let arr4 = arr.splice(2, 1, 'a', 'b');
 
@@ -3618,11 +3609,11 @@ console.log(arr);
 //output - [3]
 //output - [
 //          1, 2, 'a', 'b',
-//          4, 5, 6   
+//          4, 5, 6
 //         ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 var a = ['Sanjay', 'Aman', 'Rehman', 'Rahul'];
@@ -3630,7 +3621,7 @@ var a = ['Sanjay', 'Aman', 'Rehman', 'Rahul'];
 console.log(a);
 
 a.splice(-2, 1, 'Neha', 'Karan');
-//negative 
+//negative
 console.log(a);
 
 //output - [ 'Sanjay', 'Aman', 'Rehman', 'Rahul' ]
@@ -3643,18 +3634,26 @@ console.log(a);
 </div>
 <br/>
 
-
 #### `toString()` Method
 
-The `toString()` Method returns a string containing the comma-separated values of the array. This method is invoked automatically when you print an array. 
+The `toString()` Method returns a string containing the comma-separated values of the array. This method is invoked automatically when you print an array.
 
 It is equivalent to invoking `join()` method without any arguments. The returned string will separate the elements in the array with commas.
-
 
 Syntax:
 
 ```javascript
 array_name.toString();
+```
+
+Example:
+
+```javascript
+var stu = ['Sunil', 'Ram', 'Gopal'];
+stu.toString();
+console.log(stu);
+
+//output - [ 'Sunil', 'Ram', 'Gopal' ]
 ```
 
 <br/>
@@ -3663,6 +3662,21 @@ array_name.toString();
 </div>
 <br/>
 
+#### `Array.isArray()` Method
+
+The `Array.isArray()` method determines whether the passed value is an Array. This function returns true if the object is an array, and false if not.
+
+Syntax:
+
+```javascript
+Array.isArray(value);
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 <a name="js-variable-hosting"></a>
 
