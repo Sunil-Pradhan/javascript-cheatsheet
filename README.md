@@ -3445,6 +3445,20 @@ array_name.slice(start, end);
 * Second argument specifies ending argument
 * Second argument is optional
 
+
+**Start:** 
+
+* If begin is `undefined`, slice begins from index 0.
+* If the beginning is greater than the length of the sequence, an empty array is returned.
+* A negative index can be used, indicating an offset from the end of the sequence. `slice(-2)` extracts the last two elements in the sequence.
+
+**End:** 
+
+* If the end is omitted, slice extracts through the end of the sequence(arr.length).
+* If the end is greater than the length of the sequence, slice extracts through to the end of the sequence (arr.length).
+* A negative index can be used, indicating an offset from the end of the sequence. slice(2,-1) extracts the third element through the second-to-last element in the sequence. 
+
+
 **Example(start, end):**
 
 ```javascript
@@ -3505,6 +3519,41 @@ console.log(new_stu);
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+
+#### `splice()` Method
+
+The `splice()` method changes the contents of an array by removing existing elements and/or adding new elements. This method changes the original array.
+
+Syntax:
+
+```javascript
+array_name.splice(start,delete_count, replace_values);
+```
+
+**Start -** The first argument start specifies at what position to add/remove items, use negative values to specify the position from the end of the array. 
+
+**delete_count -** The second argument “delete_count”, is the number of elements to delete beginning with index start. 
+
+**replace_values -** “replace_values” are inserted in place of the deleted elements. If more than one separates it by comma.  
+
+
+**Remember:**
+
+* Modifies the array on which it is invoked
+* The first argument specifies the array postion for insertion or deletion
+* The second argument indicates the number of elements to delete
+* The deleted elements are returned as an array
+* The second argument is optional
+* Each additonal argument is inserted into the array
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 
 <a name="js-variable-hosting"></a>
 
