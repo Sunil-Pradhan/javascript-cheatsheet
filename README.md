@@ -4461,6 +4461,7 @@ console.log(c);
 
 //output - { courseName: 'JavaScript', tutor: 'Sunil', duration: 'TwoMonths' }
 ```
+Here reference are not being copied rather value copy. 
 
 <br/>
 <div align="right">
