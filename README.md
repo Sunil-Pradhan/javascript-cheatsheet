@@ -3466,7 +3466,7 @@ console.log(arr1);
 //output - [ 3, 4, 5, 6 ]
 ```
 
-**Example(negative value):**
+**Example(negative value - start):**
 
 ```javascript
 var stu = ['Sanjay', 'Aman', 'Rehman', 'Rahul', 'Karan'];
@@ -3483,6 +3483,21 @@ console.log(new_stu);
 In memory: 
 
 'Sanjay' ->5, 'Aman' ->4, 'Rehman'-> -3, 'Rahul'-> -2, 'Karan' -> -1
+
+
+**Example(negative value - start, end):**
+
+```javascript
+var stu = ['Sanjay', 'Aman', 'Rehman', 'Rahul', 'Karan'];
+console.log(stu);
+
+var new_stu = stu.slice(-3, -1);
+console.log(new_stu);
+
+
+//output - [ 'Sanjay', 'Aman', 'Rehman', 'Rahul', 'Karan' ]
+//output - [ 'Rehman', 'Rahul' ]
+```
 
 
 <br/>
