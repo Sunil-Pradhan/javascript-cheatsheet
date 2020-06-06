@@ -3813,6 +3813,18 @@ console.log(stu);
 //output - [ 'Sunil', 'Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj' ]
 ```
 
+Example: 
+
+```javascript
+var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
+
+var stu_length = stu.unshift('Sunil');
+console.log(stu);
+console.log(stu_length);
+
+//output - [ 'Sunil', 'Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj' ]
+//output - 6
+```
 
 <br/>
 <div align="right">
