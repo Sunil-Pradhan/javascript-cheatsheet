@@ -4282,6 +4282,30 @@ You can see both values have been changed to 50. But why?
 
 In Javascript array values never copy, it copies only references on the index. 
 
+```javascript
+//array
+var a = [10, 20, 30];
+var b = a;
+a[0] = 50;
+console.log(a[0]);
+console.log(b[0]);
+
+//output - 50
+//output - 50
+```
+To remove this issue you can use the spread operator. 
+
+```javascript
+var a = [10, 20, 30];
+var b = [...a]; //var b = [10, 20, 30]
+a[0] = 50;
+console.log(a[0]);
+console.log(b[0]);
+
+//output - 50
+//output - 10
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
