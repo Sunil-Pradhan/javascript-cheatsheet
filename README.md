@@ -3404,6 +3404,36 @@ console.log(new_stu);
 <br/>
 
 
+#### `reverse()` Method
+
+The `reverse()` method reverses the order of the elements in an array.
+
+Syntax: 
+
+```javascript
+array_name.reverse();
+```
+
+Example: 
+
+```javascript
+var stu = ['Sunil', 'Anil'];
+console.log(stu);
+stu.reverse();
+console.log(stu);
+
+//output - [ 'Sunil', 'Anil' ]
+//output - [ 'Anil', 'Sunil' ]
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
