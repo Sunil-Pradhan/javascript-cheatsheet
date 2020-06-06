@@ -3586,6 +3586,25 @@ console.log(arr);
 //output - [ 1, 2, 5, 6 ]
 ```
 
+Example: 
+
+```javascript
+var arr = [1, 2, 3, 4, 5, 6];
+//inserting
+
+let arr3 = arr.splice(2, 0, 'a', 'b');
+
+console.log(arr3);
+console.log(arr);
+
+//output - []
+//output - [
+//          1, 2, 'a', 'b',
+//          3, 4, 5,   6   
+//         ]
+```
+
+
 
 <br/>
 <div align="right">
