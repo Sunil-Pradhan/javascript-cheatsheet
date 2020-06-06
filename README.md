@@ -3320,7 +3320,20 @@ for (var i = 0; i < rows; i++) {
 
 #### `concat()` Method
 
-The `concat()` method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array. 
+The `concat()` method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+
+**Example(concat with new values):**
+
+```javascript
+var stu = ['Sunil', 'Hari', 'Ram'];
+//concat values
+var new_stu = stu.concat('Rula', 'Hari');
+console.log(new_stu);
+
+//output - [ 'Sunil', 'Hari', 'Ram', 'Rula', 'Hari' ] 
+```
+
+**Example(concat with new values):**
 
 <br/>
 <div align="right">
