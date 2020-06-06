@@ -3322,6 +3322,12 @@ for (var i = 0; i < rows; i++) {
 
 #### `concat()` Method
 
+Syntax: 
+
+```javascript
+new_array = old_array.concat(value1, value2, value_n);
+```
+
 The `concat()` method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
 
 **Example(concat with new values):**
@@ -3360,6 +3366,36 @@ console.log(new_stu);
 
 //output - [ 'Sunil', 'Ram', 'Sumit', 'Raj', 'Rohan', 'Pinku' ]
 ```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+#### `join()` Method
+
+The `join()` method joins the elements of an array into a string, and returns the string. The elements will be separated by a specified separator. The default separator is comma `,`.
+
+Syntax: 
+
+```javascript
+array_name.join(separator);
+```
+
+Example: 
+
+```javascript
+var stu = ['Sunil', 'Ram'];
+var new_stu = stu.join(' / ');
+console.log(stu);
+console.log(new_stu);
+
+//output - [ 'Sunil', 'Ram' ]
+//output - Sunil / Ram
+```
+
 
 <br/>
 <div align="right">
