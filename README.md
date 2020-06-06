@@ -3317,6 +3317,18 @@ for (var i = 0; i < rows; i++) {
 </div>
 <br/>
 
+
+#### `concat()` Method
+
+The `concat()` method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array. 
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
