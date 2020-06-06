@@ -3213,6 +3213,35 @@ In computer memory:
 | [1][0]Sonam | [1][1]HP   | [1][2]20 |
 | [2][0]Sumit | [2][1]Zen  | [2][2]30 |
 
+Example: 
+
+```javascript
+var stu = [
+  ['Sunil', 'Dell', 10],
+  ['Anil', 'HP', 20],
+  ['Rula', 'Zen', 50],
+];
+
+//for rows
+for (let i = 0; i < 3; i++) {
+  //for coloumns
+  for (let j = 0; j < 3; j++) {
+    console.log(stu[i][j]);
+  }
+}
+
+//output - Sunil, Dell, 10 
+//output - Anil, HP, 20 
+//output - Rula, Zen, 50 
+``` 
+
+  
+  
+
+ 
+ 
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
