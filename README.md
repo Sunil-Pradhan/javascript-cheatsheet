@@ -19,12 +19,15 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Object](#js-object)
 - [Array](#js-arrays)
 - [String](#js-string)
+- [Number](#js-number)
 - [Variable Hoisting](#js-variable-hosting)
 - [Rest & Spread Operator](#js-rest-spread)
 - [Module - Import & Export](#js-module)
 - [Destructuring - Array & Object](#js-destructuring)
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
+
+
 
 <a name="js-basics"></a>
 
@@ -4431,6 +4434,23 @@ console.log(str.substr(14, 19));
 
 //output - Sunil
 ```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+<a name="js-number"></a>
+
+## Number
+
+Number type in JavaScript includes both integer and floating point values. JavaScript numbers are always stored as double precision floating point numbers, following the international IEEE 754 standard. 
+
+JavaScript also provides an object representation of numbers. 
+
 
 
 <br/>
