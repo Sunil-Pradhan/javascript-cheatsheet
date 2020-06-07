@@ -4541,6 +4541,51 @@ console.log(c/d);
 //output - NaN
 ```
 
+**NaN is not equal to anything in JavaScript:**
+
+**Example:**
+
+```javascript
+if ('Hello' == NaN) {
+  console.log('Equal');
+} else {
+  console.log('Not equal');
+}
+
+//output - Not equal
+```
+
+**Example:**
+
+```javascript
+if (NaN == NaN) {
+  console.log('Equal');
+} else {
+  console.log('Not equal');
+}
+```
+
+**Global `isNaN()` Method:**
+
+* The `isNaN()` function is used to determine whether a value is an illegal number (Not-a-Number). 
+* This function returns true if the value equates to `NaN`. Otherwise it returns false. 
+* This function is different from the Number specific `Number.isNaN()` method. 
+* The global `isNaN()` function, converts the tested value to a Number, then tests it. 
+
+Example: 
+
+```javascript
+var a = '50';
+if (isNaN(a)) {
+  console.log('Not a number');
+} else {
+  console.log('Legal number');
+}
+```
+
+
+
+
 
 <br/>
 <div align="right">
