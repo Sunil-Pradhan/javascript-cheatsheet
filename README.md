@@ -4886,6 +4886,55 @@ console.log(parseFloat('10 20 30'));
 <br/>
 
 
+#### Math object 
+
+The Math object holds a set of constants and methods that enable more complex mathematical operations than the basic arithmetic operators.
+
+We can not instantiate a Math Object. The Math object is static so it’s properties and methods are accessed directly. 
+
+
+```javascript
+console.log(Math.PI);
+
+//output - 3.141592653589793
+```
+###### Reference
+
+https://www.w3schools.com/jsref/jsref_obj_math.asp
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+#### `Min()` and `Max()` Method
+
+`Min()` - find minimum value
+`Max()` - find maximum value
+
+Example: 
+
+```javascript
+console.log(Math.min(50, 5, 90, 6));
+console.log(Math.max(50, 5, 90, 6));
+
+//output - 5
+//output - 90
+```
+
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+
 
 <a name="js-variable-hosting"></a>
 
