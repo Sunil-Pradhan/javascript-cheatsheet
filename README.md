@@ -4025,6 +4025,8 @@ console.log(typeof name);
 //output - String
 ```
 
+**Store a string value in a variable:**
+
 **Example(Primitive):**
 
 ```javascript
@@ -4044,7 +4046,7 @@ console.log(typeof str);
 //output - object
 ```
 
-
+**Access a string value:**
 
 <br/>
 <div align="right">
