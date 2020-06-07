@@ -4898,19 +4898,8 @@ console.log(Math.PI);
 
 //output - 3.141592653589793
 ```
-###### Reference
 
-https://www.w3schools.com/jsref/jsref_obj_math.asp
-
-
-<br/>
-<div align="right">
-    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
-</div>
-<br/>
-
-
-#### `Min()` and `Max()` Method
+**`Min()` and `Max()` Method:**
 
 `Min()` - find minimum value
 `Max()` - find maximum value
@@ -4924,6 +4913,32 @@ console.log(Math.max(50, 5, 90, 6));
 //output - 5
 //output - 90
 ```
+
+**`floor()` Method:**
+
+The `floor()` method rounds a number downwards to the nearest integer, and returns the result. 
+
+
+Example: 
+
+```javascript
+console.log(Math.floor(2.1));
+console.log(Math.floor(6.65));
+console.log(Math.floor(0.4));
+console.log(Math.floor(-2.1));
+console.log(Math.floor(-6.65));
+
+//output - 2
+//output - 6 
+//output - 0 
+//output - -3
+//output - -7
+```
+
+
+###### Reference
+
+https://www.w3schools.com/jsref/jsref_obj_math.asp
 
 
 
