@@ -4473,6 +4473,19 @@ var a = new Number(10.45);
 var a = new Number(5e3); 
 ``` 
 
+**Accessing number:** 
+
+Example: 
+
+```javascript
+var a = 10;
+console.log(a);
+console.log(typeof a);
+
+//output - 10
+//output - number
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
