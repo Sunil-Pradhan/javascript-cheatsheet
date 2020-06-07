@@ -4857,6 +4857,28 @@ console.log(parseInt('10 20 30'));
 //output - 10
 ```
 
+**parseFloat() -** The `parseFloat()` function parses a string and returns a floating point number. This function determines if the first character in the specified string is a number. 
+
+If it is, it parses the string until it reaches the end of the number, and returns the number as a number, not as a string. 
+
+Syntax: 
+
+```javascript
+parseFloat(string)
+```
+
+Example: 
+
+```javascript
+console.log(parseFloat('10'));
+console.log(parseFloat('10.45'));
+console.log(parseFloat('10 20 30'));
+
+//output - 10
+//output - 10.45
+//output - 10
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
