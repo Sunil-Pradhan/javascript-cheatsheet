@@ -4014,6 +4014,7 @@ var a = Boolean(null) //false
 
 ## String
 
+String is a group of characters. 
 
 <br/>
 <div align="right">
