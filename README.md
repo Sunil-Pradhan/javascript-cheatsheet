@@ -4140,6 +4140,25 @@ console.log(greet);
 ```
 
 
+String template also supports multi-line strings so now you can have multiple lines without having to use the string concatenation.
+
+Example: 
+
+```javascript
+var user = 'Sunil';
+
+var greet = `Welcome 'single' "double" ${user} to ES6 course!
+              This is the second line.
+              Third and so   on.
+`;
+console.log(greet);
+
+//output - Welcome 'single' "double" Sunil to ES6 course!
+//This is the second line.        
+//Third and so   on.
+```
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
