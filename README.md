@@ -4274,7 +4274,14 @@ The `replace()` method replaces a specified value with another value in a string
 * case sensitive this method  
 * It's good to use in reg. expression
 
+Example: 
 
+```javascript
+var str = 'Hello Sunil';
+console.log(str.replace('Sunil', 'World'));
+
+//output - Hello World
+```
 
 <br/>
 <div align="right">
