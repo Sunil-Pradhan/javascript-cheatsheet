@@ -4524,6 +4524,31 @@ console.log(typeof a, typeof b);
 </div>
 <br/>
 
+
+#### NaN - Not a Number 
+
+The NaN property represents “Not-a-Number” value. This property indicates that a value is not a legal number. NaN never compares equal to anything, even itself. 
+
+The NaN property is the same as the Number.
+
+Example: 
+
+```javascript
+var c = 20; //number
+var d = 'Hello'; //string
+console.log(c/d);
+
+//output - NaN
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
