@@ -4686,6 +4686,8 @@ a.toFixed(y);
 
 Where y is the number of digits after the decimal point. Default is 0 (no digits after the decimal point).
 
+Example: 
+
 ```javascript
 var a = 19.65823;
 console.log(a.toFixed());
@@ -4696,6 +4698,39 @@ console.log(a.toFixed(3));
 //output - 19.66
 //output - 19.658
 ```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+#### `toPrecision()` Method
+
+`toPrecision()` method formats a number to a specified length. A decimal point and nulls are added (if needed), to create the specified length. 
+
+Syntax:
+
+```javascript
+variable_name.toPrecision(y)
+```
+
+Where y is the number of digits. If omitted, it returns the entire number (without any formatting)
+
+Example: 
+
+```javascript
+var a = 19.65823;
+console.log(a.toPrecision());
+console.log(a.toPrecision(2));
+console.log(a.toPrecision(3));
+
+//output - 19.65823
+//output - 20 
+//output - 19.7
+```
+
 
 <br/>
 <div align="right">
