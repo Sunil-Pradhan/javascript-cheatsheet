@@ -18,12 +18,15 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Function](#js-function)
 - [Object](#js-object)
 - [Array](#js-arrays)
+- [String](#js-string)
 - [Variable Hoisting](#js-variable-hosting)
 - [Rest & Spread Operator](#js-rest-spread)
 - [Module - Import & Export](#js-module)
 - [Destructuring - Array & Object](#js-destructuring)
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
+
+
 
 <a name="js-basics"></a>
 
@@ -4005,6 +4008,19 @@ var a = Boolean(null) //false
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+
+<a name="js-string"></a>
+
+## String
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 
 <a name="js-variable-hosting"></a>
 
