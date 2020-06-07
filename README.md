@@ -4486,6 +4486,17 @@ console.log(typeof a);
 //output - number
 ```
 
+Example: 
+
+```javascript
+var x = new Number(100);
+console.log(x);
+console.log(typeof x);
+
+//output - 100
+//output - object
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
