@@ -4605,11 +4605,11 @@ console.log(-5 / 0); //-Infinity
 
 #### `toString()` Method
 
-`toString()` method returns a number as a string in other words it converts the number into string. 
+`toString()` method returns a number as a string in other words it converts the number into string.
 
-We can use this method to output numbers as hexadecimal(16), octal(8), binary(2). 
+We can use this method to output numbers as hexadecimal(16), octal(8), binary(2).
 
-Example: 
+Example:
 
 ```javascript
 var a = 10;
@@ -4617,12 +4617,12 @@ console.log(typeof a);
 console.log(a.toString());
 console.log(typeof a.toString());
 
-//output - number 
-//output - 10 
-//output - string 
+//output - number
+//output - 10
+//output - string
 ```
 
-Example: 
+Example:
 
 ```javascript
 var a = 10;
@@ -4631,13 +4631,11 @@ console.log(a.toString(2));
 console.log(a.toString(8));
 console.log(a.toString(16));
 
-//output - number 
-//output - 1010 
-//output - 12  
+//output - number
+//output - 1010
+//output - 12
 //output - a
-
 ```
-
 
 <br/>
 <div align="right">
@@ -4645,20 +4643,19 @@ console.log(a.toString(16));
 </div>
 <br/>
 
-
 #### `toExponential()` Method
 
-The `toExponential()` method converts a number into an exponential notation. 
+The `toExponential()` method converts a number into an exponential notation.
 
-Syntax: 
+Syntax:
 
 ```javascript
-variable_name.toExponential(y)
+variable_name.toExponential(y);
 ```
 
-Where y is an integer between 0 and 20 representing the number of digits in the notation after the decimal point. If omitted, it is set to as many digits as necessary to represent the value. 
+Where y is an integer between 0 and 20 representing the number of digits in the notation after the decimal point. If omitted, it is set to as many digits as necessary to represent the value.
 
-Example: 
+Example:
 
 ```javascript
 var a = 58975.98745;
@@ -4667,10 +4664,38 @@ console.log(a.toExponential(2));
 console.log(a.toExponential(4));
 
 //output - 5.897598745e+4
-//output - 5.90e+4  
+//output - 5.90e+4
 //output - 5.8976e+4
 ```
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### `toFixed()` Method
+
+`toFixed()` method converts a number into a string, keeping a specified number of decimals; also it rounds the decimal. If the desired number of decimals are higher than the actual number, nulls are added to create the desired decimal length.
+
+Syntax:
+
+```javascript
+a.toFixed(y);
+```
+
+Where y is the number of digits after the decimal point. Default is 0 (no digits after the decimal point).
+
+```javascript
+var a = 19.65823;
+console.log(a.toFixed());
+console.log(a.toFixed(2));
+console.log(a.toFixed(3));
+
+//output - 20
+//output - 19.66
+//output - 19.658
+```
 
 <br/>
 <div align="right">
