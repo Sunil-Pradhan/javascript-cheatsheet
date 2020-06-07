@@ -4025,6 +4025,17 @@ console.log(typeof name);
 //output - String
 ```
 
+**Example(Primitive):**
+
+```javascript
+var str = 'Hello World!';
+console.log(typeof str);
+
+//output - string
+```
+
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
