@@ -4741,7 +4741,7 @@ console.log(a.toPrecision(3));
 
 #### `isInteger()` Method
 
-The `Number.isInteger()` method determines whether a value is an integer or not. 
+`Number.isInteger()` method determines whether a value is an integer or not. 
 
 This method returns true if the value is of the type `Number`, and an integer, Otherwise it returns false. 
 
@@ -4759,6 +4759,36 @@ console.log(Number.isInteger(200 - 100));
 //output - true
 //output - false
 //output - true
+```
+
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+#### `isSafeInteger()` Method
+
+`Number.isSafeInteger()` method determines whether  a value is a safe integer.
+
+A safe integer is an integer that can be exactly all integers from (2^53 -1) to -(2^5 -1).
+
+This method returns true if the value is of the type `Number`, and a safe integer. Otherwise it returns false. 
+
+Example: 
+
+```javascript
+console.log(Number.isSafeInteger(100));
+console.log(Number.isSafeInteger(-100));
+console.log(Number.isSafeInteger(0.1));
+
+
+//output - true
+//output - true
+//output - false
 ```
 
 
