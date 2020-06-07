@@ -27,8 +27,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
 
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -4422,11 +4420,11 @@ console.log(str.substring(14, 19));
 
 #### `substr()` Method
 
-The `substr()` is similar to `slice()`. The `substr()` method returns the part of a string between the start index and a number of characters after it. 
+The `substr()` is similar to `slice()`. The `substr()` method returns the part of a string between the start index and a number of characters after it.
 
 `substr()` extracts length characters from a string, counting from the start index. If the start is a positive number, the index starts counting at the start of the string. If the start is a negative number, the index starts counting from the end of the string.
 
-Example: 
+Example:
 
 ```javascript
 var str = 'Hi guys! I am Sunil';
@@ -4435,47 +4433,44 @@ console.log(str.substr(14, 19));
 //output - Sunil
 ```
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
 
-
 <a name="js-number"></a>
 
 ## Number
 
-Number type in JavaScript includes both integer and floating point values. JavaScript numbers are always stored as double precision floating point numbers, following the international IEEE 754 standard. 
+Number type in JavaScript includes both integer and floating point values. JavaScript numbers are always stored as double precision floating point numbers, following the international IEEE 754 standard.
 
-JavaScript also provides an object representation of numbers. 
+JavaScript also provides an object representation of numbers.
 
 **Example(Primitive):**
-
 
 ```javascript
 //typeof - number
 
-var a = 10;         //Whole number
-var a = 10.45;      //Decimal number
-var a = 5e3;        //5000 - 5x10^3 exponent 
-var a = 34e-5       //0.00034 exponent
-``` 
+var a = 10; //Whole number
+var a = 10.45; //Decimal number
+var a = 5e3; //5000 - 5x10^3 exponent
+var a = 34e-5; //0.00034 exponent
+```
 
 **Example(Constructor):**
 
 ```javascript
-//typeof - Object 
+//typeof - Object
 
 var a = new Number(10);
 var a = new Number(10.45);
-var a = new Number(5e3); 
-``` 
+var a = new Number(5e3);
+```
 
-**Accessing number:** 
+**Accessing number:**
 
-Example: 
+Example:
 
 ```javascript
 var a = 10;
@@ -4486,7 +4481,7 @@ console.log(typeof a);
 //output - number
 ```
 
-Example: 
+Example:
 
 ```javascript
 var x = new Number(100);
@@ -4503,10 +4498,9 @@ console.log(typeof x);
 </div>
 <br/>
 
+#### Number with String
 
-#### Number with String 
-
-Example: 
+Example:
 
 ```javascript
 var a = '50';
@@ -4524,19 +4518,18 @@ console.log(typeof a, typeof b);
 </div>
 <br/>
 
+#### NaN - Not a Number
 
-#### NaN - Not a Number 
-
-The NaN property represents “Not-a-Number” value. This property indicates that a value is not a legal number. NaN never compares equal to anything, even itself. 
+The NaN property represents “Not-a-Number” value. This property indicates that a value is not a legal number. NaN never compares equal to anything, even itself.
 
 The NaN property is the same as the Number.
 
-Example: 
+Example:
 
 ```javascript
 var c = 20; //number
 var d = 'Hello'; //string
-console.log(c/d);
+console.log(c / d);
 
 //output - NaN
 ```
@@ -4567,12 +4560,12 @@ if (NaN == NaN) {
 
 **Global `isNaN()` Method:**
 
-* The `isNaN()` function is used to determine whether a value is an illegal number (Not-a-Number). 
-* This function returns true if the value equates to `NaN`. Otherwise it returns false. 
-* This function is different from the Number specific `Number.isNaN()` method. 
-* The global `isNaN()` function, converts the tested value to a Number, then tests it. 
+- The `isNaN()` function is used to determine whether a value is an illegal number (Not-a-Number).
+- This function returns true if the value equates to `NaN`. Otherwise it returns false.
+- This function is different from the Number specific `Number.isNaN()` method.
+- The global `isNaN()` function, converts the tested value to a Number, then tests it.
 
-Example: 
+Example:
 
 ```javascript
 var a = '50';
@@ -4591,18 +4584,50 @@ if (isNaN(a)) {
 </div>
 <br/>
 
-
 #### Infinity and Negative Infinity
 
-Infinity or -Infinity is the value JavaScript will return if a number is too large or too small. All infinity values compare equal to each other. 
+Infinity or -Infinity is the value JavaScript will return if a number is too large or too small. All infinity values compare equal to each other.
 
-Example: 
+Example:
 
 ```javascript
 console.log(5 / 0); //Infinity
 console.log(-5 / 0); //-Infinity
 ```
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+### Number Methods
+
+#### `toString()` Method
+
+`toString()` method returns a number as a string in other words it converts the number into string. 
+
+We can use this method to output numbers as hexadecimal(16), octal(8), binary(2). 
+
+Example: 
+
+```javascript
+var a = 10;
+console.log(typeof a);
+console.log(a.toString());
+console.log(typeof a.toString());
+
+//output - number 
+//output - 10 
+//output - string 
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 <a name="js-variable-hosting"></a>
 
