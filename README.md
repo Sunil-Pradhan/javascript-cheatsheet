@@ -4451,7 +4451,17 @@ Number type in JavaScript includes both integer and floating point values. JavaS
 
 JavaScript also provides an object representation of numbers. 
 
+**Example(Primitive):**
 
+
+```javascript
+//number
+
+var a = 10;         //Whole number
+var a = 10.45;      //Decimal number
+var a = 5e3;        //5000 - 5x10^3 exponent 
+var a = 34e-5       //0.00034 exponent
+``` 
 
 <br/>
 <div align="right">
