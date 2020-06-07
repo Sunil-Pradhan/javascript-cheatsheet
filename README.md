@@ -4814,6 +4814,20 @@ If the value can’t be converted to a legal number, `NaN` is returned.
 
 If the parameter is a `Date` object, the `Number()` function returns the number of milliseconds since midnight January 1, 1970 UTC. 
 
+Example: 
+
+```javascript
+
+console.log(Number(true));
+console.log(Number('100'));
+console.log(Number(100 / 'Hello'));
+
+//output - true
+//output - 1 
+//output - 100
+//output - NaN
+```
+
 
 
 <br/>
