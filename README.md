@@ -4822,10 +4822,18 @@ console.log(Number(true));
 console.log(Number('100'));
 console.log(Number(100 / 'Hello'));
 
-//output - true
 //output - 1 
 //output - 100
 //output - NaN
+```
+
+Example: 
+
+```javascript
+var f = new Date();
+console.log(Number(f));
+
+//output - 1591545077754
 ```
 
 
