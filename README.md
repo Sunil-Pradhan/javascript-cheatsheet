@@ -4622,6 +4622,22 @@ console.log(typeof a.toString());
 //output - string 
 ```
 
+Example: 
+
+```javascript
+var a = 10;
+console.log(typeof a);
+console.log(a.toString(2));
+console.log(a.toString(8));
+console.log(a.toString(16));
+
+//output - number 
+//output - 1010 
+//output - 12  
+//output - a
+
+```
+
 
 <br/>
 <div align="right">
