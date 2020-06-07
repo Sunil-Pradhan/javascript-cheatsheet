@@ -4081,6 +4081,20 @@ Syntax:
 string.concat(string1, string2, string_n);
 ```
 
+```javascript
+var new_str = 'A'.concat('B', 'C');
+console.log(new_str);
+
+var str1 = 'Hello';
+var str2 = ' World!';
+var str3 = ' ABC';
+var new_str = str1.concat(str2, str3, ' XY');
+console.log(new_str);
+
+//output - ABC
+//output - Hello World! ABC XY
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
