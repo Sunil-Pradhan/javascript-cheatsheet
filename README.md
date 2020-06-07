@@ -4289,6 +4289,46 @@ console.log(str.replace('Sunil', 'World'));
 </div>
 <br/>
 
+
+#### `split()` Method
+
+The `split()` method breaks the string up into a separate string according to a delimiter passed as its first argument. The result is returned in an array. 
+
+Example: 
+
+```javascript
+var str = 'Hello';
+console.log(str.split(''));
+
+//output - [ 'H', 'e', 'l', 'l', 'o' ]
+```
+
+Example: 
+
+```javascript
+var str = 'Hello World, I am Sunil';
+console.log(str.split(','));
+
+//output - [ 'Hello World', ' I am Sunil' ]
+```
+
+Example: 
+
+```javascript
+var str = 'Hello World, I am Sunil';
+var arr = str.split(' ');
+console.log(arr[4]);
+
+//output - Sunil
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
