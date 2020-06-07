@@ -4046,7 +4046,26 @@ console.log(typeof str);
 //output - object
 ```
 
-**Access a string value:**
+**Access string value:**
+
+**Example(Primitive):**
+
+```javascript
+var str = 'Hello World!';
+console.log(str);
+
+//output - Hello World!
+```
+
+
+**Example(Constructor):**
+
+```javascript
+var str = new String('Hello World');
+console.log(str);
+
+//output - Hello World!
+```
 
 <br/>
 <div align="right">
