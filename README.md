@@ -4581,17 +4581,27 @@ if (isNaN(a)) {
 } else {
   console.log('Legal number');
 }
+
+//output - Legal number
 ```
-
-
-
-
 
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+
+#### Infinity and Negative Infinity
+
+Infinity or -Infinity is the value JavaScript will return if a number is too large or too small. All infinity values compare equal to each other. 
+
+Example: 
+
+```javascript
+console.log(5 / 0); //Infinity
+console.log(-5 / 0); //-Infinity
+```
 
 
 <a name="js-variable-hosting"></a>
