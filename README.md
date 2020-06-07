@@ -4455,12 +4455,22 @@ JavaScript also provides an object representation of numbers.
 
 
 ```javascript
-//number
+//typeof - number
 
 var a = 10;         //Whole number
 var a = 10.45;      //Decimal number
 var a = 5e3;        //5000 - 5x10^3 exponent 
 var a = 34e-5       //0.00034 exponent
+``` 
+
+**Example(Constructor):**
+
+```javascript
+//typeof - Object 
+
+var a = new Number(10);
+var a = new Number(10.45);
+var a = new Number(5e3); 
 ``` 
 
 <br/>
