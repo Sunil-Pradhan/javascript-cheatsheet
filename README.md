@@ -4270,11 +4270,11 @@ console.log(str.trim());
 
 The `replace()` method replaces a specified value with another value in a string, `replace()` method replaces only the first match.
 
-* replace (old, new) method
-* case sensitive this method  
-* It's good to use in reg. expression
+- replace (old, new) method
+- case sensitive this method
+- It's good to use in reg. expression
 
-Example: 
+Example:
 
 ```javascript
 var str = 'Hello Sunil';
@@ -4289,12 +4289,11 @@ console.log(str.replace('Sunil', 'World'));
 </div>
 <br/>
 
-
 #### `split()` Method
 
-The `split()` method breaks the string up into a separate string according to a delimiter passed as its first argument. The result is returned in an array. 
+The `split()` method breaks the string up into a separate string according to a delimiter passed as its first argument. The result is returned in an array.
 
-Example: 
+Example:
 
 ```javascript
 var str = 'Hello';
@@ -4303,7 +4302,7 @@ console.log(str.split(''));
 //output - [ 'H', 'e', 'l', 'l', 'o' ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 var str = 'Hello World, I am Sunil';
@@ -4312,7 +4311,7 @@ console.log(str.split(','));
 //output - [ 'Hello World', ' I am Sunil' ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 var str = 'Hello World, I am Sunil';
@@ -4322,6 +4321,28 @@ console.log(arr[4]);
 //output - Sunil
 ```
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### `indexOf()` Method
+
+The `indexOf()` method takes a string argument and returns the index of the first occurance of the argument in a string. If the argument is not found returns -1.
+
+This method also accepts an optional second argument that specifies the index at which to start the search.
+
+Example: 
+
+```javascript
+var str = 'Hi guys! I am Sunil';
+console.log(str.indexOf('i'));
+console.log(str.indexOf('i', 10));
+
+//output - 1
+//output - 17
+```
 
 <br/>
 <div align="right">
