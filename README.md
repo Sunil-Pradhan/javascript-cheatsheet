@@ -4350,6 +4350,24 @@ console.log(str.indexOf('i', 10));
 </div>
 <br/>
 
+
+#### `search()` Method
+
+The `search()` method searches for a string for a specified value and returns the position of the match. 
+
+The `search()` method cannot take a second start position argument.  It can use in reg. expression and bit advance of `indexOf()`.
+
+Example: 
+
+```javascript
+var str = 'Hi guys! I am Sunil';
+console.log(str.search('i'));
+
+
+//output - 1
+```
+
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
