@@ -4333,7 +4333,7 @@ The `indexOf()` method takes a string argument and returns the index of the firs
 
 This method also accepts an optional second argument that specifies the index at which to start the search.
 
-Example: 
+Example:
 
 ```javascript
 var str = 'Hi guys! I am Sunil';
@@ -4350,23 +4350,20 @@ console.log(str.indexOf('i', 10));
 </div>
 <br/>
 
-
 #### `search()` Method
 
-The `search()` method searches for a string for a specified value and returns the position of the match. 
+The `search()` method searches for a string for a specified value and returns the position of the match.
 
-The `search()` method cannot take a second start position argument.  It can use in reg. expression and bit advance of `indexOf()`.
+The `search()` method cannot take a second start position argument. It can use in reg. expression and bit advance of `indexOf()`.
 
-Example: 
+Example:
 
 ```javascript
 var str = 'Hi guys! I am Sunil';
 console.log(str.search('i'));
 
-
 //output - 1
 ```
-
 
 <br/>
 <div align="right">
@@ -4376,18 +4373,17 @@ console.log(str.search('i'));
 
 #### `slice()` Method
 
-The `slice()` extracts a part of a string and returns the extracted part in a new string. 
+The `slice()` extracts a part of a string and returns the extracted part in a new string.
 
-The method takes two parameters: the starting index(position), and the ending index(position). The method returns a string containing the string beginning at the given index up to but not including the character at the index specified by the second argument. 
+The method takes two parameters: the starting index(position), and the ending index(position). The method returns a string containing the string beginning at the given index up to but not including the character at the index specified by the second argument.
 
 If a parameter is negative, the position is counted from the end of the string.
 
-Example: 
+Example:
 
 ```javascript
 var str = 'Hi guys! I am Sunil';
-console.log(str.slice(14,19));
-
+console.log(str.slice(14, 19));
 
 //output - Sunil
 ```
@@ -4397,6 +4393,24 @@ console.log(str.slice(14,19));
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+#### `substring()` Method
+
+The `substring()` is similar to `slice()`. The first argument specifies the index at which the desired substring begins. The optional second argument indicates the index at which the desired substring ends.
+
+The method returns a string containing the substring beginning at the given index up to but not including the character at the index specified by the second argument. 
+
+_The difference between slice and substring is that `substring()` cannot accept negative indexes._
+
+Example: 
+
+```javascript
+var str = 'Hi guys! I am Sunil';
+console.log(str.substring(14,19));
+
+
+//output - Sunil
+```
 
 <a name="js-variable-hosting"></a>
 
