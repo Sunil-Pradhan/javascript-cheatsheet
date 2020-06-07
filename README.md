@@ -4166,6 +4166,28 @@ console.log(greet);
 <br/>
 
 
+#### String length
+
+The length property returns the length of a string 
+
+Example:
+
+```javascript
+var str = 'Sunil Pradhan';
+console.log(str.length);
+//including space
+
+
+//output - 13
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
