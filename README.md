@@ -4075,7 +4075,7 @@ console.log(str1 + str2);
 
 The `concat()` method accepts any number of arguments and returns the string obtained by concatenating the arguments to the string on which it was invoked.
 
-Syntax: 
+Syntax:
 
 ```javascript
 string.concat(string1, string2, string_n);
@@ -4101,14 +4101,13 @@ console.log(new_str);
 </div>
 <br/>
 
-
 #### Template Literal/String Templates
 
 Template literals allow us to embed expressions. You can use multi-line strings and string interpolation features with them.
 
-Template literals are enclosed by the back-tick (\` \`) character instead of double or single quotes. 
+Template literals are enclosed by the back-tick (\` \`) character instead of double or single quotes.
 
-Example: 
+Example:
 
 ```javascript
 var user = 'Sunil';
@@ -4116,19 +4115,18 @@ var user = 'Sunil';
 var greet = `Welcome ${user} to ES6 course!`;
 console.log(greet);
 
-
 //output - Welcome Sunil to ES6 course!
 ```
 
-If you want to use a value that is assigned to a variable within a string we can use the dollar`$` and wrap the variable name within curly braces. 
+If you want to use a value that is assigned to a variable within a string we can use the dollar`$` and wrap the variable name within curly braces.
 
 :bulb: **TIP:** String Interpolation - Template literals can contain placeholders. These are indicated by the dollar sign and curly braces `${expression}`.
 
 <br>
 
-String template also allows you to use single quotes and double quotes within the string. 
+String template also allows you to use single quotes and double quotes within the string.
 
-Example: 
+Example:
 
 ```javascript
 var user = 'Sunil';
@@ -4139,10 +4137,9 @@ console.log(greet);
 //output - Welcome 'single' "double" Sunil to ES6 course!
 ```
 
-
 String template also supports multi-line strings so now you can have multiple lines without having to use the string concatenation.
 
-Example: 
+Example:
 
 ```javascript
 var user = 'Sunil';
@@ -4154,10 +4151,9 @@ var greet = `Welcome 'single' "double" ${user} to ES6 course!
 console.log(greet);
 
 //output - Welcome 'single' "double" Sunil to ES6 course!
-//This is the second line.        
+//This is the second line.
 //Third and so   on.
 ```
-
 
 <br/>
 <div align="right">
@@ -4165,10 +4161,9 @@ console.log(greet);
 </div>
 <br/>
 
-
 #### String length
 
-The length property returns the length of a string 
+The length property returns the length of a string
 
 Example:
 
@@ -4177,10 +4172,8 @@ var str = 'Sunil Pradhan';
 console.log(str.length);
 //including space
 
-
 //output - 13
 ```
-
 
 <br/>
 <div align="right">
@@ -4188,14 +4181,13 @@ console.log(str.length);
 </div>
 <br/>
 
-
 ### String Methods
 
 #### `charAt()` Method
 
-The `charAt()` method returns the character at a specified index (position) in a string. 
+The `charAt()` method returns the character at a specified index (position) in a string.
 
-Example: 
+Example:
 
 ```javascript
 var str = 'Hello Sunil';
@@ -4210,11 +4202,9 @@ console.log(str.charAt(9));
 </div>
 <br/>
 
-
 #### `charCodeAt()` Method
 
-The `charCodeAt()` method returns the unicode of the character at a specified index in a string. 
-
+The `charCodeAt()` method returns the unicode of the character at a specified index in a string.
 
 ```javascript
 var str = 'Hello Sunil';
@@ -4229,12 +4219,11 @@ console.log(str.charCodeAt(9));
 </div>
 <br/>
 
-
 #### `toUpperCase()` & `toLowerCase()` Method
 
 Convert string to uppercase and lowercase.
 
-Example: 
+Example:
 
 ```javascript
 var str = 'Hello Sunil';
@@ -4243,7 +4232,7 @@ console.log(str.toUpperCase());
 //output - HELLO SUNIL
 ```
 
-Example: 
+Example:
 
 ```javascript
 var str = 'Hello Sunil';
@@ -4258,12 +4247,11 @@ console.log(str.toLowerCase());
 </div>
 <br/>
 
-
 #### `trim()` Method
 
 It removes white space from both side of string (starting and ending part only).
 
-Example: 
+Example:
 
 ```javascript
 var str = '      Hello Sunil    ';
@@ -4272,6 +4260,20 @@ console.log(str.trim());
 //output - Hello Sunil
 ```
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### `replace()` Method
+
+The `replace()` method replaces a specified value with another value in a string, `replace()` method replaces only the first match.
+
+* replace (old, new) method
+* case sensitive this method  
+* It's good to use in reg. expression
+
 
 
 <br/>
@@ -4279,7 +4281,6 @@ console.log(str.trim());
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 <a name="js-variable-hosting"></a>
 
