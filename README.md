@@ -4124,6 +4124,28 @@ If you want to use a value that is assigned to a variable within a string we can
 
 :bulb: **TIP:** String Interpolation - Template literals can contain placeholders. These are indicated by the dollar sign and curly braces `${expression}`.
 
+<br>
+
+String template also allows you to use single quotes and double quotes within the string. 
+
+Example: 
+
+```javascript
+var user = 'Sunil';
+
+var greet = `Welcome 'single' "double" ${user} to ES6 course!`;
+console.log(greet);
+
+//output - Welcome 'single' "double" Sunil to ES6 course!
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 
 <a name="js-variable-hosting"></a>
 
