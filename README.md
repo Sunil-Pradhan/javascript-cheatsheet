@@ -26,8 +26,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
 
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -3709,7 +3707,7 @@ Syntax:
 var position = array_name.indexOf(item, start);
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
@@ -3720,7 +3718,7 @@ console.log(position);
 //output -1
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
@@ -3731,7 +3729,7 @@ console.log(position);
 //output - 2
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
@@ -3748,18 +3746,17 @@ console.log(position);
 </div>
 <br/>
 
-
 #### `fill()` Method
 
-The `fill()` method fills all the elements in an array with a static value. 
+The `fill()` method fills all the elements in an array with a static value.
 
-Syntax: 
+Syntax:
 
 ```javascript
 array_name.fill(value, start, end);
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
@@ -3772,12 +3769,12 @@ console.log(stu);
 //output - [ 'Manu', 'Manu', 'Manu', 'Manu', 'Manu' ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
 
-stu.fill('Manu', 1,3);
+stu.fill('Manu', 1, 3);
 
 //fill Manu starting with index 1 to 3 but 3 not included
 console.log(stu);
@@ -3785,13 +3782,11 @@ console.log(stu);
 //output - [ 'Rahul', 'Manu', 'Manu', 'Raj', 'Raj' ]
 ```
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 #### `unshift()` Method
 
@@ -3799,13 +3794,13 @@ The `unshift()` method adds one or more elements to the beginning of an array an
 
 This method changes the length of an array.
 
-Syntax: 
+Syntax:
 
 ```javascript
 Array_name.unshift(value1, value2, value_n);
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
@@ -3816,7 +3811,7 @@ console.log(stu);
 //output - [ 'Sunil', 'Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj' ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
@@ -3835,23 +3830,21 @@ console.log(stu_length);
 </div>
 <br/>
 
-
 #### `push()` Method
 
-The `push()` method adds one or more elements to the end of an array and returns the new length of the array. 
+The `push()` method adds one or more elements to the end of an array and returns the new length of the array.
 
 The new item will be added at the end of the array.
 
-This method changes the length of the array. 
+This method changes the length of the array.
 
-
-Syntax: 
+Syntax:
 
 ```javascript
 Array_name.push(value1, value2, value_n);
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
@@ -3862,7 +3855,7 @@ console.log(stu);
 //output - [ 'Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj', 'Sunil' ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
@@ -3871,11 +3864,9 @@ var stu_length = stu.push('Sunil');
 console.log(stu);
 console.log(stu_length);
 
-
 //output - [ 'Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj', 'Sunil' ]
 //output - 6
 ```
-
 
 <br/>
 <div align="right">
@@ -3883,18 +3874,17 @@ console.log(stu_length);
 </div>
 <br/>
 
-
 #### `shift()` Method
 
-The `shift()` method removes the first element from an array and returns that removed element. This method changes the length of the array. 
+The `shift()` method removes the first element from an array and returns that removed element. This method changes the length of the array.
 
-Syntax: 
+Syntax:
 
 ```javascript
 array_name.shift();
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
@@ -3905,7 +3895,7 @@ console.log(stu);
 //output - [ 'Sonam', 'Sumit', 'Raj', 'Raj' ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
@@ -3926,15 +3916,15 @@ console.log(stu_removed);
 
 #### `pop()` Method
 
-The `pop()` method removes the last element from an array and returns that removed element. This method changes the length of the array. 
+The `pop()` method removes the last element from an array and returns that removed element. This method changes the length of the array.
 
-Syntax: 
+Syntax:
 
 ```javascript
 array_name.pop();
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
@@ -3945,7 +3935,7 @@ console.log(stu);
 //output - [ 'Rahul', 'Sonam', 'Sumit', 'Raj' ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 var stu = ['Rahul', 'Sonam', 'Sumit', 'Raj', 'Raj'];
@@ -3954,11 +3944,9 @@ var stu_removed = stu.pop();
 console.log(stu);
 console.log(stu_removed);
 
-
 //output - [ 'Rahul', 'Sonam', 'Sumit', 'Raj' ]
 //output - Raj
 ```
-
 
 <br/>
 <div align="right">
@@ -3966,12 +3954,11 @@ console.log(stu_removed);
 </div>
 <br/>
 
-
 #### `Boolean()` Method
 
-Boolean is the built-in object corresponding to the primitive Boolean data type. JavaScript boolean can have one of two values: true or false. 
+Boolean is the built-in object corresponding to the primitive Boolean data type. JavaScript boolean can have one of two values: true or false.
 
-**Primitive values:** 
+**Primitive values:**
 
 ```javascript
 var primitiveTrue = true;
@@ -3985,23 +3972,22 @@ var functionTrue = Boolean(true);
 var functionFalse = Boolean(flase);
 ```
 
-**Boolean constructor:** 
+**Boolean constructor:**
 
 ```javascript
 var constructorTrue = new Boolean(true);
 var constructorFalse = new Boolean(false);
-``` 
-
-Example: 
-
-```javascript
-var a = Boolean() //false 
-var a = Boolean(0) //false 
-var a = Boolean(-0) //false 
-var a = Boolean(NaN) //false 
-var a = Boolean(null) //false 
 ```
 
+Example:
+
+```javascript
+var a = Boolean(); //false
+var a = Boolean(0); //false
+var a = Boolean(-0); //false
+var a = Boolean(NaN); //false
+var a = Boolean(null); //false
+```
 
 <br/>
 <div align="right">
@@ -4009,12 +3995,11 @@ var a = Boolean(null) //false
 </div>
 <br/>
 
-
 <a name="js-string"></a>
 
 ## String
 
-String is a group of characters. 
+String is a group of characters.
 
 ```javascript
 var name = 'Sunil';
@@ -4036,7 +4021,6 @@ console.log(typeof str);
 //output - string
 ```
 
-
 **Example(Constructor):**
 
 ```javascript
@@ -4057,7 +4041,6 @@ console.log(str);
 //output - Hello World!
 ```
 
-
 **Example(Constructor):**
 
 ```javascript
@@ -4073,7 +4056,6 @@ console.log(str);
 </div>
 <br/>
 
-
 #### String Concatenation
 
 Connect two different strings and make it one.
@@ -4086,8 +4068,17 @@ var str2 = ' Sunil';
 
 console.log(str1 + str2);
 
-
 //output - Hello Sunil
+```
+
+**Example(`concat()` method):**
+
+The `concat()` method accepts any number of arguments and returns the string obtained by concatenating the arguments to the string on which it was invoked.
+
+Syntax: 
+
+```javascript
+string.concat(string1, string2, string_n);
 ```
 
 <br/>
@@ -4095,8 +4086,6 @@ console.log(str1 + str2);
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
-
 
 <a name="js-variable-hosting"></a>
 
@@ -4333,9 +4322,9 @@ Arguments object is not a real Array, while Rest operator are Array instances, m
 
 ### Spread operator
 
-Spread operator is kind of the opposite of the Rest operator so while the Rest operator takes a variable as number of parameters or arguments and puts them into a single array. 
+Spread operator is kind of the opposite of the Rest operator so while the Rest operator takes a variable as number of parameters or arguments and puts them into a single array.
 
-The spread operator takes an array and splits it into the individual elements so Rest is to combine whereas spread is to split. 
+The spread operator takes an array and splits it into the individual elements so Rest is to combine whereas spread is to split.
 
 Syntax:
 
@@ -4343,7 +4332,7 @@ Syntax:
 ...stu;
 ```
 
-Rest operator you will see mostly in functions whereas spread operator works in array and object. 
+Rest operator you will see mostly in functions whereas spread operator works in array and object.
 
 **Example(array):**
 
@@ -4372,9 +4361,9 @@ console.log(b);
 //output - [ 50, 20, 30 ]
 ```
 
-You can see both values have been changed to 50. But why?  
+You can see both values have been changed to 50. But why?
 
-In Javascript array values never copy, it copies only references on the index. 
+In Javascript array values never copy, it copies only references on the index.
 
 ```javascript
 //array
@@ -4387,7 +4376,8 @@ console.log(b[0]);
 //output - 50
 //output - 50
 ```
-To remove this issue you can use the spread operator. 
+
+To remove this issue you can use the spread operator.
 
 ```javascript
 var a = [10, 20, 30];
@@ -4400,7 +4390,7 @@ console.log(b[0]);
 //output - 10
 ```
 
-After using the spread operator you can see the changes. 
+After using the spread operator you can see the changes.
 
 ```javascript
 //array
@@ -4420,7 +4410,7 @@ Try with few more values;
 ```javascript
 //array
 var a = [10, 20, 30];
-var b = [...a, 40,50]; 
+var b = [...a, 40, 50];
 console.log(a);
 console.log(b);
 
@@ -4428,7 +4418,7 @@ console.log(b);
 //output - [ 10, 20, 30, 40, 50 ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 //array
@@ -4441,7 +4431,7 @@ console.log(b);
 //output - [ 5, 10, 20, 30, 40, 50 ]
 ```
 
-Example: 
+Example:
 
 ```javascript
 //array
@@ -4457,7 +4447,7 @@ console.log(c);
 //output - [ 10, 20, 30, 40, 50, 60 ]
 ```
 
-Array creates reference but by using spread operators you will not face any issue of reference which creates an array.  
+Array creates reference but by using spread operators you will not face any issue of reference which creates an array.
 
 **Example(object):**
 
@@ -4477,7 +4467,7 @@ console.log(b);
 //output - { courseName: 'JavaScript', tutor: 'Sunil' }
 ```
 
-Object is also a reference type. 
+Object is also a reference type.
 
 ```javascript
 //Object
@@ -4496,7 +4486,7 @@ console.log(b);
 //output - { courseName: 'React', tutor: 'Sunil' }
 ```
 
-The value of `b` has also changed. We can use here the spread operator. 
+The value of `b` has also changed. We can use here the spread operator.
 
 ```javascript
 //Object
@@ -4506,7 +4496,7 @@ var a = {
   tutor: 'Sunil',
 };
 
-var b = {...a};
+var b = { ...a };
 a.courseName = 'React';
 console.log(a);
 console.log(b);
@@ -4514,9 +4504,10 @@ console.log(b);
 //output - { courseName: 'React', tutor: 'Sunil' }
 //output - { courseName: 'JavaScript', tutor: 'Sunil' }
 ```
-Here the value `a` has only change not `b`. 
 
-If you want to add something. 
+Here the value `a` has only change not `b`.
+
+If you want to add something.
 
 ```javascript
 //Object
@@ -4526,7 +4517,7 @@ var a = {
   tutor: 'Sunil',
 };
 
-var b = {...a, duration: 'TwoMonths'};
+var b = { ...a, duration: 'TwoMonths' };
 a.courseName = 'React';
 console.log(a);
 console.log(b);
@@ -4548,12 +4539,12 @@ var a = {
 var b = { duration: 'TwoMonths' };
 var c = { ...a, ...b };
 
-
 console.log(c);
 
 //output - { courseName: 'JavaScript', tutor: 'Sunil', duration: 'TwoMonths' }
 ```
-Here reference are not being copied rather value copy. 
+
+Here reference are not being copied rather value copy.
 
 <br/>
 <div align="right">
