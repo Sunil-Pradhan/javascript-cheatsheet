@@ -4368,6 +4368,36 @@ console.log(str.search('i'));
 ```
 
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### `slice()` Method
+
+The `slice()` extracts a part of a string and returns the extracted part in a new string. 
+
+The method takes two parameters: the starting index(position), and the ending index(position). The method returns a string containing the string beginning at the given index up to but not including the character at the index specified by the second argument. 
+
+If a parameter is negative, the position is counted from the end of the string.
+
+Example: 
+
+```javascript
+var str = 'Hi guys! I am Sunil';
+console.log(str.slice(14,19));
+
+
+//output - Sunil
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
