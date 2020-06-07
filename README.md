@@ -4805,8 +4805,8 @@ console.log(Number.isSafeInteger(0.1));
 Global JavaScript methods can be used on all JavaScript data types.
 
 * Number()
-* parseFloat()
 * parseInt()
+* parseFloat()
 
 **Number() -** The `Number()` function converts the object argument to a number that represents the object’s value. 
 
@@ -4837,6 +4837,25 @@ console.log(Number(f));
 ```
 
 
+**parseInt() -** The parseInt() function parses a string and returns an integer.
+
+Syntax: 
+
+```javascript
+parseInt(string, radix)
+```
+
+Example: 
+
+```javascript
+console.log(parseInt('10'));
+console.log(parseInt('10.45'));
+console.log(parseInt('10 20 30'));
+
+//output - 10
+//output - 10
+//output - 10
+```
 
 <br/>
 <div align="right">
