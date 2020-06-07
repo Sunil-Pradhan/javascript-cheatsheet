@@ -4188,6 +4188,28 @@ console.log(str.length);
 </div>
 <br/>
 
+
+### String Methods
+
+#### `charAt()` Method
+
+The `charAt()` method returns the character at a specified index (position) in a string. 
+
+Example: 
+
+```javascript
+var str = 'Hello Sunil';
+console.log(str.charAt(9));
+
+//output - i
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
