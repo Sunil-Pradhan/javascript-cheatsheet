@@ -4738,6 +4738,38 @@ console.log(a.toPrecision(3));
 </div>
 <br/>
 
+
+#### `isInteger()` Method
+
+The `Number.isInteger()` method determines whether a value is an integer or not. 
+
+This method returns true if the value is of the type `Number`, and an integer, Otherwise it returns false. 
+
+Example: 
+
+```javascript
+console.log(Number.isInteger());
+console.log(Number.isInteger(100));
+console.log(Number.isInteger(-100));
+console.log(Number.isInteger(100.45));
+console.log(Number.isInteger(200 - 100));
+
+//output - false
+//output - true
+//output - true
+//output - false
+//output - true
+```
+
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
