@@ -4101,6 +4101,30 @@ console.log(new_str);
 </div>
 <br/>
 
+
+#### Template Literal/String Templates
+
+Template literals allow us to embed expressions. You can use multi-line strings and string interpolation features with them.
+
+Template literals are enclosed by the back-tick (` `) character instead of double or single quotes. 
+
+Example: 
+
+```javascript
+var user = 'Sunil';
+
+var greet = `Welcome ${user} to ES6 course!`;
+console.log(greet);
+
+
+//output - Welcome Sunil to ES6 course!
+```
+
+If you want to use a value that is assigned to a variable within a string we can use the dollar`$` and wrap the variable name within curly braces. 
+
+:bulb: **TIP:** String Interpolation - Template literals can contain placeholders. These are indicated by the dollar sign and curly braces `${expression}`.
+
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
