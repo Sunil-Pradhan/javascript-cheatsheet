@@ -4800,6 +4800,30 @@ console.log(Number.isSafeInteger(0.1));
 <br/>
 
 
+#### Global JavaScript methods
+
+Global JavaScript methods can be used on all JavaScript data types.
+
+* Number()
+* parseFloat()
+* parseInt()
+
+**Number() -** The `Number()` function converts the object argument to a number that represents the object’s value. 
+
+If the value can’t be converted to a legal number, `NaN` is returned. 
+
+If the parameter is a `Date` object, the `Number()` function returns the number of milliseconds since midnight January 1, 1970 UTC. 
+
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
