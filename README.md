@@ -4503,6 +4503,27 @@ console.log(typeof x);
 </div>
 <br/>
 
+
+#### Number with String 
+
+Example: 
+
+```javascript
+var a = '50';
+var b = 10;
+console.log(a + b);
+console.log(typeof a, typeof b);
+
+//output - 5010
+//output - string number
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
