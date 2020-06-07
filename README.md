@@ -4016,6 +4016,15 @@ var a = Boolean(null) //false
 
 String is a group of characters. 
 
+```javascript
+var name = 'Sunil';
+console.log(name);
+console.log(typeof name);
+
+//output - Sunil
+//output - String
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
