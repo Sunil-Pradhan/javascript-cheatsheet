@@ -4035,6 +4035,16 @@ console.log(typeof str);
 ```
 
 
+**Example(Constructor):**
+
+```javascript
+var str = new String('Hello World');
+console.log(typeof str);
+
+//output - object
+```
+
+
 
 <br/>
 <div align="right">
