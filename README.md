@@ -4210,6 +4210,54 @@ console.log(str.charAt(9));
 </div>
 <br/>
 
+
+#### `charCodeAt()` Method
+
+The `charCodeAt()` method returns the unicode of the character at a specified index in a string. 
+
+
+```javascript
+var str = 'Hello Sunil';
+console.log(str.charCodeAt(9));
+
+//output - 105
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+#### `toUpperCase()` & `toLowerCase()` Method
+
+Convert string to uppercase and lowercase.
+
+Example: 
+
+```javascript
+var str = 'Hello Sunil';
+console.log(str.toUpperCase());
+
+//output - HELLO SUNIL
+```
+
+Example: 
+
+```javascript
+var str = 'Hello Sunil';
+console.log(str.toLowerCase());
+
+//output - hello sunil
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
