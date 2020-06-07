@@ -4258,6 +4258,29 @@ console.log(str.toLowerCase());
 </div>
 <br/>
 
+
+#### `trim()` Method
+
+It removes white space from both side of string (starting and ending part only).
+
+Example: 
+
+```javascript
+var str = '      Hello Sunil    ';
+console.log(str.trim());
+
+//output - Hello Sunil
+```
+
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
