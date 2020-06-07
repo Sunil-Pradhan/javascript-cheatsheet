@@ -4074,6 +4074,30 @@ console.log(str);
 <br/>
 
 
+#### String Concatenation
+
+Connect two different strings and make it one.
+
+**Example(+ operator):**
+
+```javascript
+var str1 = 'Hello';
+var str2 = ' Sunil';
+
+console.log(str1 + str2);
+
+
+//output - Hello Sunil
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
