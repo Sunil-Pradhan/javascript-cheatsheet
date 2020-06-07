@@ -4645,6 +4645,28 @@ console.log(a.toString(16));
 </div>
 <br/>
 
+
+#### `toExponential()` Method
+
+The `toExponential()` method converts a number into an exponential notation. 
+
+Syntax: 
+
+```javascript
+variable_name.toExponential(y)
+```
+
+Where y is an integer between 0 and 20 representing the number of digits in the notation after the decimal point. If omitted, it is set to as many digits as necessary to represent the value. 
+
+
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
