@@ -4398,19 +4398,46 @@ console.log(str.slice(14, 19));
 
 The `substring()` is similar to `slice()`. The first argument specifies the index at which the desired substring begins. The optional second argument indicates the index at which the desired substring ends.
 
-The method returns a string containing the substring beginning at the given index up to but not including the character at the index specified by the second argument. 
+The method returns a string containing the substring beginning at the given index up to but not including the character at the index specified by the second argument.
 
 _The difference between slice and substring is that `substring()` cannot accept negative indexes._
+
+Example:
+
+```javascript
+var str = 'Hi guys! I am Sunil';
+console.log(str.substring(14, 19));
+
+//output - Sunil
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### `substr()` Method
+
+The `substr()` is similar to `slice()`. The `substr()` method returns the part of a string between the start index and a number of characters after it. 
+
+`substr()` extracts length characters from a string, counting from the start index. If the start is a positive number, the index starts counting at the start of the string. If the start is a negative number, the index starts counting from the end of the string.
 
 Example: 
 
 ```javascript
 var str = 'Hi guys! I am Sunil';
-console.log(str.substring(14,19));
-
+console.log(str.substr(14, 19));
 
 //output - Sunil
 ```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 <a name="js-variable-hosting"></a>
 
