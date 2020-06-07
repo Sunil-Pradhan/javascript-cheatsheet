@@ -4106,7 +4106,7 @@ console.log(new_str);
 
 Template literals allow us to embed expressions. You can use multi-line strings and string interpolation features with them.
 
-Template literals are enclosed by the back-tick (` `) character instead of double or single quotes. 
+Template literals are enclosed by the back-tick (\` \`) character instead of double or single quotes. 
 
 Example: 
 
