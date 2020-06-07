@@ -4686,7 +4686,7 @@ a.toFixed(y);
 
 Where y is the number of digits after the decimal point. Default is 0 (no digits after the decimal point).
 
-Example: 
+Example:
 
 ```javascript
 var a = 19.65823;
@@ -4705,20 +4705,19 @@ console.log(a.toFixed(3));
 </div>
 <br/>
 
-
 #### `toPrecision()` Method
 
-`toPrecision()` method formats a number to a specified length. A decimal point and nulls are added (if needed), to create the specified length. 
+`toPrecision()` method formats a number to a specified length. A decimal point and nulls are added (if needed), to create the specified length.
 
 Syntax:
 
 ```javascript
-variable_name.toPrecision(y)
+variable_name.toPrecision(y);
 ```
 
 Where y is the number of digits. If omitted, it returns the entire number (without any formatting)
 
-Example: 
+Example:
 
 ```javascript
 var a = 19.65823;
@@ -4727,10 +4726,9 @@ console.log(a.toPrecision(2));
 console.log(a.toPrecision(3));
 
 //output - 19.65823
-//output - 20 
+//output - 20
 //output - 19.7
 ```
-
 
 <br/>
 <div align="right">
@@ -4738,14 +4736,13 @@ console.log(a.toPrecision(3));
 </div>
 <br/>
 
-
 #### `isInteger()` Method
 
-`Number.isInteger()` method determines whether a value is an integer or not. 
+`Number.isInteger()` method determines whether a value is an integer or not.
 
-This method returns true if the value is of the type `Number`, and an integer, Otherwise it returns false. 
+This method returns true if the value is of the type `Number`, and an integer, Otherwise it returns false.
 
-Example: 
+Example:
 
 ```javascript
 console.log(Number.isInteger());
@@ -4761,37 +4758,31 @@ console.log(Number.isInteger(200 - 100));
 //output - true
 ```
 
-
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
 
-
 #### `isSafeInteger()` Method
 
-`Number.isSafeInteger()` method determines whether  a value is a safe integer.
+`Number.isSafeInteger()` method determines whether a value is a safe integer.
 
 A safe integer is an integer that can be exactly all integers from (2^53 -1) to -(2^5 -1).
 
-This method returns true if the value is of the type `Number`, and a safe integer. Otherwise it returns false. 
+This method returns true if the value is of the type `Number`, and a safe integer. Otherwise it returns false.
 
-Example: 
+Example:
 
 ```javascript
 console.log(Number.isSafeInteger(100));
 console.log(Number.isSafeInteger(-100));
 console.log(Number.isSafeInteger(0.1));
 
-
 //output - true
 //output - true
 //output - false
 ```
-
-
 
 <br/>
 <div align="right">
@@ -4799,35 +4790,33 @@ console.log(Number.isSafeInteger(0.1));
 </div>
 <br/>
 
-
 #### Global JavaScript methods
 
 Global JavaScript methods can be used on all JavaScript data types.
 
-* Number()
-* parseInt()
-* parseFloat()
+- Number()
+- parseInt()
+- parseFloat()
 
-**Number() -** The `Number()` function converts the object argument to a number that represents the object’s value. 
+**Number() -** The `Number()` function converts the object argument to a number that represents the object’s value.
 
-If the value can’t be converted to a legal number, `NaN` is returned. 
+If the value can’t be converted to a legal number, `NaN` is returned.
 
-If the parameter is a `Date` object, the `Number()` function returns the number of milliseconds since midnight January 1, 1970 UTC. 
+If the parameter is a `Date` object, the `Number()` function returns the number of milliseconds since midnight January 1, 1970 UTC.
 
-Example: 
+Example:
 
 ```javascript
-
 console.log(Number(true));
 console.log(Number('100'));
 console.log(Number(100 / 'Hello'));
 
-//output - 1 
+//output - 1
 //output - 100
 //output - NaN
 ```
 
-Example: 
+Example:
 
 ```javascript
 var f = new Date();
@@ -4836,16 +4825,15 @@ console.log(Number(f));
 //output - 1591545077754
 ```
 
-
 **parseInt() -** The parseInt() function parses a string and returns an integer.
 
-Syntax: 
+Syntax:
 
 ```javascript
-parseInt(string, radix)
+parseInt(string, radix);
 ```
 
-Example: 
+Example:
 
 ```javascript
 console.log(parseInt('10'));
@@ -4857,17 +4845,17 @@ console.log(parseInt('10 20 30'));
 //output - 10
 ```
 
-**parseFloat() -** The `parseFloat()` function parses a string and returns a floating point number. This function determines if the first character in the specified string is a number. 
+**parseFloat() -** The `parseFloat()` function parses a string and returns a floating point number. This function determines if the first character in the specified string is a number.
 
-If it is, it parses the string until it reaches the end of the number, and returns the number as a number, not as a string. 
+If it is, it parses the string until it reaches the end of the number, and returns the number as a number, not as a string.
 
-Syntax: 
+Syntax:
 
 ```javascript
-parseFloat(string)
+parseFloat(string);
 ```
 
-Example: 
+Example:
 
 ```javascript
 console.log(parseFloat('10'));
@@ -4885,13 +4873,11 @@ console.log(parseFloat('10 20 30'));
 </div>
 <br/>
 
-
-#### Math object 
+#### Math object
 
 The Math object holds a set of constants and methods that enable more complex mathematical operations than the basic arithmetic operators.
 
-We can not instantiate a Math Object. The Math object is static so it’s properties and methods are accessed directly. 
-
+We can not instantiate a Math Object. The Math object is static so it’s properties and methods are accessed directly.
 
 ```javascript
 console.log(Math.PI);
@@ -4904,7 +4890,7 @@ console.log(Math.PI);
 `Min()` - find minimum value
 `Max()` - find maximum value
 
-Example: 
+Example:
 
 ```javascript
 console.log(Math.min(50, 5, 90, 6));
@@ -4916,10 +4902,9 @@ console.log(Math.max(50, 5, 90, 6));
 
 **`floor()` Method:**
 
-The `floor()` method rounds a number downwards to the nearest integer, and returns the result. 
+The `floor()` method rounds a number downwards to the nearest integer, and returns the result.
 
-
-Example: 
+Example:
 
 ```javascript
 console.log(Math.floor(2.1));
@@ -4929,10 +4914,46 @@ console.log(Math.floor(-2.1));
 console.log(Math.floor(-6.65));
 
 //output - 2
-//output - 6 
-//output - 0 
+//output - 6
+//output - 0
 //output - -3
 //output - -7
+```
+
+**`round()` Method:**
+
+The `round()` method rounds a number to the nearest integer. 6.4 will be rounded down, 6.5 will be rounded up.
+
+Example: 
+
+```javascript
+console.log(Math.round(2.1));
+console.log(Math.round(6.65));
+console.log(Math.round(0.4));
+console.log(Math.round(-2.1));
+console.log(Math.round(-6.65));
+
+//output - 2
+//output - 7 
+//output - 0 
+//output - -2
+//output - -7
+```
+:bulb: **TIP:** floor and round is used when you are dealing with price or need to create a random number. 
+
+**`random()` Method:**
+
+It generate random number.
+
+Example: 
+
+```javascript
+console.log(Math.random() * 100 + 1);
+var x = Math.floor(Math.random() * 100 + 1);
+console.log(x);
+
+//output - 54.631881910377864
+//output - 81
 ```
 
 
@@ -4940,16 +4961,11 @@ console.log(Math.floor(-6.65));
 
 https://www.w3schools.com/jsref/jsref_obj_math.asp
 
-
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
-
-
 
 <a name="js-variable-hosting"></a>
 
