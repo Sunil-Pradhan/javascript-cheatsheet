@@ -5012,6 +5012,21 @@ console.log(today);
 //output - 2020-06-08T16:02:40.621Z
 ```
 
+**Create Date object using `Date(millisecond)`:**
+
+`new Date(millisecond)` - It creates a new date object as January 1,1970, 00:00:00 Universal Time (UTC).
+
+Example: 
+
+```javascript
+var today = new Date(1530867166586);
+console.log(today);
+
+//output - 2018-07-06T08:52:46.586Z
+```
+
+It is used for converting milliseconds to normal date format. 
+
 
 <br/>
 <div align="right">
