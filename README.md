@@ -4999,6 +4999,20 @@ new Date(year, month, day, hours, minutes, seconds, milliseconds);
 new Date(dateString);
 ```
 
+**Create Date object using `Date()`:**
+
+`new Date()` creates a new date object with the current date and time.
+
+Example: 
+
+```javascript
+var today = new Date();
+console.log(today);
+
+//output - 2020-06-08T16:02:40.621Z
+```
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
