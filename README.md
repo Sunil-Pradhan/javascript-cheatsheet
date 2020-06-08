@@ -5077,6 +5077,10 @@ ISO 8601 is the international standard for the representation of dates and times
 | Only Year      | YYYY                 | 2020                 |
 | Date and Time  | YYYY-MM-DDTHH:MM:SSZ | 2020-06-21T12:00:00Z |
 
+* Date and Time is separated with a capital T
+* UTC time is defined with a capital letter Z
+* If you want to modify the time relative to UTC, remove the Z and add +HH:MM or -HH:MM instead
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
