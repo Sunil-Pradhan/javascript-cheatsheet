@@ -5028,6 +5028,31 @@ console.log(today);
 It is used for converting milliseconds to normal date format. 
 
 
+**Create Date object using `Date(year, month, day, hours, minutes, seconds, milliseconds)`:**
+
+It creates an object with the date specified by the integer values for the year, month, day, hours, minutes, second, milliseconds. You can omit some of the arguments. 
+
+Example: 
+
+```javascript
+var today = new Date(2020, 4, 25, 9, 45, 35, 0);
+console.log(today);
+
+//output - 2020-05-25T04:15:35.000Z
+```
+
+Month and Week day start with 0. 
+
+0 - Sunday
+0 - January 
+
+Month day starts with 1 
+
+1 - 1
+
+
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
