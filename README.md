@@ -24,8 +24,11 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Rest & Spread Operator](#js-rest-spread)
 - [Module - Import & Export](#js-module)
 - [Destructuring - Array & Object](#js-destructuring)
+- [Symbols](#js-symbols)
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
+
+
 
 <a name="js-basics"></a>
 
@@ -6694,6 +6697,40 @@ You have an object and then you use the curly braces and assign it to the object
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+
+<a name="js-symbols"></a>
+
+## JavaScript Symbols
+
+The purpose of a symbol is to generate a unique ID but the funny thing is that we never get access to that ID. 
+ 
+
+```javascript
+let s = Symbol();
+console.log(typeof s);
+
+//output - symbol
+```
+
+We can also pass an optional symbol description while creating a symbol. So within parentheses we can specify a string so we can just call this first symbol. 
+
+```javascript
+let s = Symbol('First Symbol');
+console.log(typeof s);
+console.log(s.toString());
+
+//output- symbol
+//output - Symbol(First Symbol)
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 
 <a name="js-oop"></a>
 
