@@ -6743,8 +6743,23 @@ console.log(s2 === s3);
 
 Therefore a symbol always creates a unique ID. 
 
+Now let's pass a description 'Test'; 
 
+```javascript
+let s = Symbol('First Symbol');
+console.log(typeof s);
+console.log(s.toString());
 
+let s2 = Symbol('Test');
+let s3 = Symbol('Test');
+
+console.log(s2 === s3);
+
+//output- symbol
+//output - Symbol(First Symbol)
+//false
+
+```
 
 <br/>
 <div align="right">
