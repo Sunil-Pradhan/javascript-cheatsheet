@@ -6724,6 +6724,27 @@ console.log(s.toString());
 //output - Symbol(First Symbol)
 ```
 
+So when we call the `toString()` method on the symbol we get the description. Okay so now let's create two more symbols. 
+
+```javascript
+let s = Symbol('First Symbol');
+console.log(typeof s);
+console.log(s.toString());
+
+let s2 = Symbol();
+let s3 = Symbol();
+
+console.log(s2 === s3);
+
+//output- symbol
+//output - Symbol(First Symbol)
+//false
+```
+
+Therefore a symbol always creates a unique ID. 
+
+
+
 
 <br/>
 <div align="right">
