@@ -5067,7 +5067,7 @@ It is divided into three category:
 | Short Date | MM/DD/YYYY  | '06/21/2020                               |
 | Long Date  | MMM DD YYYY | 'June 21 2020 or 21 June 2020'            |
 
-ISO Date:
+**ISO Date:**
 
 ISO 8601 is the international standard for the representation of dates and times.
 
@@ -5080,6 +5080,33 @@ ISO 8601 is the international standard for the representation of dates and times
 * Date and Time is separated with a capital T
 * UTC time is defined with a capital letter Z
 * If you want to modify the time relative to UTC, remove the Z and add +HH:MM or -HH:MM instead
+
+Example: 
+
+```javascript
+var today = new Date('2020-06');
+console.log(today);
+
+//output - 2020-06-01T00:00:00.000Z
+```
+
+**Short Date:**
+
+* Short dates are written with an 'MM/DD/YYYY' format.
+* In some browsers, months or days with no leading zeroes may produce an error.
+* The behavior of 'YYYY/MM/DD' is undefined. Some browsers will try to guess the format.Some will return NaN.
+* The behavior of 'DD-MM-YYYY' is also undefined. Some browsers will try to guess the format. Some will return NaN. 
+
+Example: 
+
+```javascript
+var today = new Date('06-12-2020');
+console.log(today);
+
+//output - 2020-06-11T18:30:00.000Z
+```
+
+
 
 <br/>
 <div align="right">
