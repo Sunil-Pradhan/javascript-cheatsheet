@@ -5106,7 +5106,21 @@ console.log(today);
 //output - 2020-06-11T18:30:00.000Z
 ```
 
+**Long Date:**
 
+* Long dates are most often written with a 'MMM DD YYYY' format.
+* Mont and day can be in any order.
+* Month can be written in full(January), or abbreviated(Jan).
+* If you write 'June, 21, 2020' commas are ignored and Names are case insensitive. 
+
+Example: 
+
+```javascript
+var today = new Date('Mar 25 2020');
+console.log(today);
+
+//output - 2020-03-24T18:30:00.000Z
+```
 
 <br/>
 <div align="right">
