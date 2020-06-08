@@ -4977,14 +4977,11 @@ The date object provides a sophisticated set of methods for manipulating dates a
 0 - Sunday, 1 - Monday and so on.
 0 - January, 1 - February and so on.
 
-
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 #### Creating data object
 
@@ -5003,7 +5000,7 @@ new Date(dateString);
 
 `new Date()` creates a new date object with the current date and time.
 
-Example: 
+Example:
 
 ```javascript
 var today = new Date();
@@ -5016,7 +5013,7 @@ console.log(today);
 
 `new Date(millisecond)` - It creates a new date object as January 1,1970, 00:00:00 Universal Time (UTC).
 
-Example: 
+Example:
 
 ```javascript
 var today = new Date(1530867166586);
@@ -5025,14 +5022,13 @@ console.log(today);
 //output - 2018-07-06T08:52:46.586Z
 ```
 
-It is used for converting milliseconds to normal date format. 
-
+It is used for converting milliseconds to normal date format.
 
 **Create Date object using `Date(year, month, day, hours, minutes, seconds, milliseconds)`:**
 
-It creates an object with the date specified by the integer values for the year, month, day, hours, minutes, second, milliseconds. You can omit some of the arguments. 
+It creates an object with the date specified by the integer values for the year, month, day, hours, minutes, second, milliseconds. You can omit some of the arguments.
 
-Example: 
+Example:
 
 ```javascript
 var today = new Date(2020, 4, 25, 9, 45, 35, 0);
@@ -5041,21 +5037,20 @@ console.log(today);
 //output - 2020-05-25T04:15:35.000Z
 ```
 
-Month and Week day start with 0. 
+Month and Week day start with 0.
 
 0 - Sunday
-0 - January 
+0 - January
 
-Month day starts with 1 
+Month day starts with 1
 
 1 - 1
-
 
 **Create Date object using `Date(dateString)`:**
 
 `new Date(dateString)` - It creates a new date object from a date string.
 
-Example: 
+Example:
 
 ```javascript
 var today = new Date('May 12, 2020 10:16:05');
@@ -5064,7 +5059,23 @@ console.log(today);
 //output - 2020-05-12T04:46:05.000Z
 ```
 
+It is divided into three category:
 
+| Date Type  | Formate     | Example                                   |
+| ---------- | ----------- | ----------------------------------------- |
+| ISO Date   | YYYY-MM-DD  | '2020-06-21' (The International Standard) |
+| Short Date | MM/DD/YYYY  | '06/21/2020                               |
+| Long Date  | MMM DD YYYY | 'June 21 2020 or 21 June 2020'            |
+
+ISO Date:
+
+ISO 8601 is the international standard for the representation of dates and times.
+
+| Description    | Formate              | Example              |
+| -------------- | -------------------- | -------------------- |
+| Year and Month | YYYY-MM              | 2020-06              |
+| Only Year      | YYYY                 | 2020                 |
+| Date and Time  | YYYY-MM-DDTHH:MM:SSZ | 2020-06-21T12:00:00Z |
 
 <br/>
 <div align="right">
