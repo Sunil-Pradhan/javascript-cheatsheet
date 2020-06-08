@@ -4924,7 +4924,7 @@ console.log(Math.floor(-6.65));
 
 The `round()` method rounds a number to the nearest integer. 6.4 will be rounded down, 6.5 will be rounded up.
 
-Example: 
+Example:
 
 ```javascript
 console.log(Math.round(2.1));
@@ -4934,18 +4934,19 @@ console.log(Math.round(-2.1));
 console.log(Math.round(-6.65));
 
 //output - 2
-//output - 7 
-//output - 0 
+//output - 7
+//output - 0
 //output - -2
 //output - -7
 ```
-:bulb: **TIP:** floor and round is used when you are dealing with price or need to create a random number. 
+
+:bulb: **TIP:** floor and round is used when you are dealing with price or need to create a random number.
 
 **`random()` Method:**
 
 It generate random number.
 
-Example: 
+Example:
 
 ```javascript
 console.log(Math.random() * 100 + 1);
@@ -4955,7 +4956,6 @@ console.log(x);
 //output - 54.631881910377864
 //output - 81
 ```
-
 
 ###### Reference
 
@@ -4967,30 +4967,34 @@ https://www.w3schools.com/jsref/jsref_obj_math.asp
 </div>
 <br/>
 
-
 #### Date object
 
-The date object provides a sophisticated set of methods for manipulating dates and times. 
+The date object provides a sophisticated set of methods for manipulating dates and times.
 
-* It reads the client machine date and time so if the client’s date or time is incorrect, your script will reflect this fact.  
-* Days of week and months of the year are enumerated beginning with zero. 
- 
+- It reads the client machine date and time so if the client’s date or time is incorrect, your script will reflect this fact.
+- Days of week and months of the year are enumerated beginning with zero.
 
-0 - Sunday, 1 - Monday and so on. 
-0 - January, 1 - February and so on. 
+0 - Sunday, 1 - Monday and so on.
+0 - January, 1 - February and so on.
 
+**Creating data object:**
 
-**Creating data object:** 
+Date objects are created with the `new Date()` constructor. Date Objects created by programmers are static. They do not contain a ticking clock.
 
-Date objects are created with the `new Date()` constructor. Date Objects created by programmers are static. They do not contain a ticking clock. 
+Syntax:
+
+```javascript
+new Date();
+new Date(milliseconds);
+new Date(year, month, day, hours, minutes, seconds, milliseconds);
+new Date(dateString);
+```
 
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
-
 
 <a name="js-variable-hosting"></a>
 
