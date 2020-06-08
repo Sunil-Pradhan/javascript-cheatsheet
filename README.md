@@ -5164,6 +5164,78 @@ This is used to get date.
 * getTime() - Get the time (millisecond since January 1, 1970)
 * getDay() - Get the weekday as a number(0-6)
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+#### Retrieve Month name and Day name
+
+**For month:** 
+
+```javascript
+var tarikh = new Date();
+var month = tarikh.getMonth();
+var day = tarikh.getDay();
+
+console.log(getMonthName(month));
+
+function getMonthName(monthnumber) {
+  var monthname = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+
+  return monthname[monthnumber];
+}
+
+//output - June
+```
+
+**For day:** 
+
+```javascript
+var tarikh = new Date();
+var month = tarikh.getMonth();
+var day = tarikh.getDay();
+
+console.log(getDayName(day));
+
+function getDayName(daynumber) {
+  var dayname = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ];
+
+  return dayname[daynumber];
+}
+
+//output - Monday
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
