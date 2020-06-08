@@ -4977,7 +4977,16 @@ The date object provides a sophisticated set of methods for manipulating dates a
 0 - Sunday, 1 - Monday and so on.
 0 - January, 1 - February and so on.
 
-**Creating data object:**
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+#### Creating data object
 
 Date objects are created with the `new Date()` constructor. Date Objects created by programmers are static. They do not contain a ticking clock.
 
