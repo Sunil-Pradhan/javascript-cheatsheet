@@ -5051,6 +5051,19 @@ Month day starts with 1
 1 - 1
 
 
+**Create Date object using `Date(dateString)`:**
+
+`new Date(dateString)` - It creates a new date object from a date string.
+
+Example: 
+
+```javascript
+var today = new Date('May 12, 2020 10:16:05');
+console.log(today);
+
+//output - 2020-05-12T04:46:05.000Z
+```
+
 
 
 <br/>
