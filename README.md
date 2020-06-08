@@ -5236,6 +5236,63 @@ function getDayName(daynumber) {
 </div>
 <br/>
 
+#### Format Date and Time
+
+Example: 
+
+```javascript
+var tarikh = new Date();
+console.log(formateDate(tarikh));
+
+function formateDate(pd) {
+  var date = pd.getDate();
+  var month = pd.getMonth();
+  month++;
+  var year = pd.getFullYear();
+  return (date + '-' + month + '-' + year);
+}
+
+//output - 8-6-2020
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+#### Convert Date to String
+
+If you want to create a string in a standard format, Date provides three methods: -
+
+* toString()
+* toUTCString()
+* toGMTString()
+
+`toUTCString()` and `toGMTString()` format the string according to Internet (GMT) standards, whereas `toString()` creates the string according to local time. 
+
+
+Example: 
+
+```javascript
+var today = new Date();
+console.log(today.toString());
+console.log(today.toUTCString());
+console.log(today.toGMTString());
+
+
+//output - Mon Jun 08 2020 22:38:27 GMT+0530 (India Standard Time)
+//output - Mon, 08 Jun 2020 17:08:27 GMT
+//output - Mon, 08 Jun 2020 17:08:27 GMT
+```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-variable-hosting"></a>
 
 ## Variable Hoisting
