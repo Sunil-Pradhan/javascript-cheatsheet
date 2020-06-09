@@ -6957,6 +6957,8 @@ But how do we know if the object has an iterator method?  By checking to see if 
 What we are doing here is checking to see if a method exists for
 the object at this particular key so at `Symbol.iterator` if typeof string of symbols iterator returns a method or a function then this object can be used with the `for...of` loop. 
 
+Now let's have a look which of these types can be used with the `for...of` loop. 
+
 ```javascript
 let str = 'Hello';
 let arr = [1, 2, 3];
@@ -6964,17 +6966,26 @@ let num = 5;
 let obj = { name: 'Sunil' };
 
 console.log('For string -' + typeof str[Symbol.iterator]);
-console.log('For array -' + typeof str[Symbol.iterator]);
-console.log('For number -' + typeof str[Symbol.iterator]);
-console.log('For object -' + typeof str[Symbol.iterator]);
+console.log('For array -' + typeof arr[Symbol.iterator]);
+console.log('For number -' + typeof num[Symbol.iterator]);
+console.log('For object -' + typeof obj[Symbol.iterator]);
 
 //output - For string - function
 //output - For array - function 
-//output - For number -function
-//output - For object - function
+//output - For number -undefined
+//output - For object -undefined
 ```
 
-Now let's have a look which of these types can be used with the `for...of` loop. 
+So for `string` it's a `function` that means we can use a `string` in a `for...of` loop, for `array` we can use a `for...of` loop because the type of the method is `function` or the type of method add similar iterator is a `function`. 
+
+But for `number` and `object` it is `undefined` so that means to say that we cannot use the `for...of` loop with `number` and `object`. 
+
+Now that is the main use of `Symbol.iterator` to check a `for...of` loop can be used with a particular object or not. 
+
+Now does that mean that objects are not iterable well ? no! 
+
+We can write our own special iterator method, so that even an object can be used with the `for...of` loop. 
+
 
 
 <br/>
