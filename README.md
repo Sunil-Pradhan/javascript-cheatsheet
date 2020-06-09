@@ -6782,6 +6782,31 @@ let s4 = Symbol.for('RegSymbol');
 Here's the thing though `Symbol.for` doesn't add the symbol right away it checks if a symbol with the key RegSymbol already exists in the registry if it does it will return that symbol over
 here to `s4`.
 
+If it doesn't exist then it will create a new symbol in the registry.
+
+So let's also do let s 5 is equal to symbol doubt for symbol symbol dot 4 and let's use the same reg symbol. 
+
+```javascript
+let s = Symbol('First Symbol');
+console.log(typeof s);
+console.log(s.toString());
+
+let s2 = Symbol('Test');
+let s3 = Symbol('Test');
+
+console.log(s2 === s3);
+
+let s4 = Symbol.for('RegSymbol');
+let s5 = Symbol.for('RegSymbol');
+console.log(s4 === s5);
+
+//output - symbol
+//output - Symbol(First Symbol)
+//output - false
+//output - true
+```
+
+
 
 <br/>
 <div align="right">
