@@ -6761,6 +6761,26 @@ console.log(s2 === s3);
 
 ```
 
+It's still false. So it doesn't matter what the description is, a symbol is always going to create a unique ID.
+
+Now let's say that we have created a new symbol but we need to get hold of that symbol so that we can use the same symbol again in a different or the same file. So for that purpose we have a built in symbol registry. 
+
+So to add a symbol to the registry we use the `symbol.for()` method. 
+
+```javascript
+let s = Symbol('First Symbol');
+console.log(typeof s);
+console.log(s.toString());
+
+let s2 = Symbol('Test');
+let s3 = Symbol('Test');
+
+console.log(s2 === s3);
+
+let s4 = Symbol.for('RegSymbol');
+```
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
