@@ -6947,6 +6947,43 @@ So this is the new static method in ES6 which we can use to list the symbols use
 </div>
 <br/>
 
+### Symbol iterator:
+
+As we know ES6 provides a new way to iterate over objects and that is the `for...of` loop but the `for...of` loop can be used with all types of objects. For an object to work with the `for...of` loop it needs to have a special method and the special method is called as the iterator method.
+
+
+But how do we know if the object has an iterator method?  By checking to see if the object has a method defined for the key `Symbol.iterator` so this is where this well-known `Symbol.iterator` comes into action.
+
+What we are doing here is checking to see if a method exists for
+the object at this particular key so at `Symbol.iterator` if typeof string of symbols iterator returns a method or a function then this object can be used with the `for...of` loop. 
+
+```javascript
+let str = 'Hello';
+let arr = [1, 2, 3];
+let num = 5;
+let obj = { name: 'Sunil' };
+
+console.log('For string -' + typeof str[Symbol.iterator]);
+console.log('For array -' + typeof str[Symbol.iterator]);
+console.log('For number -' + typeof str[Symbol.iterator]);
+console.log('For object -' + typeof str[Symbol.iterator]);
+
+//output - For string - function
+//output - For array - function 
+//output - For number -function
+//output - For object - function
+```
+
+Now let's have a look which of these types can be used with the `for...of` loop. 
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 
 <a name="js-oop"></a>
 
