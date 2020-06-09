@@ -7001,15 +7001,15 @@ Iterable {
 }
 
 Iterator{
-  next(): 
+  next():
 }
 ```
 
-And its returns an object, let's call this iterator `IResultObj` and this iterator `IResultObj` is nothing but an object that contains two properties. 
+And its returns an object, let's call this iterator `IResultObj` and this iterator `IResultObj` is nothing but an object that contains two properties.
 
-So let us copy this and the first property is a `value` property and this can be of any data type so this `value` is going to be the actual `value` within the collection. 
+So let us copy this and the first property is a `value` property and this can be of any data type so this `value` is going to be the actual `value` within the collection.
 
-And the second property is a `boolean` flag called done, so this done indicates if the iteration is complete or not complete. 
+And the second property is a `boolean` flag called done, so this done indicates if the iteration is complete or not complete.
 
 So if done is true the iteration is complete.
 
@@ -7028,11 +7028,11 @@ IResultObj{
 }
 ```
 
-If it is false then there are more elements to be iterated over. 
+If it is false then there are more elements to be iterated over.
 
-As we already mentioned in ES6 array, strings, maps and sets are all iterables but to understand better about iterators let's create our own iterator that works with arrays. 
+As we already mentioned in ES6 array, strings, maps and sets are all iterables but to understand better about iterators let's create our own iterator that works with arrays.
 
-Let's go over here and let's create a new array and call this iterable then create our iterator, now it's going to be a function and let's name it `createIterator` and this is going to accept an array and let's have a count variable that we used to iterate or keep track of each element within the array. 
+Let's go over here and let's create a new array and call this iterable then create our iterator, now it's going to be a function and let's name it `createIterator` and this is going to accept an array and let's have a count variable that we used to iterate or keep track of each element within the array.
 
 ```javascript
 let iterable = [1, 2, 3];
@@ -7048,11 +7048,100 @@ function createIterator(array) {
 }
 ```
 
-And if you see over here an iterator this contains a `next` method so it's going to return something and that is a `next` method so this `next` is going to be a function.  And it's going to return this result object. 
+And if you see over here an iterator this contains a `next` method so it's going to return something and that is a `next` method so this `next` is going to be a function. And it's going to return this result object.
 
-Now there are two conditions while returning this object. 
+Now there are two conditions while returning this object.
 
 If the count of the array or the current count is less than `array.length` then we are going to return the value is going to be an array of count, but we also need to move on to the `next` element so `count++` and `done` is going to be false.
+
+So the count is less than `array.length` which means to say that we have more elements that need to be iterated. We are not yet done with the iteration and if the count is equal to or greater than `array.length` that means we have hit the end of our iteration. So we are going to be returning value `undefined` and `done` true.
+
+Now let us create `let myIterator` and assign it to the function so `createIterator` and pass the iterable array.
+
+We have a reference to this function and by making use of the `next` method we can iterate through each of these elements.
+
+
+```javascript
+let iterable = [1, 2, 3];
+
+function createIterator(array) {
+  let count = 0;
+  return {
+    next: function () {
+      return count < array.length
+        ? { value: array[count++], done: false }
+        : { value: undefined, done: true };
+    },
+  };
+}
+
+let myIterator = createIterator(iterable);
+console.log(myIterator.next());
+
+//output - { value: 1, done: false }
+```
+
+We are getting an object `value` is one and `done` as false so the first element.  If we repeat this two more times; 
+
+
+```javascript
+let iterable = [1, 2, 3];
+
+function createIterator(array) {
+  let count = 0;
+  return {
+    next: function () {
+      return count < array.length
+        ? { value: array[count++], done: false }
+        : { value: undefined, done: true };
+    },
+  };
+}
+
+let myIterator = createIterator(iterable);
+console.log(myIterator.next());
+console.log(myIterator.next());
+console.log(myIterator.next());
+
+//output - { value: 1, done: false }
+//output - { value: 2, done: false }
+//output - { value: 3, done: false }
+```
+
+And we get value two three and we are not yet done with the iteration and finally when we call this again; 
+
+```javascript
+let iterable = [1, 2, 3];
+
+function createIterator(array) {
+  let count = 0;
+  return {
+    next: function () {
+      return count < array.length
+        ? { value: array[count++], done: false }
+        : { value: undefined, done: true };
+    },
+  };
+}
+
+let myIterator = createIterator(iterable);
+console.log(myIterator.next());
+console.log(myIterator.next());
+console.log(myIterator.next());
+console.log(myIterator.next());
+
+//output - { value: 1, done: false }
+//output - { value: 2, done: false }
+//output - { value: 3, done: false }
+//output - { value: undefined, done: true }
+```
+
+We get value `undefined` and we are `done` with the iteration. This functionality in fact is what the `for...of` loop uses it internally calls
+the `next` method until this `done` is true. 
+
+So until the iteration is completed it keeps calling this `next` method and that is how it iterates through the elements of a collection. 
+
+
 
 
 
