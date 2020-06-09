@@ -6995,6 +6995,45 @@ Iterable {
 
 What is an iterator? An iterator is an object that is going to implement a `next` method. So it is going to have a `next` method and this `next` method knows how to access elements in a collection, be it an `array` or a `string` or `maps` or `sets`.
 
+```javascript
+Iterable {
+  [Symbol.iterator()]: Iterator
+}
+
+Iterator{
+  next(): 
+}
+```
+
+And its returns an object, let's call this iterator `IResultObj` and this iterator `IResultObj` is nothing but an object that contains two properties. 
+
+So let us copy this and the first property is a `value` property and this can be of any data type so this `value` is going to be the actual `value` within the collection. 
+
+And the second property is a `boolean` flag called done, so this done indicates if the iteration is complete or not complete. 
+
+So if done is true the iteration is complete.
+
+```javascript
+Iterable {
+  [Symbol.iterator()]: Iterator
+}
+
+Iterator{
+  next(): IResultObj
+}
+
+IResultObj{
+  value: any
+  done: bool
+}
+```
+
+If it is false then there are more elements to be iterated over. 
+
+As we already mentioned in ES6 array, strings, maps and sets are all iterables but to understand better about iterators let's create our own iterator that works with arrays. 
+
+ 
+
 
 
 <a name="js-oop"></a>
