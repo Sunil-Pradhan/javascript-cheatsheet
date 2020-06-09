@@ -7032,7 +7032,29 @@ If it is false then there are more elements to be iterated over.
 
 As we already mentioned in ES6 array, strings, maps and sets are all iterables but to understand better about iterators let's create our own iterator that works with arrays. 
 
- 
+Let's go over here and let's create a new array and call this iterable then create our iterator, now it's going to be a function and let's name it `createIterator` and this is going to accept an array and let's have a count variable that we used to iterate or keep track of each element within the array. 
+
+```javascript
+let iterable = [1, 2, 3];
+
+function createIterator(array) {
+  let count = 0;
+  return {
+    next: function () {
+      return count < array.length?
+      {value: array[count++], done:false};
+    },
+  };
+}
+```
+
+And if you see over here an iterator this contains a `next` method so it's going to return something and that is a `next` method so this `next` is going to be a function.  And it's going to return this result object. 
+
+Now there are two conditions while returning this object. 
+
+If the count of the array or the current count is less than `array.length` then we are going to return the value is going to be an array of count, but we also need to move on to the `next` element so `count++` and `done` is going to be false.
+
+
 
 
 
