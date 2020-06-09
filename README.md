@@ -28,8 +28,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
 
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -5080,11 +5078,11 @@ ISO 8601 is the international standard for the representation of dates and times
 | Only Year      | YYYY                 | 2020                 |
 | Date and Time  | YYYY-MM-DDTHH:MM:SSZ | 2020-06-21T12:00:00Z |
 
-* Date and Time is separated with a capital T
-* UTC time is defined with a capital letter Z
-* If you want to modify the time relative to UTC, remove the Z and add +HH:MM or -HH:MM instead
+- Date and Time is separated with a capital T
+- UTC time is defined with a capital letter Z
+- If you want to modify the time relative to UTC, remove the Z and add +HH:MM or -HH:MM instead
 
-Example: 
+Example:
 
 ```javascript
 var today = new Date('2020-06');
@@ -5095,12 +5093,12 @@ console.log(today);
 
 **Short Date:**
 
-* Short dates are written with an 'MM/DD/YYYY' format.
-* In some browsers, months or days with no leading zeroes may produce an error.
-* The behavior of 'YYYY/MM/DD' is undefined. Some browsers will try to guess the format.Some will return NaN.
-* The behavior of 'DD-MM-YYYY' is also undefined. Some browsers will try to guess the format. Some will return NaN. 
+- Short dates are written with an 'MM/DD/YYYY' format.
+- In some browsers, months or days with no leading zeroes may produce an error.
+- The behavior of 'YYYY/MM/DD' is undefined. Some browsers will try to guess the format.Some will return NaN.
+- The behavior of 'DD-MM-YYYY' is also undefined. Some browsers will try to guess the format. Some will return NaN.
 
-Example: 
+Example:
 
 ```javascript
 var today = new Date('06-12-2020');
@@ -5111,12 +5109,12 @@ console.log(today);
 
 **Long Date:**
 
-* Long dates are most often written with a 'MMM DD YYYY' format.
-* Mont and day can be in any order.
-* Month can be written in full(January), or abbreviated(Jan).
-* If you write 'June, 21, 2020' commas are ignored and Names are case insensitive. 
+- Long dates are most often written with a 'MMM DD YYYY' format.
+- Mont and day can be in any order.
+- Month can be written in full(January), or abbreviated(Jan).
+- If you write 'June, 21, 2020' commas are ignored and Names are case insensitive.
 
-Example: 
+Example:
 
 ```javascript
 var today = new Date('Mar 25 2020');
@@ -5131,41 +5129,38 @@ console.log(today);
 </div>
 <br/>
 
-
 #### Set Date Methods
 
-This is used to set date. 
+This is used to set date.
 
-* setDate() - Set the day as a number (1-31)
-* setFullYear() - Set the year (optionally month and day)
-* setHours() - Set the hour(0-23)
-* setMilliseconds() - Set the milliseconds (0-999)
-* setMinutes() - Set the minutes (0-59)
-* setMonth() - Set the month (0-11)
-* setSecond() - Set the seconds(0-59)
-* setTime() - Set the time(milliseconds since January 1, 1970)
-
+- setDate() - Set the day as a number (1-31)
+- setFullYear() - Set the year (optionally month and day)
+- setHours() - Set the hour(0-23)
+- setMilliseconds() - Set the milliseconds (0-999)
+- setMinutes() - Set the minutes (0-59)
+- setMonth() - Set the month (0-11)
+- setSecond() - Set the seconds(0-59)
+- setTime() - Set the time(milliseconds since January 1, 1970)
 
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 #### Get Date Methods
 
-This is used to get date. 
+This is used to get date.
 
-* getFullYear() - Get the year as a four digit number (yyyy)
-* getMonth() - Get the month as a number (0-11)
-* getDate() - Get the day as a number(1-31)
-* getHours() - Get the hour(0-23)
-* getMinutes() - Get the minute (0-59)
-* getSeconds() - Get the second (0-59)
-* getMilliseconds() - Get the millisecond (0-999)
-* getTime() - Get the time (millisecond since January 1, 1970)
-* getDay() - Get the weekday as a number(0-6)
+- getFullYear() - Get the year as a four digit number (yyyy)
+- getMonth() - Get the month as a number (0-11)
+- getDate() - Get the day as a number(1-31)
+- getHours() - Get the hour(0-23)
+- getMinutes() - Get the minute (0-59)
+- getSeconds() - Get the second (0-59)
+- getMilliseconds() - Get the millisecond (0-999)
+- getTime() - Get the time (millisecond since January 1, 1970)
+- getDay() - Get the weekday as a number(0-6)
 
 <br/>
 <div align="right">
@@ -5173,10 +5168,9 @@ This is used to get date.
 </div>
 <br/>
 
-
 #### Retrieve Month name and Day name
 
-**For month:** 
+**For month:**
 
 ```javascript
 var tarikh = new Date();
@@ -5207,7 +5201,7 @@ function getMonthName(monthnumber) {
 //output - June
 ```
 
-**For day:** 
+**For day:**
 
 ```javascript
 var tarikh = new Date();
@@ -5241,7 +5235,7 @@ function getDayName(daynumber) {
 
 #### Format Date and Time
 
-Example: 
+Example:
 
 ```javascript
 var tarikh = new Date();
@@ -5252,7 +5246,7 @@ function formateDate(pd) {
   var month = pd.getMonth();
   month++;
   var year = pd.getFullYear();
-  return (date + '-' + month + '-' + year);
+  return date + '-' + month + '-' + year;
 }
 
 //output - 8-6-2020
@@ -5268,14 +5262,13 @@ function formateDate(pd) {
 
 If you want to create a string in a standard format, Date provides three methods: -
 
-* toString()
-* toUTCString()
-* toGMTString()
+- toString()
+- toUTCString()
+- toGMTString()
 
-`toUTCString()` and `toGMTString()` format the string according to Internet (GMT) standards, whereas `toString()` creates the string according to local time. 
+`toUTCString()` and `toGMTString()` format the string according to Internet (GMT) standards, whereas `toString()` creates the string according to local time.
 
-
-Example: 
+Example:
 
 ```javascript
 var today = new Date();
@@ -5283,12 +5276,10 @@ console.log(today.toString());
 console.log(today.toUTCString());
 console.log(today.toGMTString());
 
-
 //output - Mon Jun 08 2020 22:38:27 GMT+0530 (India Standard Time)
 //output - Mon, 08 Jun 2020 17:08:27 GMT
 //output - Mon, 08 Jun 2020 17:08:27 GMT
 ```
-
 
 <br/>
 <div align="right">
@@ -6698,13 +6689,11 @@ You have an object and then you use the curly braces and assign it to the object
 </div>
 <br/>
 
-
 <a name="js-symbols"></a>
 
 ## JavaScript Symbols
 
-The purpose of a symbol is to generate a unique ID but the funny thing is that we never get access to that ID. 
- 
+The purpose of a symbol is to generate a unique ID but the funny thing is that we never get access to that ID.
 
 ```javascript
 let s = Symbol();
@@ -6713,7 +6702,7 @@ console.log(typeof s);
 //output - symbol
 ```
 
-We can also pass an optional symbol description while creating a symbol. So within parentheses we can specify a string so we can just call this first symbol. 
+We can also pass an optional symbol description while creating a symbol. So within parentheses we can specify a string so we can just call this first symbol.
 
 ```javascript
 let s = Symbol('First Symbol');
@@ -6724,7 +6713,7 @@ console.log(s.toString());
 //output - Symbol(First Symbol)
 ```
 
-So when we call the `toString()` method on the symbol we get the description. Okay so now let's create two more symbols. 
+So when we call the `toString()` method on the symbol we get the description. Okay so now let's create two more symbols.
 
 ```javascript
 let s = Symbol('First Symbol');
@@ -6741,9 +6730,9 @@ console.log(s2 === s3);
 //false
 ```
 
-Therefore a symbol always creates a unique ID. 
+Therefore a symbol always creates a unique ID.
 
-Now let's pass a description 'Test'; 
+Now let's pass a description 'Test';
 
 ```javascript
 let s = Symbol('First Symbol');
@@ -6758,14 +6747,13 @@ console.log(s2 === s3);
 //output- symbol
 //output - Symbol(First Symbol)
 //false
-
 ```
 
 It's still false. So it doesn't matter what the description is, a symbol is always going to create a unique ID.
 
-Now let's say that we have created a new symbol but we need to get hold of that symbol so that we can use the same symbol again in a different or the same file. So for that purpose we have a built in symbol registry. 
+Now let's say that we have created a new symbol but we need to get hold of that symbol so that we can use the same symbol again in a different or the same file. So for that purpose we have a built in symbol registry.
 
-So to add a symbol to the registry we use the `symbol.for()` method. 
+So to add a symbol to the registry we use the `symbol.for()` method.
 
 ```javascript
 let s = Symbol('First Symbol');
@@ -6779,11 +6767,11 @@ console.log(s2 === s3);
 
 let s4 = Symbol.for('RegSymbol');
 ```
+
 Here's the thing though `Symbol.for` doesn't add the symbol right away it checks if a symbol with the key RegSymbol already exists in the registry if it does it will return that symbol over
 here to `s4`.
 
 If it doesn't exist then it will create a new symbol in the registry.
-
 
 ```javascript
 let s = Symbol('First Symbol');
@@ -6805,13 +6793,13 @@ console.log(s4 === s5);
 //output - true
 ```
 
-There you go it's true so what happened here is that when we did a `Symbol.for` on the first time a new symbol was created in the global registry with this description. 
+There you go it's true so what happened here is that when we did a `Symbol.for` on the first time a new symbol was created in the global registry with this description.
 
-And when `Symbol.for` was called again with the same description this symbol was retrieved and stored in `s5` file so. 
+And when `Symbol.for` was called again with the same description this symbol was retrieved and stored in `s5` file so.
 
-Now `s4` and `s5` both the symbols are the same we have no clue as to what the ID for these two symbols are but we just know that they are equal. 
+Now `s4` and `s5` both the symbols are the same we have no clue as to what the ID for these two symbols are but we just know that they are equal.
 
-Now let's say we want the key that was associated with the symbol when the symbol was added to the global registry. So for that we have another method called `Symbol.keyFor`. 
+Now let's say we want the key that was associated with the symbol when the symbol was added to the global registry. So for that we have another method called `Symbol.keyFor`.
 
 ```javascript
 let s = Symbol('First Symbol');
@@ -6835,13 +6823,13 @@ console.log(Symbol.keyFor(s4));
 //output - RegSymbol
 ```
 
-Here `Symbol.keyFor` is going to give us a key for a symbol. 
+Here `Symbol.keyFor` is going to give us a key for a symbol.
 
 So when we come across a symbol and we are not sure what it is used for we can use this method to get the description. Now you know that this symbol was actually used to set up a symbol in the global registry.
 
-Okay now that we know symbol is used to create a unique ID a good place to use them or use symbols is in object properties. 
+Okay now that we know symbol is used to create a unique ID a good place to use them or use symbols is in object properties.
 
-So we can have a new symbol `let fname = Symbol()` and then we can create a new object that person is equal to and by using the bracket notation we can use the symbol over here `[fname]` as the property. 
+So we can have a new symbol `let fname = Symbol()` and then we can create a new object that person is equal to and by using the bracket notation we can use the symbol over here `[fname]` as the property.
 
 ```javascript
 let s = Symbol('First Symbol');
@@ -6872,9 +6860,9 @@ console.log(Object.getOwnPropertyNames(person));
 //output - []
 ```
 
-Now we have created a unique property inside this object so we never have to worry about our code conflicting with existing methods or being accidentally overwritten. Because this property is always going to be unique. 
+Now we have created a unique property inside this object so we never have to worry about our code conflicting with existing methods or being accidentally overwritten. Because this property is always going to be unique.
 
-So now when we try to log the console `Object.getOwnPropertyNames(person)`, we don't get this property first name listed out because it is in fact a symbol, so we need to use another static method which is now present in ES6, namely `getOwnPropertySymbols`. 
+So now when we try to log the console `Object.getOwnPropertyNames(person)`, we don't get this property first name listed out because it is in fact a symbol, so we need to use another static method which is now present in ES6, namely `getOwnPropertySymbols`.
 
 ```javascript
 let s = Symbol('First Symbol');
@@ -6904,8 +6892,9 @@ console.log(Object.getOwnPropertySymbols(person));
 //output - true
 //output - RegSymbol
 //output - []
-//output - [ Symbol() ] 
-``` 
+//output - [ Symbol() ]
+```
+
 And if we pass, let's say `FirstName`
 
 ```javascript
@@ -6951,13 +6940,12 @@ So this is the new static method in ES6 which we can use to list the symbols use
 
 As we know ES6 provides a new way to iterate over objects and that is the `for...of` loop but the `for...of` loop can be used with all types of objects. For an object to work with the `for...of` loop it needs to have a special method and the special method is called as the iterator method.
 
-
-But how do we know if the object has an iterator method?  By checking to see if the object has a method defined for the key `Symbol.iterator` so this is where this well-known `Symbol.iterator` comes into action.
+But how do we know if the object has an iterator method? By checking to see if the object has a method defined for the key `Symbol.iterator` so this is where this well-known `Symbol.iterator` comes into action.
 
 What we are doing here is checking to see if a method exists for
-the object at this particular key so at `Symbol.iterator` if typeof string of symbols iterator returns a method or a function then this object can be used with the `for...of` loop. 
+the object at this particular key so at `Symbol.iterator` if typeof string of symbols iterator returns a method or a function then this object can be used with the `for...of` loop.
 
-Now let's have a look which of these types can be used with the `for...of` loop. 
+Now let's have a look which of these types can be used with the `for...of` loop.
 
 ```javascript
 let str = 'Hello';
@@ -6971,22 +6959,20 @@ console.log('For number -' + typeof num[Symbol.iterator]);
 console.log('For object -' + typeof obj[Symbol.iterator]);
 
 //output - For string - function
-//output - For array - function 
+//output - For array - function
 //output - For number -undefined
 //output - For object -undefined
 ```
 
-So for `string` it's a `function` that means we can use a `string` in a `for...of` loop, for `array` we can use a `for...of` loop because the type of the method is `function` or the type of method add similar iterator is a `function`. 
+So for `string` it's a `function` that means we can use a `string` in a `for...of` loop, for `array` we can use a `for...of` loop because the type of the method is `function` or the type of method add similar iterator is a `function`.
 
-But for `number` and `object` it is `undefined` so that means to say that we cannot use the `for...of` loop with `number` and `object`. 
+But for `number` and `object` it is `undefined` so that means to say that we cannot use the `for...of` loop with `number` and `object`.
 
-Now that is the main use of `Symbol.iterator` to check a `for...of` loop can be used with a particular object or not. 
+Now that is the main use of `Symbol.iterator` to check a `for...of` loop can be used with a particular object or not.
 
-Now does that mean that objects are not iterable well ? no! 
+Now does that mean that objects are not iterable well ? no!
 
-We can write our own special iterator method, so that even an object can be used with the `for...of` loop. 
-
-
+We can write our own special iterator method, so that even an object can be used with the `for...of` loop.
 
 <br/>
 <div align="right">
@@ -6994,7 +6980,20 @@ We can write our own special iterator method, so that even an object can be used
 </div>
 <br/>
 
+### Iterables and Iterators:
 
+ES6 introduces iteration which is a new way to traverse data and iteration revolves around two key concepts namely `iterables` and `iterators`.
+
+**Iterables:**
+
+Now an iterable is any object that implements a method whose key is `Symbol.iterator` so we will have an iterable which is nothing but an object, which has a property `Symbol.iterator` method and
+this method is going to return an iterator.
+
+```javascript
+Iterable {
+  [Symbol.iterator()]: iterator
+}
+```
 
 <a name="js-oop"></a>
 
