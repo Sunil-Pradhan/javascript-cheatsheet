@@ -6811,9 +6811,7 @@ And when `Symbol.for` was called again with the same description this symbol was
 
 Now `s4` and `s5` both the symbols are the same we have no clue as to what the ID for these two symbols are but we just know that they are equal. 
 
-Now let's say we want the key that was associated with the symbol when the symbol was added to the global registry. 
-
-So for that we have another method to make use of called `Symbol.keyFor`. 
+Now let's say we want the key that was associated with the symbol when the symbol was added to the global registry. So for that we have another method called `Symbol.keyFor`. 
 
 ```javascript
 let s = Symbol('First Symbol');
@@ -6837,6 +6835,77 @@ console.log(Symbol.keyFor(s4));
 //output - RegSymbol
 ```
 
+Here `Symbol.keyFor` is going to give us a key for a symbol. 
+
+So when we come across a symbol and we are not sure what it is used for we can use this method to get the description. Now you know that this symbol was actually used to set up a symbol in the global registry.
+
+Okay now that we know symbol is used to create a unique ID a good place to use them or use symbols is in object properties. 
+
+So we can have a new symbol `let fname = Symbol()` and then we can create a new object that person is equal to and by using the bracket notation we can use the symbol over here `[fname]` as the property. 
+
+```javascript
+let s = Symbol('First Symbol');
+console.log(typeof s);
+console.log(s.toString());
+
+let s2 = Symbol('Test');
+let s3 = Symbol('Test');
+
+console.log(s2 === s3);
+
+let s4 = Symbol.for('RegSymbol');
+let s5 = Symbol.for('RegSymbol');
+console.log(s4 === s5);
+console.log(Symbol.keyFor(s4));
+
+let fname = Symbol();
+let person = {
+  [fname]: 'Sunil',
+};
+console.log(Object.getOwnPropertyNames(person));
+
+//output - symbol
+//output - Symbol(First Symbol)
+//output - false
+//output - true
+//output - RegSymbol
+//output - []
+```
+
+Now we have created a unique property inside this object so we never have to worry about our code conflicting with existing methods or being accidentally overwritten. Because this property is always going to be unique. 
+
+So now when we try to log the console `Object.getOwnPropertyNames(person)`, we don't get this property first name listed out because it is in fact a symbol, so we need to use another static method which is now present in ES6, namely `getOwnPropertySymbols`. 
+
+```javascript
+let s = Symbol('First Symbol');
+console.log(typeof s);
+console.log(s.toString());
+
+let s2 = Symbol('Test');
+let s3 = Symbol('Test');
+
+console.log(s2 === s3);
+
+let s4 = Symbol.for('RegSymbol');
+let s5 = Symbol.for('RegSymbol');
+console.log(s4 === s5);
+console.log(Symbol.keyFor(s4));
+
+let fname = Symbol();
+let person = {
+  [fname]: 'Sunil',
+};
+console.log(Object.getOwnPropertyNames(person));
+console.log(Object.getOwnPropertySymbols(person));
+
+//output - symbol
+//output - Symbol(First Symbol)
+//output - false
+//output - true
+//output - RegSymbol
+//output - []
+//output - [ Symbol() ] 
+``` 
 
 
 
