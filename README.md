@@ -6815,7 +6815,27 @@ Now let's say we want the key that was associated with the symbol when the symbo
 
 So for that we have another method to make use of called `Symbol.keyFor`. 
 
+```javascript
+let s = Symbol('First Symbol');
+console.log(typeof s);
+console.log(s.toString());
 
+let s2 = Symbol('Test');
+let s3 = Symbol('Test');
+
+console.log(s2 === s3);
+
+let s4 = Symbol.for('RegSymbol');
+let s5 = Symbol.for('RegSymbol');
+console.log(s4 === s5);
+console.log(Symbol.keyFor(s4));
+
+//output - symbol
+//output - Symbol(First Symbol)
+//output - false
+//output - true
+//output - RegSymbol
+```
 
 
 
