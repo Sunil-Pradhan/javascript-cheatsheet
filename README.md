@@ -6779,6 +6779,8 @@ console.log(s2 === s3);
 
 let s4 = Symbol.for('RegSymbol');
 ```
+Here's the thing though `Symbol.for` doesn't add the symbol right away it checks if a symbol with the key RegSymbol already exists in the registry if it does it will return that symbol over
+here to `s4`.
 
 
 <br/>
