@@ -6984,8 +6984,6 @@ We can write our own special iterator method, so that even an object can be used
 
 ES6 introduces iteration which is a new way to traverse data and iteration revolves around two key concepts namely `iterables` and `iterators`.
 
-**Iterables:**
-
 Now an iterable is any object that implements a method whose key is `Symbol.iterator` so we will have an iterable which is nothing but an object, which has a property `Symbol.iterator` method and
 this method is going to return an iterator.
 
@@ -6994,6 +6992,10 @@ Iterable {
   [Symbol.iterator()]: iterator
 }
 ```
+
+What is an iterator? An iterator is an object that is going to implement a `next` method. So it is going to have a `next` method and this `next` method knows how to access elements in a collection, be it an `array` or a `string` or `maps` or `sets`.
+
+
 
 <a name="js-oop"></a>
 
