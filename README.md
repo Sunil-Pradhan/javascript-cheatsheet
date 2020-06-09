@@ -6784,7 +6784,6 @@ here to `s4`.
 
 If it doesn't exist then it will create a new symbol in the registry.
 
-So let's also do let s 5 is equal to symbol doubt for symbol symbol dot 4 and let's use the same reg symbol. 
 
 ```javascript
 let s = Symbol('First Symbol');
@@ -6805,6 +6804,19 @@ console.log(s4 === s5);
 //output - false
 //output - true
 ```
+
+There you go it's true so what happened here is that when we did a `Symbol.for` on the first time a new symbol was created in the global registry with this description. 
+
+And when `Symbol.for` was called again with the same description this symbol was retrieved and stored in `s5` file so. 
+
+Now `s4` and `s5` both the symbols are the same we have no clue as to what the ID for these two symbols are but we just know that they are equal. 
+
+Now let's say we want the key that was associated with the symbol when the symbol was added to the global registry. 
+
+So for that we have another method to make use of called `Symbol.keyFor`. 
+
+
+
 
 
 
