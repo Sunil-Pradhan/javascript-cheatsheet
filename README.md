@@ -7354,7 +7354,37 @@ for (let p of person) {
 }
 ```
 
-To iterate over a simple object and instead of having to write so much of code we can use a generator to simplify this and I have replaced it already.
+To iterate over a simple object and instead of having to write so much of code we can use a generator to simplify this and we can replace it. 
+
+```javascript
+let person = {
+  fname: 'Sunil',
+  lname: 'Pradhan',
+};
+
+person[Symbol.iterator] = function* () {
+  let properties = Object.keys(person);
+  for (let t of properties) {
+    yield this[t];
+  }
+};
+
+for (let p of person) {
+  console.log(p);
+}
+
+//ouput - Sunil
+//output - Pradhan
+```
+
+So over here the person `Symbol.iterator` remains the same and we obtained all the properties but from then on so count is done an implementation of the next method all that is handled by this generator so we replaced function by just a function as tricks and properties remains the same. 
+
+And now since we have a collection of properties we can use a `for..of` loop let `t` of properties and then yield is going to be made use of. 
+
+So this is going to yield each key and we are going to be making use of the value at each key. So this is basically yield first name and yield last name.  
+
+This is one really useful feature of generator to be made use when we write our custom iterators. 
+ 
 
 
 <br/>
