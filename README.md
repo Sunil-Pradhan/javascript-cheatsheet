@@ -7060,7 +7060,6 @@ Now let us create `let myIterator` and assign it to the function so `createItera
 
 We have a reference to this function and by making use of the `next` method we can iterate through each of these elements.
 
-
 ```javascript
 let iterable = [1, 2, 3];
 
@@ -7081,8 +7080,7 @@ console.log(myIterator.next());
 //output - { value: 1, done: false }
 ```
 
-We are getting an object `value` is one and `done` as false so the first element.  If we repeat this two more times; 
-
+We are getting an object `value` is one and `done` as false so the first element. If we repeat this two more times;
 
 ```javascript
 let iterable = [1, 2, 3];
@@ -7108,7 +7106,7 @@ console.log(myIterator.next());
 //output - { value: 3, done: false }
 ```
 
-And we get value two three and we are not yet done with the iteration and finally when we call this again; 
+And we get value two three and we are not yet done with the iteration and finally when we call this again;
 
 ```javascript
 let iterable = [1, 2, 3];
@@ -7137,10 +7135,9 @@ console.log(myIterator.next());
 ```
 
 We get value `undefined` and we are `done` with the iteration. This functionality in fact is what the `for...of` loop uses it internally calls
-the `next` method until this `done` is true. 
+the `next` method until this `done` is true.
 
-So until the iteration is completed it keeps calling this `next` method and that is how it iterates through the elements of a collection. 
-
+So until the iteration is completed it keeps calling this `next` method and that is how it iterates through the elements of a collection.
 
 <br/>
 <div align="right">
@@ -7164,9 +7161,18 @@ for (let p of person) {
 //output - TypeError: person is not iterable
 ```
 
-So the `for...of` loop doesn't work with objects by default. 
+So the `for...of` loop doesn't work with objects by default.
 
 ```javascript
+let person = {
+  fname: 'Chandler',
+  lname: 'Bing',
+};
+
+for (let p of person) {
+  console.log(p);
+}
+
 person[Symbol.iterator] = function () {
   let properties = Object.keys(person);
   let count = 0;
@@ -7179,7 +7185,15 @@ person[Symbol.iterator] = function () {
   };
   return { next };
 };
+
+//output - TypeError: person is not iterable
 ```
+
+So we start off by defining a function at the key `Symbol.iterator` for this person object so our first line is going to be a person of `Symbol.iterator` is equal to a function.
+
+And this function we start off by declaring three variables that we are going to be making use of in this `next` method.
+
+So initially we are going to have the properties equal to object keys and pass this person object. So properties is going to contain first name and lastname.
 
 
 
@@ -7188,8 +7202,6 @@ person[Symbol.iterator] = function () {
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
-
 
 <a name="js-oop"></a>
 
