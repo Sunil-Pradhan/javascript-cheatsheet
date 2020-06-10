@@ -7142,8 +7142,20 @@ the `next` method until this `done` is true.
 So until the iteration is completed it keeps calling this `next` method and that is how it iterates through the elements of a collection. 
 
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+### Iterating Objects:
 
 
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 
 
