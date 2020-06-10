@@ -7228,7 +7228,7 @@ for (let p of person) {
 //output - Pradhan
 ```
 
-That is how you use objects with the `for...of` loop, you need to define your own method at `Symbol.iterator` key. 
+That is how you use objects with the `for...of` loop, you need to define your own method at `Symbol.iterator` key.
 
 <br/>
 <div align="right">
@@ -7238,7 +7238,19 @@ That is how you use objects with the `for...of` loop, you need to define your ow
 
 ### Generators:
 
-If we hav
+We know about function that once they start executing it will always run to completion before any other code can run, however ES6 generator is a special type of function which can be paused in the middle of execution run some other code and then resume the same function from where we left off.
+
+And this pausing of execution is possible with the help of a new keyword known as the `yield` keyword.
+
+So let's understand this with an example now the syntax of a generator is very much alike a function so we just have the function keyword but the only differences after the function keyword we have an asterisk.
+
+Syntax: 
+
+```javascript
+function *
+```
+
+
 
 <br/>
 <div align="right">
