@@ -7150,6 +7150,38 @@ So until the iteration is completed it keeps calling this `next` method and that
 
 ### Iterating Objects:
 
+If we have an object say `person` with the first name and last name as the properties and when we try to use a `for...of`loop;
+
+```javascript
+let person = {
+  fname: 'Chandler',
+  lname: 'Bing',
+};
+
+for (let p of person) {
+  console.log(p);
+
+//output - TypeError: person is not iterable
+```
+
+So the `for...of` loop doesn't work with objects by default. 
+
+```javascript
+person[Symbol.iterator] = function () {
+  let properties = Object.keys(person);
+  let count = 0;
+  let isDone = false;
+  let next = () => {
+    if (count >= properties.length) {
+      isDone = true;
+    }
+    return { done: isDone, value: this[properties[countK++]] };
+  };
+  return { next };
+};
+```
+
+
 
 <br/>
 <div align="right">
