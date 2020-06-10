@@ -7292,12 +7292,11 @@ let myGen = createGenerator();
 console.log(myGen.next());
 
 //output - { value: 1, done: false }
-
 ```
 
-We are provided with an object the value is one and done this boolean flag set default and this is very much like what we saw with iterators. 
+We are provided with an object the value is one and done this boolean flag set default and this is very much like what we saw with iterators.
 
-So over here the only difference is that done will be set to false when it reaches the last yield statement or there are no more yield statements in this generator. 
+So over here the only difference is that done will be set to false when it reaches the last yield statement or there are no more yield statements in this generator.
 
 So we can call this again so let's call it twice and more.
 
@@ -7315,11 +7314,47 @@ console.log(myGen.next());
 
 //output - { value: 1, done: false }
 //output - After 1st yield
-//output - { value: 2, done: false }       
+//output - { value: 2, done: false }
 //output - { value: undefined, done: true }
-
 ```
 
+So object value one done false so that was called after this first next method and the execution was paused. 
+
+And then these two lines were executed for the next method so we have after first yield an object value - done false. 
+
+And finally when we call this next method again it identifies that there are no more yield statements and hence done is set to true and the value is undefined. 
+
+So only when there are no more yields done is set to true and the value is undefined **so basically generator is a special function capable of pausing and resuming execution with the help of this yield keyword.**
+
+
+Now if you look here a generator returns an object that provides the same next method that is expected by a `for...of` loop. So generators can be used to simplify our code when we write our custom iterators.
+
+```javascript
+let person = {
+  fname: 'Chandler',
+  lname: 'Bing',
+};
+
+
+person[Symbol.iterator] = function () {
+  let properties = Object.keys(person);
+  let count = 0;
+  let isDone = false;
+  let next = () => {
+    if (count >= properties.length) {
+      isDone = true;
+    }
+    return { done: isDone, value: this[properties[count++]] };
+  };
+  return { next };
+};
+
+for (let p of person) {
+  console.log(p);
+}
+```
+
+To iterate over a simple object and instead of having to write so much of code we can use a generator to simplify this and I have replaced it already.
 
 
 <br/>
