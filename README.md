@@ -7244,10 +7244,80 @@ And this pausing of execution is possible with the help of a new keyword known a
 
 So let's understand this with an example now the syntax of a generator is very much alike a function so we just have the function keyword but the only differences after the function keyword we have an asterisk.
 
-Syntax: 
+Syntax:
 
 ```javascript
 function *
+```
+
+So function asterisk and then name of the function, so let's have create generator as the name and this is going to you make use
+of this `yield` keyword.
+
+```javascript
+function* createGenerator() {
+  yield 1;
+  console.log('After 1st yield');
+  yield 2;
+}
+```
+
+After first `yield` and then we are also going to have `yield` two. So what we are basically doing here is that in this generator first we are going to `yield` the value one and then the execution is going to pause and the generator is going to resume its execution when we again tell it to continue its execution.
+
+Then it's going to execute these two lines of code, so `console.log` as well as `yield` two. So basically with every execution it is going to hit the next `yield` point.
+
+This is going to be the point where this function is going to pause.So now we can create a reference to this generator.
+
+```javascript
+function* createGenerator() {
+  yield 1;
+  console.log('After 1st yield');
+  yield 2;
+}
+
+let myGen = createGenerator();
+```
+
+Let `myGen= createGenerator()`, and this is going to provide an reference and it's not going to start executing this function.
+
+Now to invoke this function or start execute we need to call the `next` method on the generator so `myGen.next()`.
+
+```javascript
+function* createGenerator() {
+  yield 1;
+  console.log('After 1st yield');
+  yield 2;
+}
+
+let myGen = createGenerator();
+console.log(myGen.next());
+
+//output - { value: 1, done: false }
+
+```
+
+We are provided with an object the value is one and done this boolean flag set default and this is very much like what we saw with iterators. 
+
+So over here the only difference is that done will be set to false when it reaches the last yield statement or there are no more yield statements in this generator. 
+
+So we can call this again so let's call it twice and more.
+
+```javascript
+function* createGenerator() {
+  yield 1;
+  console.log('After 1st yield');
+  yield 2;
+}
+
+let myGen = createGenerator();
+console.log(myGen.next());
+console.log(myGen.next());
+console.log(myGen.next());
+
+//output - { value: 1, done: false }
+//output - After 1st yield
+//output - { value: 2, done: false }       
+//output - { value: undefined, done: true }
+
 ```
 
 
