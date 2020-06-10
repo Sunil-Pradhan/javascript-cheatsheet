@@ -7151,8 +7151,8 @@ If we have an object say `person` with the first name and last name as the prope
 
 ```javascript
 let person = {
-  fname: 'Chandler',
-  lname: 'Bing',
+  fname: 'Sunil',
+  lname: 'Pradhan',
 };
 
 for (let p of person) {
@@ -7165,8 +7165,8 @@ So the `for...of` loop doesn't work with objects by default.
 
 ```javascript
 let person = {
-  fname: 'Chandler',
-  lname: 'Bing',
+  fname: 'Sunil',
+  lname: 'Pradhan',
 };
 
 for (let p of person) {
@@ -7195,7 +7195,50 @@ And this function we start off by declaring three variables that we are going to
 
 So initially we are going to have the properties equal to object keys and pass this person object. So properties is going to contain first name and lastname.
 
+And then we have a count variable initialized to zero to keep track of the count and we also have `isDone` variable which is going to be boolean and set to `false` and that is going to indicate if the iteration is complete or not.
 
+At the key `Symbol.iterator` implements a `next` function which returns an object so what this `next` function is going to do is if the count is greater than the number of property for the person object it is going to say `isDone` equals true, which means that the iteration is complete.
+
+And then we are going to return `done` is going to be the same as `isDone` variable, it's going to be the true or false and the `value` is going to be for this object the property add count or the value at this particular property so the property the value at first name and value at last name.
+
+```javascript
+let person = {
+  fname: 'Sunil',
+  lname: 'Pradhan',
+};
+
+person[Symbol.iterator] = function () {
+  let properties = Object.keys(person);
+  let count = 0;
+  let isDone = false;
+  let next = () => {
+    if (count >= properties.length) {
+      isDone = true;
+    }
+    return { done: isDone, value: this[properties[count++]] };
+  };
+  return { next };
+};
+
+for (let p of person) {
+  console.log(p);
+}
+
+//output - Sunil
+//output - Pradhan
+```
+
+That is how you use objects with the `for...of` loop, you need to define your own method at `Symbol.iterator` key. 
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+### Generators:
+
+If we hav
 
 <br/>
 <div align="right">
