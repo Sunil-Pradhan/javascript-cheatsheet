@@ -5296,6 +5296,15 @@ console.log(today.toGMTString());
 
 ## Prototype
 
+By prototype, write once the code, it will be available for you to use on all other objects. 
+
+
+Syntax: 
+
+```javascript
+classname.prototype.key = 'value';
+```
+
 
 <br/>
 <div align="right">
