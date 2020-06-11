@@ -5354,6 +5354,8 @@ When you are writing properties simply by using `key` and `value` pairs then it'
 
 But when you are writing propories by using a prototype then it's called prototype member. 
 
+Secondly, instance members are visible on console but prototype members does not visible on console. 
+
 
 <br/>
 <div align="right">
