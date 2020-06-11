@@ -20,6 +20,7 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Array](#js-arrays)
 - [String](#js-string)
 - [Number](#js-number)
+- [Prototype](#js-prototype)
 - [Variable Hoisting](#js-variable-hosting)
 - [Rest & Spread Operator](#js-rest-spread)
 - [Module - Import & Export](#js-module)
@@ -5283,6 +5284,18 @@ console.log(today.toGMTString());
 //output - Mon, 08 Jun 2020 17:08:27 GMT
 //output - Mon, 08 Jun 2020 17:08:27 GMT
 ```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+<a name="js-prototype"></a>
+
+## Prototype
+
 
 <br/>
 <div align="right">
