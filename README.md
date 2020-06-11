@@ -5373,6 +5373,7 @@ console.log(nokia);
 //output - Mobile { model: 'G8', price: 3000 }
 ```
 
+:bulb: **TIP:** The simple meaning of prototype - it's a parent class or super class or base case. 
 
 <br/>
 <div align="right">
