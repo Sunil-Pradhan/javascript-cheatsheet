@@ -5326,7 +5326,8 @@ console.log(nokia);
 //output - Mobile { model: 'G8', price: 3000, color: 'White' }
 ```
 
-Here we have created a constructor and later we added an object such as color. Now doing console, it is clear new object is reflecting for samsung but not for the nokia. 
+Here we have created a constructor and later we added an object such as color. Now doing console, it is clear new object is reflecting for samsung as well as for nokia. But the problem is we are here repeating code which looks much similar. 
+
 
 
 
