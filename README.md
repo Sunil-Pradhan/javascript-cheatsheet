@@ -5377,7 +5377,7 @@ console.log(nokia);
 
 <br>
 
-**Iterate Instance and Prototype Member using `for...in` Loop:**
+**Iterate Instance and Prototype member using `for...in` loop:**
 
 ```javascript
 var Mobile = function (model_no) {
@@ -5396,6 +5396,14 @@ console.log(Object.keys(samsung));
 
 //output - [ 'model', 'price' ]
 ```
+
+Here you are able to see only instance members, not prototype members. 
+
+Remember if you are using `Object.keys` and trying to iterate for your object then those object which is related to its only visible. i.e only instance members not prototype members.  
+
+If you want to see prototype members too then you need to use `for..in` loop. 
+
+
 
 
 <br/>
