@@ -25,8 +25,11 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Module - Import & Export](#js-module)
 - [Destructuring - Array & Object](#js-destructuring)
 - [Symbols](#js-symbols)
+- [Generators](#js-generators)
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
+
+
 
 <a name="js-basics"></a>
 
@@ -7236,7 +7239,9 @@ That is how you use objects with the `for...of` loop, you need to define your ow
 </div>
 <br/>
 
-### Generators:
+<a name="js-generators"></a>
+
+## Generators
 
 We know about function that once they start executing it will always run to completion before any other code can run, however ES6 generator is a special type of function which can be paused in the middle of execution run some other code and then resume the same function from where we left off.
 
