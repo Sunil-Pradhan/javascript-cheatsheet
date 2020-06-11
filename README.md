@@ -5305,6 +5305,30 @@ Syntax:
 classname.prototype.key = 'value';
 ```
 
+Let's take one example: 
+
+```javascript
+var Mobile = function (model_no) {
+  this.model = model_no;
+  this.price = 3000;
+};
+
+var samsung = new Mobile('Galaxy');
+var nokia = new Mobile('G8');
+
+//add a new object
+samsung.color = 'White';
+nokia.color = 'White';
+console.log(samsung);
+console.log(nokia);
+
+//output - Mobile { model: 'Galaxy', price: 3000, color: 'White' }
+//output - Mobile { model: 'G8', price: 3000, color: 'White' }
+```
+
+Here we have created a constructor and later we added an object such as color. Now doing console, it is clear new object is reflecting for samsung but not for the nokia. 
+
+
 
 <br/>
 <div align="right">
