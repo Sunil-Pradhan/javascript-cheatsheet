@@ -5403,7 +5403,26 @@ Remember if you are using `Object.keys` and trying to iterate for your object th
 
 If you want to see prototype members too then you need to use `for..in` loop. 
 
+```javascript
+var Mobile = function (model_no) {
+  //instance member
+  this.model = model_no;
+  this.price = 3000;
+};
 
+var samsung = new Mobile('Galaxy');
+var nokia = new Mobile('G8');
+//prototype member
+
+Mobile.prototype.color = 'white';
+
+for (var key in samsung) {
+  console.log(key);
+}
+
+
+//output - model, price, color
+```
 
 
 <br/>
