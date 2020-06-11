@@ -5348,6 +5348,12 @@ Output:
 
 ![js-prototype-nokia-samsung](/img/js-prototype-nokia-samsung.png)
 
+**Instance member and Prototype member:**
+
+When you are writing properties simply by using `key` and `value` pairs then it's called instance member. 
+
+But when you are writing propories by using a prototype then it's called prototype member. 
+
 
 <br/>
 <div align="right">
