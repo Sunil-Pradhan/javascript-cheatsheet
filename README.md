@@ -5375,6 +5375,29 @@ console.log(nokia);
 
 :bulb: **TIP:** The simple meaning of prototype - it's a parent class or super class or base case. 
 
+<br>
+
+**Iterate Instance and Prototype Member using `for...in` Loop:**
+
+```javascript
+var Mobile = function (model_no) {
+  //instance member
+  this.model = model_no;
+  this.price = 3000;
+};
+
+var samsung = new Mobile('Galaxy');
+var nokia = new Mobile('G8');
+//prototype member
+
+Mobile.prototype.color = 'white';
+console.log(Object.keys(samsung));
+//it tell us in our object how many properties present
+
+//output - [ 'model', 'price' ]
+```
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
