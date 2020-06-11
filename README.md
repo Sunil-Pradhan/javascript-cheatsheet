@@ -5356,6 +5356,23 @@ But when you are writing propories by using a prototype then it's called prototy
 
 Secondly, instance members are visible on console but prototype members does not visible on console. 
 
+```javascript
+var Mobile = function (model_no) {
+  this.model = model_no;
+  this.price = 3000;
+};
+
+var samsung = new Mobile('Galaxy');
+var nokia = new Mobile('G8');
+
+Mobile.prototype.color = 'white';
+console.log(samsung.color);
+console.log(nokia);
+
+//output - white
+//output - Mobile { model: 'G8', price: 3000 }
+```
+
 
 <br/>
 <div align="right">
