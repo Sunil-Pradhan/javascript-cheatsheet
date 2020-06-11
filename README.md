@@ -5328,7 +5328,25 @@ console.log(nokia);
 
 Here we have created a constructor and later we added an object such as color. Now doing console, it is clear new object is reflecting for samsung as well as for nokia. But the problem is we are here repeating code which looks much similar. 
 
+Do we have any other solution for it. Yes!, by prototype. 
 
+```javascript
+var Mobile = function (model_no) {
+  this.model = model_no;
+  this.price = 3000;
+};
+
+var samsung = new Mobile('Galaxy');
+var nokia = new Mobile('G8');
+
+Mobile.prototype.color = 'white';
+console.log(samsung);
+console.log(nokia);
+```
+
+Output: 
+
+![js-prototype-nokia-samsung](/img/js-prototype-nokia-samsung.png)
 
 
 <br/>
