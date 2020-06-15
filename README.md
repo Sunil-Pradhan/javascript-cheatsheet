@@ -5654,6 +5654,52 @@ There are two way to define class in JavaScript:
 * Class Declaration
 * Class Expression
 
+### Class Declaration
+
+Syntax: 
+
+```javascript
+class class_name {
+  constructor() {
+    Properties
+  }
+  Methods
+}
+```
+
+The constructor method is a special method for creating and initializing an object created within a class. There can be only one special method with the name “constructor” in a class.
+
+Example: 
+
+```javascript
+//Class declaration
+
+class Mobile {
+  constructor() {
+    //Instance member
+    this.a = 12;
+    this.show = function () {
+      return 'Instance member';
+    };
+  }
+
+  //prototype memeber
+  display() {
+    return 'Prototype member';
+  }
+}
+
+//need to create an object
+
+var samsung = new Mobile();
+console.log(samsung.a);
+console.log(samsung.show());
+console.log(samsung.display());
+
+//output - 12
+//output - Instance member
+//output - Prototype member
+```
 
 
 <br/>
