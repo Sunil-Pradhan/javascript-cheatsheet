@@ -21,6 +21,7 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [String](#js-string)
 - [Number](#js-number)
 - [Prototype](#js-prototype)
+- [Composition or Mixins](#js-mixins)
 - [Variable Hoisting](#js-variable-hosting)
 - [Rest & Spread Operator](#js-rest-spread)
 - [Module - Import & Export](#js-module)
@@ -5492,6 +5493,17 @@ console.log(s.z);
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+<a name="js-mixins"></a>
+
+## Composition or Mixins
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 
 <a name="js-variable-hosting"></a>
 
