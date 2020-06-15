@@ -5810,6 +5810,27 @@ The `extends` keyword is used in class declarations or class expressions to crea
 
 The `extends` keyword can be used to subclass, custom classes as well as built-in objects. 
 
+Example: 
+
+```javascript
+class Father {
+  showFMoney() {
+    return 'Father Money';
+  }
+}
+
+class Son extends Father {
+  showSMoney() {
+    return 'Son Money';
+  }
+}
+
+var s = new Son();
+console.log(s.showFMoney());
+
+//output - Father Money
+```
+
 :bulb: **Note:**
 <br>
 
@@ -5817,6 +5838,42 @@ Base class/Super Class/Parent Class - all are same
 
 Child class/Derived class/sub class - all are same 
 
+**Super Method:**
+
+`Super()` is used to initialize the parent class constructor. If there is a constructor present in subclass, it needs to first call `super()` before using `this`. 
+ 
+:bulb: **TIP:** Derive class duty is to initialize the super class constructor before using it. 
+<br>
+
+A constructor can use the `super` keyword to call the constructor of a parent class. 
+
+```javascript
+class Father {
+  constructor(money) {
+    this.Fmoney = money;
+  }
+  showFmoney() {
+    return this.Fmoney + ' Father Money';
+  }
+}
+
+class Son extends Father {
+  constructor(money) {
+    super(money);
+  }
+  showSMoney() {
+    return 'Son Money';
+  }
+}
+
+var s = new Son(1000);
+console.log(s.showFmoney());
+console.log(s.showSMoney());
+
+//output - 1000 Father Money
+//output - Son Money
+```
+**Method Overriding**
 
 <br/>
 <div align="right">
