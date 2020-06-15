@@ -5424,6 +5424,14 @@ for (var key in samsung) {
 //output - model, price, color
 ```
 
+#### Prototype Object
+
+In JavaScript we achieve inheritance by using a prototype.  
+
+:bulb: **TIP:** Every object is associated with another object in JavaScript and its root object is associated with `null`. 
+<br>
+
+
 
 <br/>
 <div align="right">
@@ -5433,7 +5441,7 @@ for (var key in samsung) {
 
 <a name="js-variable-hosting"></a>
 
-## Variable Hoisting
+## Variable Hoisting 
 
 Hoisting is JavaScript's default behavior of moving declarations to the top of the function, if defined in a function, or the top of the global context, if outside a function.
 
