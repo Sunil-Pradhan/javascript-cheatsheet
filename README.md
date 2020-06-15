@@ -22,6 +22,7 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Number](#js-number)
 - [Prototype](#js-prototype)
 - [Composition or Mixins](#js-mixins)
+- [Class](#js-class)
 - [Variable Hoisting](#js-variable-hosting)
 - [Rest & Spread Operator](#js-rest-spread)
 - [Module - Import & Export](#js-module)
@@ -30,6 +31,7 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Generators](#js-generators)
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
+
 
 
 
@@ -5640,6 +5642,25 @@ console.log(RoboCop.start());
 </div>
 <br/>
 
+
+<a name="js-class"></a>
+
+## JavaScript Class
+
+JavaScript classes, introduced in ES6, Classes are in fact “Special functions”. 
+
+There are two way to define class in JavaScript: 
+
+* Class Declaration
+* Class Expression
+
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
 
 <a name="js-variable-hosting"></a>
 
