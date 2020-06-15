@@ -5810,6 +5810,12 @@ The `extends` keyword is used in class declarations or class expressions to crea
 
 The `extends` keyword can be used to subclass, custom classes as well as built-in objects. 
 
+:bulb: **Note:**
+<br>
+
+Base class/Super Class/Parent Class - all are same
+
+Child class/Derived class/sub class - all are same 
 
 
 <br/>
