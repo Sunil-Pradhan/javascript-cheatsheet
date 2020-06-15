@@ -5654,7 +5654,7 @@ There are two way to define class in JavaScript:
 * Class Declaration
 * Class Expression
 
-### Class Declaration
+#### Class Declaration
 
 Syntax: 
 
