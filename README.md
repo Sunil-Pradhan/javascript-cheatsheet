@@ -5458,7 +5458,33 @@ console.log(s.a);
 
 Here it is calling its parent constructor and initializing it so that we are able to access it.
 
+```javascript
+//Super class
+var Mobile = function () {
+  this.a = 10;
+};
 
+Mobile.prototype.z = 30;
+
+//sub class
+
+var samsung = function () {
+  Mobile.call(this);
+  this.b = 20;
+};
+
+//Prototype inheritance
+
+samsung.prototype = Object.create(Mobile.prototype);
+samsung.prototype.constructor = samsung;
+
+var s = new samsung();
+console.log(s.a);
+console.log(s.b);
+console.log(s.z);
+
+//output - 10, 20, 30
+```
 
 
 <br/>
