@@ -5875,6 +5875,53 @@ console.log(s.showSMoney());
 ```
 **Method Overriding**
 
+Same function name with different implementation. 
+
+```javascript
+class Father {
+  show() {
+    return 'Super Class';
+  }
+}
+
+class Son extends Father {
+  show() {
+    return 'Sub Class';
+
+    //redefined
+  }
+}
+var s = new Son();
+console.log(s.show());
+
+//output - Sub Class
+```
+
+**Static Method**
+
+The `static` keyword is used to define a `static` method for a class. `static` methods are called without creating objects and can’t be called through a class instance (Object). 
+
+Static methods are often used to create utility functions for an application. 
+
+:bulb: **Note:**
+
+* `static` method is related to full class, remember it is not related to object.It depends on class not on specific Object. 
+* When we create function methods, it is for objects not for class. 
+
+```javascript
+class Mobile {
+  static disp() {
+    return 'Static method';
+  }
+}
+//Mobile.disp();
+console.log(Mobile.disp());
+
+//output - Static method
+```
+
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
