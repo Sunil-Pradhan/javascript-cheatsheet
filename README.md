@@ -5498,6 +5498,90 @@ console.log(s.z);
 
 ## Composition or Mixins
 
+Let you create functions for humans which can eat, walk and talk. Again we want to extend it to Animal and Robot. All are ok, but robots can not eat whereas animals can eat, walk and talk but robots only walk and talk. Here we can not inherit all properties from human to Robot. 
+
+Because the eat() method will be a waste for us. To avoid this we can use Mixins. 
+
+With mixins you are allowed to attach a particular method() to your program.  
+
+```javascript
+//mixin
+
+var eating = {
+  eat: function () {
+    return 'I can eat';
+  },
+};
+
+var walking = {
+  walk: function () {
+    return 'I can walk';
+  },
+};
+
+var talking = {
+  talk: function () {
+    return 'I can talk';
+  },
+};
+
+var Rahul = Object.assign({}, eating, walking, talking);
+
+//Object.assign = mixins
+
+console.log(Rahul.eat());
+console.log(Rahul.walk());
+console.log(Rahul.talk());
+
+//output - I can eat
+//output - I can walk
+//output - I can talk
+```
+
+Let now you want to create a Robot;
+
+```javascript
+//mixin
+
+var eating = {
+  eat: function () {
+    return 'I can eat';
+  },
+};
+
+var walking = {
+  walk: function () {
+    return 'I can walk';
+  },
+};
+
+var talking = {
+  talk: function () {
+    return 'I can talk';
+  },
+};
+
+var Rahul = Object.assign({}, eating, walking, talking);
+
+var RoboCop = Object.assign({}, walking, talking);
+
+//Object.assign = mixins
+
+console.log(Rahul.eat());
+console.log(Rahul.walk());
+console.log(Rahul.talk());
+
+//output - I can eat
+//output - I can walk
+//output - I can talk
+
+console.log(RoboCop.walk());
+console.log(RoboCop.talk());
+
+//output - I can walk
+//output - I can talk
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
