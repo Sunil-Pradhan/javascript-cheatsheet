@@ -5719,8 +5719,26 @@ console.log(samsung.display());
 //output - Prototype memeber
 ```
 
+**Parameterized Constructor:**
 
+The constructor which has a parameter is called a parameterized constructor.
 
+```javascript
+//class declaration
+
+class Mobile {
+  constructor(model_no) {
+    this.model = model_no;
+  }
+  show() {
+    return this.model + 'Price - 3000';
+  }
+}
+var samsung = new Mobile('Galaxy');
+console.log(samsung.show());
+
+//output - GalaxyPrice - 3000
+```
 
 <br/>
 <div align="right">
