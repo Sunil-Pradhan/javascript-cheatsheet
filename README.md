@@ -5701,6 +5701,26 @@ console.log(samsung.display());
 //output - Prototype member
 ```
 
+**Default Constructor:** 
+
+If you do not specify a constructor method a default constructor is used. 
+
+```javascript
+//class declaration
+
+class Mobile {
+  display() {
+    return 'Prototype memeber';
+  }
+}
+var samsung = new Mobile();
+console.log(samsung.display());
+
+//output - Prototype memeber
+```
+
+
+
 
 <br/>
 <div align="right">
