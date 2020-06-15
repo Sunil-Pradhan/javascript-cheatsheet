@@ -5798,6 +5798,20 @@ console.log(samsung.show());
 
 Both are the same. 
 
+**Class Hoisting in JavaScript:**
+
+Class declarations and Class expression are not hoisted. You first need to declare your class and then access it. 
+
+**Class Inheritance:**
+
+Through prototype you can achieve inheritance but it's more complicated. ES6 makes it more easy through class inheritance.
+
+The `extends` keyword is used in class declarations or class expressions to create a class which is a child of another class. 
+
+The `extends` keyword can be used to subclass, custom classes as well as built-in objects. 
+
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
