@@ -32,9 +32,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
 
-
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -5294,21 +5291,19 @@ console.log(today.toGMTString());
 </div>
 <br/>
 
-
 <a name="js-prototype"></a>
 
 ## Prototype
 
-By prototype, write once the code, it will be available for you to use on all other objects. 
+By prototype, write once the code, it will be available for you to use on all other objects.
 
-
-Syntax: 
+Syntax:
 
 ```javascript
 classname.prototype.key = 'value';
 ```
 
-Let's take one example: 
+Let's take one example:
 
 ```javascript
 var Mobile = function (model_no) {
@@ -5329,9 +5324,9 @@ console.log(nokia);
 //output - Mobile { model: 'G8', price: 3000, color: 'White' }
 ```
 
-Here we have created a constructor and later we added an object such as color. Now doing console, it is clear new object is reflecting for samsung as well as for nokia. But the problem is we are here repeating code which looks much similar. 
+Here we have created a constructor and later we added an object such as color. Now doing console, it is clear new object is reflecting for samsung as well as for nokia. But the problem is we are here repeating code which looks much similar.
 
-Do we have any other solution for it. Yes!, by prototype. 
+Do we have any other solution for it. Yes!, by prototype.
 
 ```javascript
 var Mobile = function (model_no) {
@@ -5347,17 +5342,17 @@ console.log(samsung);
 console.log(nokia);
 ```
 
-Output: 
+Output:
 
 ![js-prototype-nokia-samsung](/img/js-prototype-nokia-samsung.png)
 
 **Instance member and Prototype member:**
 
-When you are writing properties simply by using `key` and `value` pairs then it's called instance member. 
+When you are writing properties simply by using `key` and `value` pairs then it's called instance member.
 
-But when you are writing propories by using a prototype then it's called prototype member. 
+But when you are writing propories by using a prototype then it's called prototype member.
 
-Secondly, instance members are visible on console but prototype members does not visible on console. 
+Secondly, instance members are visible on console but prototype members does not visible on console.
 
 ```javascript
 var Mobile = function (model_no) {
@@ -5376,7 +5371,7 @@ console.log(nokia);
 //output - Mobile { model: 'G8', price: 3000 }
 ```
 
-:bulb: **TIP:** The simple meaning of prototype - it's a parent class or super class or base case. 
+:bulb: **TIP:** The simple meaning of prototype - it's a parent class or super class or base case.
 
 <br>
 
@@ -5400,11 +5395,11 @@ console.log(Object.keys(samsung));
 //output - [ 'model', 'price' ]
 ```
 
-Here you are able to see only instance members, not prototype members. 
+Here you are able to see only instance members, not prototype members.
 
-Remember if you are using `Object.keys` and trying to iterate for your object then those object which is related to its only visible. i.e only instance members not prototype members.  
+Remember if you are using `Object.keys` and trying to iterate for your object then those object which is related to its only visible. i.e only instance members not prototype members.
 
-If you want to see prototype members too then you need to use `for..in` loop. 
+If you want to see prototype members too then you need to use `for..in` loop.
 
 ```javascript
 var Mobile = function (model_no) {
@@ -5423,15 +5418,14 @@ for (var key in samsung) {
   console.log(key);
 }
 
-
 //output - model, price, color
 ```
 
 #### Prototype Object
 
-In JavaScript we achieve inheritance by using a prototype.  
+In JavaScript we achieve inheritance by using a prototype.
 
-:bulb: **TIP:** Every object is associated with another object in JavaScript and its root object is associated with `null`. 
+:bulb: **TIP:** Every object is associated with another object in JavaScript and its root object is associated with `null`.
 <br>
 
 #### Prototype Inheritance
@@ -5489,7 +5483,6 @@ console.log(s.z);
 //output - 10, 20, 30
 ```
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
@@ -5500,11 +5493,11 @@ console.log(s.z);
 
 ## Composition or Mixins
 
-Let you create functions for humans which can eat, walk and talk. Again we want to extend it to Animal and Robot. All are ok, but robots can not eat whereas animals can eat, walk and talk but robots only walk and talk. Here we can not inherit all properties from human to Robot. 
+Let you create functions for humans which can eat, walk and talk. Again we want to extend it to Animal and Robot. All are ok, but robots can not eat whereas animals can eat, walk and talk but robots only walk and talk. Here we can not inherit all properties from human to Robot.
 
-Because the eat() method will be a waste for us. To avoid this we can use Mixins. 
+Because the eat() method will be a waste for us. To avoid this we can use Mixins.
 
-With mixins you are allowed to attach a particular method() to your program.  
+With mixins you are allowed to attach a particular method() to your program.
 
 ```javascript
 //mixin
@@ -5583,7 +5576,8 @@ console.log(RoboCop.talk());
 //output - I can walk
 //output - I can talk
 ```
-In future let you want to add a new feature to your robot which can start, then you will follow in such a way: 
+
+In future let you want to add a new feature to your robot which can start, then you will follow in such a way:
 
 ```javascript
 //mixin
@@ -5635,41 +5629,39 @@ console.log(RoboCop.start());
 //output - RoboCop Start
 ```
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
 
-
 <a name="js-class"></a>
 
 ## JavaScript Class
 
-JavaScript classes, introduced in ES6, Classes are in fact “Special functions”. 
+JavaScript classes, introduced in ES6, Classes are in fact “Special functions”.
 
-There are two way to define class in JavaScript: 
+There are two way to define class in JavaScript:
 
-* Class Declaration
-* Class Expression
+- Class Declaration
+- Class Expression
 
 #### Class Declaration
 
-Syntax: 
+Syntax:
 
 ```javascript
 class class_name {
   constructor() {
-    Properties
+    Properties;
   }
-  Methods
+  Methods;
 }
 ```
 
 The constructor method is a special method for creating and initializing an object created within a class. There can be only one special method with the name “constructor” in a class.
 
-Example: 
+Example:
 
 ```javascript
 //Class declaration
@@ -5701,9 +5693,9 @@ console.log(samsung.display());
 //output - Prototype member
 ```
 
-**Default Constructor:** 
+**Default Constructor:**
 
-If you do not specify a constructor method a default constructor is used. 
+If you do not specify a constructor method a default constructor is used.
 
 ```javascript
 //class declaration
@@ -5740,6 +5732,72 @@ console.log(samsung.show());
 //output - GalaxyPrice - 3000
 ```
 
+#### Class Expression
+
+Class expressions can be named or unnamed.
+
+Syntax(Unnamed):
+
+```javascript
+var Mobile = class {
+  constructor() {
+    Properties;
+  }
+};
+```
+
+Example: 
+
+```javascript
+//unnamed
+
+var Mobile = class {
+  constructor(model_no) {
+    this.model = model_no;
+  }
+  show() {
+    return this.model + 'Price - 3000';
+  }
+};
+
+var samsung = new Mobile('Galaxy');
+console.log(samsung.show());
+
+//output - GalaxyPrice - 3000
+```
+
+Syntax(Named):
+
+```javascript
+var Mobile = class Mobile2 {
+  constructor() {
+    Properties;
+  }
+};
+```
+
+Example: 
+
+```javascript
+//named
+
+var Mobile = class Mobile2 {
+  constructor(model_no) {
+    this.model = model_no;
+  }
+  show() {
+    return this.model + 'Price - 3000';
+  }
+};
+
+var samsung = new Mobile('Galaxy');
+console.log(samsung.show());
+
+//output - GalaxyPrice - 3000
+```
+
+Both are the same. 
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
@@ -5748,7 +5806,7 @@ console.log(samsung.show());
 
 <a name="js-variable-hosting"></a>
 
-## Variable Hoisting 
+## Variable Hoisting
 
 Hoisting is JavaScript's default behavior of moving declarations to the top of the function, if defined in a function, or the top of the global context, if outside a function.
 
@@ -7779,14 +7837,13 @@ console.log(myGen.next());
 //output - { value: undefined, done: true }
 ```
 
-So object value one done false so that was called after this first next method and the execution was paused. 
+So object value one done false so that was called after this first next method and the execution was paused.
 
-And then these two lines were executed for the next method so we have after first yield an object value - done false. 
+And then these two lines were executed for the next method so we have after first yield an object value - done false.
 
-And finally when we call this next method again it identifies that there are no more yield statements and hence done is set to true and the value is undefined. 
+And finally when we call this next method again it identifies that there are no more yield statements and hence done is set to true and the value is undefined.
 
 So only when there are no more yields done is set to true and the value is undefined **so basically generator is a special function capable of pausing and resuming execution with the help of this yield keyword.**
-
 
 Now if you look here a generator returns an object that provides the same next method that is expected by a `for...of` loop. So generators can be used to simplify our code when we write our custom iterators.
 
@@ -7795,7 +7852,6 @@ let person = {
   fname: 'Chandler',
   lname: 'Bing',
 };
-
 
 person[Symbol.iterator] = function () {
   let properties = Object.keys(person);
@@ -7815,7 +7871,7 @@ for (let p of person) {
 }
 ```
 
-To iterate over a simple object and instead of having to write so much of code we can use a generator to simplify this and we can replace it. 
+To iterate over a simple object and instead of having to write so much of code we can use a generator to simplify this and we can replace it.
 
 ```javascript
 let person = {
@@ -7838,15 +7894,13 @@ for (let p of person) {
 //output - Pradhan
 ```
 
-So over here the person `Symbol.iterator` remains the same and we obtained all the properties but from then on so count is done an implementation of the next method all that is handled by this generator so we replaced function by just a function as tricks and properties remains the same. 
+So over here the person `Symbol.iterator` remains the same and we obtained all the properties but from then on so count is done an implementation of the next method all that is handled by this generator so we replaced function by just a function as tricks and properties remains the same.
 
-And now since we have a collection of properties we can use a `for..of` loop let `t` of properties and then yield is going to be made use of. 
+And now since we have a collection of properties we can use a `for..of` loop let `t` of properties and then yield is going to be made use of.
 
-So this is going to yield each key and we are going to be making use of the value at each key. So this is basically yield first name and yield last name.  
+So this is going to yield each key and we are going to be making use of the value at each key. So this is basically yield first name and yield last name.
 
-This is one really useful feature of generator to be made use when we write our custom iterators. 
- 
-
+This is one really useful feature of generator to be made use when we write our custom iterators.
 
 <br/>
 <div align="right">
