@@ -5431,6 +5431,34 @@ In JavaScript we achieve inheritance by using a prototype.
 :bulb: **TIP:** Every object is associated with another object in JavaScript and its root object is associated with `null`. 
 <br>
 
+#### Prototype Inheritance
+
+In JavaScript constructor does not inherit, its prototype inherits only.
+
+```javascript
+//Super class
+var Mobile = function () {
+  this.a = 10;
+};
+
+Mobile.prototype.z = 30;
+
+//sub class
+
+var samsung = function () {
+  Mobile.call(this);
+  this.b = 20;
+};
+
+var s = new samsung();
+console.log(s.a);
+
+//output - 10
+```
+
+Here it is calling its parent constructor and initializing it so that we are able to access it.
+
+
 
 
 <br/>
