@@ -5581,6 +5581,58 @@ console.log(RoboCop.talk());
 //output - I can walk
 //output - I can talk
 ```
+In future let you want to add a new feature to your robot which can start, then you will follow in such a way: 
+
+```javascript
+//mixin
+
+var eating = {
+  eat: function () {
+    return 'I can eat';
+  },
+};
+
+var walking = {
+  walk: function () {
+    return 'I can walk';
+  },
+};
+
+var talking = {
+  talk: function () {
+    return 'I can talk';
+  },
+};
+
+var starting = {
+  start: function () {
+    return 'RoboCop Start';
+  },
+};
+
+var Rahul = Object.assign({}, eating, walking, talking);
+
+var RoboCop = Object.assign({}, starting, walking, talking);
+
+//Object.assign = mixins
+
+console.log(Rahul.eat());
+console.log(Rahul.walk());
+console.log(Rahul.talk());
+
+//output - I can eat
+//output - I can walk
+//output - I can talk
+
+console.log(RoboCop.walk());
+console.log(RoboCop.talk());
+console.log(RoboCop.start());
+
+//output - I can walk
+//output - I can talk
+//output - RoboCop Start
+```
+
 
 <br/>
 <div align="right">
