@@ -625,7 +625,7 @@ if (x == 10) {
 
 #### if...else statement
 
-if...else statement is used when a different sequence of instructions is to be executed depending on the logical value(True/False) of the conditions evaluated.
+if...else statement is used when a different sequence of instructions is to be executed depending on the logical value(true, false) of the conditions evaluated.
 
 Syntax:
 
