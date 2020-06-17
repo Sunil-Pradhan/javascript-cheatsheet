@@ -131,7 +131,7 @@ var x = 4;
 var x;
 console.log(x);
 
-//Output - 4
+//output - 4
 ```
 
 :bulb: **TIP:** JavaScript statements are executed, one by one, in the same order as they are written.
