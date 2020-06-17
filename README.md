@@ -641,7 +641,20 @@ if (condition) {
 
 Example:
 
-![js-if-else-statement](/img/js-if-else-statement.png)
+
+```javascript
+var x = 10;
+if (x == 11) {
+  console.log('Hello World!');
+} else {
+  console.log('Sorry!');
+}
+//if statement false then display else statement 
+
+
+//output - sorry!
+```
+
 
 <br/>
 <div align="right">
