@@ -639,7 +639,6 @@ if (condition) {
 
 Example:
 
-
 ```javascript
 var x = 10;
 if (x == 11) {
@@ -647,12 +646,10 @@ if (x == 11) {
 } else {
   console.log('Sorry!');
 }
-//if statement false then display else statement 
-
+//if statement false then display else statement
 
 //output - sorry!
 ```
-
 
 <br/>
 <div align="right">
@@ -681,8 +678,8 @@ Example:
 var firstName = 'Sunil';
 var lastName = 'Pradhan';
 
-if(firstName == 'Sunil') {
-  if(lastName = 'Pradhan') {
+if (firstName == 'Sunil') {
+  if ((lastName = 'Pradhan')) {
     console.log('Hello! Sunil Pradhan');
   } else {
     console.log('Hello! you are someone else');
@@ -691,7 +688,6 @@ if(firstName == 'Sunil') {
 
 //output - Hello! Sunil Pradhan
 ```
-
 
 <br/>
 <div align="right">
@@ -723,7 +719,20 @@ First check if statement condition 1, if it's not true then go to condition 2 an
 
 Example:
 
-![js-if-else-if statement](/img/js-if-else-if%20statement.png)
+```javascript
+var result = 38;
+if (result <= 30) {
+  console.log('You are failed');
+} else if (result <= 40) {
+  console.log('You are passed');
+} else if (result <= 60) {
+  console.log('You are good');
+} else {
+  console.log('You are very good');
+}
+
+//output - You are passed
+```
 
 <br/>
 <div align="right">
