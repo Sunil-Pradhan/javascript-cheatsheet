@@ -707,11 +707,11 @@ Syntax:
 
 ```javascript
 if (condition_1) {
-  statement_1_block;
+  //statement_1_block;
 } else if (condition_2) {
-  statement_2_block;
+  //statement_2_block;
 } else if (condition_n) {
-  statement_n_block;
+  //statement_n_block;
 }
 .
 .
