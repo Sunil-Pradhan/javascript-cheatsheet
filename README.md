@@ -162,7 +162,7 @@ Primitive data types are base data types whereas reference data types are derive
 <br>
 <br>
 
-The latest ECMAScript standard defines nine types:
+The latest ECMAScript standard defines nine data types:
 
 Seven primitive data types:
 
