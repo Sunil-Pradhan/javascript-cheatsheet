@@ -677,7 +677,21 @@ if (condition1) {
 
 Example:
 
-![js-nested-if-statement](/img/js-nested-if-statement.png)
+```javascript
+var firstName = 'Sunil';
+var lastName = 'Pradhan';
+
+if(firstName == 'Sunil') {
+  if(lastName = 'Pradhan') {
+    console.log('Hello! Sunil Pradhan');
+  } else {
+    console.log('Hello! you are someone else');
+  }
+}
+
+//output - Hello! Sunil Pradhan
+```
+
 
 <br/>
 <div align="right">
