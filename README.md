@@ -701,7 +701,7 @@ if(firstName == 'Sunil') {
 
 #### if-else-if ladder or else...if statement
 
-Use else if to specify a new condition to test, if the first condition is false.
+Use else...if to specify a new condition to test, if the first condition is false.
 
 Syntax:
 
