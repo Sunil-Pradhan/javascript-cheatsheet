@@ -608,7 +608,17 @@ if (condition) {
 
 Example:
 
-![js-if-statement](/img/js-if-statement.png)
+```javascript
+var x = 10;
+if(x == 10) {
+  console.log(x);
+}
+//if the value is true then display 10 on the screen
+
+
+//output - 10 
+```
+
 
 <br/>
 <div align="right">
