@@ -601,8 +601,8 @@ Syntax:
 
 ```javascript
 if (condition) {
-  // Statements to execute if
-  // condition is true
+  // Statements to execute if condition is true
+
 }
 ```
 
