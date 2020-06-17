@@ -662,7 +662,7 @@ if (x == 11) {
 
 #### Nested if statement
 
-Embedding if statement inside another if statement is called JavaScript nested if statement. Here, else statement allows you to print different statements depending upon the expression result (true, false).
+Embedding if statement inside another if statement is called nested if statement. Here, else statement allows you to print different statements depending upon the expression result (true, false).
 
 Syntax:
 
