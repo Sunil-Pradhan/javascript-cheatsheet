@@ -602,7 +602,6 @@ Syntax:
 ```javascript
 if (condition) {
   // Statements to execute if condition is true
-
 }
 ```
 
@@ -610,15 +609,13 @@ Example:
 
 ```javascript
 var x = 10;
-if(x == 10) {
+if (x == 10) {
   console.log(x);
 }
 //if the value is true then display 10 on the screen
 
-
-//output - 10 
+//output - 10
 ```
-
 
 <br/>
 <div align="right">
@@ -5756,7 +5753,7 @@ var Mobile = class {
 };
 ```
 
-Example: 
+Example:
 
 ```javascript
 //unnamed
@@ -5786,7 +5783,7 @@ var Mobile = class Mobile2 {
 };
 ```
 
-Example: 
+Example:
 
 ```javascript
 //named
@@ -5806,21 +5803,21 @@ console.log(samsung.show());
 //output - GalaxyPrice - 3000
 ```
 
-Both are the same. 
+Both are the same.
 
 **Class Hoisting in JavaScript:**
 
-Class declarations and Class expression are not hoisted. You first need to declare your class and then access it. 
+Class declarations and Class expression are not hoisted. You first need to declare your class and then access it.
 
 **Class Inheritance:**
 
 Through prototype you can achieve inheritance but it's more complicated. ES6 makes it more easy through class inheritance.
 
-The `extends` keyword is used in class declarations or class expressions to create a class which is a child of another class. 
+The `extends` keyword is used in class declarations or class expressions to create a class which is a child of another class.
 
-The `extends` keyword can be used to subclass, custom classes as well as built-in objects. 
+The `extends` keyword can be used to subclass, custom classes as well as built-in objects.
 
-Example: 
+Example:
 
 ```javascript
 class Father {
@@ -5846,16 +5843,16 @@ console.log(s.showFMoney());
 
 Base class/Super Class/Parent Class - all are same
 
-Child class/Derived class/sub class - all are same 
+Child class/Derived class/sub class - all are same
 
 **Super Method:**
 
-`Super()` is used to initialize the parent class constructor. If there is a constructor present in subclass, it needs to first call `super()` before using `this`. 
- 
-:bulb: **TIP:** Derive class duty is to initialize the super class constructor before using it. 
+`Super()` is used to initialize the parent class constructor. If there is a constructor present in subclass, it needs to first call `super()` before using `this`.
+
+:bulb: **TIP:** Derive class duty is to initialize the super class constructor before using it.
 <br>
 
-A constructor can use the `super` keyword to call the constructor of a parent class. 
+A constructor can use the `super` keyword to call the constructor of a parent class.
 
 ```javascript
 class Father {
@@ -5883,9 +5880,10 @@ console.log(s.showSMoney());
 //output - 1000 Father Money
 //output - Son Money
 ```
+
 **Method Overriding**
 
-Same function name with different implementation. 
+Same function name with different implementation.
 
 ```javascript
 class Father {
@@ -5909,14 +5907,14 @@ console.log(s.show());
 
 **Static Method**
 
-The `static` keyword is used to define a `static` method for a class. `static` methods are called without creating objects and can’t be called through a class instance (Object). 
+The `static` keyword is used to define a `static` method for a class. `static` methods are called without creating objects and can’t be called through a class instance (Object).
 
-Static methods are often used to create utility functions for an application. 
+Static methods are often used to create utility functions for an application.
 
 :bulb: **Note:**
 
-* `static` method is related to full class, remember it is not related to object.It depends on class not on specific Object. 
-* When we create function methods, it is for objects not for class. 
+- `static` method is related to full class, remember it is not related to object.It depends on class not on specific Object.
+- When we create function methods, it is for objects not for class.
 
 ```javascript
 class Mobile {
@@ -5929,8 +5927,6 @@ console.log(Mobile.disp());
 
 //output - Static method
 ```
-
-
 
 <br/>
 <div align="right">
