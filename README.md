@@ -157,7 +157,7 @@ In JavaScript two types of data type available:
 
 Primitive data types are base data types whereas reference data types are derived.
 
-:bulb: **TIP:** Memory allocation in Primitive data types happens in “Stack” whereas memory allocation in Reference data types happens in “Heap” (Dynamic memory).
+:bulb: **TIP:** Memory allocation in **primitive data types** happens in **“Stack”** whereas memory allocation in **Reference data types** happens in **“Heap”** (Dynamic memory).
 
 <br>
 <br>
