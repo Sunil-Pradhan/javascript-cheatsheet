@@ -187,7 +187,7 @@ Two derived data types (non-primitive):
 
 ### Undefined:
 
-The meaning of undefined is “value is not assigned”, that means if a variable is declared, but not assigned, then its value is undefined:
+The meaning of `undefined` is “value is not assigned”, that means if a variable is declared, but not assigned, then its value is `undefined`:
 
 Example:
 
