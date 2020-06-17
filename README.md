@@ -111,13 +111,13 @@ I recommend always declaring your variables with `const` by default, but with `l
 
 ```javascript
 // This is how you define a variable
-// `x` will be `undefined`
+// x will be undefined
 var x;
 
 // Declare a constant (the convention is to use CAPS for constants)
 const PI = 3.14;
 
-// Declare another two variables, using `var` and `let`
+// Declare another two variables, using var and let
 var firstName = 'Sunil';
 let lastName = 'Pradhan';
 ```
