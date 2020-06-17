@@ -631,11 +631,9 @@ Syntax:
 
 ```javascript
 if (condition) {
-  // Executes this block if
-  // condition is true
+  // Executes this block if condition is true
 } else {
-  // Executes this block if
-  // condition is false
+  // Executes this block if condition is false
 }
 ```
 
