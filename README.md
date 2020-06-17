@@ -290,9 +290,9 @@ Here variable is empty so that it is at the beginning behave as a placeholder wh
 
 The value does not go to `undefined` so that you have to put initially `null` which later you can change it to a value.
 
-:bulb: **TIP:** Difference between undefined and null in JavaScript
+:bulb: **TIP:** Difference between `undefined` and `null` in JavaScript
 
-`undefined` means the value has not been set, whereas `null means the value has been set to empty.
+`undefined` means the value has not been set, whereas `null` means the value has been set to empty.
 
 ```javascript
 var a = null; //null example
