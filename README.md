@@ -8116,6 +8116,12 @@ polymorphism means you are writing a single function() but it works differently 
 
 The Document Object Model (DOM) is a programming API for HTML and XML documents. With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
 
+The DOM model represents a document with a logical tree.
+
+According to DOM model every HTML-tag is an object, Nested tags are called “children” of the enclosing one. 
+
+All operations on the DOM start with the document object. From it can access any node. 
+
 ###### Reference
 
 - https://www.w3schools.com/js/js_htmldom.asp
