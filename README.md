@@ -8128,6 +8128,14 @@ All operations on the DOM start with the document object. From it can access any
 - https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
 - https://www.w3.org/TR/WD-DOM/introduction.html
 
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
 <hr>
 
 <a name="com-res"></a>
