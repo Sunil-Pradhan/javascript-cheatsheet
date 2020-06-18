@@ -30,7 +30,14 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Symbols](#js-symbols)
 - [Generators](#js-generators)
 - [Object Oriented Programming - OOP](#js-oop)
+- [Document Object Model - DOM](#js-dom)
 - [Complementary Resources](#com-res)
+
+
+
+
+
+
 
 <a name="js-basics"></a>
 
@@ -8101,6 +8108,19 @@ polymorphism means you are writing a single function() but it works differently 
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+
+<a name="js-dom"></a>
+
+## Document Object Model - DOM
+
+The Document Object Model (DOM) is a programming API for HTML and XML documents. With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
+
+###### Reference
+
+- https://www.w3schools.com/js/js_htmldom.asp
+- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+- https://www.w3.org/TR/WD-DOM/introduction.html
 
 <hr>
 
