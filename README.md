@@ -33,12 +33,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Document Object Model - DOM](#js-dom)
 - [Complementary Resources](#com-res)
 
-
-
-
-
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -778,26 +772,25 @@ Example: (Without default)
 
 ```javascript
 var day = 1;
-switch(day) {
+switch (day) {
   case 1:
-  console.log('Sun');
-  break;
+    console.log('Sun');
+    break;
 
-  case 2: 
-  console.log('Mon');
-  break;
+  case 2:
+    console.log('Mon');
+    break;
 }
 
 //output - Sun
 ```
-
 
 Example: (With default)
 
 ```javascript
 var day = 5;
 swtich(day) {
-  case 1: 
+  case 1:
   console.log('Sun');
   break;
 
@@ -805,13 +798,12 @@ swtich(day) {
   console.log('Mon');
   break;
 
-  default: 
+  default:
   console.log('It is wrong!');
 }
 
 //output - It is wrong!
 ```
-
 
 Sometimes it is also possible or necessary to execute the same statement for **multiple expressions**.
 
@@ -844,21 +836,21 @@ Example: (With multiple options)
 ```javascript
 var day = 4;
 switch (day) {
-  case 1: 
-  console.log('Mon - Office day');
-  break;
+  case 1:
+    console.log('Mon - Office day');
+    break;
 
   case 2:
-  console.log('Tue - Office day');
-  break;
+    console.log('Tue - Office day');
+    break;
 
-  case 3: 
-  case 4: 
-  console.log('Wed/Thu - Off day');
-  break;
+  case 3:
+  case 4:
+    console.log('Wed/Thu - Off day');
+    break;
 
   default:
-  console.log('You do not have off');
+    console.log('You do not have off');
 }
 
 //output - Wed/Thu - Off day
@@ -875,31 +867,29 @@ switch (day) {
 Example: (By if statement)
 
 ```javascript
-function findGreater(a,b) {
-  if(a > b) {
+function findGreater(a, b) {
+  if (a > b) {
     return 'a is greater';
   } else {
     return 'b is greater';
   }
 }
 
-console.log(findGreater(3,1));
+console.log(findGreater(3, 1));
 
-//output - a is greater 
+//output - a is greater
 ```
 
 Example: (By ternary operator)
 
 ```javascript
-function findGreater(a,b) {
+function findGreater(a, b) {
   return a > b ? 'a is greater' : 'b is greater';
 }
-console.log(findGreater(3,1));
+console.log(findGreater(3, 1));
 
 //output - a is greater
 ```
-
-
 
 <br/>
 <div align="right">
@@ -911,11 +901,36 @@ console.log(findGreater(3,1));
 
 Example: (By if statement)
 
-![js-multiple-conditional-ternary-operator-by-if-statement](/img/js-multiple-conditional-ternary-operator-by-if-statement.png)
+```javascript
+function findGreaterOrEqual(a, b) {
+  if (a === b) {
+    return 'a and b are equal';
+  } else if (a > b) {
+    return 'a is greater';
+  } else {
+    return 'b is greater';
+  }
+}
+console.log(findGreaterOrEqual(1, 1));
+
+//output - a and b are equal
+```
 
 Example: (By ternary operator)
 
-![js-multiple-conditional-ternary-operator-by-ternary-operator](/img/js-multiple-conditional-ternary-operator-by-ternary-operator.png)
+```javascript
+function findGreaterOrEqual(a, b) {
+  return a === b
+    ? 'a and b are equal'
+    : a > b
+    ? 'a is greater'
+    : 'b is greater';
+}
+console.log(findGreaterOrEqual(1, 1));
+
+//output - a and b are equal
+```
+
 
 :bulb: **TIP:** A ternary operator returns the first value if the expression is true, or else returns the second value.
 
@@ -8182,16 +8197,15 @@ polymorphism means you are writing a single function() but it works differently 
 </div>
 <br/>
 
-
 <a name="js-dom"></a>
 
 ## Document Object Model - DOM
 
 The Document Object Model (DOM) is a programming API for HTML and XML documents. With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
 
-The DOM model represents a document with a logical tree. According to DOM model every HTML-tag is an object, Nested tags are called “children” of the enclosing one. 
+The DOM model represents a document with a logical tree. According to DOM model every HTML-tag is an object, Nested tags are called “children” of the enclosing one.
 
-All operations on the DOM start with the document object. From it can access any node. 
+All operations on the DOM start with the document object. From it can access any node.
 
 ###### Reference
 
@@ -8199,20 +8213,15 @@ All operations on the DOM start with the document object. From it can access any
 - https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
 - https://www.w3.org/TR/WD-DOM/introduction.html
 
-
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
 
-
 ### Document tree in JavaScript:
 
 Browser understands your code in following format;
-
-
-
 
 <hr>
 
