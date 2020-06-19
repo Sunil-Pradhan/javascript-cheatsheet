@@ -776,11 +776,42 @@ switch (expression)
 
 Example: (Without default)
 
-![js-switch-statement-without-default](/img/js-switch-statement-without-default.png)
+```javascript
+var day = 1;
+switch(day) {
+  case 1:
+  console.log('Sun');
+  break;
+
+  case 2: 
+  console.log('Mon');
+  break;
+}
+
+//output - Sun
+```
+
 
 Example: (With default)
 
-![js-switch-statement-with-default](/img/js-switch-statement-with-default.png)
+```javascript
+var day = 5;
+swtich(day) {
+  case 1: 
+  console.log('Sun');
+  break;
+
+  case 2:
+  console.log('Mon');
+  break;
+
+  default: 
+  console.log('It is wrong!');
+}
+
+//output - It is wrong!
+```
+
 
 Sometimes it is also possible or necessary to execute the same statement for **multiple expressions**.
 
