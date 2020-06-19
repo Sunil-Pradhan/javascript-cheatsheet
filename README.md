@@ -998,8 +998,7 @@ for(; i < 5; i++) {
 //output - 0, 1, 2, 3, 4
 ```
 
-
-Here you define a variable first but in for loop you are still keeping `;` at the initialize stage.
+Here you define a variable first but in the `for` loop you are still keeping `;` at the initialization stage.
 
 **Type 3:**
 
