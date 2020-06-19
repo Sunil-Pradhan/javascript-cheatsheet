@@ -956,7 +956,7 @@ JavaScript supports the following kinds loops:
 
 #### for loop
 
-The for loop is usually used where the loop will be repeated a fixed number of times.
+The `for` loop is usually used where the loop will be repeated a fixed number of times.
 
 **Type 1:**
 
