@@ -772,7 +772,7 @@ switch (expression)
 }
 ```
 
-:bulb: **TIP:** All the cases will be evaluated if you do not use a break statement.
+:bulb: **TIP:** All the cases will be evaluated if you do not use a `break` statement.
 
 Example: (Without default)
 
@@ -837,11 +837,32 @@ switch (expression)
 }
 ```
 
-Example: In a week, if you have two days off then in that case you can use switch statements where you need to execute the same statement multiple times.
+Example: In a week, if you have two days off then in that case you can use `switch` statements where you need to execute the same statement multiple times.
 
 Example: (With multiple options)
 
-![js-switch-statement-with-multiple-options](/img/js-switch-statement-with-multiple-options.png)
+```javascript
+var day = 4;
+switch (day) {
+  case 1: 
+  console.log('Mon - Office day');
+  break;
+
+  case 2:
+  console.log('Tue - Office day');
+  break;
+
+  case 3: 
+  case 4: 
+  console.log('Wed/Thu - Off day');
+  break;
+
+  default:
+  console.log('You do not have off');
+}
+
+//output - Wed/Thu - Off day
+```
 
 <br/>
 <div align="right">
@@ -853,11 +874,32 @@ Example: (With multiple options)
 
 Example: (By if statement)
 
-![Conditional-ternary-operator-by-if-statement](/img/Conditional-ternary-operator-by-if-statement.png)
+```javascript
+function findGreater(a,b) {
+  if(a > b) {
+    return 'a is greater';
+  } else {
+    return 'b is greater';
+  }
+}
+
+console.log(findGreater(3,1));
+
+//output - a is greater 
+```
 
 Example: (By ternary operator)
 
-![js-conditional-ternary-operator-by-ternary-operator](/img/js-conditional-ternary-operator-by-ternary-operator.png)
+```javascript
+function findGreater(a,b) {
+  return a > b ? 'a is greater' : 'b is greater';
+}
+console.log(findGreater(3,1));
+
+//output - a is greater
+```
+
+
 
 <br/>
 <div align="right">
