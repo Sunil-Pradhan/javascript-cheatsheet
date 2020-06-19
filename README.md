@@ -1031,7 +1031,7 @@ for(; ; i++) {
 //ouput - 0, 1, 2
 ```
 
-What it tells us. We have initialized a variable then we have our test condition within the if statement. It checks the condition upto equality 3 then it will break and exit from the loop.
+What it tells us. We have initialized a variable then we have our test condition within the if statement. It checks the condition upto equality 3 then it break the statement and exit from the loop.
 
 #### Nested for loop
 
