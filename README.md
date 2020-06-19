@@ -991,7 +991,7 @@ Example:
 
 ```javascript
 var i = 0;
-for(; i < 5; i++) {
+for (; i < 5; i++) {
   console.log(i);
 }
 
@@ -1006,7 +1006,7 @@ Example:
 
 ```javascript
 var i = 0;
-for(; i<5;) {
+for (; i < 5; ) {
   i++;
   console.log(i);
 }
@@ -1014,15 +1014,14 @@ for(; i<5;) {
 //output - 1, 2, 3, 4, 5
 ```
 
-
 **Type 4:**
 
 Example:
 
 ```javascript
 var i = 0;
-for(; ; i++) {
-  if(i == 3) {
+for (; ; i++) {
+  if (i == 3) {
     break;
   }
   console.log(i);
@@ -1052,7 +1051,24 @@ for (initialization condition; testing condition; increment/decrement) {
 
 Example:
 
-![js-for-loop-nested](/img/js-for-loop-nested.png)
+```javascript
+for(i=0; i<2; i++) {
+  console.log('Outer loop i: ' +i);
+
+  for(j = 0; j<2; j++) {
+    console.log('inner loop j: ' +j);
+  }
+}
+
+//output -
+// Outer loop i: 0
+// inner loop j: 0
+// inner loop j: 1
+// Outer loop i: 1
+// inner loop j: 0
+// inner loop j: 1
+```
+
 
 <br/>
 <div align="right">
@@ -1074,7 +1090,7 @@ while (test condition) {
     statement(s);
     increment/decrement;
 }
-```
+````
 
 We put one test condition at the beginning of the program. Then it will go to the body of the loop, once it finishes its work then it will increment or decrement the value. Finally it will reach the end of the loop where it can start again from starting until the condition is false.
 
