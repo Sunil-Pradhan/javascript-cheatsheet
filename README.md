@@ -931,7 +931,6 @@ console.log(findGreaterOrEqual(1, 1));
 //output - a and b are equal
 ```
 
-
 :bulb: **TIP:** A ternary operator returns the first value if the expression is true, or else returns the second value.
 
 ```javascript
@@ -977,13 +976,28 @@ When the test condition is false then it stops executing the statement.
 
 Example:
 
-![js-for-loop-type-one](/img/js-for-loop-type-one.png)
+```javascript
+var i = 5;
+for (i = 0; i <= 5; i++) {
+  console.log(i);
+}
+
+//output - 0, 1, 2, 3, 4, 5
+```
 
 **Type 2:**
 
 Example:
 
-![js-for-loop-type-two](/img/js-for-loop-type-two.png)
+```javascript
+var i = 0;
+for(; i < 5; i++) {
+  console.log(i);
+}
+
+//output - 0, 1, 2, 3, 4
+```
+
 
 Here you define a variable first but in for loop you are still keeping `;` at the initialize stage.
 
@@ -991,7 +1005,16 @@ Here you define a variable first but in for loop you are still keeping `;` at th
 
 Example:
 
-![js-for-loop-type-three](/img/js-for-loop-type-three.png)
+```javascript
+var i = 0;
+for(; i<5;) {
+  i++;
+  console.log(i);
+}
+
+//output - 1, 2, 3, 4, 5
+```
+
 
 **Type 4:**
 
