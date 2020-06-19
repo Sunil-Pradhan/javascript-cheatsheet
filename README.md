@@ -749,7 +749,7 @@ if (result <= 30) {
 
 #### Switch statement
 
-The switch statement chooses between multiple statements to execute based on possible values of a single expression. Each of these values in a switch statement is called a case.
+The `switch` statement chooses between multiple statements to execute based on possible values of a single expression. Each of these values in a `switch` statement is called a `case`.
 
 Syntax:
 
@@ -8132,6 +8132,13 @@ All operations on the DOM start with the document object. From it can access any
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
+
+
+### Document tree in JavaScript:
+
+Browser understands your code in following format;
+
+
 
 
 <hr>
