@@ -7503,7 +7503,7 @@ console.log(g);
 //output - Sunil, Pradhan, Male
 ```
 
-So that's pretty much how you destructure works in JavaScript objects.
+So that's pretty much how destructure works in JavaScript objects.
 
 You have an object and then you use the curly braces and assign it to the object and each property name should match the variable name and then the value will get assigned to it.
 
