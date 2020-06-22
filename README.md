@@ -34,8 +34,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Document Object Model - DOM](#js-dom)
 - [Complementary Resources](#com-res)
 
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -1055,11 +1053,11 @@ for (initialization condition; testing condition; increment/decrement) {
 Example:
 
 ```javascript
-for(i=0; i<2; i++) {
-  console.log('Outer loop i: ' +i);
+for (i = 0; i < 2; i++) {
+  console.log('Outer loop i: ' + i);
 
-  for(j = 0; j<2; j++) {
-    console.log('inner loop j: ' +j);
+  for (j = 0; j < 2; j++) {
+    console.log('inner loop j: ' + j);
   }
 }
 
@@ -1071,7 +1069,6 @@ for(i=0; i<2; i++) {
 // inner loop j: 0
 // inner loop j: 1
 ```
-
 
 <br/>
 <div align="right">
@@ -1093,7 +1090,7 @@ while (test condition) {
     statement(s);
     increment/decrement;
 }
-````
+```
 
 We put one test condition at the beginning of the program. Then it will go to the body of the loop, once it finishes its work then it will increment or decrement the value. Finally it will reach the end of the loop where it can start again from starting until the condition is false.
 
@@ -5676,7 +5673,6 @@ console.log(s.z);
 </div>
 <br/>
 
-
 <a name="js-this"></a>
 
 ## JavaScript `this`
@@ -5697,11 +5693,19 @@ var person = {
 // Display data from the object
 console.log(person.fullName());
 
-
 //output - Sunil Pradhan
 ```
 
 In this example, `this` represents the person object because the person object "owns" the fullName method.
+
+It has different values depending on where it is used:
+
+- In a method, `this` refers to the owner object.
+- Alone, `this` refers to the global object.
+- In a function, `this` refers to the global object.
+- In a function, in strict mode, `this` is undefined.
+- In an event, `this` refers to the element that received the event.
+- Methods like `call()`, and `apply()` can refer `this` to any object.
 
 <br/>
 <div align="right">
