@@ -5707,6 +5707,57 @@ It has different values depending on where it is used:
 - In an event, `this` refers to the element that received the event.
 - Methods like `call()`, and `apply()` can refer `this` to any object.
 
+**`this` in a Method:**
+
+In an object method, `this` refers to the "owner" of the method.
+
+```javascript
+// Create an object
+var person = {
+  firstName: 'Sunil',
+  lastName: 'Pradhan',
+  id: 5566,
+  fullName: function () {
+    return this.firstName + ' ' + this.lastName;
+  },
+};
+
+// Display data from the object
+console.log(person.fullName());
+
+//output - Sunil Pradhan
+```
+
+The person object is the owner of the fullName method.
+
+**`this` Alone:**
+
+When used alone, the owner is the Global object, so this refers to the Global object.
+
+In a browser window the Global object is [object Window]:
+
+```javascript
+var x = this;
+alert(x);
+
+//output - [object Window]
+```
+
+In this example, `this` refers to the window Object.
+
+In strict mode, when used alone, `this` also refers to the Global object [object Window]:
+
+```javascript
+'use strict';
+var x = this;
+alert(x);
+
+//output - [object Window]
+```
+
+In this example, `this` refers to the window Object.
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
@@ -5755,7 +5806,7 @@ console.log(Rahul.talk());
 //output - I can eat
 //output - I can walk
 //output - I can talk
-```
+````
 
 Let now you want to create a Robot;
 
