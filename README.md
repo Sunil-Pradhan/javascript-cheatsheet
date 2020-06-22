@@ -5734,7 +5734,7 @@ The person object is the owner of the fullName method.
 
 When used alone, the owner is the Global object, so this refers to the Global object.
 
-In a browser window the Global object is [object Window]:
+In a browser window the Global object is `[object Window]`:
 
 ```javascript
 var x = this;
@@ -5745,7 +5745,7 @@ alert(x);
 
 In this example, `this` refers to the window Object.
 
-In strict mode, when used alone, `this` also refers to the Global object [object Window]:
+In strict mode, when used alone, `this` also refers to the Global object `[object Window]`:
 
 ```javascript
 'use strict';
@@ -5757,6 +5757,36 @@ alert(x);
 
 In this example, `this` refers to the window Object.
 
+**`this` in a Function (Default)**
+
+In a JavaScript function, the owner of the function is the default binding for `this`. So, in a function, `this` refers to the Global object `[object Window]`.
+
+```javascript
+function myFunction() {
+  return this;
+}
+alert(myFunction());
+
+//output - [object Window]
+```
+
+In this example, `this` represents the object that "owns" myFunction.
+
+**`this` in a Function (Strict):**
+
+JavaScript strict mode does not allow default binding. So, when used in a function, in strict mode, `this` is `undefined`.
+
+```javascript
+'use strict';
+function myFunction() {
+  return this;
+}
+alert(myFunction());
+
+//output  undefined
+```
+
+In a function, by default, `this` refers to the Global object. In strict mode, `this` is `undefined`, because strict mode does not allow default binding.
 
 <br/>
 <div align="right">
@@ -5806,7 +5836,7 @@ console.log(Rahul.talk());
 //output - I can eat
 //output - I can walk
 //output - I can talk
-````
+```
 
 Let now you want to create a Robot;
 
