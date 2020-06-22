@@ -5844,9 +5844,30 @@ console.log(person.fullName());
 ```
 Here `this` represents the person object, because the person object "owns" the fullName method. In other words: `this.firstName` means the firstName property of this (person) object.
 
+**Explicit Function Binding:**
+
+The `call()` and `apply()` methods are predefined JavaScript methods. They can both be used to call an object method with another object as argument.
 
 
+In the example below, when calling person1.fullName with person2 as argument, `this` will refer to person2, even if it is a method of person1:
 
+```javascript
+var person1 = {
+  fullName: function () {
+    return this.firstName + ' ' + this.lastName;
+  },
+};
+var person2 = {
+  firstName: 'Sunil',
+  lastName: 'Pradhan',
+};
+
+console.log(person1.fullName.call(person2)); // // Will return "Sunil Pradhan"
+
+//output - Sunil Pradhan
+```
+
+Here `this` refers to person2, even if it is a method of person1.
 
 <br/>
 <div align="right">
