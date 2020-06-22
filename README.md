@@ -5788,6 +5788,66 @@ alert(myFunction());
 
 In a function, by default, `this` refers to the Global object. In strict mode, `this` is `undefined`, because strict mode does not allow default binding.
 
+**`this` in Event Handlers:**
+
+In HTML event handlers, `this` refers to the HTML element that received the event:
+
+```html
+<button onclick="this.style.display='none'">Click to Remove Me!</button>
+```
+
+**Object Method Binding:**
+
+In these examples, `this` is the person object (The person object is the "owner" of the function):
+
+
+```javascript
+// Create an object
+var person = {
+  firstName: 'Sunil',
+  lastName: 'Pradhan',
+  id: 5566,
+  myFunction: function () {
+    return this;
+  },
+};
+
+// Display data from the object
+console.log(person.myFunction());
+
+//output - 
+
+/*{
+  firstName: 'Sunil', 
+  lastName: 'Pradhan',
+  id: 5566,
+  myFunction: [Function: myFunction]
+}*/
+```
+Here `this` represents the person object that "owns" the myFunction method.
+
+```javascript
+// Create an object
+var person = {
+  firstName: 'Sunil',
+  lastName: 'Pradhan',
+  id: 5566,
+  fullName: function () {
+    return this.firstName + ' ' + this.lastName;
+  },
+};
+
+// Display data from the object
+console.log(person.fullName());
+
+//output - Sunil Pradhan
+```
+Here `this` represents the person object, because the person object "owns" the fullName method. In other words: `this.firstName` means the firstName property of this (person) object.
+
+
+
+
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
