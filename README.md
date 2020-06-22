@@ -5869,6 +5869,12 @@ console.log(person1.fullName.call(person2)); // // Will return "Sunil Pradhan"
 
 Here `this` refers to person2, even if it is a method of person1.
 
+
+###### References
+
+- https://www.w3schools.com/Js/js_this.asp
+- https://www.w3schools.com/Js/js_function_call.asp
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
