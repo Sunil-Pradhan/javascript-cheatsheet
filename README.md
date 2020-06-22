@@ -5874,6 +5874,7 @@ Here `this` refers to person2, even if it is a method of person1.
 
 - https://www.w3schools.com/Js/js_this.asp
 - https://www.w3schools.com/Js/js_function_call.asp
+- https://www.w3schools.com/Js/js_function_apply.asp
 
 <br/>
 <div align="right">
