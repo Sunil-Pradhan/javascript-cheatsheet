@@ -21,6 +21,7 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [String](#js-string)
 - [Number](#js-number)
 - [Prototype](#js-prototype)
+- [this keyword](#js-this)
 - [Composition or Mixins](#js-mixins)
 - [Class](#js-class)
 - [Variable Hoisting](#js-variable-hosting)
@@ -32,6 +33,8 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Object Oriented Programming - OOP](#js-oop)
 - [Document Object Model - DOM](#js-dom)
 - [Complementary Resources](#com-res)
+
+
 
 <a name="js-basics"></a>
 
@@ -5666,6 +5669,18 @@ console.log(s.z);
 
 //output - 10, 20, 30
 ```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+<a name="js-this"></a>
+
+## JavaScript `this`
+
 
 <br/>
 <div align="right">
