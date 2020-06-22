@@ -5681,6 +5681,27 @@ console.log(s.z);
 
 ## JavaScript `this`
 
+The JavaScript `this` keyword refers to the object it belongs to.
+
+```javascript
+// Create an object
+var person = {
+  firstName: 'Sunil',
+  lastName: 'Pradhan',
+  id: 5566,
+  fullName: function () {
+    return this.firstName + ' ' + this.lastName;
+  },
+};
+
+// Display data from the object
+console.log(person.fullName());
+
+
+//output - Sunil Pradhan
+```
+
+In this example, `this` represents the person object because the person object "owns" the fullName method.
 
 <br/>
 <div align="right">
