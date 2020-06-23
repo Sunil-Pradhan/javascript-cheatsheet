@@ -8442,6 +8442,27 @@ A set is nothing but a list of values but this list cannot contain any duplicate
 :bulb: **TIP:** A set is a data structure which contains a list of values that are unique. 
 <br>
 
+So to create a new set we need to follow the following pattern: 
+
+```javascript
+let mySet = new Set();
+```
+
+Now once we have a new set we can add elements to the set by calling the `add()` method on the set. 
+
+
+Now to check the size of the set or how many elements are present in the set we use the `size` property. 
+
+
+```javascript
+let mySet = new Set();
+mySet.add('Hello');
+console.log(mySet.size);
+
+//output - 1
+```
+
+
 
 ### JavaScript Maps
 
