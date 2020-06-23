@@ -8439,10 +8439,17 @@ This is one really useful feature of generator to be made use when we write our 
 
 A set is nothing but a list of values but this list cannot contain any duplicates. Unlike arrays where we access the individual elements in sets we just check if a value is present or not we don't really access the value. 
 
+:bulb: **TIP:** A set is a data structure which contains a list of values that are unique. 
+<br>
+
 
 ### JavaScript Maps
 
-A set is nothing but a list of values but this list cannot contain any duplicates. Unlike arrays where we access the individual elements in sets we just check if a value is present or not we don't really access the value. 
+A map is nothing more than a collection of key value pairs.
+
+Unlike sets where we check if a value exists or not with maps we actually want to retrieve the value. 
+
+
 
 <br/>
 <div align="right">
