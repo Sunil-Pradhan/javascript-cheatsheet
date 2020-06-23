@@ -8439,6 +8439,11 @@ This is one really useful feature of generator to be made use when we write our 
 
 A set is nothing but a list of values but this list cannot contain any duplicates. Unlike arrays where we access the individual elements in sets we just check if a value is present or not we don't really access the value. 
 
+
+### JavaScript Maps
+
+A set is nothing but a list of values but this list cannot contain any duplicates. Unlike arrays where we access the individual elements in sets we just check if a value is present or not we don't really access the value. 
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
