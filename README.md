@@ -8632,13 +8632,74 @@ In a nutshell, we create a `set` using `new` and then we can add using `add` met
 
 #### WeakSets
 
-On the last section I mentioned about the set type but it can also be called as a strong set because of the way in which it stores object references.
+On the last section We mentioned about the set type but it can also be called as a strong set because of the way in which it stores object references.
 
 So let's try to understand what I mean by that with an example. Let's first create a new set. 
 
 ```javascript
 let mySet = new Set();
 ```
+
+We are also going to have an object so let key is equal to a pair of curly braces and let's try to add that. 
+
+```javascript
+let mySet = new Set();
+let key = {};
+mySet.add(key);
+
+console.log(mySet.size);
+
+//output - 1
+```
+Now we are going to set key is equal to null and then log the size again.  
+
+```javascript
+let mySet = new Set();
+
+let key = {};
+mySet.add(key);
+console.log(mySet.size);
+
+key = null;
+console.log(mySet.size);
+
+//output - 1
+//output - 1
+```
+So what we can conclude from the above example is that even though the key was set to null. 
+
+A reference to the key object still existed in our set and we can just as easily retrieve it by saying Key is equal to the spread operator on mySet and we can have of 0. 
+
+```javascript
+let mySet = new Set();
+
+let key = {};
+mySet.add(key);
+console.log(mySet.size);
+
+key = null;
+console.log(mySet.size);
+
+key = [...mySet][0];
+
+//output - 1
+//output - 1
+```
+So this is going to give us that object back. And what sometimes to aid with garbage collection and avoid memory leaks we would prefer that the reference in a set to disappear when all other references disappear. 
+
+And for this purpose ES6 introduced, WeakSets. A weak set is very much like a strong set. 
+
+It has the add, has, delete method but two main differences are it can store only object references and not primitive values and the object references are weak. 
+
+So if all other references are removed then a week set allows
+for garbage collection. 
+
+Now to create a WeakSets; 
+
+```javascript
+let set = new weakSet();
+```
+
 
 
 
