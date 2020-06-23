@@ -8517,7 +8517,28 @@ console.log(mySet.size);
 
 //output - 4
 ```
+Here we are getting the result 4 because objects are not converted to strings the two objects will be unique.
+ 
+We can also initialize values using an array during the creation of a set. 
 
+```javascript
+let mySet = new Set();
+let ob1 = {};
+let ob2 = {};
+
+mySet.add('Hello');
+mySet.add(1);
+
+mySet.add(ob1);
+mySet.add(ob2);
+console.log(mySet.size);
+
+let newSet = new Set([1, 2, 3, 4, 4, 4]);
+console.log(mySet.size);
+
+//output - 4
+//output - 4
+```
 
 ### JavaScript Maps
 
