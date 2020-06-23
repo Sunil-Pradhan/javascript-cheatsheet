@@ -8462,6 +8462,18 @@ console.log(mySet.size);
 //output - 1
 ```
 
+The values we store in a set are not restricted to string values so we can have also a numeric value. 
+
+```javascript
+let mySet = new Set();
+
+mySet.add('Hello');
+mySet.add(1);
+console.log(mySet.size);
+
+//output - 2
+```
+
 
 
 ### JavaScript Maps
