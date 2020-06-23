@@ -30,9 +30,15 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Destructuring - Array & Object](#js-destructuring)
 - [Symbols](#js-symbols)
 - [Generators](#js-generators)
+- [Sets & Maps](#js-sets-maps)
 - [Object Oriented Programming - OOP](#js-oop)
 - [Document Object Model - DOM](#js-dom)
 - [Complementary Resources](#com-res)
+
+
+
+
+
 
 <a name="js-basics"></a>
 
@@ -8417,6 +8423,21 @@ And now since we have a collection of properties we can use a `for..of` loop let
 So this is going to yield each key and we are going to be making use of the value at each key. So this is basically yield first name and yield last name.
 
 This is one really useful feature of generator to be made use when we write our custom iterators.
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+<a name="js-sets-maps"></a>
+
+## Sets & Maps
+
+### JavaScript Sets
+
+A set is nothing but a list of values but this list cannot contain any duplicates. Unlike arrays where we access the individual elements in sets we just check if a value is present or not we don't really access the value. 
 
 <br/>
 <div align="right">
