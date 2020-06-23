@@ -8540,6 +8540,9 @@ console.log(mySet.size);
 //output - 4
 ```
 
+The first four values were unique and were saved into new set but the last two values were duplicate values and were ignored. So that is how the size of new set is 4. 
+
+
 ### JavaScript Maps
 
 A map is nothing more than a collection of key value pairs.
