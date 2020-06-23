@@ -8569,6 +8569,37 @@ console.log(chainSet.size);
 
 So when we log to the console `chainSet.size` should have two.
 
+To check for existence of a value in a set we use the `has` method.  So we are here a newSet, let's see if the value 1 is present or not.
+
+```javascript
+let mySet = new Set();
+let ob1 = {};
+let ob2 = {};
+
+mySet.add('Hello');
+mySet.add(1);
+
+mySet.add(ob1);
+mySet.add(ob2);
+console.log(mySet.size);
+
+let newSet = new Set([1, 2, 3, 4, 4, 4]);
+console.log(mySet.size);
+
+let chainSet = new Set().add('Hello').add('World');
+console.log(chainSet.size);
+console.log(newSet.has(1));
+
+//output - 4
+//output - 4
+//output - 2
+//output - true
+```
+
+As we use `has` method to check for an existence of a value similarly to delete a value from a set we use the `delete` method. So let's delete the value 1.
+
+
+
 ### JavaScript Maps
 
 A map is nothing more than a collection of key value pairs.
