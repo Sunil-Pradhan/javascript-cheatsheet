@@ -8630,6 +8630,17 @@ console.log(newSet.size);
 
 In a nutshell, we create a `set` using `new` and then we can add using `add` method. We can check for an existence using the `has` method and delete using the `delete` method and the size of the set can be found out using the `size` property. 
 
+#### WeakSets
+
+On the last section I mentioned about the set type but it can also be called as a strong set because of the way in which it stores object references.
+
+So let's try to understand what I mean by that with an example. Let's first create a new set. 
+
+```javascript
+let mySet = new Set();
+```
+
+
 
 ### JavaScript Maps
 
