@@ -8628,7 +8628,7 @@ console.log(newSet.size);
 //output - 3
 ```
 
-
+In a nutshell, we create a `set` using `new` and then we can add using `add` method. We can check for an existence using the `has` method and delete using the `delete` method and the size of the set can be found out using the `size` property. 
 
 
 ### JavaScript Maps
