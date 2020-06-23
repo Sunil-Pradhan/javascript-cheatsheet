@@ -8542,6 +8542,32 @@ console.log(mySet.size);
 
 The first four values were unique and were saved into new set but the last two values were duplicate values and were ignored. So that is how the size of new set is 4. 
 
+You can also change the add method to add elements to a set so we can have: 
+
+```javascript
+let mySet = new Set();
+let ob1 = {};
+let ob2 = {};
+
+mySet.add('Hello');
+mySet.add(1);
+
+mySet.add(ob1);
+mySet.add(ob2);
+console.log(mySet.size);
+
+let newSet = new Set([1, 2, 3, 4, 4, 4]);
+console.log(mySet.size);
+
+let chainSet = new Set().add('Hello').add('World');
+console.log(chainSet.size);
+
+//output - 4
+//output - 4
+//output - 2
+```
+
+So when we log to the console `chainSet.size` should have two.
 
 ### JavaScript Maps
 
