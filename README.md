@@ -8489,7 +8489,34 @@ console.log(mySet.size);
 
 Its size still remains 2. So a set can only contain unique values that means when you try to insert or add a duplicate value it is going to ignore that particular value. 
 
+Now let's create two new objects.
 
+```javascript
+let mySet = new Set();
+let ob1 = {};
+let ob2 = {};
+
+mySet.add('Hello');
+mySet.add(1);
+
+console.log(mySet.size);
+```
+But when we try to add `mySet.add(ob1)` and `mySet.add(ob2)` we get the result of 4. 
+
+```javascript
+let mySet = new Set();
+let ob1 = {};
+let ob2 = {};
+
+mySet.add('Hello');
+mySet.add(1);
+
+mySet.add(ob1);
+mySet.add(ob2);
+console.log(mySet.size);
+
+//output - 4
+```
 
 
 ### JavaScript Maps
