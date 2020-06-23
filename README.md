@@ -5868,7 +5868,7 @@ var person2 = {
   lastName: 'Pradhan',
 };
 
-console.log(person1.fullName.call(person2)); // // Will return "Sunil Pradhan"
+console.log(person1.fullName.call(person2)); // Will return "Sunil Pradhan"
 
 //output - Sunil Pradhan
 ```
