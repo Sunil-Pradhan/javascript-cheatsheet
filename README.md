@@ -8598,6 +8598,37 @@ console.log(newSet.has(1));
 
 As we use `has` method to check for an existence of a value similarly to delete a value from a set we use the `delete` method. So let's delete the value 1.
 
+Initially it was 4 now we are deleting an element so the new size should be 3.
+
+
+```javascript
+let mySet = new Set();
+let ob1 = {};
+let ob2 = {};
+
+mySet.add('Hello');
+mySet.add(1);
+
+mySet.add(ob1);
+mySet.add(ob2);
+console.log(mySet.size);
+
+let newSet = new Set([1, 2, 3, 4, 4, 4]);
+console.log(mySet.size);
+
+let chainSet = new Set().add('Hello').add('World');
+console.log(chainSet.size);
+console.log(newSet.delete(1));
+console.log(newSet.size);
+
+//output - 4
+//output - 4
+//output - 2
+//output - true
+//output - 3
+```
+
+
 
 
 ### JavaScript Maps
