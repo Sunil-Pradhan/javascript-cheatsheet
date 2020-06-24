@@ -8857,6 +8857,69 @@ console.log(myMap.has('fname'));
 
 It returns `true` so if it did not exist it was going to return `false`.
 
+Now we can also have a `delete` method to remove a key value pair.
+
+```javascript
+let myMap = new Map();
+
+myMap.set('fname', 'Sunil');
+myMap.set('age', 18);
+
+console.log(myMap.get('fname'));
+console.log(myMap.get('age'));
+
+let ob1 = {};
+let ob2 = {};
+
+myMap.set(ob1, 10);
+myMap.set(ob2, 20);
+
+console.log(myMap.get(ob1));
+myMap.delete('fname');
+
+console.log(myMap.size);
+console.log(myMap.has('fname'));
+
+//output - Sunil
+//output - 18
+
+//output - 10
+//output - 3
+//output - false
+```
+So the number of elements or key value pairs was reduced by one and we don't have `fname` in the map anymore. 
+
+For this it has returned `false` and finally we have a `clear` method that removes all the key value pairs from a map. 
+
+```javascript
+let myMap = new Map();
+
+myMap.set('fname', 'Sunil');
+myMap.set('age', 18);
+
+console.log(myMap.get('fname'));
+console.log(myMap.get('age'));
+
+let ob1 = {};
+let ob2 = {};
+
+myMap.set(ob1, 10);
+myMap.set(ob2, 20);
+
+console.log(myMap.get(ob1));
+myMap.delete('fname');
+myMap.clear();
+
+console.log(myMap.size);
+console.log(myMap.has('fname'));
+
+//output - Sunil
+//output - 18
+
+//output - 10
+//output - 0
+//output - false
+```
 
 
 <br/>
