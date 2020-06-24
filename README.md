@@ -8921,6 +8921,84 @@ console.log(myMap.has('fname'));
 //output - false
 ```
 
+#### Iterating over Maps
+
+There is another way to add key value pairs to a map and that is by using arrays doing map initialization. 
+
+So we can have `let myMap` is equal to `new Map` but this time within parentheses we can specify an array. As a result this array is going to contain more arrays in turn.
+
+```javascript
+let myMap = new Map([
+  ['fname', 'Sunil'],
+  ['lname', 'Pradhan'],
+]);
+```
+Now that we have a new map. Let's see now how to iterate over this map.
+
+If we need to iterate only the keys of the map then we make use of map keys method in a `for..of` statement. 
+
+```javascript
+let myMap = new Map([
+  ['fname', 'Sunil'],
+  ['lname', 'Pradhan'],
+]);
+
+for (let key of myMap.keys()) {
+  console.log(key);
+}
+
+
+//output - fname
+//output - lname
+```
+
+These are just the keys and similarly if we need only the values then we make use of my map dot values. 
+
+```javascript
+let myMap = new Map([
+  ['fname', 'Sunil'],
+  ['lname', 'Pradhan'],
+]);
+
+for (let value of myMap.values()) {
+  console.log(value);
+}
+
+for (let key of myMap.keys()) {
+  console.log(key);
+}
+
+// output - Sunil
+// output - Pradhan
+
+// output - fname
+// output - lname
+```
+
+But if you need both the key and value then we make use of `myMap.entries()`. 
+
+So for we can have let and entry of my map dot entries and in console dot log let's make use of backticks. 
+
+```javascript
+let myMap = new Map([
+  ['fname', 'Sunil'],
+  ['lname', 'Pradhan'],
+]);
+
+for (let entry of myMap.entries()) {
+  console.log(`${entry[0]} -> ${entry[1]}`);
+}
+
+for (let value of myMap.values()) {
+  console.log(value);
+}
+
+
+//output - fname -> Sunil
+//output - lname -> Pradhan
+//output - Sunil
+//output - Pradhan
+```
 
 <br/>
 <div align="right">
