@@ -3435,9 +3435,6 @@ Now if you have a look array has three parameters, map has three parameters and 
 
 So the `key` and `value` are going to be the same. You can just log out either one of them and when we do a `mySet` triple equal to the `callingSet` we have true.
 
-So that was a quick video about using the for each...loop on arrays with es5 or maps and sets with es2015.
-
-So thank you guys for watching and don't forget to subscribe. I'll see you guys in the next video.
 
 <br/>
 <div align="right">
@@ -9070,6 +9067,40 @@ for (let [key, value] of myMap.entries()) {
 //output - fname -> Sunil
 //output - lname -> Pradhan
 ```
+
+#### WeakMaps
+
+In WeakMaps the keys can only be object and the object references are weak, meaning they don't interfere with the garbage collection. 
+
+Now to create a WeakMaps we say;
+
+```javascript
+let myMap = new WeakMap();
+```
+
+We can also have an object that we are going to be using as a key and then we can add this key value pair.
+
+```javascript
+let myMap = new WeakMap();
+let ob1 = {};
+myMap.set(ob1, 'Hello World');
+console.log(myMap.get(ob1));
+
+//ouput - Hello World
+```
+
+Now let us add `ob1` is equal to `null`,  at this point the WeakMap is empty and there is no way really to verify this. 
+
+```javascript
+let myMap = new WeakMap();
+let ob1 = {};
+myMap.set(ob1, 'Hello World');
+console.log(myMap.get(ob1));
+ob1 = null;
+
+//ouput - Hello World
+```
+
 
 <br/>
 <div align="right">
