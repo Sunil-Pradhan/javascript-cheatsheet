@@ -8749,7 +8749,28 @@ let myMap = new Map();
 
 myMap.set('fname', 'Sunil');
 ```
+We can also have numeric values too;
 
+```javascript
+let myMap = new Map();
+
+myMap.set('fname', 'Sunil');
+myMap.set('age', 18);
+```
+To retrieve a value we need to use the `get` method.
+
+```javascript
+let myMap = new Map();
+
+myMap.set('fname', 'Sunil');
+myMap.set('age', 18);
+
+console.log(myMap.get('fname'));
+console.log(myMap.get('age'));
+
+//output - Sunil
+//output - 18
+```
 
 
 
