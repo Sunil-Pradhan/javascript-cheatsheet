@@ -8732,7 +8732,16 @@ a strong set.
 
 A map is nothing more than a collection of key value pairs.
 
-Unlike sets where we check if a value exists or not with maps we actually want to retrieve the value. 
+Unlike sets where we check if a value exists or not, with maps we actually want to retrieve the value. 
+
+In maps both the key and the value can be of any type unlike objects where the type of the property is always a string. 
+
+To create a new map; 
+
+```javascript
+let myMap = new Map();
+```
+
 
 
 
