@@ -36,7 +36,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Document Object Model - DOM](#js-dom)
 - [Complementary Resources](#com-res)
 
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -3436,7 +3435,6 @@ So in `sets` the `key` and `value` are both the same but we have those three par
 Now if you have a look array has three parameters, map has three parameters and they wanted to continue the same and that is why they have three parameters even for a `set`.
 
 So the `key` and `value` are going to be the same. You can just log out either one of them and when we do a `mySet` triple equal to the `callingSet` we have true.
-
 
 <br/>
 <div align="right">
@@ -9072,7 +9070,7 @@ for (let [key, value] of myMap.entries()) {
 
 #### WeakMaps
 
-In WeakMaps the keys can only be object and the object references are weak, meaning they don't interfere with the garbage collection. 
+In WeakMaps the keys can only be object and the object references are weak, meaning they don't interfere with the garbage collection.
 
 Now to create a WeakMaps we say;
 
@@ -9091,7 +9089,7 @@ console.log(myMap.get(ob1));
 //ouput - Hello World
 ```
 
-Now let us add `ob1` is equal to `null`,  at this point the WeakMap is empty and there is no way really to verify this. 
+Now let us add `ob1` is equal to `null`, at this point the WeakMap is empty and there is no way really to verify this.
 
 ```javascript
 let myMap = new WeakMap();
@@ -9102,7 +9100,6 @@ ob1 = null;
 
 //ouput - Hello World
 ```
-
 
 <br/>
 <div align="right">
@@ -9118,22 +9115,43 @@ By Map method we can quickly iterate over an array and return a new array with t
 
 Definition: _The map() method creates a new array populated with the results of calling a provided function on every element in the calling array._
 
-Example: 
+Example:
 
 ```javascript
 const array1 = [1, 4, 9, 16];
 
 // pass a function to map
-const map1 = array1.map(x => x * 2);
+const map1 = array1.map((x) => x * 2);
 
 console.log(map1);
 // expected output: Array [2, 8, 18, 32]
 ```
 
+Here we have an array of numbers then we call the map method on the array.
+
+The map method accepts a function as an argument and of course what you see here is an arrow function. There is one parameter called "x" and in the function body we return x multiply by 2.
+
+The entire operation is then assigned to a variable called `map1` which is then log to the console.
+
+If we run this code you get the expected output i.e`[2, 8, 18, 32]`.
+
+So what the map method does is go over each element in the array and apply a transformation specified in the function body.
+
+In our example we have an array of four numbers so the transformation function is executed once for each of the four numbers.
+
+On first execution the parameter "x" will contain a value of 1 it is
+transformed to 1 multiplied by 2 which is 2, which you can see here in the output.
+
+Second execution we have "x" is equal to 4 which is transformed to 4
+into 2 which is 8 and similarly 9 into 2 which is 18 and 16 into 2 which is 32.
+
+So we have a list of numbers and we are able to return a list of numbers after applying some transformation using the map method.
+
+
+
 ###### Reference
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
-
 
 <br/>
 <div align="right">
