@@ -8742,6 +8742,14 @@ To create a new map;
 let myMap = new Map();
 ```
 
+To add an item we use the `set` method, so `myMap.set` and within parentheses we specify the key value pair. 
+
+```javascript
+let myMap = new Map();
+
+myMap.set('fname', 'Sunil');
+```
+
 
 
 
