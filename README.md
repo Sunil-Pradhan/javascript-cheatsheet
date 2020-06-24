@@ -8772,6 +8772,60 @@ console.log(myMap.get('age'));
 //output - 18
 ```
 
+We can also use objects as keys within a map;
+
+```javascript
+let myMap = new Map();
+
+myMap.set('fname', 'Sunil');
+myMap.set('age', 18);
+
+console.log(myMap.get('fname'));
+console.log(myMap.get('age'));
+
+let ob1 = {};
+let ob2 = {};
+
+myMap.set(ob1, 10);
+myMap.set(ob2, 20);
+
+console.log(myMap.get(ob1));
+console.log(myMap.get(ob2));
+
+//output - Sunil
+//output - 18
+
+//output - 10
+//output - 20
+```
+
+We can also use the `size` property to know how many key value pairs are present in a particular map. 
+
+```javascript
+let myMap = new Map();
+
+myMap.set('fname', 'Sunil');
+myMap.set('age', 18);
+
+console.log(myMap.get('fname'));
+console.log(myMap.get('age'));
+
+let ob1 = {};
+let ob2 = {};
+
+myMap.set(ob1, 10);
+myMap.set(ob2, 20);
+
+console.log(myMap.get(ob1));
+console.log(myMap.size);
+
+
+//output - Sunil
+//output - 18
+
+//output - 10
+//output - 4
+```
 
 
 <br/>
