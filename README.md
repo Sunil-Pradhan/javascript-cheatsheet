@@ -8989,16 +8989,30 @@ for (let entry of myMap.entries()) {
   console.log(`${entry[0]} -> ${entry[1]}`);
 }
 
-for (let value of myMap.values()) {
-  console.log(value);
-}
 
 
 //output - fname -> Sunil
 //output - lname -> Pradhan
-//output - Sunil
-//output - Pradhan
+
 ```
+
+We can also make use of destructuring for the same cause;
+
+```javascript
+let myMap = new Map([
+  ['fname', 'Sunil'],
+  ['lname', 'Pradhan'],
+]);
+
+for (let [key, value] of myMap.entries()) {
+  console.log(`${key} -> ${value}`);
+}
+
+//output - fname -> Sunil
+//output - lname -> Pradhan
+```
+
+
 
 <br/>
 <div align="right">
