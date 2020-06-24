@@ -9114,6 +9114,26 @@ ob1 = null;
 
 ## Map method
 
+By Map method we can quickly iterate over an array and return a new array with the desired changes applied.
+
+Definition: _The map() method creates a new array populated with the results of calling a provided function on every element in the calling array._
+
+Example: 
+
+```javascript
+const array1 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
+```
+
+###### Reference
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
 
 <br/>
 <div align="right">
