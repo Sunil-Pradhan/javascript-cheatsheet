@@ -35,11 +35,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Document Object Model - DOM](#js-dom)
 - [Complementary Resources](#com-res)
 
-
-
-
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -3339,7 +3334,11 @@ for (let i = 0; i <= stu.length - 1; i++) {
 
 #### forEach Loop
 
-The forEach loop calls a provided function once for each element in an array, in order.
+The `forEach` loop calls a provided function once for each element in an array, in order.
+
+In other words,
+
+ES6 provides the `forEach` loop to iterate over array elements. So let's say we have an array of numbers 2, 4, 6, 8 then we can call the `forEach` loop on this numbers array by passing a function.
 
 Syntax:
 
@@ -3349,8 +3348,8 @@ array.forEact(function (value, index, arr) {});
 
 Where,
 
-- value - It is the current value of array index and it's a variable so that you can name it anything like value, name or other.It is mandatory.
-- index - Array's index number.Here also you can give any other name index, i or any other.It is not mandatory.
+- value - It is the current value of array index and it's a variable so that you can name it anything like value, name or other. It is mandatory.
+- index - Array's index number. Here also you can give any other name index, i or any other. It is not mandatory.
 - arr - The array object the current element belongs to. It is not mandatory.
 
 Example:
@@ -3377,6 +3376,68 @@ stu.forEach(function (value, index) {
 //output - 56 2
 //output - 66 3
 ```
+
+`forEach` loop worked out pretty well with arrays but from ES6 you can use `forEach` with `maps` and `sets` too.
+
+So over here we have created a new map and this contains two key value pairs first name `Sunil` and last name `Pradhan`.
+
+```javascript
+let myMap = new Map([
+  ['fname', 'Sunil'],
+  ['lname', 'Pradhan'],
+]);
+
+myMap.forEach(mapFunction);
+function mapFunction(value, key, callingMap) {
+  console.log(key + ' ' + value);
+  console.log(myMap === callingMap);
+}
+
+//output - fname Sunil
+//output - true
+//output - lname Pradhan
+//output - true
+```
+
+Similar to arrays we call the `forEach` loop on the `map` and we have a function passed into the parentheses.
+
+Now this `map` function is going to again accept three parameters, the value so `Sunil` and `Pradhan`, the key `fname` and `lname`.
+
+And then the `callingMap`, so the map on which the `forEach` method is called.
+
+So that is how the `forEach` loop works with `maps` now, similarly we also have the `forEach` loop with `sets`:
+
+Just create a new set and it has three unique values 1 2 & 3.
+
+Again we are calling the `forEach` loop on mySet by passing a function called `set` function.
+
+And the `set` function is going to accept three parameters again: `value`, `key` and `callingSet`.
+
+```javascript
+let mySet = new Set([1, 2, 3]);
+mySet.forEach(setFunction);
+function setFunction(value, key, callingSet) {
+  console.log(key + ' ' + value);
+  console.log(mySet === callingSet);
+}
+
+//output - 1 1
+//output - true
+//output - 2 2
+//output - true
+//output - 3 3
+//output - true
+```
+
+So in `sets` the `key` and `value` are both the same but we have those three parameters here, because they wanted to maintain the standard across arrays, maps and sets.
+
+Now if you have a look array has three parameters, map has three parameters and they wanted to continue the same and that is why they have three parameters even for a `set`.
+
+So the `key` and `value` are going to be the same. You can just log out either one of them and when we do a `mySet` triple equal to the `callingSet` we have true.
+
+So that was a quick video about using the for each...loop on arrays with es5 or maps and sets with es2015.
+
+So thank you guys for watching and don't forget to subscribe. I'll see you guys in the next video.
 
 <br/>
 <div align="right">
@@ -5806,7 +5867,6 @@ In HTML event handlers, `this` refers to the HTML element that received the even
 
 In these examples, `this` is the person object (The person object is the "owner" of the function):
 
-
 ```javascript
 // Create an object
 var person = {
@@ -5821,7 +5881,7 @@ var person = {
 // Display data from the object
 console.log(person.myFunction());
 
-//output - 
+//output -
 
 /*{
   firstName: 'Sunil', 
@@ -5830,6 +5890,7 @@ console.log(person.myFunction());
   myFunction: [Function: myFunction]
 }*/
 ```
+
 Here `this` represents the person object that "owns" the myFunction method.
 
 ```javascript
@@ -5848,12 +5909,12 @@ console.log(person.fullName());
 
 //output - Sunil Pradhan
 ```
+
 Here `this` represents the person object, because the person object "owns" the fullName method. In other words: `this.firstName` means the firstName property of this (person) object.
 
 **Explicit Function Binding:**
 
 The `call()` and `apply()` methods are predefined JavaScript methods. They can both be used to call an object method with another object as argument.
-
 
 In the example below, when calling person1.fullName with person2 as argument, `this` will refer to person2, even if it is a method of person1:
 
@@ -5874,7 +5935,6 @@ console.log(person1.fullName.call(person2)); // Will return "Sunil Pradhan"
 ```
 
 Here `this` refers to person2, even if it is a method of person1.
-
 
 ###### References
 
@@ -8430,29 +8490,26 @@ This is one really useful feature of generator to be made use when we write our 
 </div>
 <br/>
 
-
 <a name="js-sets-maps"></a>
 
 ## Sets & Maps
 
 ### JavaScript Sets
 
-A set is nothing but a list of values but this list cannot contain any duplicates. Unlike arrays where we access the individual elements in sets we just check if a value is present or not we don't really access the value. 
+A set is nothing but a list of values but this list cannot contain any duplicates. Unlike arrays where we access the individual elements in sets we just check if a value is present or not we don't really access the value.
 
-:bulb: **TIP:** A set is a data structure which contains a list of values that are unique. 
+:bulb: **TIP:** A set is a data structure which contains a list of values that are unique.
 <br>
 
-So to create a new set we need to follow the following pattern: 
+So to create a new set we need to follow the following pattern:
 
 ```javascript
 let mySet = new Set();
 ```
 
-Now once we have a new set we can add elements to the set by calling the `add()` method on the set. 
+Now once we have a new set we can add elements to the set by calling the `add()` method on the set.
 
-
-Now to check the size of the set or how many elements are present in the set we use the `size` property. 
-
+Now to check the size of the set or how many elements are present in the set we use the `size` property.
 
 ```javascript
 let mySet = new Set();
@@ -8462,7 +8519,7 @@ console.log(mySet.size);
 //output - 1
 ```
 
-The values we store in a set are not restricted to string values so we can have also a numeric value. 
+The values we store in a set are not restricted to string values so we can have also a numeric value.
 
 ```javascript
 let mySet = new Set();
@@ -8487,7 +8544,7 @@ console.log(mySet.size);
 //output - 2
 ```
 
-Its size still remains 2. So a set can only contain unique values that means when you try to insert or add a duplicate value it is going to ignore that particular value. 
+Its size still remains 2. So a set can only contain unique values that means when you try to insert or add a duplicate value it is going to ignore that particular value.
 
 Now let's create two new objects.
 
@@ -8501,7 +8558,8 @@ mySet.add(1);
 
 console.log(mySet.size);
 ```
-But when we try to add `mySet.add(ob1)` and `mySet.add(ob2)` we get the result of 4. 
+
+But when we try to add `mySet.add(ob1)` and `mySet.add(ob2)` we get the result of 4.
 
 ```javascript
 let mySet = new Set();
@@ -8517,9 +8575,10 @@ console.log(mySet.size);
 
 //output - 4
 ```
+
 Here we are getting the result 4 because objects are not converted to strings the two objects will be unique.
- 
-We can also initialize values using an array during the creation of a set. 
+
+We can also initialize values using an array during the creation of a set.
 
 ```javascript
 let mySet = new Set();
@@ -8540,9 +8599,9 @@ console.log(mySet.size);
 //output - 4
 ```
 
-The first four values were unique and were saved into new set but the last two values were duplicate values and were ignored. So that is how the size of new set is 4. 
+The first four values were unique and were saved into new set but the last two values were duplicate values and were ignored. So that is how the size of new set is 4.
 
-You can also change the add method to add elements to a set so we can have: 
+You can also change the add method to add elements to a set so we can have:
 
 ```javascript
 let mySet = new Set();
@@ -8569,7 +8628,7 @@ console.log(chainSet.size);
 
 So when we log to the console `chainSet.size` should have two.
 
-To check for existence of a value in a set we use the `has` method.  So we are here a newSet, let's see if the value 1 is present or not.
+To check for existence of a value in a set we use the `has` method. So we are here a newSet, let's see if the value 1 is present or not.
 
 ```javascript
 let mySet = new Set();
@@ -8600,7 +8659,6 @@ As we use `has` method to check for an existence of a value similarly to delete 
 
 Initially it was 4 now we are deleting an element so the new size should be 3.
 
-
 ```javascript
 let mySet = new Set();
 let ob1 = {};
@@ -8628,19 +8686,19 @@ console.log(newSet.size);
 //output - 3
 ```
 
-In a nutshell, we create a `set` using `new` and then we can add using `add` method. We can check for an existence using the `has` method and delete using the `delete` method and the size of the set can be found out using the `size` property. 
+In a nutshell, we create a `set` using `new` and then we can add using `add` method. We can check for an existence using the `has` method and delete using the `delete` method and the size of the set can be found out using the `size` property.
 
 #### WeakSets
 
 On the last section you saw the set type but it can also be called as a strong set because of the way in which it stores object references.
 
-So let's try to understand with an example. Let's first create a new set. 
+So let's try to understand with an example. Let's first create a new set.
 
 ```javascript
 let mySet = new Set();
 ```
 
-We are also going to have an object so `let key` is equal to a pair of curly braces and let's try to `add` that. 
+We are also going to have an object so `let key` is equal to a pair of curly braces and let's try to `add` that.
 
 ```javascript
 let mySet = new Set();
@@ -8651,7 +8709,8 @@ console.log(mySet.size);
 
 //output - 1
 ```
-Now we are going to set key is equal to null and then log the size again.  
+
+Now we are going to set key is equal to null and then log the size again.
 
 ```javascript
 let mySet = new Set();
@@ -8666,9 +8725,10 @@ console.log(mySet.size);
 //output - 1
 //output - 1
 ```
-So what we can conclude from the above example is that even though the key was set to null. 
 
-A reference to the key object still existed in our set and we can just as easily retrieve it by saying `key` is equal to the spread operator on `mySet` and we can have of 0. 
+So what we can conclude from the above example is that even though the key was set to null.
+
+A reference to the key object still existed in our set and we can just as easily retrieve it by saying `key` is equal to the spread operator on `mySet` and we can have of 0.
 
 ```javascript
 let mySet = new Set();
@@ -8685,16 +8745,17 @@ key = [...mySet][0];
 //output - 1
 //output - 1
 ```
-This is going to give us that object back. And what sometimes to aid with garbage collection and avoid memory leaks we would prefer that the reference in a `set` to disappear when all other references disappear. 
 
-And for this purpose ES6 introduced, WeakSets. A weak set is very much like a strong set. 
+This is going to give us that object back. And what sometimes to aid with garbage collection and avoid memory leaks we would prefer that the reference in a `set` to disappear when all other references disappear.
 
-It has the `add`, `has`, `delete` method but two main differences are it can store only object references and not primitive values and the object references are weak. 
+And for this purpose ES6 introduced, WeakSets. A weak set is very much like a strong set.
+
+It has the `add`, `has`, `delete` method but two main differences are it can store only object references and not primitive values and the object references are weak.
 
 So if all other references are removed then a WeakSets allows
-for garbage collection. 
+for garbage collection.
 
-Now to create a WeakSets; 
+Now to create a WeakSets;
 
 ```javascript
 let set = new WeakSet();
@@ -8705,7 +8766,7 @@ console.log(set.has(key));
 //output - true
 ```
 
-So `key` is a value in this `set`, now when we have `key` is equal to `null` and when we run this code the reference to key in the WeakSets is no longer accessible. 
+So `key` is a value in this `set`, now when we have `key` is equal to `null` and when we run this code the reference to key in the WeakSets is no longer accessible.
 
 ```javascript
 let set = new WeakSet();
@@ -8717,38 +8778,37 @@ key = null;
 //output - true
 ```
 
-And the funny thing here is, it is not even possible to verify if the reference is removed because we need at least one reference to this object to pass in the `has` method. 
+And the funny thing here is, it is not even possible to verify if the reference is removed because we need at least one reference to this object to pass in the `has` method.
 
 So we just have to put our faith in the JavaScript engine.
 
-The only advantage of WeakSets over a strong set is memory is handled properly with WeakSets. 
+The only advantage of WeakSets over a strong set is memory is handled properly with WeakSets.
 
 So let's say if we have to only track the references the object and nothing more than that then a WeakSets should be preferred over
-a strong set. 
-
-
+a strong set.
 
 ### JavaScript Maps
 
 A map is nothing more than a collection of key value pairs.
 
-Unlike sets where we check if a value exists or not, with maps we actually want to retrieve the value. 
+Unlike sets where we check if a value exists or not, with maps we actually want to retrieve the value.
 
-In maps both the key and the value can be of any type unlike objects where the type of the property is always a string. 
+In maps both the key and the value can be of any type unlike objects where the type of the property is always a string.
 
-To create a new map; 
+To create a new map;
 
 ```javascript
 let myMap = new Map();
 ```
 
-To add an item we use the `set` method, so `myMap.set` and within parentheses we specify the key value pair. 
+To add an item we use the `set` method, so `myMap.set` and within parentheses we specify the key value pair.
 
 ```javascript
 let myMap = new Map();
 
 myMap.set('fname', 'Sunil');
 ```
+
 We can also have numeric values too;
 
 ```javascript
@@ -8757,6 +8817,7 @@ let myMap = new Map();
 myMap.set('fname', 'Sunil');
 myMap.set('age', 18);
 ```
+
 To retrieve a value we need to use the `get` method.
 
 ```javascript
@@ -8799,7 +8860,7 @@ console.log(myMap.get(ob2));
 //output - 20
 ```
 
-We can also use the `size` property to know how many key value pairs are present in a particular map. 
+We can also use the `size` property to know how many key value pairs are present in a particular map.
 
 ```javascript
 let myMap = new Map();
@@ -8819,13 +8880,13 @@ myMap.set(ob2, 20);
 console.log(myMap.get(ob1));
 console.log(myMap.size);
 
-
 //output - Sunil
 //output - 18
 
 //output - 10
 //output - 4
 ```
+
 We can also use the `has` method to check if a key exists in a map.
 
 ```javascript
@@ -8887,9 +8948,10 @@ console.log(myMap.has('fname'));
 //output - 3
 //output - false
 ```
-So the number of elements or key value pairs was reduced by one and we don't have `fname` in the map anymore. 
 
-For this it has returned `false` and finally we have a `clear` method that removes all the key value pairs from a map. 
+So the number of elements or key value pairs was reduced by one and we don't have `fname` in the map anymore.
+
+For this it has returned `false` and finally we have a `clear` method that removes all the key value pairs from a map.
 
 ```javascript
 let myMap = new Map();
@@ -8923,7 +8985,7 @@ console.log(myMap.has('fname'));
 
 #### Iterating over Maps
 
-There is another way to add key value pairs to a map and that is by using arrays doing map initialization. 
+There is another way to add key value pairs to a map and that is by using arrays doing map initialization.
 
 So we can have `let myMap` is equal to `new Map` but this time within parentheses we can specify an array. As a result this array is going to contain more arrays in turn.
 
@@ -8933,9 +8995,10 @@ let myMap = new Map([
   ['lname', 'Pradhan'],
 ]);
 ```
+
 Now that we have a new map. Let's see now how to iterate over this map.
 
-If we need to iterate only the keys of the map then we make use of map keys method in a `for..of` statement. 
+If we need to iterate only the keys of the map then we make use of map keys method in a `for..of` statement.
 
 ```javascript
 let myMap = new Map([
@@ -8947,12 +9010,11 @@ for (let key of myMap.keys()) {
   console.log(key);
 }
 
-
 //output - fname
 //output - lname
 ```
 
-These are just the keys and similarly if we need only the values then we make use of my map dot values. 
+These are just the keys and similarly if we need only the values then we make use of my map dot values.
 
 ```javascript
 let myMap = new Map([
@@ -8975,9 +9037,9 @@ for (let key of myMap.keys()) {
 // output - lname
 ```
 
-But if you need both the key and value then we make use of `myMap.entries()`. 
+But if you need both the key and value then we make use of `myMap.entries()`.
 
-So for we can have let and entry of my map dot entries and in console dot log let's make use of backticks. 
+So for we can have let and entry of my map dot entries and in console dot log let's make use of backticks.
 
 ```javascript
 let myMap = new Map([
@@ -8989,11 +9051,8 @@ for (let entry of myMap.entries()) {
   console.log(`${entry[0]} -> ${entry[1]}`);
 }
 
-
-
 //output - fname -> Sunil
 //output - lname -> Pradhan
-
 ```
 
 We can also make use of destructuring for the same cause;
@@ -9011,8 +9070,6 @@ for (let [key, value] of myMap.entries()) {
 //output - fname -> Sunil
 //output - lname -> Pradhan
 ```
-
-
 
 <br/>
 <div align="right">
