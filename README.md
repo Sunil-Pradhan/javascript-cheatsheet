@@ -8826,6 +8826,37 @@ console.log(myMap.size);
 //output - 10
 //output - 4
 ```
+We can also use the `has` method to check if a key exists in a map.
+
+```javascript
+let myMap = new Map();
+
+myMap.set('fname', 'Sunil');
+myMap.set('age', 18);
+
+console.log(myMap.get('fname'));
+console.log(myMap.get('age'));
+
+let ob1 = {};
+let ob2 = {};
+
+myMap.set(ob1, 10);
+myMap.set(ob2, 20);
+
+console.log(myMap.get(ob1));
+console.log(myMap.size);
+console.log(myMap.has('fname'));
+
+//output - Sunil
+//output - 18
+
+//output - 10
+//output - 4
+//output - true
+```
+
+It returns `true` so if it did not exist it was going to return `false`.
+
 
 
 <br/>
