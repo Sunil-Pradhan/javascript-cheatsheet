@@ -31,9 +31,11 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Symbols](#js-symbols)
 - [Generators](#js-generators)
 - [Sets & Maps](#js-sets-maps)
+- [Map method](#js-map-method)
 - [Object Oriented Programming - OOP](#js-oop)
 - [Document Object Model - DOM](#js-dom)
 - [Complementary Resources](#com-res)
+
 
 <a name="js-basics"></a>
 
@@ -9100,6 +9102,17 @@ ob1 = null;
 
 //ouput - Hello World
 ```
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+<a name="js-map-method"></a>
+
+## Map method
 
 
 <br/>
