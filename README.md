@@ -9281,16 +9281,16 @@ output - <p id="demo-id-one">Hello Sunil</p> (on console)
 
 #### getElementsByTagName(“Tag_Name”)
 
-The method getElementsByTagName(“Tag_Name”) returns a live Node List meaning that it updates itself with the DOM tree automatically, so modification of the DOM tree will be reflected in the returned collection. 
+The method getElementsByTagName(“Tag_Name”) returns a live Node List meaning that it updates itself with the DOM tree automatically, so modification of the DOM tree will be reflected in the returned collection.
 
 The returned Node List or Collection of Nodes can be accessed by index numbers starting with index 0.
 
-It returns a list. 
+It returns a list.
 
-* This method accepts a string indicating the type of elements that can be retrieved, a special value **“*”** returns all elements in the documents. 
-* You can use the **length** property of the Node List object to determine the number of elements with the specified tag name, then you can loop through all elements and extract the info you want. 
+- This method accepts a string indicating the type of elements that can be retrieved, a special value **“\*”** returns all elements in the documents.
+- You can use the **length** property of the Node List object to determine the number of elements with the specified tag name, then you can loop through all elements and extract the info you want.
 
-Example: 
+Example(return collection):
 
 ```html
 <!DOCTYPE html>
@@ -9321,6 +9321,75 @@ output - [object HTMLCollection] (on screen)
 output - HTMLCollection(2) [p, p] (on console)
 
 ```
+
+Example(return all):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Document</title>
+  </head>
+  <body>
+    <div>
+      <p>1st p inside div</p>
+      <p>2nd p inside div</p>
+    </div>
+
+    <script>
+      var result = document.getElementsByTagName('*');
+      document.write(result);
+      console.log(result);
+    </script>
+  </body>
+</html>
+```
+
+```
+output - [object HTMLCollection] (on screen)
+
+output - HTMLCollection(10) [html, head, meta, meta, title, body, div, p, p, script, viewport: meta] (on console)
+
+```
+
+It returns every element whatever present on the webpage.
+
+If you do not want to return entire document rather only want to know inside the body tag then try using:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Document</title>
+  </head>
+  <body>
+    <div>
+      <p>1st p inside div</p>
+      <p>2nd p inside div</p>
+    </div>
+
+    <script>
+      var result = document.body.getElementsByTagName('*');
+      document.write(result);
+      console.log(result);
+    </script>
+  </body>
+</html>
+```
+
+```
+output - [object HTMLCollection] (on screen)
+
+output - HTMLCollection(4) [div, p, p, script] (on console)
+
+```
+
+If you do not want a collection of list but want a single value then you need to access it via index number.
+
 
 <hr>
 
