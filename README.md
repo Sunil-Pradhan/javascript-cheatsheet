@@ -9290,6 +9290,37 @@ It returns a list.
 * This method accepts a string indicating the type of elements that be retrieved, a special value “*” returns all elements in the documents. 
 * You can use the length property of the NodeList object to determine the number of elements with the specified tag name, then you can loop through all elements and extract the info you want. 
 
+Example: 
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Document</title>
+  </head>
+  <body>
+    <div>
+      <p>1st p inside div</p>
+      <p>2nd p inside div</p>
+    </div>
+
+    <script>
+      var result = document.getElementsByTagName('p');
+      document.write(result);
+      console.log(result);
+    </script>
+  </body>
+</html>
+```
+
+```
+output - [object HTMLCollection] (on screen)
+
+output - HTMLCollection(2) [p, p] (on console)
+
+```
 
 <hr>
 
