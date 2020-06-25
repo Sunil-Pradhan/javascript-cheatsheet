@@ -9147,8 +9147,6 @@ into 2 which is 8 and similarly 9 into 2 which is 18 and 16 into 2 which is 32.
 
 So we have a list of numbers and we are able to return a list of numbers after applying some transformation using the map method.
 
-
-
 ###### Reference
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
@@ -9215,16 +9213,14 @@ All operations on the DOM start with the document object. From it can access any
 
 Browser understands your code in following format;
 
-
 ![js-dom-tree](/img/js-dom-tree.png)
 
+- Any element is called an **Element node** in JavaScript
+- If you see any text then it would be called a **Text node**
+- For attribute it will be called as **Attribute node**
+- For comment - **comment node**
 
-* Any element is called an **Element node** in JavaScript
-* If you see any text then it would be called a **Text node**
-* For attribute it will be called as **Attribute node** 
-* For comment - **comment node** 
-
-**DOM node types** 
+**DOM node types**
 
 Total 12 but 7 is only important
 
@@ -9234,29 +9230,26 @@ Total 12 but 7 is only important
 
 ![js-dom-node-type](/img/js-node-relationship.png)
 
-
-* Parent (eg: html)
-* Children (eg: head)
-* First child (eg: h1)
-* Previous sibling (br -> h1)
-* Next Sibling (h1 -> br)
-* Last child (ul)
-
+- Parent (eg: html)
+- Children (eg: head)
+- First child (eg: h1)
+- Previous sibling (br -> h1)
+- Next Sibling (h1 -> br)
+- Last child (ul)
 
 ### Element Access Methods
 
 ![js-element-access-methods](/img/js-element-access-methods.png)
 
-
 #### getElementByID(“ID_Name”)
 
-The method getElementByID(“ID_Name”) returns an element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they are a useful way to get access to a specific element quickly. 
+The method getElementByID(“ID_Name”) returns an element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they are a useful way to get access to a specific element quickly.
 
-In other words, if something presents uniquely in your document through ID then you can use this method to manipulate it. 
+In other words, if something presents uniquely in your document through ID then you can use this method to manipulate it.
 
 :bulb: **TIP:** In browser `document` is the main object.
 
-Example: 
+Example:
 
 ```html
 <!DOCTYPE html>
@@ -9279,11 +9272,12 @@ Example:
   </body>
 </html>
 ```
-```html
-output - [object HTMLParagraphElement] (on screen)
-output - <p id="demo-id-one">Hello Sunil</p>
-```
 
+```
+output - [object HTMLParagraphElement] (on screen) 
+
+output - <p id="demo-id-one">Hello Sunil</p> (on console)
+```
 
 <hr>
 
