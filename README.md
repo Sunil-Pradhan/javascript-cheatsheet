@@ -9252,11 +9252,37 @@ Total 12 but 7 is only important
 
 The method getElementByID(“ID_Name”) returns an element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they are a useful way to get access to a specific element quickly. 
 
-In other words, if something presents uniquely in your document via ID then you can use this method to manipulate it. 
+In other words, if something presents uniquely in your document through ID then you can use this method to manipulate it. 
 
 :bulb: **TIP:** In browser `document` is the main object.
 
+Example: 
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Document</title>
+  </head>
+  <body>
+    <p id="demo-id-one">Hello Sunil</p>
+    <p id="demo-id-two">Hello Sunil</p>
+
+    <script>
+      //getElementByID()
+      var result = document.getElementById('demo-id-one');
+      document.write(result);
+      console.log(result);
+    </script>
+  </body>
+</html>
+```
+```html
+output - [object HTMLParagraphElement] (on screen)
+output - <p id="demo-id-one">Hello Sunil</p>
+```
 
 
 <hr>
