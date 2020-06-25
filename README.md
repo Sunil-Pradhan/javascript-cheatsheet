@@ -9215,6 +9215,16 @@ All operations on the DOM start with the document object. From it can access any
 
 Browser understands your code in following format;
 
+
+![js-dom-tree](/img/js-dom-tree.png)
+
+
+*Any element is called an **Element node** in JavaScript
+*If you see any text then it would be called a **Text node**
+*For attribute it will be called as **Attribute node** 
+*For comment - **comment node** 
+
+
 <hr>
 
 <a name="com-res"></a>
