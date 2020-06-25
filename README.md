@@ -9219,11 +9219,14 @@ Browser understands your code in following format;
 ![js-dom-tree](/img/js-dom-tree.png)
 
 
-*Any element is called an **Element node** in JavaScript
-*If you see any text then it would be called a **Text node**
-*For attribute it will be called as **Attribute node** 
-*For comment - **comment node** 
+* Any element is called an **Element node** in JavaScript
+* If you see any text then it would be called a **Text node**
+* For attribute it will be called as **Attribute node** 
+* For comment - **comment node** 
 
+DOM node types (Total 12 but 7 is only important):
+
+![js-dom-node-type](/img/js-dom-node-type.png)
 
 <hr>
 
