@@ -9243,6 +9243,12 @@ Total 12 but 7 is only important
 * Last child (ul)
 
 
+### Element Access Methods
+
+![js-element-access-methods](/img/js-element-access-methods.png)
+
+
+#### getElementByID(“ID_Name”)
 
 <hr>
 
