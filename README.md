@@ -9261,7 +9261,7 @@ Example:
   </head>
   <body>
     <p id="demo-id-one">Hello Sunil</p>
-    <p id="demo-id-two">Hello Sunil</p>
+    <p id="demo-id-two">Bye Sunil</p>
 
     <script>
       //getElementByID()
@@ -9274,10 +9274,22 @@ Example:
 ```
 
 ```
-output - [object HTMLParagraphElement] (on screen) 
+output - [object HTMLParagraphElement] (on screen)
 
 output - <p id="demo-id-one">Hello Sunil</p> (on console)
 ```
+
+#### getElementsByTagName(“Tag_Name”)
+
+The method getElementsByTagName(“Tag_Name”) returns a live node list meaning that it updates itself with the DOM tree automatically, so modification of the DOM tree will be reflected in the returned collection. 
+
+The returned Node List or Collection of Nodes can be accessed by index numbers starting with index 0.
+
+It returns a list. 
+
+* This method accepts a string indicating the type of elements that be retrieved, a special value “*” returns all elements in the documents. 
+* You can use the length property of the NodeList object to determine the number of elements with the specified tag name, then you can loop through all elements and extract the info you want. 
+
 
 <hr>
 
