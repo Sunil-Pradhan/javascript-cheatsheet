@@ -9250,6 +9250,15 @@ Total 12 but 7 is only important
 
 #### getElementByID(“ID_Name”)
 
+The method getElementByID(“ID_Name”) returns an element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they are a useful way to get access to a specific element quickly. 
+
+In other words, if something presents uniquely in your document via ID then you can use this method to manipulate it. 
+
+:bulb: **TIP:** In browser `document` is the main object.
+
+
+
+
 <hr>
 
 <a name="com-res"></a>
