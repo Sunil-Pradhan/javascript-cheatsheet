@@ -9230,6 +9230,20 @@ Total 12 but 7 is only important
 
 ![js-dom-node-type](/img/js-dom-node-type.png)
 
+**Node relationship:**
+
+![js-dom-node-type](/img/js-node-relationship.png)
+
+
+* Parent (eg: html)
+* Children (eg: head)
+* First child (eg: h1)
+* Previous sibling (br -> h1)
+* Next Sibling (h1 -> br)
+* Last child (ul)
+
+
+
 <hr>
 
 <a name="com-res"></a>
