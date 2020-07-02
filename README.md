@@ -601,6 +601,19 @@ console.log(typeof a);
 
 ## JavaScript Promises
 
+A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). 
+
+A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+
+**How Promises work**
+
+
+
+###### References
+
+- https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
+- https://www.youtube.com/watch?v=2IPw-mWe10U
+
 
 
 
