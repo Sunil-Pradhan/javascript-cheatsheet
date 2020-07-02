@@ -32,9 +32,13 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Generators](#js-generators)
 - [Sets & Maps](#js-sets-maps)
 - [Map method](#js-map-method)
+- [JavaScript Promises](#js-promises)
 - [Object Oriented Programming - OOP](#js-oop)
 - [Document Object Model - DOM](#js-dom)
 - [Complementary Resources](#com-res)
+
+
+
 
 <a name="js-basics"></a>
 
@@ -584,6 +588,21 @@ console.log(typeof a);
 
 //output - number
 ```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+
+
+<a name="js-promises"></a>
+
+## JavaScript Promises
+
+
+
 
 <br/>
 <div align="right">
