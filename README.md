@@ -607,6 +607,45 @@ A promise may be in one of 3 possible states: fulfilled, rejected, or pending. P
 
 **How Promises work**
 
+It will be in one of 3 possible states:
+
+* Fulfilled
+* Rejected
+* Pending
+
+A promise is **settled** if it’s not pending (it has been resolved or rejected). Sometimes people use resolved and settled to mean the same thing: not pending.
+
+Once settled, a promise can not be resettled. The immutability of a settled promise is an important feature.
+
+Example: 
+
+```javascript
+function func1() {
+  return new Promise(function (resolve, reject) {
+    setTimeout(() => {
+      const error = true;
+      if (!error) {
+        console.log('Function: Your promise has been resolved');
+        resolve();
+      } else {
+        console.log('Function: Your promise has not been resolved');
+        reject('Sorry not fulfilled');
+      }
+    }, 2000);
+  });
+}
+func1()
+  .then(function () {
+    console.log('Sunil!! - Thanks for resolving');
+  })
+  .catch(function (error) {
+    console.log('Sunil!! - Very bad bro. Reason: ' + error);
+  });
+```
+
+JavaScript Promises are better substitute of callback funtion. 
+
+
 
 
 ###### References
