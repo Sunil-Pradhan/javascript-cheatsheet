@@ -33,6 +33,7 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Sets & Maps](#js-sets-maps)
 - [Map method](#js-map-method)
 - [JavaScript Promises](#js-promises)
+- [JavaScript Async/Await](#js-async-await)
 - [Object Oriented Programming - OOP](#js-oop)
 - [Document Object Model - DOM](#js-dom)
 - [Complementary Resources](#com-res)
@@ -596,71 +597,6 @@ console.log(typeof a);
 <br/>
 
 
-
-<a name="js-promises"></a>
-
-## JavaScript Promises
-
-A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). 
-
-A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
-
-**How Promises work**
-
-It will be in one of 3 possible states:
-
-* Fulfilled
-* Rejected
-* Pending
-
-A promise is **settled** if it’s not pending (it has been resolved or rejected). Sometimes people use resolved and settled to mean the same thing: not pending.
-
-Once settled, a promise can not be resettled. The immutability of a settled promise is an important feature.
-
-Example: 
-
-```javascript
-function func1() {
-  return new Promise(function (resolve, reject) {
-    setTimeout(() => {
-      const error = true;
-      if (!error) {
-        console.log('Function: Your promise has been resolved');
-        resolve();
-      } else {
-        console.log('Function: Your promise has not been resolved');
-        reject('Sorry not fulfilled');
-      }
-    }, 2000);
-  });
-}
-func1()
-  .then(function () {
-    console.log('Sunil!! - Thanks for resolving');
-  })
-  .catch(function (error) {
-    console.log('Sunil!! - Very bad bro. Reason: ' + error);
-  });
-```
-
-JavaScript Promises are better substitute of callback funtion. 
-
-
-
-
-###### References
-
-- https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
-- https://www.youtube.com/watch?v=2IPw-mWe10U
-
-
-
-
-<br/>
-<div align="right">
-    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
-</div>
-<br/>
 
 <a name="js-branch-loops"></a>
 
@@ -9221,6 +9157,86 @@ So we have a list of numbers and we are able to return a list of numbers after a
 ###### Reference
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+<a name="js-promises"></a>
+
+## JavaScript Promises
+
+A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). 
+
+A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+
+**How Promises work**
+
+It will be in one of 3 possible states:
+
+* Fulfilled
+* Rejected
+* Pending
+
+A promise is **settled** if it’s not pending (it has been resolved or rejected). Sometimes people use resolved and settled to mean the same thing: not pending.
+
+Once settled, a promise can not be resettled. The immutability of a settled promise is an important feature.
+
+Example: 
+
+```javascript
+function func1() {
+  return new Promise(function (resolve, reject) {
+    setTimeout(() => {
+      const error = true;
+      if (!error) {
+        console.log('Function: Your promise has been resolved');
+        resolve();
+      } else {
+        console.log('Function: Your promise has not been resolved');
+        reject('Sorry not fulfilled');
+      }
+    }, 2000);
+  });
+}
+func1()
+  .then(function () {
+    console.log('Sunil!! - Thanks for resolving');
+  })
+  .catch(function (error) {
+    console.log('Sunil!! - Very bad bro. Reason: ' + error);
+  });
+```
+
+JavaScript Promises are better substitute of callback funtion. 
+
+
+
+
+###### References
+
+- https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
+- https://www.youtube.com/watch?v=2IPw-mWe10U
+
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
+<a name="async-await"></a>
+
+## JavaScript Async/Await
+
+
+
+###### References
+
+- https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
+- https://www.youtube.com/watch?v=2IPw-mWe10U
 
 <br/>
 <div align="right">
