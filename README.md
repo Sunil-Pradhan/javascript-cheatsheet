@@ -9231,12 +9231,57 @@ JavaScript Promises are better substitute of callback funtion.
 
 ## JavaScript Async/Await
 
-There’s a special syntax to work with promises in a more comfortable fashion, called “async/await”.
+Async and Await are extensions of promises.
+
+#### Async
+
+Async functions enable us to write promise based code as if it were synchronous, but without blocking the execution thread. It operates asynchronously via the event-loop. 
+
+Async functions will always return a value. Using async simply implies that a promise will be returned, and if a promise is not returned, JavaScript automatically wraps it in a resolved promise with its value.
+
+Example: 
+
+```javascript
+async function firstAsync() {
+  return 27;
+}
+
+firstAsync().then(alert); // 27
+```
+Running the above code gives the alert output as 27, it means that a promise was returned, otherwise the .then() method simply would not be possible.
+
+
+#### Await
+
+The await operator is used to wait for a Promise. It can be used inside an Async block only. The keyword Await makes JavaScript wait until the promise returns a result. 
+
+It has to be noted that it only makes the async function block wait and not the whole program execution.
+
+The code block below shows the use of Async Await together.
+
+Example: 
+
+```javascript
+async function firstAsync() {
+  let promise = new Promise((res, rej) => {
+    setTimeout(() => res("Now it's done!"), 1000);
+  });
+
+  // wait until the promise returns us a value
+  let result = await promise;
+
+  // "Now it's done!"
+  alert(result);
+}
+firstAsync();
+```
+
 
 ###### References
 
-- https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
-- https://www.youtube.com/watch?v=2IPw-mWe10U
+- https://javascript.info/async-await
+- https://medium.com/javascript-in-plain-english/async-await-javascript-5038668ec6eb
+- https://www.youtube.com/watch?v=AyJq1RRaY_k
 
 <br/>
 <div align="right">
