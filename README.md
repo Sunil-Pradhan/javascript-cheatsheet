@@ -9231,7 +9231,7 @@ JavaScript Promises are better substitute of callback funtion.
 
 ## JavaScript Async/Await
 
-
+There’s a special syntax to work with promises in a more comfortable fashion, called “async/await”.
 
 ###### References
 
