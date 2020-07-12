@@ -207,11 +207,8 @@ console.log(typeof x);
 //output - undefined
 ```
 
-Without initialization we are trying to access it so that it throws us `undefined`.
+Without initialization we try to access it here, so that it throws us `undefined`.
 
-**Condtion 1:** `undefined` when you declare a variable but not initialized a value and trying to access it then it will show you as `undefined`.
-
-**Condtion 2:** Trying to access a variable which doesn’t even exist then it will show you an `undefined`.
 
 ### Boolean:
 
