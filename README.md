@@ -576,9 +576,9 @@ console.log(a);
 </div>
 <br/>
 
-### Typeof operator:
+### `typeof` operator:
 
-The typeof operator is used to get the data type of its operand. The operand can be either a literal or a data structure such as a variable, a function, or an object.
+The `typeof` operator is used to get the data type of its operand. The operand can be either a literal or a data structure such as a variable, a function, or an object.
 
 ```javascript
 var a = 10;
