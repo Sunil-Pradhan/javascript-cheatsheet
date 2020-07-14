@@ -9364,11 +9364,18 @@ Total 12 but 7 is only important
 
 #### getElementByID(“ID_Name”)
 
-The method getElementByID(“ID_Name”) returns an element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they are a useful way to get access to a specific element quickly.
+The `getElementById()` method returns the element that has the ID attribute with the specified value.
 
 In other words, if something presents uniquely in your document through ID then you can use this method to manipulate it.
 
 :bulb: **TIP:** In browser `document` is the main object.
+
+###### Reference
+
+- https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+- https://www.javatpoint.com/document-getElementById()-method
+- https://www.tutorialspoint.com/how-getelementbyid-works-in-javascript
+- https://www.geeksforgeeks.org/html-dom-getelementbyid-method/
 
 Example:
 
