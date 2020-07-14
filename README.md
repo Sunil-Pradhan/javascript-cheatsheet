@@ -2420,9 +2420,11 @@ Here `var` is only limited to this function only. You can't access this variable
 
 #### Callback function
 
-A callback function is a function which can be any function (Anonymous function, Arrow function) passed into another function as an argument, which is then invoked inside the outer function to complete some kind of action.
+In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be returned by other functions. Functions that do this are called higher-order functions. Any function that is passed as an argument is called a callback function.
 
-In other words, when you pass a function into another function as an argument then its called a **callback function**.
+In other words, A callback is a function that is to be executed after another function has finished executing — hence the name ‘call back’.
+
+Simply put: Callbacks are a way to make sure certain code doesn’t execute until other code has already finished execution.
 
 Call back function is of two types:
 
