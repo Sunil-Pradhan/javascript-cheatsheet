@@ -2428,8 +2428,39 @@ Simply put: Callbacks are a way to make sure certain code doesn’t execute unti
 
 Call back function is of two types:
 
-- Synchronous
-- Asynchronous
+- Synchronous : It waits for each operation to complete, after that it executes the next operation.
+- Asynchronous : It never waits for each operation to complete, rather it executes all operations in the first go only.
+
+**Example(Synchronous):** 
+
+
+```javascript
+function show() {
+  console.log('I am show function');
+}
+function geeky(callback) {
+  callback();
+}
+geeky(show);
+console.log('End');
+
+//output - I am show function
+//output - End
+```
+
+**Example(Asynchronous):**
+
+
+```javascript
+setTimeout(function show() {
+  console.log('I am show function');
+}, 5000);
+
+console.log('End');
+
+//output - End
+//output - I am show function
+```
 
 **Example(without parameter):**
 
@@ -2474,38 +2505,9 @@ geeky((a) => console.log('I am show function ' + a));
 //output - I am show function 101
 ```
 
-**Example(Synchronous):**
+###### References
 
-It waits for each operation to complete, after that it executes the next operation.
-
-```javascript
-function show() {
-  console.log('I am show function');
-}
-function geeky(callback) {
-  callback();
-}
-geeky(show);
-console.log('End');
-
-//output - I am show function
-//output - End
-```
-
-**Example(Asynchronous):**
-
-It never waits for each operation to complete, rather it executes all operations in the first GO only.
-
-```javascript
-setTimeout(function show() {
-  console.log('I am show function');
-}, 5000);
-
-console.log('End');
-
-//output - End
-//output - I am show function
-```
+- https://www.javascripttutorial.net/javascript-callback/
 
 <br/>
 <div align="right">
