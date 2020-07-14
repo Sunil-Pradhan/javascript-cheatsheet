@@ -2159,18 +2159,18 @@ a(10, 20);
 Example:
 
 ```javascript
-function disp(a) {
-  return function (b) {
-    return a + b;
-  };
+function test(){
+    return function(){
+        alert("hi");
+    }
 }
+test()();
 
-var anoFun = disp(10);
-
-console.log(anoFun(20));
-
-//output - 30
+//output - hi
 ```
+
+###### Reference
+- https://stackoverflow.com/questions/17382041/how-to-return-anonymous-function-in-javascript/17382060
 
 **Pass in a function or Passing anonymous function as argument:**
 
