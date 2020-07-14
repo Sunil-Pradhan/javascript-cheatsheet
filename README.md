@@ -2368,9 +2368,7 @@ var myfunN = (a,b) => {return a+b};   //work
 #### Immediately invoked functions expression in JavaScript(IIFE)
 
 - IIFE (Immediately invoked function expression) is a JavaScript function that runs as soon as it is defined.
-- It is a design pattern which is also known as **Self-Executing Anonymous Function** and contains two major parts.
-- The first is the anonymous function with lexical scope enclosed within the **Grouping Operator()**. This prevents accessing variables within the IIFE idiom as well as polluting the global scope.
-- The second part is creating the **immediately executing function expression ()**, through which the JavaScript engine will directly interpret the function.
+- It is a design pattern which is also known as **Self-Executing Anonymous Function**.
 
 :bulb: **TIP:** IIFE function is like an anonymous function only but it is self executing.
 
