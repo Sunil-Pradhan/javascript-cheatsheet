@@ -9339,7 +9339,7 @@ Browser understands your code in following format;
 - Any element is called an **Element node** in JavaScript
 - If you see any text then it would be called a **Text node**
 - For attribute it will be called as **Attribute node**
-- For comment - **comment node**
+- For comment - **Comment node**
 
 **DOM node types**
 
