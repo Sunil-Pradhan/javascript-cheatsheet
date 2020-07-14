@@ -1538,7 +1538,7 @@ num(1, 2, 3);
 
 When the function called and if it doesn't hold any value inside of it then it will use its default value from parameters to display its output.
 
-Default parameter values always come on last, otherwise it returns undefined. Once default value start then rest of parameters should be default value only.
+Default parameter values always come on last, otherwise it returns `undefined`. Once default value start then rest of parameters should be default value only.
 
 Syntax:
 
