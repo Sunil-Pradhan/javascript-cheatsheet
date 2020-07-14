@@ -9380,13 +9380,6 @@ In other words, if something presents uniquely in your document through ID then 
 Example:
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo Document</title>
-  </head>
   <body>
     <p id="demo-id-one">Hello Sunil</p>
     <p id="demo-id-two">Bye Sunil</p>
@@ -9398,7 +9391,6 @@ Example:
       console.log(result);
     </script>
   </body>
-</html>
 ```
 
 ```
