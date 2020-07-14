@@ -2431,8 +2431,7 @@ Call back function is of two types:
 - Synchronous : It waits for each operation to complete, after that it executes the next operation.
 - Asynchronous : It never waits for each operation to complete, rather it executes all operations in the first go only.
 
-**Example(Synchronous):** 
-
+**Example(Synchronous):**
 
 ```javascript
 function show() {
@@ -2449,7 +2448,6 @@ console.log('End');
 ```
 
 **Example(Asynchronous):**
-
 
 ```javascript
 setTimeout(function show() {
@@ -9380,17 +9378,17 @@ In other words, if something presents uniquely in your document through ID then 
 Example:
 
 ```html
-  <body>
-    <p id="demo-id-one">Hello Sunil</p>
-    <p id="demo-id-two">Bye Sunil</p>
+<body>
+  <p id="demo-id-one">Hello Sunil</p>
+  <p id="demo-id-two">Bye Sunil</p>
 
-    <script>
-      //getElementByID()
-      var result = document.getElementById('demo-id-one');
-      document.write(result);
-      console.log(result);
-    </script>
-  </body>
+  <script>
+    //getElementByID()
+    var result = document.getElementById('demo-id-one');
+    document.write(result);
+    console.log(result);
+  </script>
+</body>
 ```
 
 ```
