@@ -38,9 +38,6 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [Document Object Model - DOM](#js-dom)
 - [Complementary Resources](#com-res)
 
-
-
-
 <a name="js-basics"></a>
 
 ## JavaScript Basics
@@ -208,7 +205,6 @@ console.log(typeof x);
 ```
 
 Without initialization we try to access it here, so that it throws us `undefined`.
-
 
 ### Boolean:
 
@@ -592,8 +588,6 @@ console.log(typeof a);
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
-
 
 <a name="js-branch-loops"></a>
 
@@ -2159,10 +2153,10 @@ a(10, 20);
 Example:
 
 ```javascript
-function test(){
-    return function(){
-        alert("hi");
-    }
+function test() {
+  return function () {
+    alert('hi');
+  };
 }
 test()();
 
@@ -2170,9 +2164,10 @@ test()();
 ```
 
 ###### Reference
+
 - https://stackoverflow.com/questions/17382041/how-to-return-anonymous-function-in-javascript/17382060
 
-**Pass in a function or Passing anonymous function as argument:**
+**Passing anonymous function as argument:**
 
 ```javascript
 function disp(myfun) {
@@ -9165,7 +9160,7 @@ So we have a list of numbers and we are able to return a list of numbers after a
 
 ## JavaScript Promises
 
-A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). 
+A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred).
 
 A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
 
@@ -9173,15 +9168,15 @@ A promise may be in one of 3 possible states: fulfilled, rejected, or pending. P
 
 It will be in one of 3 possible states:
 
-* Fulfilled
-* Rejected
-* Pending
+- Fulfilled
+- Rejected
+- Pending
 
 A promise is **settled** if it’s not pending (it has been resolved or rejected). Sometimes people use resolved and settled to mean the same thing: not pending.
 
 Once settled, a promise can not be resettled. The immutability of a settled promise is an important feature.
 
-Example: 
+Example:
 
 ```javascript
 function func1() {
@@ -9207,16 +9202,12 @@ func1()
   });
 ```
 
-JavaScript Promises are better substitute of callback funtion. 
-
-
-
+JavaScript Promises are better substitute of callback funtion.
 
 ###### References
 
 - https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
 - https://www.youtube.com/watch?v=2IPw-mWe10U
-
 
 <br/>
 <div align="right">
@@ -9232,11 +9223,11 @@ Async and Await are extensions of promises.
 
 #### Async
 
-Async functions enable us to write promise based code as if it were synchronous, but without blocking the execution thread. It operates asynchronously via the event-loop. 
+Async functions enable us to write promise based code as if it were synchronous, but without blocking the execution thread. It operates asynchronously via the event-loop.
 
 Async functions will always return a value. Using async simply implies that a promise will be returned, and if a promise is not returned, JavaScript automatically wraps it in a resolved promise with its value.
 
-Example: 
+Example:
 
 ```javascript
 async function firstAsync() {
@@ -9245,18 +9236,18 @@ async function firstAsync() {
 
 firstAsync().then(alert); // 27
 ```
-Running the above code gives the alert output as 27, it means that a promise was returned, otherwise the .then() method simply would not be possible.
 
+Running the above code gives the alert output as 27, it means that a promise was returned, otherwise the .then() method simply would not be possible.
 
 #### Await
 
-The await operator is used to wait for a Promise. It can be used inside an Async block only. The keyword Await makes JavaScript wait until the promise returns a result. 
+The await operator is used to wait for a Promise. It can be used inside an Async block only. The keyword Await makes JavaScript wait until the promise returns a result.
 
 It has to be noted that it only makes the async function block wait and not the whole program execution.
 
 The code block below shows the use of Async Await together.
 
-Example: 
+Example:
 
 ```javascript
 async function firstAsync() {
@@ -9272,7 +9263,6 @@ async function firstAsync() {
 }
 firstAsync();
 ```
-
 
 ###### References
 
@@ -9518,7 +9508,6 @@ output - HTMLCollection(4) [div, p, p, script] (on console)
 ```
 
 If you do not want a collection of list but want a single value then you need to access it via index number.
-
 
 <hr>
 
