@@ -3018,7 +3018,7 @@ samsung.data();
 //output - Model no:Galaxy Price: 5000
 ```
 
-Here `Mobile` is a class in JavaScript and then we create a object by using the `new` keyword.
+Here `Mobile` is a class in JavaScript and then we create an object by using the `new` keyword.
 
 Here `this` keyword points to the current object instance. That means;this.model is equal to samsung.model, here samsung is the current object instance.
 
