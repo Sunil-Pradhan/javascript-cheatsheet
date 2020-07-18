@@ -9308,6 +9308,73 @@ output - HTMLCollection(4) [div, p, p, script] (on console)
 
 If you do not want a collection of list but want a single value then you need to access it via index number.
 
+**More Specific:**
+
+```html
+<body>
+    <h1>We are learning DOM</h1>
+    <h1>Subscribe</h1>
+    <h2>Now</h2>
+    <p id="geek">
+      Hello
+      <span>Sunil</span>
+      <em>World</em>
+      <span>YouTube</span>
+    </p>
+    <p id="find"><span>Bye</span>Sunil</p>
+    <div>
+      <p>1st p inside div</p>
+      <p>2nd p inside div</p>
+    </div>
+
+    <script>
+      //more specific :: Need only geek span
+      var result = document.getElementById('geek').getElementsByTagName('span');
+      console.log(result);
+    </script>
+  </body>
+```
+
+```
+output - HTMLCollection(2) [span, span] (on console)
+```
+
+**Using length property:** 
+
+```html
+<body>
+    <h1>We are learning DOM</h1>
+    <h1>Subscribe</h1>
+    <h2>Now</h2>
+    <p id="geek">
+      Hello
+      <span>Sunil</span>
+      <em>World</em>
+      <span>YouTube</span>
+    </p>
+    <p id="find"><span>Bye</span>Sunil</p>
+    <div>
+      <p>1st p inside div</p>
+      <p>2nd p inside div</p>
+    </div>
+
+    <script>
+      //length
+      var len = document.getElementsByTagName('p').length;
+      console.log(len);
+    </script>
+  </body>
+```
+
+```
+output - 4 (on console)
+```
+
+#### getElementsByTagName(“Tag_Name”)
+
+`getElementsByTagName(“Tag_Name”)` method returns all the element of specified tag name.
+
+
 <hr>
 
 <a name="com-res"></a>
