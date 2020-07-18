@@ -9232,13 +9232,6 @@ It returns a list.
 Example(return collection):
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo Document</title>
-  </head>
   <body>
     <div>
       <p>1st p inside div</p>
@@ -9251,7 +9244,6 @@ Example(return collection):
       console.log(result);
     </script>
   </body>
-</html>
 ```
 
 ```
@@ -9264,13 +9256,6 @@ output - HTMLCollection(2) [p, p] (on console)
 Example(return all):
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo Document</title>
-  </head>
   <body>
     <div>
       <p>1st p inside div</p>
@@ -9283,7 +9268,6 @@ Example(return all):
       console.log(result);
     </script>
   </body>
-</html>
 ```
 
 ```
@@ -9298,13 +9282,6 @@ It returns every element whatever present on the webpage.
 If you do not want to return entire document rather only want to know inside the body tag then try using:
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo Document</title>
-  </head>
   <body>
     <div>
       <p>1st p inside div</p>
@@ -9317,7 +9294,6 @@ If you do not want to return entire document rather only want to know inside the
       console.log(result);
     </script>
   </body>
-</html>
 ```
 
 ```
