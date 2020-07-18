@@ -2987,7 +2987,6 @@ By using `for..in` loop, it shows both object instance members and prototype mem
 </div>
 <br/>
 
-
 <a name="js-arrays"></a>
 
 ## Array
@@ -9220,30 +9219,34 @@ output - <p id="demo-id-one">Hello Sunil</p> (on console)
 
 #### getElementsByTagName(“Tag_Name”)
 
-The method getElementsByTagName(“Tag_Name”) returns a live Node List meaning that it updates itself with the DOM tree automatically, so modification of the DOM tree will be reflected in the returned collection.
+`getElementsByTagName(“Tag_Name”)` method returns all the element of specified tag name.
 
-The returned Node List or Collection of Nodes can be accessed by index numbers starting with index 0.
-
-It returns a list.
 
 - This method accepts a string indicating the type of elements that can be retrieved, a special value **“\*”** returns all elements in the documents.
 - You can use the **length** property of the Node List object to determine the number of elements with the specified tag name, then you can loop through all elements and extract the info you want.
 
+
+###### Reference
+
+- https://www.javatpoint.com/document-getElementsByTagName()-method
+- https://www.geeksforgeeks.org/html-dom-getelementsbytagname-method/
+- https://www.w3schools.com/jsref/met_document_getelementsbytagname.asp
+
 Example(return collection):
 
 ```html
-  <body>
-    <div>
-      <p>1st p inside div</p>
-      <p>2nd p inside div</p>
-    </div>
+<body>
+  <div>
+    <p>1st p inside div</p>
+    <p>2nd p inside div</p>
+  </div>
 
-    <script>
-      var result = document.getElementsByTagName('p');
-      document.write(result);
-      console.log(result);
-    </script>
-  </body>
+  <script>
+    var result = document.getElementsByTagName('p');
+    document.write(result);
+    console.log(result);
+  </script>
+</body>
 ```
 
 ```
@@ -9256,18 +9259,18 @@ output - HTMLCollection(2) [p, p] (on console)
 Example(return all):
 
 ```html
-  <body>
-    <div>
-      <p>1st p inside div</p>
-      <p>2nd p inside div</p>
-    </div>
+<body>
+  <div>
+    <p>1st p inside div</p>
+    <p>2nd p inside div</p>
+  </div>
 
-    <script>
-      var result = document.getElementsByTagName('*');
-      document.write(result);
-      console.log(result);
-    </script>
-  </body>
+  <script>
+    var result = document.getElementsByTagName('*');
+    document.write(result);
+    console.log(result);
+  </script>
+</body>
 ```
 
 ```
@@ -9282,18 +9285,18 @@ It returns every element whatever present on the webpage.
 If you do not want to return entire document rather only want to know inside the body tag then try using:
 
 ```html
-  <body>
-    <div>
-      <p>1st p inside div</p>
-      <p>2nd p inside div</p>
-    </div>
+<body>
+  <div>
+    <p>1st p inside div</p>
+    <p>2nd p inside div</p>
+  </div>
 
-    <script>
-      var result = document.body.getElementsByTagName('*');
-      document.write(result);
-      console.log(result);
-    </script>
-  </body>
+  <script>
+    var result = document.body.getElementsByTagName('*');
+    document.write(result);
+    console.log(result);
+  </script>
+</body>
 ```
 
 ```
