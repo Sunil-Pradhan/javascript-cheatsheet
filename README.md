@@ -9221,10 +9221,8 @@ output - <p id="demo-id-one">Hello Sunil</p> (on console)
 
 `getElementsByTagName(“Tag_Name”)` method returns all the element of specified tag name.
 
-
 - This method accepts a string indicating the type of elements that can be retrieved, a special value **“\*”** returns all elements in the documents.
 - You can use the **length** property of the Node List object to determine the number of elements with the specified tag name, then you can loop through all elements and extract the info you want.
-
 
 ###### Reference
 
@@ -9312,164 +9310,219 @@ If you do not want a collection of list but want a single value then you need to
 
 ```html
 <body>
-    <h1>We are learning DOM</h1>
-    <h1>Subscribe</h1>
-    <h2>Now</h2>
-    <p id="geek">
-      Hello
-      <span>Sunil</span>
-      <em>World</em>
-      <span>YouTube</span>
-    </p>
-    <p id="find"><span>Bye</span>Sunil</p>
-    <div>
-      <p>1st p inside div</p>
-      <p>2nd p inside div</p>
-    </div>
+  <h1>We are learning DOM</h1>
+  <h1>Subscribe</h1>
+  <h2>Now</h2>
+  <p id="geek">
+    Hello
+    <span>Sunil</span>
+    <em>World</em>
+    <span>YouTube</span>
+  </p>
+  <p id="find"><span>Bye</span>Sunil</p>
+  <div>
+    <p>1st p inside div</p>
+    <p>2nd p inside div</p>
+  </div>
 
-    <script>
-      //more specific :: Need only geek span
-      var result = document.getElementById('geek').getElementsByTagName('span');
-      console.log(result);
-    </script>
-  </body>
+  <script>
+    //more specific :: Need only geek span
+    var result = document.getElementById('geek').getElementsByTagName('span');
+    console.log(result);
+  </script>
+</body>
 ```
 
 ```
 output - HTMLCollection(2) [span, span] (on console)
 ```
 
-**Using length property:** 
+**Using length property:**
 
 ```html
 <body>
-    <h1>We are learning DOM</h1>
-    <h1>Subscribe</h1>
-    <h2>Now</h2>
-    <p id="geek">
-      Hello
-      <span>Sunil</span>
-      <em>World</em>
-      <span>YouTube</span>
-    </p>
-    <p id="find"><span>Bye</span>Sunil</p>
-    <div>
-      <p>1st p inside div</p>
-      <p>2nd p inside div</p>
-    </div>
+  <h1>We are learning DOM</h1>
+  <h1>Subscribe</h1>
+  <h2>Now</h2>
+  <p id="geek">
+    Hello
+    <span>Sunil</span>
+    <em>World</em>
+    <span>YouTube</span>
+  </p>
+  <p id="find"><span>Bye</span>Sunil</p>
+  <div>
+    <p>1st p inside div</p>
+    <p>2nd p inside div</p>
+  </div>
 
-    <script>
-      //length
-      var len = document.getElementsByTagName('p').length;
-      console.log(len);
-    </script>
-  </body>
+  <script>
+    //length
+    var len = document.getElementsByTagName('p').length;
+    console.log(len);
+  </script>
+</body>
 ```
 
 ```
 output - 4 (on console)
 ```
 
-**Looping:** 
+**Looping:**
 
 Gives you all paragraph.
 
 ```html
 <body>
-    <h1>We are learning DOM</h1>
-    <h1>Subscribe</h1>
-    <h2>Now</h2>
-    <p id="geek">
-      Hello
-      <span>Sunil</span>
-      <em>World</em>
-      <span>YouTube</span>
-    </p>
-    <p id="find"><span>Bye</span>Sunil</p>
-    <div>
-      <p>1st p inside div</p>
-      <p>2nd p inside div</p>
-    </div>
+  <h1>We are learning DOM</h1>
+  <h1>Subscribe</h1>
+  <h2>Now</h2>
+  <p id="geek">
+    Hello
+    <span>Sunil</span>
+    <em>World</em>
+    <span>YouTube</span>
+  </p>
+  <p id="find"><span>Bye</span>Sunil</p>
+  <div>
+    <p>1st p inside div</p>
+    <p>2nd p inside div</p>
+  </div>
 
-    <script>
-      //loop
-      var len = document.getElementsByTagName('p').length;
-      for (let i = 0; i < len; i++) {
-        var result = document.getElementsByTagName('p')[i];
-        console.log(result);
-      }
-    </script>
-  </body>
+  <script>
+    //loop
+    var len = document.getElementsByTagName('p').length;
+    for (let i = 0; i < len; i++) {
+      var result = document.getElementsByTagName('p')[i];
+      console.log(result);
+    }
+  </script>
+</body>
 ```
 
 #### getElementsByClassName
 
 The `getElementsByClassName()` method returns an object containing all the elements with the specified class names in the document as objects
 
-Example: 
+Example:
 
 ```html
 <body>
-    <h1>We are learning DOM</h1>
-    <h1>Subscribe</h1>
-    <h2>Now</h2>
-    <p class="geek">
-      Hello
-      <span>Sunil</span>
-      <em>World</em>
-      <span>YouTube</span>
-    </p>
-    <p class="myclass"><span>Bye</span>Sunil</p>
-    <div>
-      <p>1st p inside div</p>
-      <p class="geek">2nd p inside div</p>
-    </div>
+  <h1>We are learning DOM</h1>
+  <h1>Subscribe</h1>
+  <h2>Now</h2>
+  <p class="geek">
+    Hello
+    <span>Sunil</span>
+    <em>World</em>
+    <span>YouTube</span>
+  </p>
+  <p class="myclass"><span>Bye</span>Sunil</p>
+  <div>
+    <p>1st p inside div</p>
+    <p class="geek">2nd p inside div</p>
+  </div>
 
-    <script>
-      //access geek element
+  <script>
+    //access geek element
 
-      var result = document.getElementsByClassName('geek');
-      console.log(result);
-    </script>
-  </body>
+    var result = document.getElementsByClassName('geek');
+    console.log(result);
+  </script>
+</body>
 ```
 
 ```
 output - HTMLCollection(2) [p.geek, p.geek] (on console)
 ```
-If we need to access two classes then what ? 
+
+If we need to access two classes then what ?
 
 ```html
 <body>
-    <h1>We are learning DOM</h1>
-    <h1>Subscribe</h1>
-    <h2>Now</h2>
-    <p class="geek">
-      Hello
-      <span>Sunil</span>
-      <em>World</em>
-      <span>YouTube</span>
-    </p>
-    <p class="geek myclass"><span>Bye</span>Sunil</p>
-    <div>
-      <p>1st p inside div</p>
-      <p class="geek">2nd p inside div</p>
-    </div>
+  <h1>We are learning DOM</h1>
+  <h1>Subscribe</h1>
+  <h2>Now</h2>
+  <p class="geek">
+    Hello
+    <span>Sunil</span>
+    <em>World</em>
+    <span>YouTube</span>
+  </p>
+  <p class="geek myclass"><span>Bye</span>Sunil</p>
+  <div>
+    <p>1st p inside div</p>
+    <p class="geek">2nd p inside div</p>
+  </div>
 
-    <script>
-      //access two class name
-      var result = document.getElementsByClassName('geek myclass');
-      console.log(result);
-    </script>
-  </body>
+  <script>
+    //access two class name
+    var result = document.getElementsByClassName('geek myclass');
+    console.log(result);
+  </script>
+</body>
 ```
 
-```output
+```
 output - HTMLCollection [p.geek.myclass] (on console)
 ```
 
-**More Specific:** 
+**More Specific:**
 
+```html
+<body>
+  <h1>We are learning JS</h1>
+  <h1 class="geek myclass">Subscribe Geekyshows</h1>
+  <h2>Now</h2>
+  <p class="geek">
+    Hello<span>Geekyshows</span> <em>World</em><span>Youtube</span>
+  </p>
+
+  <p class="myclass"><span>Bye</span>Geekyshows</p>
+  <div id="show">
+    <p>1st p inside div</p>
+    <p class="geek">2nd p inside div</p>
+  </div>
+  <script>
+    //more specific
+    var getShow = document.getElementById('show');
+    var result = getShow.getElementsByClassName('geek');
+    console.log(result);
+  </script>
+</body>
+```
+
+```
+output - HTMLCollection [p.geek] (on console)
+```
+
+**Using length property:**
+
+```html
+<body>
+  <h1>We are learning JS</h1>
+  <h1 class="geek myclass">Subscribe Geekyshows</h1>
+  <h2>Now</h2>
+  <p class="geek">
+    Hello<span>Geekyshows</span> <em>World</em><span>Youtube</span>
+  </p>
+
+  <p class="myclass"><span>Bye</span>Geekyshows</p>
+  <div id="show">
+    <p>1st p inside div</p>
+    <p class="geek">2nd p inside div</p>
+  </div>
+  <script>
+    //length - find number of element of geek class
+    var len = document.getElementsByClassName('geek').length;
+    console.log(len);
+  </script>
+</body>
+```
+
+```
+output - 3 (on console)
+```
 
 <hr>
 
