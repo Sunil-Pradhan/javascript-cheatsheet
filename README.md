@@ -9528,58 +9528,58 @@ output - 3 (on console)
 
 ```html
 <body>
-    <h1>We are learning JS</h1>
-    <h1 class="geek myclass">Subscribe Geekyshows</h1>
-    <h2>Now</h2>
-    <p class="geek">
-      Hello<span>Geekyshows</span> <em>World</em><span>Youtube</span>
-    </p>
+  <h1>We are learning JS</h1>
+  <h1 class="geek myclass">Subscribe Geekyshows</h1>
+  <h2>Now</h2>
+  <p class="geek">
+    Hello<span>Geekyshows</span> <em>World</em><span>Youtube</span>
+  </p>
 
-    <p class="myclass"><span>Bye</span>Geekyshows</p>
-    <div id="show">
-      <p>1st p inside div</p>
-      <p class="geek">2nd p inside div</p>
-    </div>
-    <script>
-      //for loop
-      var data = document.getElementsByClassName('geek');
-      var len = data.length;
-      for (let i = 0; i < len; i++) {
-        var result = document.getElementsByClassName('geek')[i];
-        console.log(result);
-      }
-    </script>
-  </body>
+  <p class="myclass"><span>Bye</span>Geekyshows</p>
+  <div id="show">
+    <p>1st p inside div</p>
+    <p class="geek">2nd p inside div</p>
+  </div>
+  <script>
+    //for loop
+    var data = document.getElementsByClassName('geek');
+    var len = data.length;
+    for (let i = 0; i < len; i++) {
+      var result = document.getElementsByClassName('geek')[i];
+      console.log(result);
+    }
+  </script>
+</body>
 ```
 
 #### querySelector(“CSS Selector”)
 
-The method `querySelector()` returns the first Element match of the specified selector, or group of selectors. If no matches are found, null is returned. 
+The method `querySelector()` returns the first Element match of the specified selector, or group of selectors. If no matches are found, null is returned.
 
-**Example:** 
+**Example:**
 
-**Element Selector:** 
-
-```html
-querySelector('p')
-querySelector('p, h1')
-```
-
-
-**ID Selector:** 
+**Element Selector:**
 
 ```html
-querySelector('#show1')
-querySelector('#show, #show1')
+querySelector('p') querySelector('p, h1')
 ```
 
-**Class Selector:** 
+**ID Selector:**
 
 ```html
-querySelector('.geek')
-querySelector('p.myclass')
-querySelector('p > span.myclass')
+querySelector('#show1') querySelector('#show, #show1')
 ```
+
+**Class Selector:**
+
+```html
+querySelector('.geek') querySelector('p.myclass') querySelector('p >
+span.myclass')
+```
+
+#### querySelectorAll(“CSS Selector”)
+
+The querySelectorAll() method returns all elements in the document that matches a specified CSS selector, as a static NodeList object.
 
 <hr>
 
