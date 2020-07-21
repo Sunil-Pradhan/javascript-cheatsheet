@@ -4840,7 +4840,7 @@ console.log(Number.isInteger(200 - 100));
 
 `Number.isSafeInteger()` method determines whether a value is a safe integer.
 
-A safe integer is an integer that can be exactly all integers from (2<sup>53</sup> - 1) to -(253 - 1).
+A safe integer is an integer that can be exactly all integers from (2<sup>53</sup> - 1) to - (2<sup>53</sup> - 1).
 
 This method returns true if the value is of the type `Number`, and a safe integer. Otherwise it returns false.
 
