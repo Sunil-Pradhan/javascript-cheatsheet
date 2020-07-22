@@ -5181,7 +5181,7 @@ console.log(today);
 **Long Date:**
 
 - Long dates are most often written with a 'MMM DD YYYY' format.
-- Mont and day can be in any order.
+- Month and day can be in any order.
 - Month can be written in full(January), or abbreviated(Jan).
 - If you write 'June, 21, 2020' commas are ignored and Names are case insensitive.
 
