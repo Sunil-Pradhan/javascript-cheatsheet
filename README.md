@@ -5133,11 +5133,11 @@ console.log(today);
 
 It is divided into three category:
 
-| Date Type  | Formate     | Example                                   |
-| ---------- | ----------- | ----------------------------------------- |
-| ISO Date   | YYYY-MM-DD  | '2020-06-21' (The International Standard) |
-| Short Date | MM/DD/YYYY  | '06/21/2020                               |
-| Long Date  | MMM DD YYYY | 'June 21 2020 or 21 June 2020'            |
+| Date Type  | Formate     | Example                                 |
+| ---------- | ----------- | --------------------------------------- |
+| ISO Date   | YYYY-MM-DD  | 2020-06-21 (The International Standard) |
+| Short Date | MM/DD/YYYY  | 06/21/2020                              |
+| Long Date  | MMM DD YYYY | June 21 2020 or 21 June 2020            |
 
 **ISO Date:**
 
