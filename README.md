@@ -8982,7 +8982,7 @@ So we have a list of numbers and we are able to return a list of numbers after a
 
 A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred).
 
-A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+A promise may be in one of 3 possible states: fulfilled, rejected, or pending.
 
 **How Promises work**
 
