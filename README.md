@@ -9020,6 +9020,11 @@ func1()
   .catch(function (error) {
     console.log('Sunil!! - Very bad bro. Reason: ' + error);
   });
+
+//output: 
+
+//Function: Your promise has not been resolved
+//Sunil!! - Very bad bro. Reason: Sorry not fulfilled
 ```
 
 JavaScript Promises are better substitute of callback funtion.
