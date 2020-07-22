@@ -5055,7 +5055,7 @@ The date object provides a sophisticated set of methods for manipulating dates a
 </div>
 <br/>
 
-#### Creating data object
+#### Creating date object
 
 Date objects are created with the `new Date()` constructor. Date Objects created by programmers are static. They do not contain a ticking clock.
 
