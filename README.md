@@ -4068,6 +4068,34 @@ var a = Boolean(null); //false
 </div>
 <br/>
 
+#### `includes()` Method
+
+The `includes()` method determines whether an array contains a specified element.
+
+This method returns true if the array contains the element, and false if not. The `includes()` method is case sensitive.
+
+Syntax:
+
+```javascript
+array.includes(element, start)
+```
+
+Example:
+
+```javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var n = fruits.includes("Mango");
+console.log(n);
+
+//output - true
+```
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-string"></a>
 
 ## String
