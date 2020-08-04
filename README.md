@@ -4090,6 +4090,10 @@ console.log(n);
 //output - true
 ```
 
+###### Reference
+
+- https://www.w3schools.com/jsref/jsref_includes_array.asp
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
