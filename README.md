@@ -4100,6 +4100,36 @@ console.log(n);
 </div>
 <br/>
 
+
+#### `sort()` Method
+
+The `sort()` method sorts the items of an array.
+
+Syntax:
+
+```javascript
+array.sort(compareFunction)
+```
+
+Example:
+
+```javascript
+var fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+console.log(fruits.sort());
+
+//output - [ 'Apple', 'Banana', 'Mango', 'Orange' ]
+```
+
+###### Reference
+
+- https://www.w3schools.com/jsref/jsref_sort.asp
+
+<br/>
+<div align="right">
+    <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
+</div>
+<br/>
+
 <a name="js-string"></a>
 
 ## String
