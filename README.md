@@ -9262,27 +9262,6 @@ In other words, if something presents uniquely in your document through ID then 
 - https://www.tutorialspoint.com/how-getelementbyid-works-in-javascript
 - https://www.geeksforgeeks.org/html-dom-getelementbyid-method/
 
-Example:
-
-```html
-<body>
-  <p id="demo-id-one">Hello Sunil</p>
-  <p id="demo-id-two">Bye Sunil</p>
-
-  <script>
-    //getElementByID()
-    var result = document.getElementById('demo-id-one');
-    document.write(result);
-    console.log(result);
-  </script>
-</body>
-```
-
-```
-output - [object HTMLParagraphElement] (on screen)
-
-output - <p id="demo-id-one">Hello Sunil</p> (on console)
-```
 
 #### getElementsByTagName(“Tag_Name”)
 
