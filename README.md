@@ -86,6 +86,8 @@ z = x + y; //statement 4
 
 If an expression corresponds to a sentence fragment, a JavaScript statement corresponds to a full sentence in a human language.
 
+Roughly, an expression is something that computes a value but doesn’t do anything: it doesn’t alter the program state in any way. Statements, on the other hand, don’t have a value, but they do alter the state.
+
 ### Terminate statements in JavaScript
 
 ```javascript
