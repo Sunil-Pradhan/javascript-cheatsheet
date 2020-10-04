@@ -73,10 +73,20 @@ Example:
 12 // The number twelve
 1.2 // The number one point two
 "hello world" // A string of text
-
 ```
 
-Identifiers: 
+**Identifiers:** All JavaScript variables, constants, properties, functions and classes must be identified with unique names. These unique names are called identifiers and these are case sensitive.
+
+A JavaScript identifier must begin with a letter, an underscore (_), or a dollar sign ($).
+
+Example: 
+
+```javascript
+i my_variable_name
+v13
+_dummy
+$str
+```
 
 ### JavaScript expression
 
