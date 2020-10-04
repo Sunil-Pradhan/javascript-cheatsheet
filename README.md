@@ -65,21 +65,21 @@ Single line comments start with `//`. For multi-line commands, you use `/* ... *
 
 ### JavaScript Literals & Identifiers
 
-**Literals:** JavaScript literals are fixed values. 
+**Literals:** JavaScript literals are fixed values.
 
-Example: 
+Example:
 
 ```javascript
-12 // The number twelve
-1.2 // The number one point two
-"hello world" // A string of text
+12; // The number twelve
+1.2; // The number one point two
+('hello world'); // A string of text
 ```
 
 **Identifiers:** All JavaScript variables, constants, properties, functions and classes must be identified with unique names. These unique names are called identifiers and these are case sensitive.
 
-A JavaScript identifier must begin with a letter, an underscore (_), or a dollar sign ($).
+A JavaScript identifier must begin with a letter, an underscore (\_), or a dollar sign (\$).
 
-Example: 
+Example:
 
 ```javascript
 i my_variable_name
@@ -118,6 +118,29 @@ Roughly, an expression is something that computes a value but doesn’t do anyth
 ```javascript
 doStuff(); // Semicolons (;) to terminate lines
 ```
+
+### JavaScript reserved words
+
+These reserved keywords must not be used as the names of constants, variables, functions, or classes.
+
+| Column A | Column B   | Column C |
+| -------- | ---------- | -------- |
+| as       | const      | export   |
+| get      | null       | target   |
+| void     | async      | continue |
+| extends  | if         | of       |
+| this     | while      | await    |
+| debugger | false      | import   |
+| return   | throw      | with     |
+| break    | default    | finally  |
+| in       | set        | true     |
+| yield    | case       | delete   |
+| for      | instanceof | static   |
+| try      | catch      | do       |
+| from     | let        | super    |
+| typeof   | class      | else     |
+| function | new        | switch   |
+| var      | -          | -        |
 
 <br/>
 <div align="right">
