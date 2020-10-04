@@ -178,9 +178,14 @@ Here are three different ways to write a variable name that includes this charac
 let café = 1; // Define a variable using a Unicode character
 caf\u00e9     // 1; access the variable using an escape sequence
 caf\u{E9}     // 1; another form of the same escape sequence
-
 ```
 
+Early versions of JavaScript only supported the four-digit escape sequence. The version with curly braces was introduced in ES6 to better support Unicode codepoints that require more than 16 bits, such as emoji:
+
+```javascript
+console.log("\u{1F600}"); // Prints a smiley face emoji
+
+```
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
