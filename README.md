@@ -152,6 +152,35 @@ JavaScript also restricts the use of certain keywords that are not currently use
 
 :bulb: **Note:** For historical reasons, `arguments` and `eval` are not allowed as identifiers in certain circumstances and are best avoided entirely.
 
+### JavaScript & Unicode
+
+You can use Unicode character set in strings, comments and identifiers (but not emojis).
+
+This means that programmers can use mathematical symbols and words from non-English languages as constants and variables.
+
+Example: 
+
+```javascript 
+const π = 3.14;
+const sí = true;
+```
+
+**Unicode Escape Sequences:** Some computer hardware and software can't display, input, or
+correctly process the full set of Unicode characters. To support programmers and systems using older technology, JavaScript defines **escape sequences** that allow you to write Unicode characters using only ASCII characters. 
+
+These Unicode escapes begin with the characters `\u` and are either followed by exactly four hexadecimal digits (using uppercase or lowercase letters A–F) or by one to six hexadecimal digits enclosed within curly braces. 
+
+These Unicode escapes may appear in JavaScript string literals, regular expression literals, and identifiers (but not in language keywords). The Unicode escape for the character “é,” for example, is `\u00E9;`.
+
+Here are three different ways to write a variable name that includes this character:
+
+```javascript
+let café = 1; // Define a variable using a Unicode character
+caf\u00e9     // 1; access the variable using an escape sequence
+caf\u{E9}     // 1; another form of the same escape sequence
+
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
