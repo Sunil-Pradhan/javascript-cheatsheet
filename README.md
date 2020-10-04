@@ -142,6 +142,16 @@ These reserved keywords must not be used as the names of constants, variables, f
 | function | new        | switch   |
 | var      | -          | -        |
 
+JavaScript also restricts the use of certain keywords that are not currently used by the language but that might be used in future versions:
+
+| Column A | Column B   | Column C  |
+| -------- | ---------- | --------- |
+| enum     | implements | interface |
+| package  | private    | protected |
+| public   | -          | -         |
+
+:bulb: **Note:** For historical reasons, `arguments` and `eval` are not allowed as identifiers in certain circumstances and are best avoided entirely.
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
