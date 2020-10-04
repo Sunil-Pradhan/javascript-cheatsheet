@@ -63,6 +63,21 @@ Single line comments start with `//`. For multi-line commands, you use `/* ... *
  */
 ```
 
+### JavaScript Literals & Identifiers
+
+**Literals:** JavaScript literals are fixed values. 
+
+Example: 
+
+```javascript
+12 // The number twelve
+1.2 // The number one point two
+"hello world" // A string of text
+
+```
+
+Identifiers: 
+
 ### JavaScript expression
 
 A fragment of code that produces a value is called an expression.
@@ -4084,14 +4099,14 @@ This method returns true if the array contains the element, and false if not. Th
 Syntax:
 
 ```javascript
-array.includes(element, start)
+array.includes(element, start);
 ```
 
 Example:
 
 ```javascript
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-var n = fruits.includes("Mango");
+var fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+var n = fruits.includes('Mango');
 console.log(n);
 
 //output - true
@@ -4107,7 +4122,6 @@ console.log(n);
 </div>
 <br/>
 
-
 #### `sort()` Method
 
 The `sort()` method sorts the items of an array.
@@ -4115,7 +4129,7 @@ The `sort()` method sorts the items of an array.
 Syntax:
 
 ```javascript
-array.sort(compareFunction)
+array.sort(compareFunction);
 ```
 
 Example:
@@ -9090,7 +9104,7 @@ func1()
     console.log('Sunil!! - Very bad bro. Reason: ' + error);
   });
 
-//output: 
+//output:
 
 //Function: Your promise has not been resolved
 //Sunil!! - Very bad bro. Reason: Sorry not fulfilled
@@ -9268,7 +9282,6 @@ In other words, if something presents uniquely in your document through ID then 
 - https://www.javatpoint.com/document-getElementById()-method
 - https://www.tutorialspoint.com/how-getelementbyid-works-in-javascript
 - https://www.geeksforgeeks.org/html-dom-getelementbyid-method/
-
 
 #### getElementsByTagName(“Tag_Name”)
 
