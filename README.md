@@ -44,7 +44,7 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 JavaScript was created at Netscape in the early days of the web then Netscape submitted the language for standardization to ECMA—the European Computer Manufacturer’s Association—and because of trademark issues, the standardized version of the language was stuck with the awkward name “ECMAScript.” In practice, everyone just calls the language JavaScript.
 
 For most of the 2010s, version 5 of the ECMAScript standard has been supported by all web browsers. ES6 was released in 2015 and added major new features—including class and module syntax—that changed JavaScript from a scripting language into a serious, general-purpose
-language suitable for large-scale software engineering. Since ES6, the ECMAScript specification has moved to a yearly release cadence, and versions of the language—ES2016, ES2017, ES2018, ES2019, and ES2020—are now identified by year of release.
+language suitable for large-scale software engineering. Since ES6, the ECMAScript specification has moved to a yearly release cadence, and versions of the language—ES2016, ES2017, ES2018, ES2019, ES2020 and ES2021—are now identified by year of release.
 
 Everything in JavaScript is an object.
 
