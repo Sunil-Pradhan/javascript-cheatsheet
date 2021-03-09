@@ -8,6 +8,8 @@
 JavaScript is a dynamic interpreted language that powers the web. It is widely used in browsers and increasingly on servers. This document is a cheatsheet for JavaScript you will frequently encounter in modern projects and most contemporary sample code.
 </p>
 
+> Click :star:if you like the project. Pull Request are highly appreciated. Follow me [@itsSunilPradhan](https://twitter.com/itsSunilPradhan) on Twitter or [Hello Sunil](https://hello-sunil.in/)  for technical updates and in depth tech articles.
+
 ## Table of Contents
 
 - [JavaScript Basics](#js-basics)
