@@ -8,7 +8,7 @@
 JavaScript is a dynamic interpreted language that powers the web. It is widely used in browsers and increasingly on servers. This document is a cheatsheet for JavaScript you will frequently encounter in modern projects and most contemporary sample code.
 </p>
 
-> Click :star:if you like the project. Pull Request are highly appreciated. Follow me [@itsSunilPradhan](https://twitter.com/itsSunilPradhan) on Twitter or [Hello Sunil](https://hello-sunil.in/)  for technical updates and in depth tech articles.
+> Click :star:if you like the project. Pull Request are highly appreciated. Follow me [@itsSunilPradhan](https://twitter.com/itsSunilPradhan) on Twitter or [Hello Sunil](https://hello-sunil.in/) for technical updates and in depth tech articles.
 
 ## Table of Contents
 
@@ -47,6 +47,27 @@ JavaScript was created at Netscape in the early days of the web then Netscape su
 
 For most of the 2010s, version 5 of the ECMAScript standard has been supported by all web browsers. ES6 was released in 2015 and added major new features—including class and module syntax—that changed JavaScript from a scripting language into a serious, general-purpose
 language suitable for large-scale software engineering. Since ES6, the ECMAScript specification has moved to a yearly release cadence, and versions of the language—ES2016, ES2017, ES2018, ES2019, ES2020 and ES2021—are now identified by year of release.
+
+ECMAScript standardized by the ECMA International standards organization in the ECMA-262 and ECMA-402 specifications.
+
+Each proposal for an ECMAScript feature goes through the following maturity stages:
+
+1. Stage 0: Strawman;
+2. Stage 1: Proposal;
+3. Stage 2: Draft;
+4. Stage 3: Candidate;
+5. Stage 4: Finished.
+
+**Version History of JavaScript**
+
+| Edition      | Date      |
+| ------------ | --------- |
+| ES2015 (ES6) | June 2015 |
+| ES2016       | June 2016 |
+| ES2017       | June 2017 |
+| ES2018       | June 2018 |
+| ES2019       | June 2019 |
+| ES2020       | June 2020 |
 
 Everything in JavaScript is an object.
 
@@ -159,17 +180,17 @@ You can use Unicode character set in strings, comments and identifiers (but not 
 
 This means that programmers can use mathematical symbols and words from non-English languages as constants and variables.
 
-Example: 
+Example:
 
-```javascript 
+```javascript
 const π = 3.14;
 const sí = true;
 ```
 
 **Unicode Escape Sequences:** Some computer hardware and software can't display, input, or
-correctly process the full set of Unicode characters. To support programmers and systems using older technology, JavaScript defines **escape sequences** that allow you to write Unicode characters using only ASCII characters. 
+correctly process the full set of Unicode characters. To support programmers and systems using older technology, JavaScript defines **escape sequences** that allow you to write Unicode characters using only ASCII characters.
 
-These Unicode escapes begin with the characters `\u` and are either followed by exactly four hexadecimal digits (using uppercase or lowercase letters A–F) or by one to six hexadecimal digits enclosed within curly braces. 
+These Unicode escapes begin with the characters `\u` and are either followed by exactly four hexadecimal digits (using uppercase or lowercase letters A–F) or by one to six hexadecimal digits enclosed within curly braces.
 
 These Unicode escapes may appear in JavaScript string literals, regular expression literals, and identifiers (but not in language keywords). The Unicode escape for the character “é,” for example, is `\u00E9;`.
 
@@ -177,16 +198,16 @@ Here are three different ways to write a variable name that includes this charac
 
 ```javascript
 let café = 1; // Define a variable using a Unicode character
-caf\u00e9     // 1; access the variable using an escape sequence
-caf\u{E9}     // 1; another form of the same escape sequence
+café; // 1; access the variable using an escape sequence
+café; // 1; another form of the same escape sequence
 ```
 
 Early versions of JavaScript only supported the four-digit escape sequence. The version with curly braces was introduced in ES6 to better support Unicode codepoints that require more than 16 bits, such as emoji:
 
 ```javascript
-console.log("\u{1F600}"); // Prints a smiley face emoji
-
+console.log('\u{1F600}'); // Prints a smiley face emoji
 ```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
@@ -9291,7 +9312,6 @@ polymorphism means you are writing a single function() but it works differently 
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
 </div>
 <br/>
-
 
 <hr>
 
