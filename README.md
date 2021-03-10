@@ -12,6 +12,7 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 
 ## Table of Contents
 
+- [Motivation](#js-motivation)
 - [JavaScript Basics](#js-basics)
 - [Variables](#js-variables)
 - [Data types](#js-datatypes)
@@ -38,6 +39,17 @@ JavaScript is a dynamic interpreted language that powers the web. It is widely u
 - [JavaScript Async/Await](#js-async-await)
 - [Object Oriented Programming - OOP](#js-oop)
 - [Complementary Resources](#com-res)
+
+
+<a name="js-motivation"></a>
+
+## Motivation
+
+This document is a cheatsheet for JavaScript you will frequently encounter in modern projects and most contemporary sample code.
+
+This guide is not intended to teach you JavaScript from the ground up, but to help developers with basic knowledge who may struggle to get familiar with modern codebases (or let's say to learn React for instance) because of the JavaScript concepts used.
+
+> ❗ **Note:** Most of the concepts introduced here are coming from a JavaScript language update ES6 or later. 
 
 <a name="js-basics"></a>
 
