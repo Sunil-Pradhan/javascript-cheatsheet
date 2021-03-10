@@ -224,6 +224,20 @@ I recommend always declaring your variables with `const` by default, but with `l
 
 :bulb: **TIP:** The **Temporal Dead Zone(TDZ)** is never named explicitly in the ECMAScript specification, but the term is often used to describe why `let` and `const` bindings are not accessible before their declaration.
 
+
+**Example**
+
+```javascript
+const person = "Sunil";
+person = "Anil" // Will raise an error, person can't be reassigned
+```
+
+```javascript
+let person = "Sunil";
+person = "Anil";
+console.log(person) // "Anil", reassignment is allowed with let
+```
+
 <br>
 
 **Variable declaration:**
