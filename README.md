@@ -74,7 +74,7 @@ language suitable for large-scale software engineering.
 
 Since ES6, the ECMAScript specification has moved to a yearly release cadence, and versions of the language—ES2016, ES2017, ES2018, ES2019, ES2020 and ES2021—are now identified by year of release.
 
-ECMAScript(JavaScript) standardized by the ECMA International standards organization in the ECMA-262 and ECMA-402 specifications.
+ECMAScript(JavaScript) standardized by the ECMA International standards organization in the [ECMA-262](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/) and [ECMA-402](https://www.ecma-international.org/publications-and-standards/standards/ecma-402/) specifications.
 
 Each proposal for an ECMAScript feature goes through the following maturity stages:
 
