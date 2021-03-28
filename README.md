@@ -101,7 +101,7 @@ In the browser you aren't going to see errors by default. So, if something goes 
 
 To see errors and get a lot of other useful information about scripts, **“developer tools”** have been embedded in browsers.
 
-Most developers lean towards Chrome or Firefox for development because those browsers have the best developer tools.
+Most developers lean towards [Chrome](https://www.google.com/intl/en_in/chrome/) or [Firefox](https://www.mozilla.org/en-US/firefox/products/) for development because those browsers have the best developer tools.
 
 **[Chrome DevTools](https://developer.chrome.com/docs/devtools/):**
 
@@ -110,7 +110,7 @@ Most developers lean towards Chrome or Firefox for development because those bro
 By pressing `F12` Chrome DevTools window open up. 
 
 
-**[Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools)**
+**[Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools):**
 
 ![Firefox Developer Tools](/img/js-cheatsheet-img-2.png)
 
