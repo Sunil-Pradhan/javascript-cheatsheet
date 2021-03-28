@@ -107,21 +107,21 @@ Most developers lean towards [Chrome](https://www.google.com/intl/en_in/chrome/)
 
 ![Chrome DevTools](/img/js-cheatsheet-img-1.png)
 
-By pressing `F12` Chrome DevTools window open up. 
+By pressing <kbd>F12</kbd> Chrome DevTools window open up. 
 
 
 **[Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools):**
 
 ![Firefox Developer Tools](/img/js-cheatsheet-img-2.png)
 
-By pressing `F12` Firefox Developer Tools window open up. 
+By pressing <kbd>F12</kbd> Firefox Developer Tools window open up. 
 
 
 💡 **TIP:** Multi-line input
 
-Usually, when we put a line of code into the Chrome DevTools/Firefox Developer Tools console, and then press `Enter`, it executes.
+Usually, when we put a line of code into the Chrome DevTools/Firefox Developer Tools console, and then press <kbd>Enter ⏎ </kbd>, it executes.
 
-To insert multiple lines, press `Shift + Enter`. This way one can enter long fragments of JavaScript code easily.
+To insert multiple lines, press <kbd>Shift</kbd> + <kbd>Enter ⏎</kbd>. This way one can enter long fragments of JavaScript code easily.
 
 ❗ **Remember** - Everything in JavaScript is an object.
 
