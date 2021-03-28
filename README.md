@@ -407,9 +407,7 @@ Example:
 
 ```javascript
 var x;
-console.log(typeof x);
-
-//output - undefined
+console.log(typeof x);  //output - undefined
 ```
 
 Without initialization we try to access it here, so that it throws us `undefined`.
@@ -420,10 +418,39 @@ Technically, it is possible to assign undefined to any variable:
 ```javascript
  var x = 123;
  x = undefined;
-console.log(typeof x);  //output - undefined
+ console.log(typeof x);  //output - undefined
 ```
 
 But it is not recommended. Normally, we use `null` to assign an **“empty”** or **“unknown”** value to a variable, and we use `undefined` for checks like seeing if a variable has been assigned or not.
+
+**8 Ways to get `undefined`:**
+
+1. A declared variable without assigning any value to it.
+
+Example:
+
+```javascript
+var x;
+console.log(typeof x);  //output - undefined
+```
+
+2. Implicit returns of functions due to missing `return` statements.
+
+Example:
+
+```javascript
+function demo() {}
+console.log(demo());  //output - undefined
+```
+3. `return` statements that do not explicitly `return` anything.
+
+```javascript
+function demo() {
+return;
+}
+console.log(demo()); //output - undefined
+```
+
 
 ### Boolean:
 
@@ -433,9 +460,7 @@ Example:
 
 ```javascript
 var x = true;
-console.log(typeof x);
-
-//output - boolean
+console.log(typeof x);  //output - boolean
 ```
 
 ### Number:
@@ -446,9 +471,7 @@ Example:
 
 ```javascript
 var age = 18;
-console.log(typeof age);
-
-//output - number
+console.log(typeof age);   //output - number
 ```
 
 ### String:
@@ -459,9 +482,7 @@ Example:
 
 ```javascript
 var name = 'Sunil';
-console.log(typeof name);
-
-//output - string
+console.log(typeof name);   //output - string
 ```
 
 In JavaScript, there are three types of quotes for strings.
@@ -504,9 +525,7 @@ Example:
 ```javascript
 const x = 123n;  // the 'n' at the end means it's a BigInt
 
-console.log(typeof x);
-
-//output - BigInt
+console.log(typeof x);   //output - BigInt
 ```
 
 ### Symbol:
@@ -515,9 +534,7 @@ Symbol is used to generate primitives which are unique in nature.
 
 ```javascript
 var x = Symbol();
-console.log(typeof x);
-
-//output - Symbol
+console.log(typeof x);   //output - Symbol
 ```
 
 ### Null:
@@ -528,9 +545,7 @@ Example:
 
 ```javascript
 var x = null;
-console.log(typeof x);
-
-//output - object
+console.log(typeof x);  //output - object
 ```
 
 Here variable is empty so that it is at the beginning behave as a placeholder which you will use to put something inside of it.
