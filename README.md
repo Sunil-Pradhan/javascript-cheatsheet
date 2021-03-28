@@ -95,7 +95,35 @@ Each proposal for an ECMAScript feature goes through the following maturity stag
 | ES2019       | June 2019 |
 | ES2020       | June 2020 |
 
-Everything in JavaScript is an object.
+**Developer console**
+
+In the browser you aren't going to see errors by default. So, if something goes wrong in the script, you won’t see what’s broken and can’t fix it.
+
+To see errors and get a lot of other useful information about scripts, **“developer tools”** have been embedded in browsers.
+
+Most developers lean towards Chrome or Firefox for development because those browsers have the best developer tools.
+
+**[Chrome DevTools](https://developer.chrome.com/docs/devtools/):**
+
+![Chrome DevTools](/img/js-cheatsheet-img-1.png)
+
+By pressing `F12` Chrome DevTools window open up. 
+
+
+**[Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools)**
+
+![Firefox Developer Tools](/img/js-cheatsheet-img-2.png)
+
+By pressing `F12` Firefox Developer Tools window open up. 
+
+
+💡 **TIP:** Multi-line input
+
+Usually, when we put a line of code into the Chrome DevTools/Firefox Developer Tools console, and then press `Enter`, it executes.
+
+To insert multiple lines, press `Shift + Enter`. This way one can enter long fragments of JavaScript code easily.
+
+❗ **Remember** - Everything in JavaScript is an object.
 
 ### JavaScript comments
 
