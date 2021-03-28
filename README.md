@@ -414,6 +414,17 @@ console.log(typeof x);
 
 Without initialization we try to access it here, so that it throws us `undefined`.
 
+Technically, it is possible to assign undefined to any variable:
+
+
+```javascript
+ var x = 123;
+ x = undefined;
+console.log(typeof x);  //output - undefined
+```
+
+But it is not recommended. Normally, we use `null` to assign an **“empty”** or **“unknown”** value to a variable, and we use `undefined` for checks like seeing if a variable has been assigned or not.
+
 ### Boolean:
 
 Booleans can only have two values: `true` or `false`.
