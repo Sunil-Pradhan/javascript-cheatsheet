@@ -154,7 +154,7 @@ In other words, downloads the script while the page content is downloading, and 
 
 
 
-❗ **Remember** - Everything in JavaScript is an object and Javascript code runs top to bottom and left to right
+❗ **Remember** - Everything in JavaScript is an object and Its code runs top to bottom and left to right.
 
 ### JavaScript comments
 
