@@ -470,15 +470,15 @@ On the other hand, backticks are **extended functionality quotes**. They allow u
 
 
 ```javascript
-      let name = "Sunil"
+  let name = "Sunil"
 
-      //embed a variable 
-      console.log(`Hello, ${name}!`);   //Hello, Sunil!
+  //embed a variable 
+  console.log(`Hello, ${name}!`);   //Hello, Sunil!
 ```
 
 ```javascript
-      //embed an expression
-      console.log(`The result is ${1 + 2}`);   //The result is 3
+  //embed an expression
+  console.log(`The result is ${1 + 2}`);   //The result is 3
 ```
 ### BigInt:
 
