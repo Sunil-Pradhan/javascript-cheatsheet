@@ -54,10 +54,25 @@ This guide is not intended to teach you JavaScript from the ground up, but to he
 
 ## JavaScript Basics
 
-JavaScript was created at Netscape in the early days of the web then Netscape submitted the language for standardization to ECMA(European Computer Manufacturer’s Association) and because of trademark issues, the standardized version of the language was stuck with the awkward name “ECMAScript.” In practice, everyone just calls the language JavaScript.
+
+JavaScript was created at [Netscape](https://isp.netscape.com/) in the early days of the web and initially it had another name: **“LiveScript”**, but [Java](https://www.java.com/en/) was very popular at that time, so it was decided that positioning a new language as a **younger brother** of Java would help to increase its popularity.
+
+Later Netscape submitted the language for standardization to [ECMA(European Computer Manufacturer’s Association)](https://www.ecma-international.org/) and because of trademark issues, the standardized version of the language was stuck with the awkward name “ECMAScript.” In practice, everyone just calls the language **JavaScript**.
+
+Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called the **JavaScript Engine**.
+
+The browser has an embedded engine sometimes called a **“JavaScript virtual machine”**.
+
+Different engines have different code names. For example:
+
+* Chrome, Microsoft Edge and Opera - [V8](https://v8.dev/) 
+* Firefox - [SpiderMonkey](https://mozilla-spidermonkey.github.io/)
+
 
 For most of the 2010s, version 5 of the ECMAScript standard has been supported by all web browsers. ES6 was released in 2015 and added major new features—including class and module syntax—that changed JavaScript from a scripting language into a serious, general-purpose
-language suitable for large-scale software engineering. Since ES6, the ECMAScript specification has moved to a yearly release cadence, and versions of the language—ES2016, ES2017, ES2018, ES2019, ES2020 and ES2021—are now identified by year of release.
+language suitable for large-scale software engineering. 
+
+Since ES6, the ECMAScript specification has moved to a yearly release cadence, and versions of the language—ES2016, ES2017, ES2018, ES2019, ES2020 and ES2021—are now identified by year of release.
 
 ECMAScript(JavaScript) standardized by the ECMA International standards organization in the ECMA-262 and ECMA-402 specifications.
 
