@@ -425,7 +425,7 @@ But it is not recommended. Normally, we use `null` to assign an **“empty”** 
 
 **8 Ways to get `undefined`:**
 
-1. A declared variable without assigning any value to it.
+**1.** A declared variable without assigning any value to it.
 
 Example:
 
@@ -434,7 +434,7 @@ var x;
 console.log(typeof x);  //output - undefined
 ```
 
-2. Implicit returns of functions due to missing `return` statements.
+**2.** Implicit returns of functions due to missing `return` statements.
 
 Example:
 
@@ -442,7 +442,7 @@ Example:
 function demo() {}
 console.log(demo());  //output - undefined
 ```
-3. `return` statements that do not explicitly `return` anything.
+**3.** `return` statements that do not explicitly `return` anything.
 
 ```javascript
 function demo() {
