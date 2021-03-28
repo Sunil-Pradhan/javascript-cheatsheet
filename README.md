@@ -123,7 +123,38 @@ Usually, when we put a line of code into the Chrome DevTools/Firefox Developer T
 
 To insert multiple lines, press <kbd>Shift</kbd> + <kbd>Enter ⏎</kbd>. This way one can enter long fragments of JavaScript code easily.
 
-❗ **Remember** - Everything in JavaScript is an object.
+**async & defer attribute:**
+
+
+**async**
+
+```javascript
+<script scr="./script.js" async> </script>
+```
+
+The `async` attribute is a boolean attribute. When present, it specifies that the script will be executed asynchronously as soon as it is available.
+
+
+**defer**
+
+```javascript
+<script src="demo_defer.js" defer></script>
+```
+The `defer` attribute is a boolean attribute. When present, it specifies that the script is executed when the page has finished parsing.
+
+In other words, downloads the script while the page content is downloading, and executes after the HTML is parsed.
+
+
+###### Further Reading
+
+* [Introduction to HTTP/2](https://developers.google.com/web/fundamentals/performance/http2)
+* [Script Tag - async & defer](https://stackoverflow.com/questions/10808109/script-tag-async-defer)
+* [HTML `<script>` `async` Attribute](https://www.w3schools.com/tags/att_script_async.asp)
+* [HTML `<script>` `defer` Attribute](https://www.w3schools.com/tags/att_script_defer.asp)
+
+
+
+❗ **Remember** - Everything in JavaScript is an object and Javascript code runs top to bottom and left to right
 
 ### JavaScript comments
 
