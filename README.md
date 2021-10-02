@@ -5354,6 +5354,33 @@ console.log(x);
 
 https://www.w3schools.com/jsref/jsref_obj_math.asp
 
+**`sqrt(a)` Method:**
+
+It returns square root of a number.
+
+Example:
+
+```javascript
+var x = 25;
+Math.sqrt(x);
+
+//output - 5
+```
+
+**`pow(a,b)` Method:**
+
+It returns value of a to the power b.
+
+Example:
+
+```javascript
+var x = 25;
+var y = 2;
+Math.pow(x, y);
+
+//output - 625
+```
+
 <br/>
 <div align="right">
     <b><a href="#javascript-cheatsheet">↥ back to top</a></b>
